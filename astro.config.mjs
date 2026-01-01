@@ -409,14 +409,14 @@ export default defineConfig({
 				{
           tag: 'script',
           attrs: {
-            src: 'https://www.googletagmanager.com/gtag/js?id=G-M6N39DH483',
-						'id': 'G-M6N39DH483',
+            src: 'https://www.googletagmanager.com/gtag/js?id=G-D3DYLSSL3T',
+						'id': 'G-D3DYLSSL3T',
             async: true,
 					},
 				},
 				{
           tag: 'script',
-					content: "window.dataLayer = window.dataLayer || [];function gtag(){dataLayer.push(arguments);}gtag('js', new Date());gtag('config', 'G-M6N39DH483', {'anonymize_ip': true, 'cookie_flags': 'SameSite=None;Secure'});"
+					content: "window.dataLayer = window.dataLayer || [];function gtag(){dataLayer.push(arguments);}gtag('js', new Date());gtag('config', 'G-D3DYLSSL3T', {'anonymize_ip': true, 'cookie_flags': 'SameSite=None;Secure'});"
 				},
 				// Google AdSense
 				{
