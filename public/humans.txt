@@ -1,0 +1,18 @@
+/* TEAM */
+  Developer: 逍遥自在轩
+  Site: https://www.niceshare.site/
+  Twitter: @MarshalXuan
+  Location: China
+
+/* THANKS */
+  Astro - https://astro.build/
+  Starlight - https://starlight.astro.build/
+  Svelte - https://svelte.dev/
+
+/* SITE */
+  Last update: 2024/12/08
+  Language: 简体中文 / Simplified Chinese
+  Doctype: HTML5
+  IDE: Cursor, VS Code
+  Technologies: Astro, Starlight, Svelte, TypeScript, TailwindCSS
+

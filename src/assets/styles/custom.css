@@ -1,0 +1,126 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+:root {
+  --sl-text-5xl: 3rem;
+  --sl-text-4xl: 1.6rem;
+  --sl-text-3xl: 1.4rem;
+  --sl-text-2xl: 1.2rem;
+  --sl-text-xl: 1.125rem;
+  --sl-text-lg: 1rem;
+  --sl-color-accent: #2c3e50 !important;
+  --sl-color-text-accent: #2196f3 !important;
+  --sl-color-link-accent: #2edfa3;
+  --sl-color-brand: #2196f3 !important;
+}
+
+h1 {
+  font-size: var(--sl-text-5xl);
+  font-weight: 600;
+  font-family: cursive;
+}
+
+h2 {
+  font-size: var(--sl-text-4xl);
+}
+
+h3 {
+  font-size: var(--sl-text-3xl);
+}
+
+svg {
+  --sl-icon-size: 1.2rem !important;
+  font-size: var(--sl-icon-size) !important;
+  width: var(--sl-icon-size) !important;
+  height: var(--sl-icon-size) !important;
+}
+
+.header {
+  padding: 0 1rem;
+}
+
+.primary {
+  background-color: #fffaf0;
+}
+
+html[data-theme='dark'] .primary {
+  background: #0F2027;
+  background: -webkit-linear-gradient(to left, #2C5364, #203A43, #0F2027);
+  background: linear-gradient(to left, #2C5364, #203A43, #0F2027)
+}
+
+.tagline {
+  font-weight: black;
+  background: linear-gradient(to bottom right,#aa4b6b, #6b6b83, #3b8d99);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  font-weight: 600;
+}
+
+.sl-markdown-content a:not(:where(.not-content *)) {
+	color: var(--sl-color-link-accent);
+}
+
+.sl-link-button {
+  padding: 1rem;
+  border: 1px solid var(--sl-color-brand);
+}
+
+
+.site-title {
+  img {
+    width: 2rem;
+    height: 2rem;
+    object-fit: cover;
+  }
+}
+
+.link-title {
+  font-size: var(--sl-text-base);
+}
+
+.social-icons {
+  a {
+    &:hover {
+      border-radius: 8px;
+      background-color: #ececec;
+    }
+  }
+}
+
+select {
+  outline: none;
+}
+
+.main-pane li {
+  margin-left: 2rem;
+  list-style-type: initial;
+}
+
+.main-pane li li {
+  list-style-type: circle;
+}
+
+.medium-zoom-image--opened {
+  z-index: 1000;
+}
+
+[aria-current='page']:hover,
+[aria-current='page']:focus,
+[aria-current='page'] {
+  color: var(--sl-color-accent);
+  background-color: transparent;
+}
+
+#starlight__sidebar a {
+  transition: all .4s ease;
+  overflow: hidden;
+  white-space: nowrap;
+  text-overflow: ellipsis;
+  -o-text-overflow: ellipsis;
+}
+
+#starlight__sidebar a:hover {
+  transform: scale(1.023);
+}

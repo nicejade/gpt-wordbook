@@ -1,0 +1,34 @@
+{
+  "name": "gpt-wordbook",
+  "description": "基于 GPT-4 生成的深度解析数据构建，涵盖超过 8000+ 核心英语词汇。不仅提供精准的词义与例句，更深入挖掘词根词缀、文化背景、记忆技巧及趣味小故事。旨在通过 AI 的视角，帮助英语学习者构建逻辑化的词汇体系，让单词记忆不再是死记硬背。",
+  "type": "module",
+  "version": "0.1.0",
+  "scripts": {
+    "dev": "astro dev",
+    "start": "astro dev",
+    "build": "astro check && astro build",
+    "preview": "astro preview",
+    "astro": "astro",
+    "deploy": "bash deploy.sh",
+    "cf-build": "pnpm install --no-frozen-lockfile && astro check && astro build"
+  },
+  "dependencies": {
+    "@astrojs/check": "^0.9.4",
+    "@astrojs/starlight": "0.35.2",
+    "@astrojs/starlight-tailwind": "^4.0.1",
+    "@astrojs/svelte": "7.1.0",
+    "@astrojs/tailwind": "^6.0.2",
+    "@tailwindcss/vite": "^4.1.13",
+    "anchor-js": "^5.0.0",
+    "astro": "5.12.5",
+    "gray-matter": "^4.0.3",
+    "starlight-links-validator": "^0.14.3",
+    "starlight-theme-rapide": "^0.5.1",
+    "svelte": "^5.20.5",
+    "tailwindcss": "^4.1.11"
+  },
+  "devDependencies": {
+    "sharp": "^0.33.5",
+    "typescript": "^5.8.2"
+  }
+}

@@ -1,0 +1,70 @@
+{
+	"name": "GPT Wordbook - 基于 GPT 生成的单词书",
+	"short_name": "GPT Wordbook",
+	"description": "基于 GPT-4 生成的深度解析数据构建，涵盖超过 8000+ 核心英语词汇。不仅提供精准的词义与例句，更深入挖掘词根词缀、文化背景、记忆技巧及趣味小故事。旨在通过 AI 的视角，帮助英语学习者构建逻辑化的词汇体系，让单词记忆不再是死记硬背。",
+	"id": "/?source=pwa",
+	"start_url": "/?source=pwa",
+	"display": "standalone",
+	"orientation": "any",
+	"scope": "/",
+	"display_override": ["window-controls-overlay", "standalone"],
+	"categories": ["education", "reference", "productivity"],
+	"lang": "zh-CN",
+	"dir": "ltr",
+	"screenshots": [
+		{
+			"src": "/hero.png",
+			"sizes": "1200x676",
+			"type": "image/png",
+			"form_factor": "wide",
+			"label": "GPT Wordbook 主页面"
+		}
+	],
+	"background_color": "#ffffff",
+	"theme_color": "#3b82f6",
+	"icons": [
+		{
+			"src": "/android-chrome-512x512.png",
+			"sizes": "512x512",
+			"type": "image/png",
+			"purpose": "any"
+		},
+		{
+			"src": "/android-chrome-512x512.png",
+			"sizes": "512x512",
+			"type": "image/png",
+			"purpose": "maskable"
+		},
+		{
+			"src": "/android-chrome-192x192.png",
+			"sizes": "192x192",
+			"type": "image/png",
+			"purpose": "any"
+		},
+		{
+			"src": "/apple-touch-icon.png",
+			"sizes": "180x180",
+			"type": "image/png"
+		},
+		{
+			"src": "/favicon-32x32.png",
+			"sizes": "32x32",
+			"type": "image/png"
+		},
+		{
+			"src": "/favicon-16x16.png",
+			"sizes": "16x16",
+			"type": "image/png"
+		}
+	],
+	"shortcuts": [
+		{
+			"name": "关于页面",
+			"short_name": "关于",
+			"description": "了解更多关于 GPT Wordbook",
+			"url": "/about",
+			"icons": [{ "src": "/favicon-96x96.png", "sizes": "96x96" }]
+		}
+	],
+	"prefer_related_applications": false
+}

@@ -1,0 +1,91 @@
+---
+title: GPT Wordbook - 基于 GPT 生成的单词书
+description: 基于 GPT-4 生成的深度解析数据构建，涵盖超过 8000+ 核心英语词汇。不仅提供精准的词义与例句，更深入挖掘词根词缀、文化背景、记忆技巧及趣味小故事。旨在通过 AI 的视角，帮助英语学习者构建逻辑化的词汇体系，让单词记忆不再是死记硬背。
+template: splash
+hero:
+  tagline: 用 AI 的智慧重塑单词学习 · 让记忆从死记硬背到逻辑构建
+  image:
+    alt: GPT Wordbook - 智能单词学习平台
+    file: https://www.niceshare.site/logo.png
+  actions:
+    - text: 开始探索词汇
+      link: /words/
+      icon: right-arrow
+      variant: primary
+    - text: 了解更多
+      link: /about
+      icon: information
+      variant: minimal
+---
+
+import { Card, CardGrid } from '@astrojs/starlight/components';
+
+<section style="width: 100%; text-align: center; margin: 3rem auto 4rem;">
+  <div style="max-width: 900px; margin: 0 auto; padding: 0 1.5rem;">
+    <h2 style="font-size: clamp(1.75rem, 4vw, 2.5rem); line-height: 1.3; font-weight: 800; margin-bottom: 1.5rem; background: linear-gradient(135deg, #667eea 0%, #764ba2 50%, #f093fb 100%); -webkit-background-clip: text; -webkit-text-fill-color: transparent; background-clip: text;">
+      深度挖掘英语词汇魅力的学习平台
+    </h2>
+    <p style="font-size: clamp(1rem, 2.5vw, 1.25rem); line-height: 1.8; color: var(--sl-color-gray-2); max-width: 760px; margin: 0 auto 2rem;">
+      涵盖 <strong style="color: var(--sl-color-text-accent); font-size: 1.4em;">8000+</strong> 精选核心词汇，每个单词都经过 GPT-4 深度解析，结合词根词缀、文化背景、助记技巧，构建系统化的词汇学习体系
+    </p>
+  </div>
+</section>
+
+<CardGrid stagger>
+  <Card title="🤖 AI 智能驱动" icon="rocket">
+    基于 **GPT-4** 生成高质量词汇解析内容，专业且富有洞察力，每个单词都包含深度的语言学分析
+  </Card>
+  
+  <Card title="🎯 系统化学习" icon="puzzle">
+    通过**词根词缀逻辑**梳理，帮助你建立完整的词汇网络，理解单词构成规律，举一反三
+  </Card>
+  
+  <Card title="📚 海量词库" icon="open-book">
+    **8000+** 精选核心词汇，覆盖考研、托福、雅思、GRE、四六级等各类考试和应用场景
+  </Card>
+  
+  <Card title="💡 趣味记忆" icon="star">
+    AI 生成生动有趣的**助记故事**，结合文化背景和趣闻轶事，让单词记忆充满乐趣
+  </Card>
+  
+  <Card title="⚡ 极速体验" icon="rocket">
+    基于 **Astro** 构建的静态网站，加载速度极快，响应式设计完美支持所有设备
+  </Card>
+  
+  <Card title="🔗 智能关联" icon="random">
+    智能关联相关词汇，构建**词汇网络**，通过联想和对比强化记忆效果
+  </Card>
+</CardGrid>
+
+<section style="width: 100%; text-align: center; margin: 4rem auto 2rem; padding: 3rem 1.5rem; background: linear-gradient(135deg, rgba(102, 126, 234, 0.1) 0%, rgba(118, 75, 162, 0.1) 100%); border-radius: 1rem;">
+  <h3 style="font-size: clamp(1.5rem, 3vw, 2rem); font-weight: 700; margin-bottom: 1rem; color: var(--sl-color-white);">
+    适合谁使用？
+  </h3>
+  <div style="display: grid; grid-template-columns: repeat(auto-fit, minmax(200px, 1fr)); gap: 1.5rem; max-width: 1000px; margin: 2rem auto 0; text-align: left;">
+    <div style="padding: 1.25rem;margin-top: 0;background: var(--sl-color-bg-nav); border-radius: 0.75rem; border: 1px solid var(--sl-color-hairline-light);">
+      <strong style="display: block; margin-bottom: 0.5rem; color: var(--sl-color-white);">🎓 考试备考者</strong>
+      <span style="font-size: 0.9rem; color: var(--sl-color-gray-3);">考研、托福、雅思、GRE</span>
+    </div>
+    <div style="padding: 1.25rem;margin-top: 0; background: var(--sl-color-bg-nav); border-radius: 0.75rem; border: 1px solid var(--sl-color-hairline-light);">
+      <strong style="display: block; margin-bottom: 0.5rem; color: var(--sl-color-white);">💼 职场人士</strong>
+      <span style="font-size: 0.9rem; color: var(--sl-color-gray-3);">提升专业英语和职场应用能力</span>
+    </div>
+    <div style="padding: 1.25rem;margin-top: 0; background: var(--sl-color-bg-nav); border-radius: 0.75rem; border: 1px solid var(--sl-color-hairline-light);">
+      <strong style="display: block; margin-bottom: 0.5rem; color: var(--sl-color-white);">🌟 英语爱好者</strong>
+      <span style="font-size: 0.9rem; color: var(--sl-color-gray-3);">深度学习语言文化内涵</span>
+    </div>
+    <div style="padding: 1.25rem;margin-top: 0; background: var(--sl-color-bg-nav); border-radius: 0.75rem; border: 1px solid var(--sl-color-hairline-light);">
+      <strong style="display: block; margin-bottom: 0.5rem; color: var(--sl-color-white);">👨‍🏫 教育工作者</strong>
+      <span style="font-size: 0.9rem; color: var(--sl-color-gray-3);">获取优质的教学资源和素材</span>
+    </div>
+  </div>
+</section>
+
+<section style="width: 100%; text-align: center; margin: 3rem auto 2rem;">
+  <p style="font-size: 1.1rem; color: var(--sl-color-gray-2); line-height: 1.8;">
+    🚀 <strong style="color: var(--sl-color-text-accent);">现代化技术栈</strong>：基于 Astro + Starlight + Svelte + TailwindCSS 构建
+  </p>
+  <p style="font-size: 1rem; color: var(--sl-color-gray-3); margin-top: 1rem;">
+    开源免费 · SEO 友好 · 响应式设计 · 高性能体验
+  </p>
+</section>

@@ -1,0 +1,29 @@
+# robots.txt for https://www.niceshare.site/
+# 允许所有搜索引擎爬取
+
+User-agent: *
+Allow: /
+
+# 特别允许 Google, Bing, Baidu 等主流搜索引擎
+User-agent: Googlebot
+Allow: /
+
+User-agent: Bingbot
+Allow: /
+
+User-agent: Baiduspider
+Allow: /
+
+User-agent: Yandex
+Allow: /
+
+# 防止爬取 API 密钥等敏感信息
+Disallow: /api/
+Disallow: /*.json$
+
+# Sitemap 位置
+Sitemap: https://www.niceshare.site/sitemap-index.xml
+
+# 爬取延迟设置（避免服务器负载过大）
+Crawl-delay: 1
+
