@@ -1,18 +1,23 @@
 ---
-title: '关于 GPT Wordbook'
+title: "关于 GPT Wordbook"
 description: 基于 GPT-4 生成的深度解析数据构建，涵盖超过 8000+ 核心英语词汇。让单词记忆不再是死记硬背，而是一场探索语言魅力的智慧之旅。
 ---
 
-import { Card, CardGrid } from '@astrojs/starlight/components';
+import { Card, CardGrid } from "@astrojs/starlight/components";
 
 <div class="hero-section" style="text-align: center; padding: 3rem 0 2rem;">
   <h1 style="font-size: 2.5rem; font-weight: 800; margin-bottom: 1rem; background: linear-gradient(120deg, #667eea 0%, #764ba2 100%); -webkit-background-clip: text; -webkit-text-fill-color: transparent; background-clip: text;">
     GPT Wordbook
   </h1>
   <p style="font-size: 1.25rem; color: var(--sl-color-gray-2); max-width: 800px; margin: 0 auto 2rem; line-height: 1.8;">
-    基于 <strong>GPT-4</strong> 生成的深度解析数据构建，涵盖超过 <strong style="color: var(--sl-color-accent);">8000+ 核心英语词汇</strong>。<br/>
-    不仅提供精准的词义与例句，更深入挖掘词根词缀、文化背景、记忆技巧及趣味小故事。<br/>
-    旨在通过 AI 的视角，帮助英语学习者构建逻辑化的词汇体系，<strong>让单词记忆不再是死记硬背</strong>。
+    基于 <strong>GPT-4</strong> 生成的深度解析数据构建，涵盖超过{" "}
+    <strong style="color: var(--sl-color-accent);">8000+ 核心英语词汇</strong>。
+    <br />
+    不仅提供精准的词义与例句，更深入挖掘词根词缀、文化背景、记忆技巧及趣味小故事。
+    <br />
+    旨在通过 AI 的视角，帮助英语学习者构建逻辑化的词汇体系，<strong>
+      让单词记忆不再是死记硬背
+    </strong>。
   </p>
 </div>
 
@@ -22,16 +27,19 @@ import { Card, CardGrid } from '@astrojs/starlight/components';
 
 <CardGrid>
   <Card title="🤖 AI 驱动" icon="laptop">
-    基于 **GPT-4** 生成高质量的词汇解析内容，专业且富有洞察力。每个单词都经过 AI 的深度分析，提供独特的学习视角。
+    基于 **GPT-4** 生成高质量的词汇解析内容，专业且富有洞察力。每个单词都经过 AI
+    的深度分析，提供独特的学习视角。
   </Card>
   <Card title="🎯 系统化学习" icon="puzzle">
     通过**词根词缀**逻辑梳理，帮助你建立完整的词汇网络。不是孤立地记忆单词，而是理解词汇的内在联系。
   </Card>
   <Card title="📚 海量词库" icon="open-book">
-    **8000+** 精选核心词汇，覆盖各类考试和应用场景。从日常交流到学术研究，满足不同层次的学习需求。
+    **8000+**
+    精选核心词汇，覆盖各类考试和应用场景。从日常交流到学术研究，满足不同层次的学习需求。
   </Card>
   <Card title="⚡ 极速体验" icon="rocket">
-    基于 **Astro** 构建的静态网站，页面加载速度极快。即时响应，流畅的学习体验，让你专注于知识本身。
+    基于 **Astro**
+    构建的静态网站，页面加载速度极快。即时响应，流畅的学习体验，让你专注于知识本身。
   </Card>
   <Card title="🔍 SEO 友好" icon="magnifier">
     优秀的搜索引擎优化，方便通过搜索引擎快速查找单词。随时随地，一搜即达。
@@ -197,12 +205,12 @@ pnpm preview
 
 ### 推荐平台
 
-| 平台 | 特点 | 适用场景 |
-|------|------|----------|
-| **[Vercel](https://vercel.com/)** | 零配置部署、全球 CDN、自动 HTTPS | 首选推荐 ⭐ |
-| **[Cloudflare Pages](https://pages.cloudflare.com/)** | 免费无限流量、边缘网络、优秀性能 | 高流量网站 |
-| **[GitHub Pages](https://pages.github.com/)** | 完全免费、与 GitHub 深度集成 | 个人项目 |
-| **[Netlify](https://www.netlify.com/)** | 拖拽部署、表单处理、函数支持 | 快速原型 |
+| 平台                                                  | 特点                             | 适用场景    |
+| ----------------------------------------------------- | -------------------------------- | ----------- |
+| **[Vercel](https://vercel.com/)**                     | 零配置部署、全球 CDN、自动 HTTPS | 首选推荐 ⭐ |
+| **[Cloudflare Pages](https://pages.cloudflare.com/)** | 免费无限流量、边缘网络、优秀性能 | 高流量网站  |
+| **[GitHub Pages](https://pages.github.com/)**         | 完全免费、与 GitHub 深度集成     | 个人项目    |
+| **[Netlify](https://www.netlify.com/)**               | 拖拽部署、表单处理、函数支持     | 快速原型    |
 
 ### 部署步骤（以 Vercel 为例）
 
@@ -321,14 +329,48 @@ in the Software without restriction...
     用 ❤️ 构建，助力英语学习
   </p>
   <p style="color: var(--sl-color-gray-3);">
-    Made with ❤️ by <a href="https://www.lovejade.cn/" target="_blank" style="color: var(--sl-color-accent);">nicejade</a>
+    Made with ❤️ by{" "}
+    <a
+      href="https://www.lovejade.cn/"
+      target="_blank"
+      style="color: var(--sl-color-accent);"
+    >
+      nicejade
+    </a>
   </p>
   <p style="margin-top: 1.5rem;">
-    <a href="https://word.lovejade.cn/" target="_blank" style="margin: 0 1rem; color: var(--sl-color-accent);">在线访问</a> · 
-    <a href="https://github.com/nicejade/gpt-wordbook/issues" target="_blank" style="margin: 0 1rem; color: var(--sl-color-accent);">报告问题</a> · 
-    <a href="https://github.com/nicejade/gpt-wordbook/discussions" target="_blank" style="margin: 0 1rem; color: var(--sl-color-accent);">讨论交流</a>
+    <a
+      href="https://word.lovejade.cn/"
+      target="_blank"
+      style="margin: 0 1rem; color: var(--sl-color-accent);"
+    >
+      在线访问
+    </a>{" "}
+    ·
+    <a
+      href="https://github.com/nicejade/gpt-wordbook/issues"
+      target="_blank"
+      style="margin: 0 1rem; color: var(--sl-color-accent);"
+    >
+      报告问题
+    </a>{" "}
+    ·
+    <a
+      href="https://github.com/nicejade/gpt-wordbook/discussions"
+      target="_blank"
+      style="margin: 0 1rem; color: var(--sl-color-accent);"
+    >
+      讨论交流
+    </a>
   </p>
   <p style="margin-top: 2rem; color: var(--sl-color-gray-4); font-size: 0.9rem;">
-    Copyright © 2026-present <a href="https://www.lovejade.cn/" target="_blank" style="color: var(--sl-color-accent);">nicejade</a>
+    Copyright © 2026-present{" "}
+    <a
+      href="https://www.lovejade.cn/"
+      target="_blank"
+      style="color: var(--sl-color-accent);"
+    >
+      nicejade
+    </a>
   </p>
 </div>
