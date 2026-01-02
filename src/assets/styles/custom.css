@@ -1,33 +1,121 @@
-@tailwind base;
-@tailwind components;
-@tailwind utilities;
+@import "tailwindcss";
 
 :root {
+  /* 字体比例 - 极致均衡 */
   --sl-text-5xl: 3rem;
-  --sl-text-4xl: 1.6rem;
-  --sl-text-3xl: 1.4rem;
-  --sl-text-2xl: 1.2rem;
-  --sl-text-xl: 1.125rem;
-  --sl-text-lg: 1rem;
-  --sl-color-accent: #2c3e50 !important;
-  --sl-color-text-accent: #2196f3 !important;
-  --sl-color-link-accent: #2196f3;: #2edfa3;
-  --sl-color-link-hover-accent: #2edfa3;
-  --sl-color-brand: #2196f3 !important;
+  --sl-text-4xl: 2rem;
+  --sl-text-3xl: 1.75rem;
+  --sl-text-2xl: 1.5rem;
+  --sl-text-xl: 1.25rem;
+  --sl-text-lg: 1.125rem;
+  --sl-text-base: 1rem;
+
+  /* 品牌色 - 经典 Apple 蓝与专业灰 */
+  --sl-color-accent: #1d1d1f !important;
+  --sl-color-text-accent: #0066cc !important;
+  --sl-color-link-accent: #0066cc !important;
+  --sl-color-link-hover-accent: #004499 !important;
+  --sl-color-brand: #0066cc !important;
+  
+  /* 线条与背景 */
+  --sl-color-bg-subtle: #f5f5f7;
+}
+
+/* 全局滚动与选择优化 */
+html {
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  text-rendering: optimizeLegibility;
+  scroll-behavior: smooth;
+}
+
+::selection {
+  background-color: rgba(0, 102, 204, 0.2);
+  color: inherit;
 }
 
 h1 {
   font-size: var(--sl-text-5xl);
-  font-weight: 600;
-  font-family: cursive;
+  font-weight: 700;
+  letter-spacing: -0.025em;
+  font-family: cursive, -apple-system, BlinkMacSystemFont, "SF Pro Display", "Helvetica Neue", Arial, sans-serif;
+  color: #1d1d1f;
+  margin-bottom: 2.5rem !important;
 }
 
 h2 {
   font-size: var(--sl-text-4xl);
+  font-weight: 600;
+  letter-spacing: -0.02em;
+  margin-top: 3.5rem !important;
+  margin-bottom: 1.5rem !important;
 }
 
 h3 {
   font-size: var(--sl-text-3xl);
+  font-weight: 600;
+  letter-spacing: -0.015em;
+  margin-top: 3rem !important;
+  margin-bottom: 1.25rem !important;
+  padding-bottom: 0.5rem;
+  border-bottom: 1px solid #e5e5e5;
+  color: #1d1d1f;
+}
+
+/* Markdown 内容区优化 - 为图片卡片生成设计 */
+.sl-markdown-content {
+  font-family: -apple-system, BlinkMacSystemFont, "SF Pro Text", "Helvetica Neue", Arial, sans-serif;
+  line-height: 1.65;
+  color: #1d1d1f;
+  max-width: 60rem;
+  margin: 0 auto;
+}
+
+.sl-markdown-content p {
+  margin-bottom: 1.5rem;
+  color: #333336;
+}
+
+/* 列表样式优化 */
+.sl-markdown-content ul, 
+.sl-markdown-content ol {
+  margin-bottom: 2rem;
+  padding-left: 1.25rem;
+}
+
+.sl-markdown-content li {
+  margin-bottom: 0.8rem;
+  padding-left: 0.5rem;
+}
+
+/* 强调色与链接 */
+.sl-markdown-content a:not(:where(.not-content *)) {
+	color: var(--sl-color-link-accent);
+  text-decoration: none;
+  border-bottom: 1px solid transparent;
+  transition: border-color 0.2s ease;
+}
+
+.sl-markdown-content a:not(.not-content a):hover {
+    color: var(--sl-color-link-hover-accent);
+    border-bottom-color: var(--sl-color-link-hover-accent);
+}
+
+/* 引用块样式 - 更简约专业 */
+.sl-markdown-content blockquote {
+  border-left: 4px solid #d2d2d7;
+  padding: 0.5rem 0 0.5rem 1.5rem;
+  font-style: italic;
+  color: #6e6e73;
+  margin: 2rem 0;
+}
+
+/* 代码块略微收敛 */
+.sl-markdown-content pre {
+  border-radius: 12px !important;
+  padding: 1.25rem !important;
+  background-color: #f5f5f7 !important;
+  border: 1px solid #d2d2d7 !important;
 }
 
 svg {
@@ -37,95 +125,174 @@ svg {
   height: var(--sl-icon-size) !important;
 }
 
+/* Header 优化 - 极致毛玻璃效果与 Apple 审美 */
 .header {
-  padding: 0 1rem;
+  backdrop-filter: blur(20px) saturate(180%);
+  background: rgba(255, 255, 255, 0.72) !important;
+  border-bottom: 1px solid rgba(0, 0, 0, 0.08);
+  padding: 0 1.5rem;
+  transition: all 0.3s ease;
 }
 
-.primary {
-  background-color: #fffaf0;
-}
-
-html[data-theme='dark'] .primary {
-  background: #0F2027;
-  background: -webkit-linear-gradient(to left, #2C5364, #203A43, #0F2027);
-  background: linear-gradient(to left, #2C5364, #203A43, #0F2027)
+html[data-theme='dark'] .header {
+  background: rgba(29, 29, 31, 0.72) !important;
+  border-bottom: 1px solid rgba(255, 255, 255, 0.08);
 }
 
 .tagline {
-  font-weight: black;
-  background: linear-gradient(to bottom right,#aa4b6b, #6b6b83, #3b8d99);
+  font-size: 1.25rem;
+  font-weight: 600;
+  letter-spacing: -0.01em;
+  background: linear-gradient(135deg, #0066cc 0%, #c621e5 100%);
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
-  font-weight: 600;
-}
-
-.sl-markdown-content a:not(:where(.not-content *)) {
-	color: var(--sl-color-link-accent);
-}
-
-.sl-markdown-content a:not(.not-content a):hover {
-    color: var(--sl-color-link-hover-accent);
 }
 
 .sl-link-button {
-  padding: 1rem;
-  border: 1px solid var(--sl-color-brand);
+  padding: 0.8rem 1.5rem;
+  border-radius: 999px; /* Pill shape - Jobs style */
+  font-weight: 500;
+  transition: all 0.2s ease;
 }
 
+.sl-link-button.primary {
+  background: #0066cc;
+  color: white !important;
+  border: none;
+}
+
+.sl-link-button.primary:hover {
+  background: #0077ed;
+  transform: scale(1.02);
+}
 
 .site-title {
+  gap: 0.75rem;
+  font-weight: 700 !important;
+  letter-spacing: -0.03em !important;
   img {
-    width: 2rem;
-    height: 2rem;
-    object-fit: cover;
+    width: 2.25rem;
+    height: 2.25rem;
+    border-radius: 22% !important; /* Apple Icon shape */
+    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
   }
 }
 
-.link-title {
-  font-size: var(--sl-text-base);
+.social-icons a {
+  padding: 0.5rem;
+  border-radius: 50%;
+  transition: background-color 0.2s ease;
 }
 
-.social-icons {
-  a {
-    &:hover {
-      border-radius: 8px;
-      background-color: #ececec;
-    }
-  }
+.social-icons a:hover {
+  background-color: #f5f5f7;
 }
 
-select {
-  outline: none;
-}
-
-.main-pane li {
-  margin-left: 2rem;
-  list-style-type: initial;
-}
-
-.main-pane li li {
-  list-style-type: circle;
-}
-
-.medium-zoom-image--opened {
-  z-index: 1000;
-}
-
-[aria-current='page']:hover,
-[aria-current='page']:focus,
-[aria-current='page'] {
-  color: var(--sl-color-accent);
-  background-color: transparent;
+/* 侧边栏优化 - 参照 AlphabetIndex 风格 */
+#starlight__sidebar {
+  padding-top: 1rem;
 }
 
 #starlight__sidebar a {
-  transition: all .4s ease;
-  overflow: hidden;
-  white-space: nowrap;
-  text-overflow: ellipsis;
-  -o-text-overflow: ellipsis;
+  border-radius: 0.6rem;
+  padding: 0.5rem 1rem;
+  margin: 0.15rem 0.5rem;
+  transition: all 0.25s cubic-bezier(0.4, 0, 0.2, 1);
+  border: 1px solid transparent;
+  color: var(--sl-color-gray-3);
+  text-decoration: none;
 }
 
 #starlight__sidebar a:hover {
-  transform: scale(1.023);
+  background-color: rgba(0, 0, 0, 0.04);
+  color: var(--sl-color-brand);
+  transform: translateY(-1px);
+}
+
+#starlight__sidebar [aria-current='page'] {
+  background-color: rgba(0, 102, 204, 0.08) !important;
+  color: var(--sl-color-brand) !important;
+  font-weight: 600;
+  border-color: rgba(0, 102, 204, 0.1) !important;
+  box-shadow: 
+    0 2px 4px rgba(0, 0, 0, 0.02),
+    inset 0 1px 0 rgba(255, 255, 255, 0.5);
+}
+
+/* 深色模式侧边栏 */
+html[data-theme='dark'] #starlight__sidebar a:hover {
+  background-color: rgba(255, 255, 255, 0.04);
+  border-color: rgba(255, 255, 255, 0.08);
+}
+
+html[data-theme='dark'] #starlight__sidebar [aria-current='page'] {
+  background-color: rgba(64, 158, 255, 0.15) !important;
+  color: #409eff !important;
+  border-color: rgba(64, 158, 255, 0.2) !important;
+  box-shadow: 
+    0 4px 12px rgba(0, 0, 0, 0.2),
+    inset 0 1px 1px rgba(255, 255, 255, 0.05);
+}
+
+/* 详情摘要动画优化 */
+details {
+  transition: all 0.3s ease;
+}
+
+summary {
+  list-style: none;
+  cursor: pointer;
+  padding: 0.5rem 1rem;
+  border-radius: 0.6rem;
+  transition: background 0.2s ease;
+}
+
+summary:hover {
+  background: rgba(0, 0, 0, 0.02);
+}
+
+html[data-theme='dark'] summary:hover {
+  background: rgba(255, 255, 255, 0.02);
+}
+
+/* 适配移动端和卡片生成 */
+@media (max-width: 50rem) {
+  .sl-markdown-content {
+    padding: 1.5rem;
+  }
+  
+  h1 {
+    font-size: 2.5rem;
+  }
+}
+
+/* --- 深色模式适配 (Apple Dark Mode Aesthetic) --- */
+html[data-theme='dark'] {
+  --sl-color-accent: #f5f5f7 !important;
+  --sl-color-text-accent: #409eff !important;
+  --sl-color-link-accent: #409eff !important;
+  --sl-color-brand: #409eff !important;
+}
+
+html[data-theme='dark'] h1,
+html[data-theme='dark'] h2,
+html[data-theme='dark'] h3 {
+  color: #f5f5f7;
+}
+
+html[data-theme='dark'] h3 {
+  border-bottom-color: #333336;
+}
+
+html[data-theme='dark'] .sl-markdown-content p {
+  color: #d2d2d7;
+}
+
+html[data-theme='dark'] .social-icons a:hover {
+  background-color: rgba(255, 255, 255, 0.08);
+}
+
+html[data-theme='dark'] .sl-markdown-content pre {
+  background-color: #121212 !important;
+  border-color: #333336 !important;
 }

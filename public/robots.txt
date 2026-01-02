@@ -1,4 +1,4 @@
-# robots.txt for https://www.niceshare.site/
+# robots.txt for https://word.lovejade.cn/
 # 允许所有搜索引擎爬取
 
 User-agent: *
@@ -22,7 +22,7 @@ Disallow: /api/
 Disallow: /*.json$
 
 # Sitemap 位置
-Sitemap: https://www.niceshare.site/sitemap-index.xml
+Sitemap: https://word.lovejade.cn/sitemap-index.xml
 
 # 爬取延迟设置（避免服务器负载过大）
 Crawl-delay: 1
