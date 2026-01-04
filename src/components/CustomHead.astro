@@ -40,8 +40,6 @@ const isHomepage = Astro.url.pathname === '/' || Astro.url.pathname === '/index.
 
     /* 搜索按钮在左，菜单按钮在右 */
     site-search,
-    starlight-menu-button,
-    .mobile-menu-toggle,
     [aria-controls="starlight__sidebar"] {
       display: flex !important;
       visibility: visible !important;
@@ -152,6 +150,98 @@ const isHomepage = Astro.url.pathname === '/' || Astro.url.pathname === '/index.
 
 {isHomepage && (
   <>
+    <style is:global>
+      @media (max-width: 50rem) {
+        .mobile-theme-toggle {
+          display: flex !important;
+          visibility: visible !important;
+          opacity: 1 !important;
+          width: 2rem !important;
+          height: 2rem !important;
+          justify-content: center !important;
+          align-items: center !important;
+          position: fixed !important;
+          top: 0.7rem !important;
+          right: 1rem !important;
+          z-index: 1000 !important;
+          background: #ffffff !important;
+          border-radius: 50% !important;
+          border: none !important;
+          box-shadow: 0px 8px 4px hsla(0, 0%, 0%, .01), 0px 5px 2px hsla(0, 0%, 0%, .03), 0px 3px 2px hsla(0, 0%, 0%, .06), 0px 1px 1px hsla(0, 0%, 0%, .06);
+          cursor: pointer !important;
+          padding: 0 !important;
+          color: #1d1d1f !important;
+        }
+
+        html[data-theme='dark'] .mobile-theme-toggle {
+          background: #2c2c2e !important;
+          color: #ffffff !important;
+        }
+
+        /* 优化暗色模式下的按钮视觉 */
+        html[data-theme='dark'] site-search,
+        html[data-theme='dark'] starlight-menu-button,
+        html[data-theme='dark'] .mobile-menu-toggle,
+        html[data-theme='dark'] [aria-controls="starlight__sidebar"] {
+          background: #2c2c2e !important;
+        }
+
+        html[data-theme='dark'] site-search button,
+        html[data-theme='dark'] starlight-menu-button button,
+        html[data-theme='dark'] site-search svg,
+        html[data-theme='dark'] starlight-menu-button svg {
+          color: #ffffff !important;
+        }
+      }
+    </style>
+    <script is:inline>
+      (function() {
+        const initThemeToggle = () => {
+          if (window.innerWidth > 800) return; // 50rem = 800px
+          if (document.querySelector('.mobile-theme-toggle')) return;
+          
+          const button = document.createElement('button');
+          button.className = 'mobile-theme-toggle';
+          button.setAttribute('aria-label', '切换主题');
+          
+          const sunIcon = `<svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" style="width:1.2rem;height:1.2rem;"><circle cx="12" cy="12" r="5"></circle><line x1="12" y1="1" x2="12" y2="3"></line><line x1="12" y1="21" x2="12" y2="23"></line><line x1="4.22" y1="4.22" x2="5.64" y2="5.64"></line><line x1="18.36" y1="18.36" x2="19.78" y2="19.78"></line><line x1="1" y1="12" x2="3" y2="12"></line><line x1="21" y1="12" x2="23" y2="12"></line><line x1="4.22" y1="19.78" x2="5.64" y2="18.36"></line><line x1="18.36" y1="5.64" x2="19.78" y2="4.22"></line></svg>`;
+          const moonIcon = `<svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" style="width:1.2rem;height:1.2rem;"><path d="M21 12.79A9 9 0 1 1 11.21 3 7 7 0 0 0 21 12.79z"></path></svg>`;
+          
+          const updateIcon = () => {
+            const isDark = document.documentElement.dataset.theme === 'dark';
+            button.innerHTML = isDark ? sunIcon : moonIcon;
+          };
+          
+          updateIcon();
+          
+          button.addEventListener('click', () => {
+            const currentTheme = document.documentElement.dataset.theme || (window.matchMedia('(prefers-color-scheme: dark)').matches ? 'dark' : 'light');
+            const newTheme = currentTheme === 'dark' ? 'light' : 'dark';
+            document.documentElement.dataset.theme = newTheme;
+            localStorage.setItem('starlight-theme', newTheme);
+            updateIcon();
+          });
+          
+          // 监听外部主题变化
+          const observer = new MutationObserver((mutations) => {
+            mutations.forEach((mutation) => {
+              if (mutation.type === 'attributes' && mutation.attributeName === 'data-theme') {
+                updateIcon();
+              }
+            });
+          });
+          observer.observe(document.documentElement, { attributes: true });
+          
+          document.body.appendChild(button);
+        };
+
+        if (document.readyState === 'loading') {
+          document.addEventListener('DOMContentLoaded', initThemeToggle);
+        } else {
+          initThemeToggle();
+        }
+      })();
+    </script>
     <script type="application/ld+json" set:html={JSON.stringify({
       "@context": "https://schema.org",
       "@type": "WebSite",
