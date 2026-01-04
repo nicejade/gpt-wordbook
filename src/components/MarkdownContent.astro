@@ -8,7 +8,7 @@ const isWordPage = url.pathname.includes('/words/') && !url.pathname.includes('/
 ---
 
 <div class="sl-markdown-content">
-  <div class={isWordPage ? "main-pane" : ""}>
+  <div class={isWordPage ? "word-content" : ""}>
     <slot />
   </div>
   {isWordPage && <WordActions client:load />}
@@ -16,25 +16,32 @@ const isWordPage = url.pathname.includes('/words/') && !url.pathname.includes('/
 
 <style is:global>
   /* 仅在单词详情页应用背景优化，以增强卡片感 */
-  :root:has(.main-pane) {
+  :root:has(.word-content) {
     --sl-color-bg: #f5f5f7 !important;
   }
   
-  html[data-theme='dark']:has(.main-pane) {
+  html[data-theme='dark']:has(.word-content) {
     --sl-color-bg: #000000 !important;
   }
 
-  /* 移动端优化：当存在 main-pane 时，移除外层容器的 padding，让卡片撑满或保持极小间距 */
+  /* 移动端优化：当存在 word-content 时，移除外层容器的 padding，让卡片撑满或保持极小间距 */
   @media (max-width: 50rem) {
-    .sl-markdown-content:has(.main-pane) {
+    .sl-markdown-content:has(.word-content) {
       padding: 0.75rem !important;
     }
+  }
+
+  .main-pane {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
   }
 </style>
 
 <style>
   /* 基础卡片与毛玻璃效果 (Apple 设计风格) */
-  .main-pane {
+  .word-content {
     padding: 3rem;
     margin-top: 1rem;
     margin-bottom: 2rem;
@@ -50,7 +57,7 @@ const isWordPage = url.pathname.includes('/words/') && !url.pathname.includes('/
   }
 
   /* 深色模式适配 */
-  :global(html[data-theme='dark']) .main-pane {
+  :global(html[data-theme='dark']) .word-content {
     background-color: rgba(28, 28, 30, 0.75);
     border: 1px solid rgba(255, 255, 255, 0.1);
     box-shadow: 
@@ -59,7 +66,7 @@ const isWordPage = url.pathname.includes('/words/') && !url.pathname.includes('/
   }
 
   /* 针对图片生成的样式优化 */
-  .main-pane.is-snapping {
+  .word-content.is-snapping {
     padding: 4rem;
     background-color: #ffffff;
     border-radius: 32px;
@@ -71,11 +78,11 @@ const isWordPage = url.pathname.includes('/words/') && !url.pathname.includes('/
   }
 
   /* 彻底解决组件被拷贝进图片的问题：当进入 snapping 状态时，通过兄弟选择器隐藏操作栏 */
-  .main-pane.is-snapping ~ .word-actions-wrapper {
+  .word-content.is-snapping ~ .word-actions-wrapper {
     display: none !important;
   }
 
-  :global(html[data-theme='dark']) .main-pane.is-snapping {
+  :global(html[data-theme='dark']) .word-content.is-snapping {
     background-color: #1c1c1e;
     box-shadow: 0 20px 50px rgba(0, 0, 0, 0.4);
     border: 1px solid rgba(255, 255, 255, 0.05);
@@ -85,12 +92,12 @@ const isWordPage = url.pathname.includes('/words/') && !url.pathname.includes('/
 
   /* 移动端适配 */
   @media (max-width: 50rem) {
-    .main-pane {
+    .word-content {
       padding: 1.5rem;
       border-radius: 20px;
       margin-top: 0.5rem;
     }
-    .main-pane.is-snapping {
+    .word-content.is-snapping {
       padding: 2rem;
     }
   }
