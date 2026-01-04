@@ -7,6 +7,149 @@ const isHomepage = Astro.url.pathname === '/' || Astro.url.pathname === '/index.
 
 <Default {...Astro.props}><slot /></Default>
 
+<style is:global>
+  /* 优化 SVG 图标：仅针对特定容器，避免全局冲突 */
+  .site-title svg,
+  .social-icons svg {
+    --sl-icon-size: 1.2rem !important;
+    font-size: var(--sl-icon-size) !important;
+    width: var(--sl-icon-size) !important;
+    height: var(--sl-icon-size) !important;
+  }
+
+  /* Header 优化 - 极致毛玻璃效果与 Apple 审美 */
+  header {
+    padding: 0 1rem !important;
+    backdrop-filter: blur(24px) saturate(200%);
+    transition: all 0.4s cubic-bezier(0.4, 0, 0.2, 1);
+    box-shadow: 
+      0 1px 2px rgba(0, 0, 0, 0.02),
+      0 4px 12px rgba(0, 0, 0, 0.03),
+      inset 0 1px 1px rgba(255, 255, 255, 0.4);
+    z-index: 100;
+  }
+
+  /* 修复移动端侧边栏开关不显示及展示瑕疵问题 */
+  @media (max-width: 50rem) {
+    /* 确保按钮的父容器可见，但不要遮挡点击 */
+    nav.sidebar {
+      display: block !important;
+      height: 0;
+      overflow: visible;
+    }
+
+    /* 搜索按钮在左，菜单按钮在右 */
+    site-search,
+    starlight-menu-button,
+    .mobile-menu-toggle,
+    [aria-controls="starlight__sidebar"] {
+      display: flex !important;
+      visibility: visible !important;
+      opacity: 1 !important;
+      width: 2rem !important;
+      height: 2rem !important;
+      justify-content: center !important;
+      align-items: center !important;
+      position: fixed !important;
+      top: 0.7rem !important;
+      z-index: 1000 !important;
+      background: #ffffff !important;
+      border-radius: 50% !important;
+      border: none !important;
+      box-shadow: 0px 8px 4px hsla(0, 0%, 0%, .01), 0px 5px 2px hsla(0, 0%, 0%, .03), 0px 3px 2px hsla(0, 0%, 0%, .06), 0px 1px 1px hsla(0, 0%, 0%, .06);
+    }
+
+    starlight-menu-button,
+    .mobile-menu-toggle,
+    [aria-controls="starlight__sidebar"] {
+      right: 1rem !important; 
+    }
+
+    site-search {
+      right: 4.5rem !important; 
+    }
+
+    site-search button,
+    starlight-menu-button button {
+      display: flex !important;
+      width: 100% !important;
+      height: 100% !important;
+      padding: 0 !important;
+      border: none !important;
+      background: transparent !important;
+      cursor: pointer !important;
+      justify-content: center !important;
+      align-items: center !important;
+      color: #1d1d1f !important;
+    }
+
+    site-search svg,
+    starlight-menu-button svg {
+      display: block;
+      width: 1.4rem !important;
+      height: 1.4rem !important;
+      color: #1d1d1f !important;
+      fill: currentColor !important;
+    }
+
+    /* 精确控制切换图标：根据状态显示或隐藏 */
+    starlight-menu-button button[aria-expanded="false"] .close-menu,
+    starlight-menu-button button[aria-expanded="true"] .open-menu {
+      display: none !important;
+    }
+
+    /* 移动端隐藏可能冲突的元素 */
+    .social-icons,
+    .tagline {
+      display: none !important;
+    }
+  }
+
+  html[data-theme='dark'] .header {
+    background: rgba(28, 28, 30, 0.75) !important;
+    border-bottom: 1px solid rgba(255, 255, 255, 0.06);
+    box-shadow: 
+      0 1px 2px rgba(0, 0, 0, 0.2),
+      0 8px 24px rgba(0, 0, 0, 0.2),
+      inset 0 1px 0 rgba(255, 255, 255, 0.05);
+  }
+
+  .tagline {
+    font-size: 1.25rem;
+    font-weight: 600;
+    letter-spacing: -0.01em;
+    background: linear-gradient(135deg, #0066cc 0%, #c621e5 100%);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+  }
+
+  .site-title {
+    gap: 0.75rem;
+    font-weight: 700 !important;
+    letter-spacing: -0.03em !important;
+    img {
+      width: 2.25rem;
+      height: 2.25rem;
+      border-radius: 22% !important; /* Apple Icon shape */
+      box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
+    }
+  }
+
+  .social-icons a {
+    padding: 0.5rem;
+    border-radius: 0.5rem;
+    transition: background-color 0.2s ease;
+  }
+
+  .social-icons a:hover {
+    background-color: #e5e5e5;
+  }
+
+  html[data-theme='dark'] .social-icons a:hover {
+    background-color: rgba(255, 255, 255, 0.08);
+  }
+</style>
+
 {isHomepage && (
   <>
     <script type="application/ld+json" set:html={JSON.stringify({
