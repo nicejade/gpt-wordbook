@@ -401,5 +401,13 @@ export default defineConfig({
 		sidebar: sidebarConfig,
 		}),
 	],
-	vite: { plugins: [tailwindcss()] },
+	vite: { 
+		plugins: [tailwindcss()],
+		ssr: {
+			noExternal: ['@zumer/snapdom'],
+		},
+		optimizeDeps: {
+			include: ['@zumer/snapdom'],
+		},
+	},
 })

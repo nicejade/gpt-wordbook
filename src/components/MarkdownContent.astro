@@ -14,7 +14,50 @@ const isWordPage = url.pathname.includes('/words/') && !url.pathname.includes('/
   {isWordPage && <WordActions client:load />}
 </div>
 
+<style is:global>
+  /* 仅在单词详情页应用背景优化，以增强卡片感 */
+  :root:has(.main-pane) {
+    --sl-color-bg: #f5f5f7 !important;
+  }
+  
+  html[data-theme='dark']:has(.main-pane) {
+    --sl-color-bg: #000000 !important;
+  }
+
+  /* 移动端优化：当存在 main-pane 时，移除外层容器的 padding，让卡片撑满或保持极小间距 */
+  @media (max-width: 50rem) {
+    .sl-markdown-content:has(.main-pane) {
+      padding: 0.75rem !important;
+    }
+  }
+</style>
+
 <style>
+  /* 基础卡片与毛玻璃效果 (Apple 设计风格) */
+  .main-pane {
+    padding: 3rem;
+    margin-top: 1rem;
+    margin-bottom: 2rem;
+    background-color: rgba(255, 255, 255, 0.75);
+    backdrop-filter: blur(20px) saturate(180%);
+    -webkit-backdrop-filter: blur(20px) saturate(180%);
+    border-radius: 28px;
+    border: 1px solid rgba(255, 255, 255, 0.4);
+    box-shadow: 
+      0 10px 40px -10px rgba(0, 0, 0, 0.05),
+      0 20px 50px -20px rgba(0, 0, 0, 0.1);
+    transition: all 0.4s cubic-bezier(0.16, 1, 0.3, 1);
+  }
+
+  /* 深色模式适配 */
+  :global(html[data-theme='dark']) .main-pane {
+    background-color: rgba(28, 28, 30, 0.75);
+    border: 1px solid rgba(255, 255, 255, 0.1);
+    box-shadow: 
+      0 10px 40px -10px rgba(0, 0, 0, 0.2),
+      0 20px 80px -20px rgba(0, 0, 0, 0.4);
+  }
+
   /* 针对图片生成的样式优化 */
   .main-pane.is-snapping {
     padding: 4rem;
@@ -23,6 +66,8 @@ const isWordPage = url.pathname.includes('/words/') && !url.pathname.includes('/
     box-shadow: 0 40px 100px -20px rgba(0, 0, 0, 0.2);
     position: relative;
     z-index: 1;
+    backdrop-filter: none;
+    -webkit-backdrop-filter: none;
   }
 
   /* 彻底解决组件被拷贝进图片的问题：当进入 snapping 状态时，通过兄弟选择器隐藏操作栏 */
@@ -34,5 +79,19 @@ const isWordPage = url.pathname.includes('/words/') && !url.pathname.includes('/
     background-color: #1c1c1e;
     box-shadow: 0 20px 50px rgba(0, 0, 0, 0.4);
     border: 1px solid rgba(255, 255, 255, 0.05);
+    backdrop-filter: none;
+    -webkit-backdrop-filter: none;
+  }
+
+  /* 移动端适配 */
+  @media (max-width: 50rem) {
+    .main-pane {
+      padding: 1.5rem;
+      border-radius: 20px;
+      margin-top: 0.5rem;
+    }
+    .main-pane.is-snapping {
+      padding: 2rem;
+    }
   }
 </style>

@@ -1,6 +1,4 @@
 <script lang="ts">
-	import { snapdom } from '@zumer/snapdom';
-
 	let processing = $state(false);
 	let success = $state(false);
 
@@ -10,6 +8,7 @@
 		success = false;
 
 		try {
+			const { snapdom } = await import('@zumer/snapdom');
 			const element = document.querySelector('.main-pane') as HTMLElement;
 			if (!element) return;
 
@@ -58,7 +57,7 @@
 	}
 </script>
 
-<div class="word-actions-wrapper mx-auto no-print not-content mt-24 mb-12 max-w-fit [perspective:1000px] print:hidden" style="margin-left: auto; margin-right: auto;">
+<div class="word-actions-wrapper mx-auto no-print not-content mt-8 mb-12 max-w-fit [perspective:1000px] print:hidden" style="margin-left: auto; margin-right: auto;">
 	<nav class="flex items-center p-[0.6rem] max-[480px]:p-[0.4rem] bg-white/60 dark:bg-[#1c1c1e]/60 backdrop-blur-[20px] backdrop-saturate-[180%] border border-black/[0.08] dark:border-white/0.08 rounded-[1.5rem] shadow-[0_10px_30px_-5px_rgba(0,0,0,0.05),0_4px_10px_-2px_rgba(0,0,0,0.02),inset_0_1px_1px_rgba(255,255,255,0.8)] dark:shadow-[0_15px_35px_-5px_rgba(0,0,0,0.3),0_5px_15px_-2px_rgba(0,0,0,0.1),inset_0_1px_0_rgba(255,255,255,0.05)] transition-all duration-500 [transition-timing-function:cubic-bezier(0.23,1,0.32,1)]" aria-label="Word actions">
 		<button
 			onclick={() => handleAction('copy')}
