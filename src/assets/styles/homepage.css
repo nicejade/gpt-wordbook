@@ -15,22 +15,6 @@
   background-clip: text;
 }
 
-.audience-section {
-  width: 100%;
-  text-align: center;
-  margin: 6rem auto 4rem;
-  padding: 4rem 1.5rem;
-  background: rgba(255, 255, 255, 0.03);
-  border: 1px solid rgba(255, 255, 255, 0.08);
-  border-radius: 2rem;
-  backdrop-filter: blur(12px);
-}
-
-[data-theme='light'] .audience-section {
-  background: rgba(0, 0, 0, 0.02);
-  border: 1px solid rgba(0, 0, 0, 0.05);
-}
-
 .sl-markdown-content .card-grid .card,
 .audience-card {
   padding: 2.5rem 2rem;

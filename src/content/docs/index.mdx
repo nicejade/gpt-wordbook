@@ -189,7 +189,7 @@ import "../../assets/styles/homepage.css";
 <div class="features-wrapper">
   <CardGrid stagger>
     <Card title="🤖 AI 智能驱动" icon="rocket">
-      基于 **GPT-4**
+      基于 **GPT**
       生成高质量词汇解析内容，专业且富有洞察力，每个单词都包含深度的语言学分析
     </Card>
 
@@ -261,8 +261,18 @@ import "../../assets/styles/homepage.css";
 <style>{`
   .audience-section {
     width: 100%;
-    padding: 1rem;
-    margin-bottom: 3rem;
+    text-align: center;
+    margin: 4rem auto;
+    padding: 4rem 1.5rem;
+    background: rgba(255, 255, 255, 0.03);
+    border: 1px solid rgba(255, 255, 255, 0.08);
+    border-radius: 2rem;
+    backdrop-filter: blur(12px);
+  }
+
+  [data-theme='light'] .audience-section {
+    background: rgba(0, 0, 0, 0.02);
+    border: 1px solid rgba(0, 0, 0, 0.05);
   }
 
   .audience-title {
@@ -378,11 +388,10 @@ import "../../assets/styles/homepage.css";
 
 <section class="tech-section">
   <p class="tech-description">
-    🚀{" "}
     <strong class="tech-highlight">
-      现代化技术栈
+      🚀 现代化技术栈：
     </strong>
-    ：基于 Astro + Starlight + Svelte + TailwindCSS 构建
+    基于 Astro + Starlight + Svelte + TailwindCSS 构建
   </p>
   <div class="tech-tags">
     {["开源免费", "SEO 友好", "响应式设计", "高性能体验"].map((tag) => (
@@ -450,7 +459,6 @@ import "../../assets/styles/homepage.css";
   [data-theme='light'] .tech-tag:hover {
     background: rgba(0, 0, 0, 0.06);
     border-color: rgba(0, 0, 0, 0.15);
-    color: var(--sl-color-black);
   }
 
   @media (min-width: 640px) {
