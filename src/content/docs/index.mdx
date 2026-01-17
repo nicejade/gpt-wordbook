@@ -21,53 +21,53 @@ hero:
 import { Card, CardGrid } from "@astrojs/starlight/components";
 import AlphabetIndex from "../../components/AlphabetIndex.astro";
 
-<section class="w-full text-center my-8 md:my-12 lg:my-16 px-4 not-prose">
+<section class="w-full text-center my-8 md:my-12 lg:my-16 px-0 not-prose">
   <div class="max-w-[900px] mx-auto py-8 px-5 md:px-8 lg:px-10 rounded-[1.25rem] md:rounded-3xl border border-white/10 bg-white/[0.02] backdrop-blur-md shadow-[0_4px_6px_-1px_rgba(0,0,0,0.1),0_2px_4px_-1px_rgba(0,0,0,0.06),inset_0_1px_1px_rgba(255,255,255,0.05)] transition-all duration-300 [:root[data-theme='light']_&]:bg-black/[0.01] [:root[data-theme='light']_&]:border-black/[0.04] [:root[data-theme='light']_&]:shadow-[0_10px_15px_-3px_rgba(0,0,0,0.05),0_4px_6px_-2px_rgba(0,0,0,0.02),inset_0_1px_0_rgba(255,255,255,0.5)]">
-    <h2 class="text-[clamp(2rem,5vw,3.5rem)] font-extrabold leading-[1.1] mb-6 tracking-tighter bg-clip-text text-transparent bg-gradient-to-br from-[var(--sl-color-text-accent)] to-[#434343] font-sans">AI 赋能的深度词汇学习平台</h2>
+    <h2 class="text-[clamp(2rem,5vw,3.5rem)] font-extrabold leading-[1.1] !my-6 tracking-tighter bg-clip-text text-transparent bg-gradient-to-br from-[var(--sl-color-text-accent)] to-[#434343] font-sans">AI 赋能的深度词汇学习平台</h2>
     <p class="text-[clamp(1rem,3vw,1.4rem)] leading-relaxed text-[var(--sl-color-gray-3)] max-w-[700px] mx-auto font-normal tracking-tight font-sans">
       精选 <strong class="text-[var(--sl-color-text-accent)] font-semibold text-[1.15em] inline-block transition-transform duration-200 hover:scale-105">8000+</strong> 核心词汇，利用 GPT 模型深度解析词义、词根、词缀与文化内涵，从理解本质出发构建长期记忆。
     </p>
   </div>
 </section>
 
-<div class="mb-12 md:mb-16 lg:mb-24 px-4">
-  <h3 class="text-center mb-6 md:mb-8 lg:mb-8 text-[clamp(1.25rem,4vw,1.5rem)] text-[var(--sl-color-gray-2)] font-semibold tracking-tight border-none">
+<div class="!mb-12 !md:mb-16 !lg:mb-24 px-0">
+  <h3 class="text-center !my-6 !md:my-8 !lg:my-8 text-[clamp(1.25rem,4vw,1.5rem)] text-[var(--sl-color-gray-2)] font-semibold tracking-tight border-none">
     快速开始：按首字母索引
   </h3>
   <AlphabetIndex />
 </div>
 
-<div class="px-2 sm:px-4 mb-12 md:mb-16 lg:mb-20 [&_.card]:!p-10 [&_.card]:md:!p-8 [&_.card]:!mt-0 [&_.card]:transition-all [&_.card]:duration-300 [&_.card]:bg-white/[0.02] [&_.card]:!border-white/[0.08] [&_.card]:rounded-[1.25rem] [&_.card]:backdrop-blur-md [&_.card]:shadow-[0_4px_6px_-1px_rgba(0,0,0,0.1),0_2px_4px_-1px_rgba(0,0,0,0.06),inset_0_1px_1px_rgba(255,255,255,0.05)] [&_.card]:hover:-translate-y-0.5 [:root[data-theme='light']_&_.card]:!bg-black/[0.01] [:root[data-theme='light']_&_.card]:!border-black/[0.04] [:root[data-theme='light']_&_.card]:shadow-[0_10px_15px_-3px_rgba(0,0,0,0.05),0_4px_6px_-2px_rgba(0,0,0,0.02),inset_0_1px_0_rgba(255,255,255,0.5)]">
+<div class="px-0 mb-12 md:mb-16 lg:mb-20 [&_.card]:!p-10 [&_.card]:md:!p-8 [&_.card]:!mt-0 [&_.card]:transition-all [&_.card]:duration-300 [&_.card]:bg-white/[0.02] [&_.card]:!border-white/[0.08] [&_.card]:rounded-[1.25rem] [&_.card]:backdrop-blur-md [&_.card]:shadow-[0_4px_6px_-1px_rgba(0,0,0,0.1),0_2px_4px_-1px_rgba(0,0,0,0.06),inset_0_1px_1px_rgba(255,255,255,0.05)] [&_.card]:hover:-translate-y-0.5 [:root[data-theme='light']_&_.card]:!bg-black/[0.01] [:root[data-theme='light']_&_.card]:!border-black/[0.04] [:root[data-theme='light']_&_.card]:shadow-[0_10px_15px_-3px_rgba(0,0,0,0.05),0_4px_6px_-2px_rgba(0,0,0,0.02),inset_0_1px_0_rgba(255,255,255,0.5)]">
   <CardGrid stagger>
-    <Card title="🤖 AI 智能驱动" icon="rocket">
+    <Card title="🤖 AI 智能驱动">
       基于 **GPT**
       生成高质量词汇解析内容，专业且富有洞察力，每个单词都包含深度的语言学分析
     </Card>
 
-    <Card title="🎯 系统化学习" icon="puzzle">
+    <Card title="🎯 系统化学习">
       通过**词根词缀逻辑**梳理，帮助你建立完整的词汇网络，理解单词构成规律，举一反三
     </Card>
 
-    <Card title="📚 海量词库" icon="open-book">
+    <Card title="📚 海量词库">
       **8000+** 精选核心词汇，覆盖考研、托福、雅思、GRE、四六级等各类考试和应用场景
     </Card>
 
-    <Card title="💡 趣味记忆" icon="star">
+    <Card title="💡 趣味记忆">
       AI 生成生动有趣的**助记故事**，结合文化背景和趣闻轶事，让单词记忆充满乐趣
     </Card>
 
-    <Card title="⚡ 极速体验" icon="rocket">
+    <Card title="⚡ 极速体验">
       基于 **Astro** 构建的静态网站，加载速度极快，响应式设计完美支持所有设备
     </Card>
 
-    <Card title="🔗 智能关联" icon="random">
+    <Card title="🔗 智能关联">
       智能关联相关词汇，构建**词汇网络**，通过联想和对比强化记忆效果
     </Card>
   </CardGrid>
 </div>
 
-<section class="w-full text-center !my-16 md:my-20 lg:my-20 px-6 py-16 bg-white/[0.03] border border-white/[0.08] rounded-3xl backdrop-blur-md [:root[data-theme='light']_&]:bg-black/[0.02] [:root[data-theme='light']_&]:border-black/[0.05] mb-16 md:mb-16 lg:mb-20">
-  <h3 class="text-[clamp(1.5rem,5vw,2.25rem)] font-bold mb-8 md:mb-12 lg:mb-12 border-none text-white text-center tracking-tight">
+<section class="w-full text-center !mt-16 !md:mt-20 !lg:mt-20 px-6 py-16 bg-white/[0.03] border border-white/[0.08] rounded-3xl backdrop-blur-md [:root[data-theme='light']_&]:bg-black/[0.02] [:root[data-theme='light']_&]:border-black/[0.05] mb-16 md:mb-16 lg:mb-20">
+  <h3 class="text-[clamp(1.5rem,5vw,2.25rem)] font-bold !mt-0 border-none text-white text-center tracking-tight">
     为进阶英语学习者打造
   </h3>
   <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-4 md:gap-5 lg:gap-6 max-w-[1100px] mx-auto">

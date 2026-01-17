@@ -192,7 +192,7 @@ html[data-theme='dark'] #starlight__sidebar [aria-current='page'] {
 /* 适配移动端和卡片生成 */
 @media (max-width: 50rem) {
   .sl-markdown-content {
-    padding: 1.5rem;
+    padding: 0;
   }
   
   h1 {
