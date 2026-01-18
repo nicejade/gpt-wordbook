@@ -4,9 +4,10 @@
  * A professional, responsive alphabet navigation component with Steve Jobs' aesthetic.
  * Features:
  * - Minimalist design with subtle shadows and rounded corners
- * - Responsive grid layout (8 columns on desktop, 6 on tablet, 4 on mobile)
+ * - Responsive grid layout (13 columns on desktop, 9 on tablet, 7 on mobile, 6 on small mobile)
  * - Automatic active state detection based on current path
  * - High-quality hover effects
+ * - Fully implemented with TailwindCSS
  */
 
 const alphabet = 'ABCDEFGHIJKLMNOPQRSTUVWXYZ'.split('');
@@ -21,14 +22,22 @@ const isActive = (letter: string) => {
 };
 ---
 
-<div class="alphabet-index-container not-prose">
-  <nav class="alphabet-grid" aria-label="Alphabetical index">
+<div class="not-prose mx-auto! my-8! p-5 max-w-[900px] bg-white/[0.02] border border-white/[0.08] rounded-[1.25rem] backdrop-blur-[12px] shadow-[0_4px_6px_-1px_rgba(0,0,0,0.1),0_2px_4px_-1px_rgba(0,0,0,0.06),inset_0_1px_1px_rgba(255,255,255,0.05)] [:where(html[data-theme='light'])_&]:bg-black/[0.01] [:where(html[data-theme='light'])_&]:border-black/[0.04] [:where(html[data-theme='light'])_&]:shadow-[0_10px_15px_-3px_rgba(0,0,0,0.05),0_4px_6px_-2px_rgba(0,0,0,0.02),inset_0_1px_0_rgba(255,255,255,0.5)] md:mx-2 md:mt-12 md:mb-6 md:p-4 md:rounded-2xl">
+  <nav 
+    class="grid grid-cols-13 gap-2 lg:grid-cols-13 md:grid-cols-7 sm:grid-cols-6 sm:gap-[0.35rem]" 
+    aria-label="Alphabetical index"
+  >
     {alphabet.map((letter) => (
       <a
         href={`/words-index/${letter.toLowerCase()}/`}
         class:list={[
-          'letter-link',
-          { 'active': isActive(letter) }
+          'flex items-center justify-center aspect-square text-[0.95rem] font-medium font-sans text-[var(--sl-color-gray-3)] no-underline rounded-[0.6rem] transition-all duration-[250ms] ease-[cubic-bezier(0.4,0,0.2,1)] border border-transparent relative overflow-hidden',
+          'hover:bg-[var(--sl-color-gray-9)] hover:text-[var(--sl-color-accent-high)] hover:-translate-y-px hover:border-[rgba(var(--sl-color-accent-base),0.1)]',
+          '[:where(html[data-theme=\'light\'])_&]:hover:bg-white [:where(html[data-theme=\'light\'])_&]:hover:shadow-[0_2px_8px_rgba(0,0,0,0.05)]',
+          'sm:text-[0.85rem] sm:rounded-lg',
+          {
+            'bg-[var(--sl-color-accent-low)] text-[var(--sl-color-accent-high)] border-[rgba(var(--sl-color-accent-base),0.3)] font-bold shadow-[0_0_0_1px_rgba(var(--sl-color-accent-base),0.2),0_2px_4px_rgba(0,0,0,0.1)] [:where(html[data-theme=\'light\'])_&]:bg-[var(--sl-color-accent-low)] [:where(html[data-theme=\'light\'])_&]:shadow-[0_2px_8px_rgba(var(--sl-color-accent-base),0.15),inset_0_0_0_1px_rgba(var(--sl-color-accent-base),0.1)]': isActive(letter)
+          }
         ]}
         aria-current={isActive(letter) ? 'page' : undefined}
       >
@@ -37,111 +46,3 @@ const isActive = (letter: string) => {
     ))}
   </nav>
 </div>
-
-<style>
-  .alphabet-index-container {
-    margin: 4rem auto 2rem;
-    padding: 1.25rem;
-    max-width: 900px;
-    background: rgba(255, 255, 255, 0.02);
-    border: 1px solid rgba(255, 255, 255, 0.08);
-    border-radius: 1.25rem;
-    backdrop-filter: blur(12px);
-    box-shadow: 
-      0 4px 6px -1px rgba(0, 0, 0, 0.1),
-      0 2px 4px -1px rgba(0, 0, 0, 0.06),
-      inset 0 1px 1px rgba(255, 255, 255, 0.05);
-  }
-
-  /* Light mode refinement */
-  :global([data-theme='light']) .alphabet-index-container {
-    background: rgba(0, 0, 0, 0.01);
-    border: 1px solid rgba(0, 0, 0, 0.04);
-    box-shadow: 
-      0 10px 15px -3px rgba(0, 0, 0, 0.05),
-      0 4px 6px -2px rgba(0, 0, 0, 0.02),
-      inset 0 1px 0 rgba(255, 255, 255, 0.5);
-  }
-
-  .alphabet-grid {
-    display: grid;
-    grid-template-columns: repeat(13, 1fr);
-    gap: 0.5rem;
-  }
-
-  /* Responsive Grid Adjustments */
-  @media (max-width: 1024px) {
-    .alphabet-grid {
-      grid-template-columns: repeat(9, 1fr);
-    }
-  }
-
-  @media (max-width: 768px) {
-    .alphabet-grid {
-      grid-template-columns: repeat(7, 1fr);
-    }
-    .alphabet-index-container {
-      padding: 1rem;
-      margin: 3rem 0.5rem 1.5rem;
-      border-radius: 1rem;
-    }
-  }
-
-  @media (max-width: 480px) {
-    .alphabet-grid {
-      grid-template-columns: repeat(6, 1fr);
-      gap: 0.35rem;
-    }
-    .letter-link {
-      font-size: 0.85rem;
-      border-radius: 0.5rem;
-    }
-  }
-
-  .letter-link {
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    aspect-ratio: 1 / 1;
-    font-size: 0.95rem;
-    font-weight: 500;
-    font-family: ui-sans-serif, system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif;
-    color: var(--sl-color-gray-3);
-    text-decoration: none;
-    border-radius: 0.6rem;
-    transition: all 0.25s cubic-bezier(0.4, 0, 0.2, 1);
-    border: 1px solid transparent;
-    position: relative;
-    overflow: hidden;
-  }
-
-  .letter-link:hover {
-    background: var(--sl-color-gray-6);
-    color: var(--sl-color-accent-high);
-    transform: translateY(-1px);
-    border-color: rgba(var(--sl-color-accent-base), 0.1);
-  }
-
-  .letter-link.active {
-    background: var(--sl-color-accent-low);
-    color: var(--sl-color-accent-high);
-    border-color: rgba(var(--sl-color-accent-base), 0.3);
-    font-weight: 700;
-    box-shadow: 
-      0 0 0 1px rgba(var(--sl-color-accent-base), 0.2),
-      0 2px 4px rgba(0, 0, 0, 0.1);
-  }
-
-  :global([data-theme='light']) .letter-link:hover {
-    background: #fff;
-    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.05);
-  }
-
-  :global([data-theme='light']) .letter-link.active {
-    background: var(--sl-color-accent-low);
-    box-shadow: 
-      0 2px 8px rgba(var(--sl-color-accent-base), 0.15),
-      inset 0 0 0 1px rgba(var(--sl-color-accent-base), 0.1);
-  }
-</style>
-

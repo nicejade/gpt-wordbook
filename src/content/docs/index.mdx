@@ -21,7 +21,7 @@ hero:
 import { Card, CardGrid } from "@astrojs/starlight/components";
 import AlphabetIndex from "../../components/AlphabetIndex.astro";
 
-<section class="w-full text-center my-8 md:my-12 lg:my-16 px-0 not-prose">
+<section class="w-full text-center mt-0! px-0 not-prose">
   <div class="max-w-[900px] mx-auto py-8 px-5 md:px-8 lg:px-10 rounded-[1.25rem] md:rounded-3xl border border-white/10 bg-white/[0.02] backdrop-blur-md shadow-[0_4px_6px_-1px_rgba(0,0,0,0.1),0_2px_4px_-1px_rgba(0,0,0,0.06),inset_0_1px_1px_rgba(255,255,255,0.05)] transition-all duration-300 [:root[data-theme='light']_&]:bg-black/[0.01] [:root[data-theme='light']_&]:border-black/[0.04] [:root[data-theme='light']_&]:shadow-[0_10px_15px_-3px_rgba(0,0,0,0.05),0_4px_6px_-2px_rgba(0,0,0,0.02),inset_0_1px_0_rgba(255,255,255,0.5)]">
     <h2 class="text-[clamp(2rem,5vw,3.5rem)] font-extrabold leading-[1.1] !my-6 tracking-tighter bg-clip-text text-transparent bg-gradient-to-br from-[var(--sl-color-text-accent)] to-[#434343] font-sans">AI 赋能的深度词汇学习平台</h2>
     <p class="text-[clamp(1rem,3vw,1.4rem)] leading-relaxed text-[var(--sl-color-gray-3)] max-w-[700px] mx-auto font-normal tracking-tight font-sans">
@@ -30,14 +30,14 @@ import AlphabetIndex from "../../components/AlphabetIndex.astro";
   </div>
 </section>
 
-<div class="!mb-12 !md:mb-16 !lg:mb-24 px-0">
+<div class="mt-16! md:mt-20! lg:mt-20! px-0">
   <h3 class="text-center !my-6 !md:my-8 !lg:my-8 text-[clamp(1.25rem,4vw,1.5rem)] text-[var(--sl-color-gray-2)] font-semibold tracking-tight border-none">
     快速开始：按首字母索引
   </h3>
   <AlphabetIndex />
 </div>
 
-<div class="px-0 mb-12 md:mb-16 lg:mb-20 [&_.card]:!p-10 [&_.card]:md:!p-8 [&_.card]:!mt-0 [&_.card]:transition-all [&_.card]:duration-300 [&_.card]:bg-white/[0.02] [&_.card]:!border-white/[0.08] [&_.card]:rounded-[1.25rem] [&_.card]:backdrop-blur-md [&_.card]:shadow-[0_4px_6px_-1px_rgba(0,0,0,0.1),0_2px_4px_-1px_rgba(0,0,0,0.06),inset_0_1px_1px_rgba(255,255,255,0.05)] [&_.card]:hover:-translate-y-0.5 [:root[data-theme='light']_&_.card]:!bg-black/[0.01] [:root[data-theme='light']_&_.card]:!border-black/[0.04] [:root[data-theme='light']_&_.card]:shadow-[0_10px_15px_-3px_rgba(0,0,0,0.05),0_4px_6px_-2px_rgba(0,0,0,0.02),inset_0_1px_0_rgba(255,255,255,0.5)]">
+<div class="px-0 mt-16! md:mt-20! lg:mt-20! [&_.card]:!p-10 [&_.card]:md:!p-8 [&_.card]:!mt-0 [&_.card]:transition-all [&_.card]:duration-300 [&_.card]:bg-white/[0.02] [&_.card]:!border-white/[0.08] [&_.card]:rounded-[1.25rem] [&_.card]:backdrop-blur-md [&_.card]:shadow-[0_4px_6px_-1px_rgba(0,0,0,0.1),0_2px_4px_-1px_rgba(0,0,0,0.06),inset_0_1px_1px_rgba(255,255,255,0.05)] [&_.card]:hover:-translate-y-0.5 [:root[data-theme='light']_&_.card]:!bg-black/[0.01] [:root[data-theme='light']_&_.card]:!border-black/[0.04] [:root[data-theme='light']_&_.card]:shadow-[0_10px_15px_-3px_rgba(0,0,0,0.05),0_4px_6px_-2px_rgba(0,0,0,0.02),inset_0_1px_0_rgba(255,255,255,0.5)]">
   <CardGrid stagger>
     <Card title="🤖 AI 智能驱动">
       基于 **GPT**
@@ -66,7 +66,7 @@ import AlphabetIndex from "../../components/AlphabetIndex.astro";
   </CardGrid>
 </div>
 
-<section class="w-full text-center !mt-16 !md:mt-20 !lg:mt-20 px-6 py-16 bg-white/[0.03] border border-white/[0.08] rounded-3xl backdrop-blur-md [:root[data-theme='light']_&]:bg-black/[0.02] [:root[data-theme='light']_&]:border-black/[0.05] mb-16 md:mb-16 lg:mb-20">
+<section class="w-full text-center mt-16! md:mt-20! lg:mt-20! px-6 py-16 bg-white/[0.03] border border-white/[0.08] rounded-3xl backdrop-blur-md [:root[data-theme='light']_&]:bg-black/[0.02] [:root[data-theme='light']_&]:border-black/[0.05] mb-16 md:mb-16 lg:mb-20">
   <h3 class="text-[clamp(1.5rem,5vw,2.25rem)] font-bold !mt-0 border-none text-white text-center tracking-tight">
     为进阶英语学习者打造
   </h3>
@@ -77,7 +77,7 @@ import AlphabetIndex from "../../components/AlphabetIndex.astro";
       { title: "🌟 英语爱好者", desc: "深度学习语言文化内涵" },
       { title: "👨‍🏫 教育工作者", desc: "获取优质的教学资源和素材" },
     ].map((item) => (
-      <div class="bg-white/[0.02] border border-white/[0.08] rounded-2xl p-6 md:p-7 lg:p-8 text-left transition-all duration-300 hover:-translate-y-0.5 hover:border-white/15 hover:shadow-xl [:root[data-theme='light']_&]:bg-black/[0.01] [:root[data-theme='light']_&]:border-black/[0.04] hover:shadow-[0_8px_16px_-4px_rgba(0,0,0,0.2)] [:root[data-theme='light']_&:hover]:border-black/[0.12] [:root[data-theme='light']_&:hover]:shadow-[0_8px_16px_-4px_rgba(0,0,0,0.08)]">
+      <div class="bg-white/[0.02] mt-0! border border-white/[0.08] rounded-2xl p-6 md:p-7 lg:p-8 text-left transition-all duration-300 hover:-translate-y-0.5 hover:border-white/15 hover:shadow-xl [:root[data-theme='light']_&]:bg-black/[0.01] [:root[data-theme='light']_&]:border-black/[0.04] hover:shadow-[0_8px_16px_-4px_rgba(0,0,0,0.2)] [:root[data-theme='light']_&:hover]:border-black/[0.12] [:root[data-theme='light']_&:hover]:shadow-[0_8px_16px_-4px_rgba(0,0,0,0.08)]">
         <strong class="block mb-2.5 text-[var(--sl-color-accent)] text-lg md:text-xl font-semibold tracking-tight">
           {item.title}
         </strong>

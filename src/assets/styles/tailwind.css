@@ -17,4 +17,11 @@
   --shadow-custom-white-xl: 8px 8px 30px 6px #c3c3c3;
   --shadow-custom-dark: 8px 8px 20px 2px #212121;
   --shadow-custom-dark-xl: 8px 8px 20px 2px #363636;
+  
+  /* Custom grid columns for AlphabetIndex component */
+  --grid-cols-13: repeat(13, minmax(0, 1fr));
+}
+
+@utility grid-cols-13 {
+  grid-template-columns: var(--grid-cols-13);
 }
