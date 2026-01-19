@@ -6,16 +6,16 @@ sidebar:
 tableOfContents: false
 ---
 
-import Pronunciation from '../../../components/Pronunciation.svelte';
-import WordRelations from '../../../components/WordRelations.svelte';
+import Pronunciation from "../../../components/Pronunciation.svelte";
+import WordRelations from "../../../components/WordRelations.svelte";
 
 ### 分析词义
 
 "Strange"是一个形容词，它的主要含义是“陌生的，奇怪的”。它可以用来形容某个地方、人或事物对你来说不常见或不熟悉，或者与通常或预期的情况不同。
 
-<Pronunciation word="Strange" uk="/ˈstɹeɪnd͡ʒ/" us="/ˈstɹeɪnd͡ʒ/" client:only />
-
 例如，“That's a strange idea.”（那是一个奇怪的想法。）
+
+<Pronunciation word="Strange" uk="/ˈstɹeɪnd͡ʒ/" us="/ˈstɹeɪnd͡ʒ/" client:only />
 
 ### 列举例句
 
@@ -49,6 +49,15 @@ Once upon a time, there was a strange little creature in the forest, with colorf
 
 <WordRelations
   synonyms={["new", "unfamiliar", "unknown"]}
-  antonyms={["everyday", "normal", "regular", "standard", "unsurprising", "usual", "familiar", "known"]}
+  antonyms={[
+    "everyday",
+    "normal",
+    "regular",
+    "standard",
+    "unsurprising",
+    "usual",
+    "familiar",
+    "known",
+  ]}
   client:only
 />

@@ -8,14 +8,12 @@ sidebar:
 tableOfContents: false
 ---
 
-import Pronunciation from '../../../components/Pronunciation.svelte';
-import WordRelations from '../../../components/WordRelations.svelte';
+import Pronunciation from "../../../components/Pronunciation.svelte";
+import WordRelations from "../../../components/WordRelations.svelte";
 
 ### 分析词义
 
 "Dark" 是一个形容词，用于描述光线不足或完全没有的情况，像"夜晚"和"暗室"等情况下通常会使用到"dark"。此外，"dark"也常用来形容秘密、神秘、阴郁或恶意的事物。
-
-<Pronunciation word="Dark" uk="/dɑːk/" us="/dɑɹk/" client:only />
 
 例如：
 
@@ -25,6 +23,8 @@ import WordRelations from '../../../components/WordRelations.svelte';
 
 词根词缀分析：
 "Dark" 一词在英语中是一个基础词，没有明显的词根或词缀。但可以和其他词组成复合词，如 "darkroom"（暗房）。
+
+<Pronunciation word="Dark" uk="/dɑːk/" us="/dɑɹk/" client:only />
 
 ### 文化背景
 
@@ -49,7 +49,19 @@ import WordRelations from '../../../components/WordRelations.svelte';
 (在黑暗的森林中，一只孤狼嚎叫着，听者如临冰窖。阴影在跳舞，使得气氛更加诡异。)
 
 <WordRelations
-  synonyms={["hopeless", "negative", "pessimistic", "unenlightened", "deep", "dim", "gloomy", "hidden", "secret", "sinister", "malign"]}
+  synonyms={[
+    "hopeless",
+    "negative",
+    "pessimistic",
+    "unenlightened",
+    "deep",
+    "dim",
+    "gloomy",
+    "hidden",
+    "secret",
+    "sinister",
+    "malign",
+  ]}
   antonyms={["bright", "light", "pale", "lit"]}
   client:only
 />

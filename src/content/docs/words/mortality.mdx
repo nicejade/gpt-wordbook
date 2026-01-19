@@ -6,14 +6,19 @@ sidebar:
 tableOfContents: false
 ---
 
-import Pronunciation from '../../../components/Pronunciation.svelte';
-import WordRelations from '../../../components/WordRelations.svelte';
+import Pronunciation from "../../../components/Pronunciation.svelte";
+import WordRelations from "../../../components/WordRelations.svelte";
 
 ### 分析词义
 
 "mortality" 这个单词属于名词，这个词的基本意思是"死亡率"或者"生命的终结"。
 
-<Pronunciation word="Mortality" uk="/mɔɹˈtælɪti/" us="/mɔɹˈtælɪti/" client:only />
+<Pronunciation
+  word="Mortality"
+  uk="/mɔɹˈtælɪti/"
+  us="/mɔɹˈtælɪti/"
+  client:only
+/>
 
 ### 列举例句
 
@@ -46,7 +51,4 @@ import WordRelations from '../../../components/WordRelations.svelte';
 In a village, the increasing mortality due to a mysterious disease raised concerns among the villagers. They sought help from various sources to reduce the mortality.
 在一个村庄里，由于一种神秘疾病导致的死亡率的增加引起了村民们的关注。他们寻求各种方式来减少这个死亡率。
 
-<WordRelations
-  synonyms={["humanity", "humankind", "mankind"]}
-  client:only
-/>
+<WordRelations synonyms={["humanity", "humankind", "mankind"]} client:only />

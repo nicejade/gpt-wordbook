@@ -6,14 +6,19 @@ sidebar:
 tableOfContents: false
 ---
 
-import Pronunciation from '../../../components/Pronunciation.svelte';
-import WordRelations from '../../../components/WordRelations.svelte';
+import Pronunciation from "../../../components/Pronunciation.svelte";
+import WordRelations from "../../../components/WordRelations.svelte";
 
 ### 分析词义
 
 "Articulate"既可以作为形容词，也可以作为动词。形容词形式代表有能力准确、清晰地表达观点或者情绪，动词形式则代表清晰地表达思想、感情或者想法。
 
-<Pronunciation word="Articulate" uk="/ɑː(ɹ)ˈtɪk.jʊ.lət/" us="/ɑːɹˈtɪk.jə.lət/" client:only />
+<Pronunciation
+  word="Articulate"
+  uk="/ɑː(ɹ)ˈtɪk.jʊ.lət/"
+  us="/ɑːɹˈtɪk.jə.lət/"
+  client:only
+/>
 
 ### 列举例句
 
@@ -48,7 +53,4 @@ import WordRelations from '../../../components/WordRelations.svelte';
 John was always a quiet boy until he went to debate camp. There, he learned to articulate his thoughts effectively. Now, he is known as the most articulate speaker in his class.
 约翰一直是一个安静的男孩，直到他去参加辩论营。在那里，他学会了有效地表达他的思想。现在，他被认为是他的班级中最能言善辩的演讲者。
 
-<WordRelations
-  synonyms={["eloquent"]}
-  client:only
-/>
+<WordRelations synonyms={["eloquent"]} client:only />

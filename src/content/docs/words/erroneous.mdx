@@ -8,14 +8,19 @@ sidebar:
 tableOfContents: false
 ---
 
-import Pronunciation from '../../../components/Pronunciation.svelte';
-import WordRelations from '../../../components/WordRelations.svelte';
+import Pronunciation from "../../../components/Pronunciation.svelte";
+import WordRelations from "../../../components/WordRelations.svelte";
 
 ### 分析词义
 
 "Erroneous" 这个单词是形容词，意思是错误的，不正确的。通常用来描述一个结果、意见、方法或任何其他事物是错误的或不正确的。这个词在形式上较为正式，经常出现在书面英语中。
 
-<Pronunciation word="Erroneous" uk="/ɛɹˈəʊ.nɪ.əs/" us="/ɛɹˈəʊ.nɪ.əs/" client:only />
+<Pronunciation
+  word="Erroneous"
+  uk="/ɛɹˈəʊ.nɪ.əs/"
+  us="/ɛɹˈəʊ.nɪ.əs/"
+  client:only
+/>
 
 ### 列举例句
 
@@ -52,7 +57,19 @@ The scientist's erroneous interpretation of the data led to incorrect conclusion
 （科学家对数据的错误解释导致了不正确的结论。但是当他被纠正时，他愿意接受改变。）
 
 <WordRelations
-  synonyms={["inaccurate", "incorrect", "wrong", "fallacious", "false", "faulty", "flawed", "mistaken", "errorful", "errorous", "errory"]}
+  synonyms={[
+    "inaccurate",
+    "incorrect",
+    "wrong",
+    "fallacious",
+    "false",
+    "faulty",
+    "flawed",
+    "mistaken",
+    "errorful",
+    "errorous",
+    "errory",
+  ]}
   antonyms={["errorless"]}
   client:only
 />

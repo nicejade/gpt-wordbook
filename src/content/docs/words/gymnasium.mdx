@@ -6,14 +6,19 @@ sidebar:
 tableOfContents: false
 ---
 
-import Pronunciation from '../../../components/Pronunciation.svelte';
-import WordRelations from '../../../components/WordRelations.svelte';
+import Pronunciation from "../../../components/Pronunciation.svelte";
+import WordRelations from "../../../components/WordRelations.svelte";
 
 ### 分析词义
 
 "Gymnasium" 是英文单词，原始意思是"体育馆"或者"健身房"。
 
-<Pronunciation word="Gymnasium" uk="/dʒɪmˈneɪ.zi.əm/" us="/dʒɪmˈneɪ.zi.əm/" client:only />
+<Pronunciation
+  word="Gymnasium"
+  uk="/dʒɪmˈneɪ.zi.əm/"
+  us="/dʒɪmˈneɪ.zi.əm/"
+  client:only
+/>
 
 ### 列举例句
 
@@ -46,7 +51,4 @@ import WordRelations from '../../../components/WordRelations.svelte';
 Molly attends a yoga class at the gymnasium every morning. The moment she steps in, she feels energized.
 茉莉每天早上在体育馆参加瑜伽课。每当她走进体育馆，她都会感到充满活力。
 
-<WordRelations
-  synonyms={["gym"]}
-  client:only
-/>
+<WordRelations synonyms={["gym"]} client:only />

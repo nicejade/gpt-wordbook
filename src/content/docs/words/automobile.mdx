@@ -6,14 +6,19 @@ sidebar:
 tableOfContents: false
 ---
 
-import Pronunciation from '../../../components/Pronunciation.svelte';
-import WordRelations from '../../../components/WordRelations.svelte';
+import Pronunciation from "../../../components/Pronunciation.svelte";
+import WordRelations from "../../../components/WordRelations.svelte";
 
 ### 分析词义
 
 "Automobile" 是一个名词，它意为"汽车"。它描述的是一种自由移动的机动车辆，主要用于运输人员或货物。
 
-<Pronunciation word="Automobile" uk="/ˈɔː.tə.məˌbiːl/" us="/ˈɔ.tə.moʊˌbil/" client:only />
+<Pronunciation
+  word="Automobile"
+  uk="/ˈɔː.tə.məˌbiːl/"
+  us="/ˈɔ.tə.moʊˌbil/"
+  client:only
+/>
 
 ### 列举例句
 
@@ -49,7 +54,4 @@ John woke up, got ready, and climbed into his shiny new automobile. He needed no
 
 约翰醒来，准备就绪，然后爬上了他闪亮的新汽车。他不需要地图，因为这辆车是自动化的，知道具体要去哪里。
 
-<WordRelations
-  synonyms={["auto", "car", "motor", "motorcar"]}
-  client:only
-/>
+<WordRelations synonyms={["auto", "car", "motor", "motorcar"]} client:only />

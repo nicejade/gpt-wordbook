@@ -6,14 +6,19 @@ sidebar:
 tableOfContents: false
 ---
 
-import Pronunciation from '../../../components/Pronunciation.svelte';
-import WordRelations from '../../../components/WordRelations.svelte';
+import Pronunciation from "../../../components/Pronunciation.svelte";
+import WordRelations from "../../../components/WordRelations.svelte";
 
 ### 分析词义
 
 "Nuisance" 是一个英文单词，主要用作名词，用于指代某人或某事物给别人带来的麻烦，困扰或者是不便。它有很明显的负面含义。
 
-<Pronunciation word="Nuisance" uk="/ˈnjuːsəns/" us="/ˈn(j)uːsəns/" client:only />
+<Pronunciation
+  word="Nuisance"
+  uk="/ˈnjuːsəns/"
+  us="/ˈn(j)uːsəns/"
+  client:only
+/>
 
 ### 列举例句
 
@@ -52,7 +57,14 @@ There once was a naughty squirrel, who was a nuisance to the quiet library. It a
 从前,有一只淘气的松鼠，它是安静图书馆的一个麻烦。它总是在书堆里扰动，打断人们试图集中精力的尝试。
 
 <WordRelations
-  synonyms={["annoyance", "inconvenience", "offense", "bother", "obstacle", "pest"]}
+  synonyms={[
+    "annoyance",
+    "inconvenience",
+    "offense",
+    "bother",
+    "obstacle",
+    "pest",
+  ]}
   antonyms={["enjoyment"]}
   client:only
 />

@@ -6,14 +6,19 @@ sidebar:
 tableOfContents: false
 ---
 
-import Pronunciation from '../../../components/Pronunciation.svelte';
-import WordRelations from '../../../components/WordRelations.svelte';
+import Pronunciation from "../../../components/Pronunciation.svelte";
+import WordRelations from "../../../components/WordRelations.svelte";
 
 ### 分析词义
 
 "Incorrect"这个英文单词是一个形容词，意思是“错误的”，“不准确的”，“不正确的”。通常用于描述一个答案、结论或行为等事物是错误或者不准确。
 
-<Pronunciation word="Incorrect" uk="/ˌɪnkəˈɹɛkt/" us="/ˌɪnkəˈɹɛkt/" client:only />
+<Pronunciation
+  word="Incorrect"
+  uk="/ˌɪnkəˈɹɛkt/"
+  us="/ˌɪnkəˈɹɛkt/"
+  client:only
+/>
 
 ### 列举例句
 
@@ -50,7 +55,4 @@ Incorrect 作为形容词没有单复数形式，其词性变形包括 incorrect
 Tom was convinced that his math solution was flawless, but the teacher marked it as incorrect.
 (汤姆确信自己的数学解答无懈可击，但老师却判定它是错误的。)
 
-<WordRelations
-  antonyms={["correct", "proper", "right"]}
-  client:only
-/>
+<WordRelations antonyms={["correct", "proper", "right"]} client:only />

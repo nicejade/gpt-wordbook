@@ -6,17 +6,22 @@ sidebar:
 tableOfContents: false
 ---
 
-import Pronunciation from '../../../components/Pronunciation.svelte';
-import WordRelations from '../../../components/WordRelations.svelte';
+import Pronunciation from "../../../components/Pronunciation.svelte";
+import WordRelations from "../../../components/WordRelations.svelte";
 
 ### 分析词义
 
 "Prescribe"是一个动词，主要有两种含义：
 
-<Pronunciation word="Prescribe" uk="/pɹɪˈskɹaɪb/" us="/pɹɪˈskɹaɪb/" client:only />
-
 1.  开具(药方)，如医生为病人开处方；
 2.  规定，比如法律规定某些程序或规则。
+
+<Pronunciation
+  word="Prescribe"
+  uk="/pɹɪˈskɹaɪb/"
+  us="/pɹɪˈskɹaɪb/"
+  client:only
+/>
 
 ### 列举例句
 
@@ -56,7 +61,4 @@ John felt really sick one day, so he decided to go see a doctor. After checking 
 
 (约翰有一天感觉非常不舒服，所以他决定去看医生。医生在检查他的症状后，为他开了一些药。)
 
-<WordRelations
-  antonyms={["proscribe"]}
-  client:only
-/>
+<WordRelations antonyms={["proscribe"]} client:only />

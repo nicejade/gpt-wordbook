@@ -6,14 +6,19 @@ sidebar:
 tableOfContents: false
 ---
 
-import Pronunciation from '../../../components/Pronunciation.svelte';
-import WordRelations from '../../../components/WordRelations.svelte';
+import Pronunciation from "../../../components/Pronunciation.svelte";
+import WordRelations from "../../../components/WordRelations.svelte";
 
 ### 分析词义
 
 "Comfortable" 是一個形容詞，通常用來登述一種感覺或狀態，意味著感到輕鬆、愉快或者無疼痛感。它還可以用來形容一個人或環境讓人感到身心舒適。
 
-<Pronunciation word="Comfortable" uk="/ˈkʌm.fə.tə.bəl/" us="/ˈkʌm.fə.tə.bəl/" client:only />
+<Pronunciation
+  word="Comfortable"
+  uk="/ˈkʌm.fə.tə.bəl/"
+  us="/ˈkʌm.fə.tə.bəl/"
+  client:only
+/>
 
 ### 列举例句
 
@@ -54,7 +59,16 @@ Split the word into "com-" and "-fortable", and associate it with a picture or p
 In the small, cozy cottage, Tom felt completely comfortable. He sat by the fire, feeling its warmth seeping into him. (在小而舒適的小屋中，湯姆感到非常舒服。他坐在火旁，感受它的溫暖進入他的身體。)
 
 <WordRelations
-  synonyms={["comforting", "comfy", "cozy", "cushy", "eathful", "restful", "snug", "safe"]}
+  synonyms={[
+    "comforting",
+    "comfy",
+    "cozy",
+    "cushy",
+    "eathful",
+    "restful",
+    "snug",
+    "safe",
+  ]}
   antonyms={["comfortless", "uncomfortable"]}
   client:only
 />

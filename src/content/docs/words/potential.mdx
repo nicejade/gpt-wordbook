@@ -6,14 +6,19 @@ sidebar:
 tableOfContents: false
 ---
 
-import Pronunciation from '../../../components/Pronunciation.svelte';
-import WordRelations from '../../../components/WordRelations.svelte';
+import Pronunciation from "../../../components/Pronunciation.svelte";
+import WordRelations from "../../../components/WordRelations.svelte";
 
 ### 分析词义
 
 英文单词"potential"用作名词，有"潜力，潜能"的意思，用作形容词则表示"潜在的，可能的"。
 
-<Pronunciation word="Potential" uk="/pəˈtɛnʃəl/" us="/po(ʊ)ˈtɛnʃəl/" client:only />
+<Pronunciation
+  word="Potential"
+  uk="/pəˈtɛnʃəl/"
+  us="/po(ʊ)ˈtɛnʃəl/"
+  client:only
+/>
 
 ### 列举例句
 
@@ -48,7 +53,15 @@ Once a seed fell into a crack in the desert. It had the potential to become a to
 曾经，有颗种子落入了沙漠的裂隙中。它具有成为一颗能够顶风吹沙、屹立不倒的大树的潜力。
 
 <WordRelations
-  synonyms={["noumenon", "spirit", "efficacious", "influential", "noumenal", "spiritual", "virtual"]}
+  synonyms={[
+    "noumenon",
+    "spirit",
+    "efficacious",
+    "influential",
+    "noumenal",
+    "spiritual",
+    "virtual",
+  ]}
   antonyms={["matter", "phenomenon", "actual", "phenomenal", "real"]}
   client:only
 />

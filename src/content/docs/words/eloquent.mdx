@@ -6,14 +6,19 @@ sidebar:
 tableOfContents: false
 ---
 
-import Pronunciation from '../../../components/Pronunciation.svelte';
-import WordRelations from '../../../components/WordRelations.svelte';
+import Pronunciation from "../../../components/Pronunciation.svelte";
+import WordRelations from "../../../components/WordRelations.svelte";
 
 ### 分析词义
 
 "Eloquent" 是一种形容词，用于形容一个人的表达清晰，能用雄辩和有感染力的方式说话或写作。它也可以形容演讲或文字让人留下深刻印象，富有表现力。
 
-<Pronunciation word="Eloquent" uk="/ˈɛl.əˌkwənt/" us="/ˈɛl.əˌkwənt/" client:only />
+<Pronunciation
+  word="Eloquent"
+  uk="/ˈɛl.əˌkwənt/"
+  us="/ˈɛl.əˌkwənt/"
+  client:only
+/>
 
 ### 列举例句
 
@@ -45,7 +50,4 @@ import WordRelations from '../../../components/WordRelations.svelte';
 
 In the city council meeting, an eloquent woman defended the proposed park. Her moving words left an unforgettable impression on the council members. (在市议会的会议中，一个雄辩的女人为拟议的公园辩护。她感人的言辞给议会成员留下了深刻的印象。)
 
-<WordRelations
-  synonyms={["articulate"]}
-  client:only
-/>
+<WordRelations synonyms={["articulate"]} client:only />

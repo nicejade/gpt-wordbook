@@ -8,14 +8,19 @@ sidebar:
 tableOfContents: false
 ---
 
-import Pronunciation from '../../../components/Pronunciation.svelte';
-import WordRelations from '../../../components/WordRelations.svelte';
+import Pronunciation from "../../../components/Pronunciation.svelte";
+import WordRelations from "../../../components/WordRelations.svelte";
 
 ### 分析词义
 
 "Construction" 是一个名词，意为 "建设，建造，结构，构造"。在实际用法中，有多重含义。例如，"construction" 可以指建设过程，也可以指建筑物，又或是语句结构。
 
-<Pronunciation word="Construction" uk="/kənˈstɹʌkʃən/" us="/kənˈstɹʌkʃən/" client:only />
+<Pronunciation
+  word="Construction"
+  uk="/kənˈstɹʌkʃən/"
+  us="/kənˈstɹʌkʃən/"
+  client:only
+/>
 
 ### 列举例句
 
@@ -51,8 +56,4 @@ import WordRelations from '../../../components/WordRelations.svelte';
 
 Once upon a time, a powerful king ordered the construction of a magnificent castle. The castle was built on top of a hill and could be seen for miles around. (从前，一个强大的国王命令修建一座宏伟的城堡。城堡建造在山顶上，可以看到周围数英里的景色。)
 
-<WordRelations
-  synonyms={["building"]}
-  antonyms={["destruction"]}
-  client:only
-/>
+<WordRelations synonyms={["building"]} antonyms={["destruction"]} client:only />

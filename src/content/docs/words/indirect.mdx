@@ -8,14 +8,19 @@ sidebar:
 tableOfContents: false
 ---
 
-import Pronunciation from '../../../components/Pronunciation.svelte';
-import WordRelations from '../../../components/WordRelations.svelte';
+import Pronunciation from "../../../components/Pronunciation.svelte";
+import WordRelations from "../../../components/WordRelations.svelte";
 
 ### 分析词义
 
 "Indirect" 是一个英文形容词，意为"间接的"，"不直接的"，指的是不直截了当，不坦率的或者是不直线的。在语言学中，"indirect" 有时用来描述一种非直接或绕迂的表达方式。
 
-<Pronunciation word="Indirect" uk="/ˌɪndaɪˈɹɛkt/" us="/ˌɪndaɪˈɹɛkt/" client:only />
+<Pronunciation
+  word="Indirect"
+  uk="/ˌɪndaɪˈɹɛkt/"
+  us="/ˌɪndaɪˈɹɛkt/"
+  client:only
+/>
 
 ### 列举例句
 
@@ -50,7 +55,4 @@ import WordRelations from '../../../components/WordRelations.svelte';
 Roger, a shy boy, was indirect in expressing his feelings for Lisa. Instead of telling her directly, he used to send anonymous love notes.
 (罗杰，一个害羞的男孩，对丽莎的感情非常间接。他不是直接告诉她，而是习惯性地发送匿名的情书。)
 
-<WordRelations
-  antonyms={["direct"]}
-  client:only
-/>
+<WordRelations antonyms={["direct"]} client:only />

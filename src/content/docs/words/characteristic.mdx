@@ -8,14 +8,19 @@ sidebar:
 tableOfContents: false
 ---
 
-import Pronunciation from '../../../components/Pronunciation.svelte';
-import WordRelations from '../../../components/WordRelations.svelte';
+import Pronunciation from "../../../components/Pronunciation.svelte";
+import WordRelations from "../../../components/WordRelations.svelte";
 
 ### 分析词义
 
 "Characteristic" 是一个形容词，也可作为名词使用，主要表示的是特性、特征或者代表性的特点。例如：“a characteristic feature（特征性的特点）”。
 
-<Pronunciation word="Characteristic" uk="/ˌkæɹəktəˈɹɪstɪk/" us="/ˌkæɹəktəˈɹɪstɪk/" client:only />
+<Pronunciation
+  word="Characteristic"
+  uk="/ˌkæɹəktəˈɹɪstɪk/"
+  us="/ˌkæɹəktəˈɹɪstɪk/"
+  client:only
+/>
 
 ### 列举例句
 
@@ -50,7 +55,24 @@ import WordRelations from '../../../components/WordRelations.svelte';
 "Emily, a girl who is always full of energy, has a characteristic laugh, loud and cheerful. Whenever you hear it, you know she's around."（Emily, 一个总是充满活力的女孩，有一种很有特色的笑声，声音响亮且欢快。每当你听到这个笑声，你就知道她在附近。）
 
 <WordRelations
-  synonyms={["attribute", "hallmark", "idiosyncrasy", "mannerism", "quality", "tendency", "trademark", "trait", "distinctive", "exclusive", "idiosyncratic", "indicative", "representative", "signature", "specific", "typical"]}
+  synonyms={[
+    "attribute",
+    "hallmark",
+    "idiosyncrasy",
+    "mannerism",
+    "quality",
+    "tendency",
+    "trademark",
+    "trait",
+    "distinctive",
+    "exclusive",
+    "idiosyncratic",
+    "indicative",
+    "representative",
+    "signature",
+    "specific",
+    "typical",
+  ]}
   antonyms={["uncharacteristic", "untypical"]}
   client:only
 />

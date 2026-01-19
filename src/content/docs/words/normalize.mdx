@@ -6,14 +6,19 @@ sidebar:
 tableOfContents: false
 ---
 
-import Pronunciation from '../../../components/Pronunciation.svelte';
-import WordRelations from '../../../components/WordRelations.svelte';
+import Pronunciation from "../../../components/Pronunciation.svelte";
+import WordRelations from "../../../components/WordRelations.svelte";
 
 ### 分析词义
 
 "Normalize" 是一个动词，意为使某事物达到或恢复到正常、标准或常规的状态。在不同的语境下，它可以指社会关系的正常化、数据的标准化或某种行为的普遍化。
 
-<Pronunciation word="Normalize" uk="/ˈnɔː(ɹ).mə.laɪz/" us="/ˈnɔː(ɹ).mə.laɪz/" client:only />
+<Pronunciation
+  word="Normalize"
+  uk="/ˈnɔː(ɹ).mə.laɪz/"
+  us="/ˈnɔː(ɹ).mə.laɪz/"
+  client:only
+/>
 
 ### 列举例句
 
@@ -52,7 +57,4 @@ normal (正常的) + ize (使...) = 使...变得正常 -> 使正常化。
 After the long storm, the town's people worked together to normalize their lives. They repaired the roads and reopened the shops, and soon everything felt normal again.
 (长久的暴风雨过后，镇上的人们共同努力使生活恢复正常。他们修理了道路，重新开放了商店，很快一切又感觉正常了。)
 
-<WordRelations
-  antonyms={["reverse"]}
-  client:only
-/>
+<WordRelations antonyms={["reverse"]} client:only />

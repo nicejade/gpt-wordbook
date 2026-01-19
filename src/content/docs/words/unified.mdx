@@ -8,14 +8,19 @@ sidebar:
 tableOfContents: false
 ---
 
-import Pronunciation from '../../../components/Pronunciation.svelte';
-import WordRelations from '../../../components/WordRelations.svelte';
+import Pronunciation from "../../../components/Pronunciation.svelte";
+import WordRelations from "../../../components/WordRelations.svelte";
 
 ### 分析词义
 
 "Unified" 是英语中的一个形容词，它的基本含义是"联合的"，"统一的"或"一致的"，用来描述两个或者多个事物（例如：想法土区域人士）整合在一起形成一个整体。
 
-<Pronunciation word="Unified" uk="/ˈjuː.nɪ.faɪd/" us="/ˈjuː.nɪ.faɪd/" client:only />
+<Pronunciation
+  word="Unified"
+  uk="/ˈjuː.nɪ.faɪd/"
+  us="/ˈjuː.nɪ.faɪd/"
+  client:only
+/>
 
 ### 列举例句
 
@@ -55,7 +60,4 @@ import WordRelations from '../../../components/WordRelations.svelte';
 The diversified tribes established a unified federation, working together to build survival shelter and ensure safety.
 多元化的部落建立了一个统一的联邦,共同努力建立生存的庇护所,并确保安全。
 
-<WordRelations
-  antonyms={["divide"]}
-  client:only
-/>
+<WordRelations antonyms={["divide"]} client:only />

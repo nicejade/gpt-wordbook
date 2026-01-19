@@ -6,14 +6,19 @@ sidebar:
 tableOfContents: false
 ---
 
-import Pronunciation from '../../../components/Pronunciation.svelte';
-import WordRelations from '../../../components/WordRelations.svelte';
+import Pronunciation from "../../../components/Pronunciation.svelte";
+import WordRelations from "../../../components/WordRelations.svelte";
 
 ### 分析词义
 
 "Subsequent"是一个英语形容词，它的含义是“接下来的”或者“随后的”。这个词常用来表示某些事件、行动或时间在某一点后发生或存在。
 
-<Pronunciation word="Subsequent" uk="/ˈsʌbsəkwənt/" us="/ˈsʌbsəkwənt/" client:only />
+<Pronunciation
+  word="Subsequent"
+  uk="/ˈsʌbsəkwənt/"
+  us="/ˈsʌbsəkwənt/"
+  client:only
+/>
 
 ### 列举例句
 
@@ -47,8 +52,4 @@ After the sudden rain, the subsequent rainbow made everyone cheer up. Everyone p
 
 (雨过天晴，随后出现的彩虹让所有人都振奋了起来。每个人都拿出他们的手机，试图捕捉这美好的瞬间。)
 
-<WordRelations
-  synonyms={["next"]}
-  antonyms={["preceding"]}
-  client:only
-/>
+<WordRelations synonyms={["next"]} antonyms={["preceding"]} client:only />

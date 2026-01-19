@@ -6,14 +6,19 @@ sidebar:
 tableOfContents: false
 ---
 
-import Pronunciation from '../../../components/Pronunciation.svelte';
-import WordRelations from '../../../components/WordRelations.svelte';
+import Pronunciation from "../../../components/Pronunciation.svelte";
+import WordRelations from "../../../components/WordRelations.svelte";
 
 ### 分析词义
 
 "Residence" 是英语名词，意思是“居住，住宅”. 它可以指一个人居住的场所，也可以指一个人的居住状态或时期。
 
-<Pronunciation word="Residence" uk="/ˈɹɛz.ɪ.dəns/" us="/ˈɹɛz.ɪ.dəns/" client:only />
+<Pronunciation
+  word="Residence"
+  uk="/ˈɹɛz.ɪ.dəns/"
+  us="/ˈɹɛz.ɪ.dəns/"
+  client:only
+/>
 
 ### 列举例句
 
@@ -45,7 +50,4 @@ Residence 的词根是 "resid-"，来自拉丁语，意为“坐下，住下”�
 
 "Lisa moved often, but finally found her favourite residence by the sea. The sea breeze and warm sun every day made her happy beyond words." – "丽莎经常搬家，但最终在海边找到了她最喜欢的住宅。海风和暖洋洋的太阳每天都让她感到无比的幸福。"
 
-<WordRelations
-  synonyms={["residence", "residency"]}
-  client:only
-/>
+<WordRelations synonyms={["residence", "residency"]} client:only />

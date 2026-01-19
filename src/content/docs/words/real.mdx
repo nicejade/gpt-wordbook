@@ -8,19 +8,19 @@ sidebar:
 tableOfContents: false
 ---
 
-import Pronunciation from '../../../components/Pronunciation.svelte';
-import WordRelations from '../../../components/WordRelations.svelte';
+import Pronunciation from "../../../components/Pronunciation.svelte";
+import WordRelations from "../../../components/WordRelations.svelte";
 
 ### 分析词义
 
 "Real" 是一个英文单词，常被用作形容词，其主要意思是“真实的，现实的”，指的是物质存在或是不含虚构、假造成分的事情。其也有“真诚的，真挚的”等含义，用以描述人的性格或情感。
 
-<Pronunciation word="Real" uk="/ɹiːl/" us="/ɹiːl/" client:only />
-
 例如：
 
 1.  She showed her real emotions. (她展现出了她真实的情感。)
 2.  This is a real diamond. (这是真钻石。)
+
+<Pronunciation word="Real" uk="/ɹiːl/" us="/ɹiːl/" client:only />
 
 ### 词根分析
 
@@ -51,7 +51,18 @@ import WordRelations from '../../../components/WordRelations.svelte';
 There was a boy named Tim. He had a dream to find a real treasure. One day, he set out on his adventure, and finally found a chest of gold. He realized the real treasure was the journey itself. (有个叫蒂姆的男孩。他梦想找到真正的宝藏。一天，他踏上了冒险之旅，最后找到了一个装满黄金的箱子。他意识到真正的宝藏就是这次旅行本身。)
 
 <WordRelations
-  synonyms={["actual","authentic","genuine","heartfelt","true"]}
-  antonyms={["artificial","counterfeit","fake","sham","feigned","staged","imaginary","fictitious","pretend","unreal"]}
+  synonyms={["actual", "authentic", "genuine", "heartfelt", "true"]}
+  antonyms={[
+    "artificial",
+    "counterfeit",
+    "fake",
+    "sham",
+    "feigned",
+    "staged",
+    "imaginary",
+    "fictitious",
+    "pretend",
+    "unreal",
+  ]}
   client:only
 />

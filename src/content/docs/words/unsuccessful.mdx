@@ -6,14 +6,19 @@ sidebar:
 tableOfContents: false
 ---
 
-import Pronunciation from '../../../components/Pronunciation.svelte';
-import WordRelations from '../../../components/WordRelations.svelte';
+import Pronunciation from "../../../components/Pronunciation.svelte";
+import WordRelations from "../../../components/WordRelations.svelte";
 
 ### 分析词义
 
 "Unsuccessful" 是一个英文形容词，表示“不成功，失败的”。
 
-<Pronunciation word="Unsuccessful" uk="/ˌʌnsəkˈsɛsfl̩/" us="/ˌʌnsəkˈsɛsfl̩/" client:only />
+<Pronunciation
+  word="Unsuccessful"
+  uk="/ˌʌnsəkˈsɛsfl̩/"
+  us="/ˌʌnsəkˈsɛsfl̩/"
+  client:only
+/>
 
 ### 列举例句
 
@@ -47,7 +52,4 @@ Adam, an ambitious entrepreneur, had an unsuccessful venture selling cupcakes. T
 
 亚当，一个有雄心壮志的企业家，曾经尝试卖杯子蛋糕但是没有成功。虽然他失败了，但亚当并没有灰心，他已经准备好下一次尝试。
 
-<WordRelations
-  antonyms={["successful"]}
-  client:only
-/>
+<WordRelations antonyms={["successful"]} client:only />

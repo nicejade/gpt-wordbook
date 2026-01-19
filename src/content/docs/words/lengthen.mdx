@@ -6,14 +6,19 @@ sidebar:
 tableOfContents: false
 ---
 
-import Pronunciation from '../../../components/Pronunciation.svelte';
-import WordRelations from '../../../components/WordRelations.svelte';
+import Pronunciation from "../../../components/Pronunciation.svelte";
+import WordRelations from "../../../components/WordRelations.svelte";
 
 ### 分析词义
 
 'Lengthen' 是一个动词，它的意思是"使变长"或"延长"。它可以用于形容物理的或抽象的概念的延长，例如延长一条裤子的长度或延长一个会议的时间。
 
-<Pronunciation word="Lengthen" uk="/ˈlɛŋ(k)θən/" us="/ˈlɛŋ(k)θən/" client:only />
+<Pronunciation
+  word="Lengthen"
+  uk="/ˈlɛŋ(k)θən/"
+  us="/ˈlɛŋ(k)θən/"
+  client:only
+/>
 
 ### 列举例句
 
@@ -50,7 +55,4 @@ Peter's favorite pants were always a little short. One day, he decided to length
 
 彼得最喜欢的裤子一直有点短。有一天，他决定把裤子延长。他小心翼翼地把裤脚的线头剪开，然后加上一块相配的布料。裤子现在正好合适，他对自己的工作感到满意。
 
-<WordRelations
-  antonyms={["shorten"]}
-  client:only
-/>
+<WordRelations antonyms={["shorten"]} client:only />

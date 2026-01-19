@@ -6,14 +6,19 @@ sidebar:
 tableOfContents: false
 ---
 
-import Pronunciation from '../../../components/Pronunciation.svelte';
-import WordRelations from '../../../components/WordRelations.svelte';
+import Pronunciation from "../../../components/Pronunciation.svelte";
+import WordRelations from "../../../components/WordRelations.svelte";
 
 ### 分析词义
 
 "familiar" 是一个形容词，它的基本含义是 "经常见到的，认识的，熟悉的"。 如果你对某事物或人熟悉，那么你就知道或曾经看过它，你会对它有深的理解。
 
-<Pronunciation word="Familiar" uk="/fəˈmɪl.i.ə/" us="/fəˈmɪl.i.ɚ/" client:only />
+<Pronunciation
+  word="Familiar"
+  uk="/fəˈmɪl.i.ə/"
+  us="/fəˈmɪl.i.ɚ/"
+  client:only
+/>
 
 ### 列举例句
 
@@ -47,7 +52,27 @@ One day, I walked into a café, and the aroma was familiar to my grandmother's k
 有一天，我走进了一家咖啡厅，那里的香味让我想起了奶奶的厨房，让我开始怀念我的家乡。
 
 <WordRelations
-  synonyms={["nigget", "acquainted", "cheeky", "fresh", "impudent", "close", "friendly", "intimate", "personal"]}
-  antonyms={["unacquainted", "cold", "cool", "distant", "impersonal", "standoffish", "unfriendly", "unfamiliar", "unknown"]}
+  synonyms={[
+    "nigget",
+    "acquainted",
+    "cheeky",
+    "fresh",
+    "impudent",
+    "close",
+    "friendly",
+    "intimate",
+    "personal",
+  ]}
+  antonyms={[
+    "unacquainted",
+    "cold",
+    "cool",
+    "distant",
+    "impersonal",
+    "standoffish",
+    "unfriendly",
+    "unfamiliar",
+    "unknown",
+  ]}
   client:only
 />

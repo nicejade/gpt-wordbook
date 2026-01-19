@@ -8,14 +8,19 @@ sidebar:
 tableOfContents: false
 ---
 
-import Pronunciation from '../../../components/Pronunciation.svelte';
-import WordRelations from '../../../components/WordRelations.svelte';
+import Pronunciation from "../../../components/Pronunciation.svelte";
+import WordRelations from "../../../components/WordRelations.svelte";
 
 ### 分析词义
 
 "Perpendicular"是一个形容词，通常用来描述两条线、面或物体相交形成 90 度角，或者用来表示垂直的。例如，The wall is perpendicular to the floor（墙壁与地板垂直）。
 
-<Pronunciation word="Perpendicular" uk="/ˌpɜː.pənˈdɪk.jə.lə(ɹ)/" us="/pɝ.pənˈdɪk.jə.lɚ/" client:only />
+<Pronunciation
+  word="Perpendicular"
+  uk="/ˌpɜː.pənˈdɪk.jə.lə(ɹ)/"
+  us="/pɝ.pənˈdɪk.jə.lɚ/"
+  client:only
+/>
 
 ### 列举例句
 
@@ -51,7 +56,4 @@ Perpendicular 除了作为形容词外，也可以作为名词表示垂线或垂
 Two lines met one day. One was horizontal and the other, quite daring, was perpendicular. They formed a perfect cross, each respecting the other's space.
 （两条线某天相遇了。一条是水平的，另一条则很大胆地是垂直的。他们形成了一个完美的十字，互相尊重对方的空间。）
 
-<WordRelations
-  synonyms={["normal", "orthogonal"]}
-  client:only
-/>
+<WordRelations synonyms={["normal", "orthogonal"]} client:only />

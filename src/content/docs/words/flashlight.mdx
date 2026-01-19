@@ -6,14 +6,19 @@ sidebar:
 tableOfContents: false
 ---
 
-import Pronunciation from '../../../components/Pronunciation.svelte';
-import WordRelations from '../../../components/WordRelations.svelte';
+import Pronunciation from "../../../components/Pronunciation.svelte";
+import WordRelations from "../../../components/WordRelations.svelte";
 
 ### 分析词义
 
 "Flashlight"这个词在英文中通常指的是一个便携式的光源，特别是在黑暗的环境下使用。
 
-<Pronunciation word="Flashlight" uk="/ˈflæʃˌlaɪt/" us="/ˈflæʃˌlaɪt/" client:only />
+<Pronunciation
+  word="Flashlight"
+  uk="/ˈflæʃˌlaɪt/"
+  us="/ˈflæʃˌlaɪt/"
+  client:only
+/>
 
 ### 列举例句
 
@@ -45,7 +50,4 @@ Flashlight 作为名词，没有具体的变形。
 
 When I was camping in the mountains, I forgot to bring the flashlight. It was pitch-dark at night. Thanks to the moonlight, I found the way back to the tent. (当我在山上露营时，我忘记带手电筒。晚上一片漆黑。幸亏有月光，我找到了回帐篷的路。)
 
-<WordRelations
-  synonyms={["torch"]}
-  client:only
-/>
+<WordRelations synonyms={["torch"]} client:only />

@@ -8,14 +8,19 @@ sidebar:
 tableOfContents: false
 ---
 
-import Pronunciation from '../../../components/Pronunciation.svelte';
-import WordRelations from '../../../components/WordRelations.svelte';
+import Pronunciation from "../../../components/Pronunciation.svelte";
+import WordRelations from "../../../components/WordRelations.svelte";
 
 ### 分析词义
 
 "Disability" 是一个名词，主要用来描述由于身体或精神方面的障碍，一个人的生理或心理功能受到限制或者损失。通常也会用来描述人们无法进行自身应有的日常活动或工作。
 
-<Pronunciation word="Disability" uk="/dɪsəˈbɪlɪti/" us="/dɪsəˈbɪlɪti/" client:only />
+<Pronunciation
+  word="Disability"
+  uk="/dɪsəˈbɪlɪti/"
+  us="/dɪsəˈbɪlɪti/"
+  client:only
+/>
 
 ### 列举例句
 
@@ -60,7 +65,24 @@ Tom is a painter with a physical disability. But his optimism and talent make hi
 汤姆虽然有身体残疾，但他是一位画家。他的乐观精神和才华使他成为他那一代人中最有影响力的艺术家之一。
 
 <WordRelations
-  synonyms={["disqualification", "impotence", "inability", "incapacity", "incompetence", "incompetency", "weakness"]}
-  antonyms={["ability", "capacity", "competence", "competency", "potence", "potential", "qualification", "strength"]}
+  synonyms={[
+    "disqualification",
+    "impotence",
+    "inability",
+    "incapacity",
+    "incompetence",
+    "incompetency",
+    "weakness",
+  ]}
+  antonyms={[
+    "ability",
+    "capacity",
+    "competence",
+    "competency",
+    "potence",
+    "potential",
+    "qualification",
+    "strength",
+  ]}
   client:only
 />

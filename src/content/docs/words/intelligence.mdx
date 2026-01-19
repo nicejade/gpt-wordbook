@@ -8,14 +8,19 @@ sidebar:
 tableOfContents: false
 ---
 
-import Pronunciation from '../../../components/Pronunciation.svelte';
-import WordRelations from '../../../components/WordRelations.svelte';
+import Pronunciation from "../../../components/Pronunciation.svelte";
+import WordRelations from "../../../components/WordRelations.svelte";
 
 ### 分析词义
 
 "Intelligence" 是一个英文名词，主要有两个基本含义：一是指个体的理解、记忆、学习、解决问题等心智能力，我们通常所说的智力和智能就是这个意思。二是指获取和处理有关特定问题的信息以及行动洞察力，如军事情报或者商业情报。
 
-<Pronunciation word="Intelligence" uk="/ɪnˈtɛl.ɪ.d͡ʒəns/" us="/ɪnˈtɛl.ɪ.d͡ʒəns/" client:only />
+<Pronunciation
+  word="Intelligence"
+  uk="/ɪnˈtɛl.ɪ.d͡ʒəns/"
+  us="/ɪnˈtɛl.ɪ.d͡ʒəns/"
+  client:only
+/>
 
 ### 列举例句
 
@@ -48,7 +53,4 @@ Intelligence 主要由两部分构成：inter-（词缀） + leg （词根）。
 John, a member of the Intelligence Agency, uses his intelligence to solve complex problems and capture criminals.
 约翰是情报机构的一员，他运用自己的智力解决复杂的问题并抓捕罪犯。
 
-<WordRelations
-  synonyms={["brightness", "intellect", "wit"]}
-  client:only
-/>
+<WordRelations synonyms={["brightness", "intellect", "wit"]} client:only />

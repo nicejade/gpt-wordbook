@@ -6,14 +6,19 @@ sidebar:
 tableOfContents: false
 ---
 
-import Pronunciation from '../../../components/Pronunciation.svelte';
-import WordRelations from '../../../components/WordRelations.svelte';
+import Pronunciation from "../../../components/Pronunciation.svelte";
+import WordRelations from "../../../components/WordRelations.svelte";
 
 ### 分析词义
 
 "Productive"是一个形容词，它描述的是产生许多良好结果或实用的东西，或者具有这样的潜力的人、地区或时间。它还可以指一种可以产生某事的环境或方式。
 
-<Pronunciation word="Productive" uk="/pɹəˈdʌktɪv/" us="/pɹəˈdʌktɪv/" client:only />
+<Pronunciation
+  word="Productive"
+  uk="/pɹəˈdʌktɪv/"
+  us="/pɹəˈdʌktɪv/"
+  client:only
+/>
 
 ### 列举例句
 
@@ -53,6 +58,13 @@ Jane, a productive author, attends writing sessions each morning. With a clear m
 简，一位高效的作者，每天早上都参加写作课。清澈的思绪使她的手指在键盘上飞舞，文字如清流般流淌出来。今天确实是个高效的一天。
 
 <WordRelations
-  antonyms={["baneful","counterproductive","destructive","nonproductive","ruinous","unproductive"]}
+  antonyms={[
+    "baneful",
+    "counterproductive",
+    "destructive",
+    "nonproductive",
+    "ruinous",
+    "unproductive",
+  ]}
   client:only
 />

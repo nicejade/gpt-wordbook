@@ -6,14 +6,19 @@ sidebar:
 tableOfContents: false
 ---
 
-import Pronunciation from '../../../components/Pronunciation.svelte';
-import WordRelations from '../../../components/WordRelations.svelte';
+import Pronunciation from "../../../components/Pronunciation.svelte";
+import WordRelations from "../../../components/WordRelations.svelte";
 
 ### 分析词义
 
 英文单词"enormous"是一个形容词，意味着非常大的或者庞大的。
 
-<Pronunciation word="Enormous" uk="/ɪˈnɔː(ɹ)məs/" us="/ɪˈnɔː(ɹ)məs/" client:only />
+<Pronunciation
+  word="Enormous"
+  uk="/ɪˈnɔː(ɹ)məs/"
+  us="/ɪˈnɔː(ɹ)məs/"
+  client:only
+/>
 
 ### 列举例句
 
@@ -48,6 +53,13 @@ import WordRelations from '../../../components/WordRelations.svelte';
 There was an enormous tree in our backyard. Its branches touched the sky and its roots filled the earth. (我们后院有一棵巨大的树。它的树枝触摸到了天空，树根填满了大地。)
 
 <WordRelations
-  synonyms={["abnormal", "gigantic", "huge", "humongous", "massive", "tremendous"]}
+  synonyms={[
+    "abnormal",
+    "gigantic",
+    "huge",
+    "humongous",
+    "massive",
+    "tremendous",
+  ]}
   client:only
 />

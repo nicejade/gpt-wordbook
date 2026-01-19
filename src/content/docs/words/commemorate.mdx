@@ -6,14 +6,19 @@ sidebar:
 tableOfContents: false
 ---
 
-import Pronunciation from '../../../components/Pronunciation.svelte';
-import WordRelations from '../../../components/WordRelations.svelte';
+import Pronunciation from "../../../components/Pronunciation.svelte";
+import WordRelations from "../../../components/WordRelations.svelte";
 
 ### 分析词义
 
 "Commemorate"是一个动词，其基本含义是纪念，庆祝。
 
-<Pronunciation word="Commemorate" uk="/kəˈmɛməˌɹeɪt/" us="/kəˈmɛməˌɹeɪt/" client:only />
+<Pronunciation
+  word="Commemorate"
+  uk="/kəˈmɛməˌɹeɪt/"
+  us="/kəˈmɛməˌɹeɪt/"
+  client:only
+/>
 
 ### 列举例句
 
@@ -47,7 +52,4 @@ In our town, we commemorate the first snowfall of the year with a big parade. Ev
 
 在我们的小镇上，我们用大型游行来纪念每年的初雪。每个人都会穿上暖和的衣服，分享热可可。
 
-<WordRelations
-  synonyms={["memorialize"]}
-  client:only
-/>
+<WordRelations synonyms={["memorialize"]} client:only />

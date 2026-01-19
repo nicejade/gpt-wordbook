@@ -6,14 +6,19 @@ sidebar:
 tableOfContents: false
 ---
 
-import Pronunciation from '../../../components/Pronunciation.svelte';
-import WordRelations from '../../../components/WordRelations.svelte';
+import Pronunciation from "../../../components/Pronunciation.svelte";
+import WordRelations from "../../../components/WordRelations.svelte";
 
 ### 分析词义
 
 "Programmer"是一个名词，表示"编程人员"或"程序员"，专指那些设计并编写计算机软件、应用和系统的专业人员。
 
-<Pronunciation word="Programmer" uk="/ˈpɹəʊɡɹæmə/" us="/ˈpɹəʊɡɹæmə/" client:only />
+<Pronunciation
+  word="Programmer"
+  uk="/ˈpɹəʊɡɹæmə/"
+  us="/ˈpɹəʊɡɹæmə/"
+  client:only
+/>
 
 ### 列举例句
 
@@ -46,7 +51,4 @@ Programmer 作为一个名词，其复数形式为 "programmers"，中文是“�
 John, a skilled programmer, worked diligently at his computer. His fingertips hurriedly danced across the keyboard, breathing life into written codes that would fuel the latest app.
 约翰是一个技术娴熟的程序员，他在电脑前努力工作。他的手指快速地在键盘上跳舞，赋予那些写好的代码生命，驱动最新的应用程序。
 
-<WordRelations
-  synonyms={["coder"]}
-  client:only
-/>
+<WordRelations synonyms={["coder"]} client:only />

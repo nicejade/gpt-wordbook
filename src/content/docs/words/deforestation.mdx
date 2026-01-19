@@ -6,14 +6,19 @@ sidebar:
 tableOfContents: false
 ---
 
-import Pronunciation from '../../../components/Pronunciation.svelte';
-import WordRelations from '../../../components/WordRelations.svelte';
+import Pronunciation from "../../../components/Pronunciation.svelte";
+import WordRelations from "../../../components/WordRelations.svelte";
 
 ### 分析词义
 
 "Deforestation" 是一个名词，用来描述大规模砍伐森林或者其他的树木的过程。这个词语通常用来讨论环保问题。
 
-<Pronunciation word="Deforestation" uk="/dɪˌfɒɹɪsˈteɪʃən/" us="/dɪˌfɒɹɪsˈteɪʃən/" client:only />
+<Pronunciation
+  word="Deforestation"
+  uk="/dɪˌfɒɹɪsˈteɪʃən/"
+  us="/dɪˌfɒɹɪsˈteɪʃən/"
+  client:only
+/>
 
 ### 列举例句
 
@@ -46,7 +51,4 @@ import WordRelations from '../../../components/WordRelations.svelte';
 
 “The jungle was beautiful, full of colorful species. However, deforestation turned it into a barren field. The local animals no longer had their habitats and had to move elsewhere."（这个丛林曾经很美，有各色各样的生物。然而，森林砍伐使它变成了一片荒原。本地的动物丧失了栖息地，不得不去别处寻找新的家园。）
 
-<WordRelations
-  antonyms={["afforestation", "reforestation"]}
-  client:only
-/>
+<WordRelations antonyms={["afforestation", "reforestation"]} client:only />

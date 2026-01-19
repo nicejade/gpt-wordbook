@@ -6,14 +6,19 @@ sidebar:
 tableOfContents: false
 ---
 
-import Pronunciation from '../../../components/Pronunciation.svelte';
-import WordRelations from '../../../components/WordRelations.svelte';
+import Pronunciation from "../../../components/Pronunciation.svelte";
+import WordRelations from "../../../components/WordRelations.svelte";
 
 ### 分析词义
 
 "Completely"是一个副词，表示“完全地，彻底地”，用于强化形容词或者动词。
 
-<Pronunciation word="Completely" uk="/kəmˈpliːtli/" us="/kəmˈpliːtli/" client:only />
+<Pronunciation
+  word="Completely"
+  uk="/kəmˈpliːtli/"
+  us="/kəmˈpliːtli/"
+  client:only
+/>
 
 ### 列举例句
 
@@ -47,7 +52,4 @@ import WordRelations from '../../../components/WordRelations.svelte';
 
 Jack was completely absorbed in his favorite book. He didn't even hear his mom calling him for dinner. (杰克完全沉浸在他最喜欢的书中，他甚至没有听到他的妈妈叫他吃晚饭。)
 
-<WordRelations
-  synonyms={["fully", "totally", "utterly"]}
-  client:only
-/>
+<WordRelations synonyms={["fully", "totally", "utterly"]} client:only />

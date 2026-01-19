@@ -8,14 +8,19 @@ sidebar:
 tableOfContents: false
 ---
 
-import Pronunciation from '../../../components/Pronunciation.svelte';
-import WordRelations from '../../../components/WordRelations.svelte';
+import Pronunciation from "../../../components/Pronunciation.svelte";
+import WordRelations from "../../../components/WordRelations.svelte";
 
 ### 分析词义
 
 "Superman" 是由 "super-" 和 "man" 两个部分组成的组合词。"super-" 是前缀，来源于拉丁语，表示“超越，超过常人”，"man" 就是我们通用的 "男人"。所以，"superman" 的直接翻译是"超人"。
 
-<Pronunciation word="Superman" uk="/ˈs(j)uːpəmæn/" us="/ˈs(j)uːpəmæn/" client:only />
+<Pronunciation
+  word="Superman"
+  uk="/ˈs(j)uːpəmæn/"
+  us="/ˈs(j)uːpəmæn/"
+  client:only
+/>
 
 ### 列举例句
 
@@ -48,7 +53,4 @@ import WordRelations from '../../../components/WordRelations.svelte';
 Once a superman lifted a heavy building to save the people trapped inside.
 曾经，超人力举起一栋重重的大楼，以挽救被困其中的人们。
 
-<WordRelations
-  antonyms={["netherman"]}
-  client:only
-/>
+<WordRelations antonyms={["netherman"]} client:only />

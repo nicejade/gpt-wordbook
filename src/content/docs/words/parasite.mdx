@@ -6,14 +6,19 @@ sidebar:
 tableOfContents: false
 ---
 
-import Pronunciation from '../../../components/Pronunciation.svelte';
-import WordRelations from '../../../components/WordRelations.svelte';
+import Pronunciation from "../../../components/Pronunciation.svelte";
+import WordRelations from "../../../components/WordRelations.svelte";
 
 ### 分析词义
 
 "Parasite" 这个单词来源于希腊语，定义为一个生物体寄生在另一个生物体上，从后者身上吸取营养，而对后者有损害的生物。
 
-<Pronunciation word="Parasite" uk="/ˈpæɹəˌsaɪt/" us="/ˈpæɹəˌsaɪt/" client:only />
+<Pronunciation
+  word="Parasite"
+  uk="/ˈpæɹəˌsaɪt/"
+  us="/ˈpæɹəˌsaɪt/"
+  client:only
+/>
 
 ### 列举例句
 
@@ -47,7 +52,4 @@ Joey, a talented painter, was often called a "parasite" by his jealous peers. De
 
 乔伊是一位有才华的画家，常常被嫉妒他的同行称为“寄生虫”。尽管他们言辞激烈，乔伊的精神并未被压垮。他通过自己的努力证明了他们是错的。
 
-<WordRelations
-  antonyms={["commensal", "mutualist", "symbiote"]}
-  client:only
-/>
+<WordRelations antonyms={["commensal", "mutualist", "symbiote"]} client:only />

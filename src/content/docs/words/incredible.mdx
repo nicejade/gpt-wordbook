@@ -8,14 +8,19 @@ sidebar:
 tableOfContents: false
 ---
 
-import Pronunciation from '../../../components/Pronunciation.svelte';
-import WordRelations from '../../../components/WordRelations.svelte';
+import Pronunciation from "../../../components/Pronunciation.svelte";
+import WordRelations from "../../../components/WordRelations.svelte";
 
 ### 分析词义
 
 "Incredible"是形容词，主要有两个含义：1. 难以置信的，惊人的。用于形容事物或情况极其出乎意料，无法用常理来解释。2. 极好的，极其出色的。用来形容非凡的人或事物。
 
-<Pronunciation word="Incredible" uk="/ɪŋˈkɹɛdɪbəl/" us="/ɪŋˈkɹɛdɪbəl/" client:only />
+<Pronunciation
+  word="Incredible"
+  uk="/ɪŋˈkɹɛdɪbəl/"
+  us="/ɪŋˈkɹɛdɪbəl/"
+  client:only
+/>
 
 ### 列举例句
 
@@ -54,7 +59,4 @@ import WordRelations from '../../../components/WordRelations.svelte';
 Once upon a time, there was an incredible cat who could understand human languages. She helped the police solve many complicated cases, which made her a hero in the town.
 从前，有一只会理解人类语言的难以置信的猫。她帮助警察解决了很多复杂的案件，使她成为了小镇的英雄。
 
-<WordRelations
-  synonyms={["unbelievable"]}
-  client:only
-/>
+<WordRelations synonyms={["unbelievable"]} client:only />

@@ -6,17 +6,17 @@ sidebar:
 tableOfContents: false
 ---
 
-import Pronunciation from '../../../components/Pronunciation.svelte';
-import WordRelations from '../../../components/WordRelations.svelte';
+import Pronunciation from "../../../components/Pronunciation.svelte";
+import WordRelations from "../../../components/WordRelations.svelte";
 
 ### 分析词义
 
 "Noble" 是一个形容词，主要含义包括以下几点：
 
-<Pronunciation word="Noble" uk="/ˈnəʊbəl/" us="/ˈnoʊbəl/" client:only />
-
 1.  高尚的，贵族的。通常用来描述一个人的道德品质高尚或者身份地位高贵，如 noble thoughts (高尚的想法) 或 noble birth (贵族出身)。
 2.  优秀的，高效的。在化学中，noble 用于称呼稀有且不易与其他元素反应的元素，如 noble gas (稀有气体)。
+
+<Pronunciation word="Noble" uk="/ˈnəʊbəl/" us="/ˈnoʊbəl/" client:only />
 
 ### 列举例句
 
@@ -52,6 +52,14 @@ There was a noble king who shared his wealth with the poor, and his actions were
 
 <WordRelations
   synonyms={["great", "honorable", "superior"]}
-  antonyms={["commoner", "plebeian", "despicable", "ignoble", "mean", "vile", "inferior"]}
+  antonyms={[
+    "commoner",
+    "plebeian",
+    "despicable",
+    "ignoble",
+    "mean",
+    "vile",
+    "inferior",
+  ]}
   client:only
 />

@@ -7,14 +7,19 @@ sidebar:
 tableOfContents: false
 ---
 
-import Pronunciation from '../../../components/Pronunciation.svelte';
-import WordRelations from '../../../components/WordRelations.svelte';
+import Pronunciation from "../../../components/Pronunciation.svelte";
+import WordRelations from "../../../components/WordRelations.svelte";
 
 ### 分析词义
 
 "Association"是一个名词，主要有两个常见的含义。首先，它可以表示某个组织或团体，例如学术协会，商业协会等；其次，它也有联合，关联，联想等意思，在心理学中经常用来描述人的思维过程。
 
-<Pronunciation word="Association" uk="/əˌsəʊsiˈeɪʃən/" us="/əˌsoʊsiˈeɪʃən/" client:only />
+<Pronunciation
+  word="Association"
+  uk="/əˌsəʊsiˈeɪʃən/"
+  us="/əˌsoʊsiˈeɪʃən/"
+  client:only
+/>
 
 ### 列举例句
 
@@ -50,7 +55,4 @@ import WordRelations from '../../../components/WordRelations.svelte';
 "Tom joined the local basketball association hoping to improve his skills. The association provided him with good coaches, competitions and made him a better player."
 “汤姆加入了当地的篮球协会，希望能提高自己的技术。协会为他提供了优秀的教练，比赛的机会，使他成为一个更好的球员。”
 
-<WordRelations
-  synonyms={["connection"]}
-  client:only
-/>
+<WordRelations synonyms={["connection"]} client:only />

@@ -6,14 +6,19 @@ sidebar:
 tableOfContents: false
 ---
 
-import Pronunciation from '../../../components/Pronunciation.svelte';
-import WordRelations from '../../../components/WordRelations.svelte';
+import Pronunciation from "../../../components/Pronunciation.svelte";
+import WordRelations from "../../../components/WordRelations.svelte";
 
 ### 分析词义
 
 "Strawberry" 是一个英语名词，中文翻译为"草莓"。
 
-<Pronunciation word="Strawberry" uk="/ˈstɹɔːb(ə)ɹi/" us="/ˈstɹɔːb(ə)ɹi/" client:only />
+<Pronunciation
+  word="Strawberry"
+  uk="/ˈstɹɔːb(ə)ɹi/"
+  us="/ˈstɹɔːb(ə)ɹi/"
+  client:only
+/>
 
 ### 列举例句
 
@@ -45,7 +50,4 @@ import WordRelations from '../../../components/WordRelations.svelte';
 
 Lucy had a special liking for strawberry milkshakes. One day, she made a delicious strawberry milkshake at home and invited her friends to enjoy it together. They praised the strawberry milkshake as the best they had tasted. (露西特别喜欢草莓奶昔。有一天，她在家做了一杯美味的草莓奶昔，并邀请朋友们一起品尝。他们赞扬这个草莓奶昔是他们吃过的最好的。)
 
-<WordRelations
-  synonyms={["earthberry"]}
-  client:only
-/>
+<WordRelations synonyms={["earthberry"]} client:only />

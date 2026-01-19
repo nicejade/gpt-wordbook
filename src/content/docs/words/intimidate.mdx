@@ -6,14 +6,19 @@ sidebar:
 tableOfContents: false
 ---
 
-import Pronunciation from '../../../components/Pronunciation.svelte';
-import WordRelations from '../../../components/WordRelations.svelte';
+import Pronunciation from "../../../components/Pronunciation.svelte";
+import WordRelations from "../../../components/WordRelations.svelte";
 
 ### 分析词义
 
 "Intimidate" 是一个动词，意为 "威胁" 或 "恐吓"，透过权力、威胁、压力等手段，使他人害怕以达到自己的目的。
 
-<Pronunciation word="Intimidate" uk="/ɪnˈtɪmɪdeɪt/" us="/ɪnˈtɪmɪdeɪt/" client:only />
+<Pronunciation
+  word="Intimidate"
+  uk="/ɪnˈtɪmɪdeɪt/"
+  us="/ɪnˈtɪmɪdeɪt/"
+  client:only
+/>
 
 ### 列举例句
 
@@ -50,7 +55,4 @@ import WordRelations from '../../../components/WordRelations.svelte';
 Once upon a time in the wild west, an intimidating cowboy would win poker games not by luck, but by scaring off his opponents.
 （在西部荒野的某个地方，一个让人畏惧的牛仔不是靠运气赢得扑克游戏，而是通过恐吓他的对手们。）
 
-<WordRelations
-  synonyms={["abash"]}
-  client:only
-/>
+<WordRelations synonyms={["abash"]} client:only />

@@ -8,14 +8,19 @@ sidebar:
 tableOfContents: false
 ---
 
-import Pronunciation from '../../../components/Pronunciation.svelte';
-import WordRelations from '../../../components/WordRelations.svelte';
+import Pronunciation from "../../../components/Pronunciation.svelte";
+import WordRelations from "../../../components/WordRelations.svelte";
 
 ### 分析词义
 
 Motherland 这个词汇通常用来指一个人的出生地或祖先的原籍地，常常是出于对这个地方的深深热爱和敬仰，会引起强烈的情感共鸣。英文中，它具有和“祖国”相似的情感。
 
-<Pronunciation word="Motherland" uk="/ˈmʌðɚˌlænd/" us="/ˈmʌðɚˌlænd/" client:only />
+<Pronunciation
+  word="Motherland"
+  uk="/ˈmʌðɚˌlænd/"
+  us="/ˈmʌðɚˌlænd/"
+  client:only
+/>
 
 ### 列举例句
 
@@ -52,7 +57,4 @@ John had been away for ten years, but now he was finally going home. As the plan
 
 约翰已经离开十年了，但现在他终于要回家。当飞机下降时，他凝视着下面的土地，他的祖国。他是多么的想念它！他要回到他属于的地方。
 
-<WordRelations
-  synonyms={["fatherland", "homeland"]}
-  client:only
-/>
+<WordRelations synonyms={["fatherland", "homeland"]} client:only />

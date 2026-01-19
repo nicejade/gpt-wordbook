@@ -6,14 +6,19 @@ sidebar:
 tableOfContents: false
 ---
 
-import Pronunciation from '../../../components/Pronunciation.svelte';
-import WordRelations from '../../../components/WordRelations.svelte';
+import Pronunciation from "../../../components/Pronunciation.svelte";
+import WordRelations from "../../../components/WordRelations.svelte";
 
 ### 分析词义
 
 "Humanity"这个词有两种含义，首先，它指的是全人类或人类总体。其次，它也可以指的是人性，含括同情心、慈悲心等人的情感与道德价值。
 
-<Pronunciation word="Humanity" uk="/hjuˈmænɪti/" us="/hjuˈmænɪti/" client:only />
+<Pronunciation
+  word="Humanity"
+  uk="/hjuˈmænɪti/"
+  us="/hjuˈmænɪti/"
+  client:only
+/>
 
 ### 列举例句
 
@@ -46,7 +51,4 @@ import WordRelations from '../../../components/WordRelations.svelte';
 There once was a boy who had a great love for humanity. He always helped those in need without any hesitation. His selfless deeds inspired many others to do the same.
 (曾经有一个男孩，他对人类有着深深的爱。他总是毫不犹豫地帮助那些需要帮助的人。他无私的行为激励了许多人也去做同样的事。)
 
-<WordRelations
-  synonyms={["humaneness"]}
-  client:only
-/>
+<WordRelations synonyms={["humaneness"]} client:only />

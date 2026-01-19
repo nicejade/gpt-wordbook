@@ -6,14 +6,19 @@ sidebar:
 tableOfContents: false
 ---
 
-import Pronunciation from '../../../components/Pronunciation.svelte';
-import WordRelations from '../../../components/WordRelations.svelte';
+import Pronunciation from "../../../components/Pronunciation.svelte";
+import WordRelations from "../../../components/WordRelations.svelte";
 
 ### 分析词义
 
 "Unpleasant"是一个形容词，用来形容不愉快，令人不舒服或让人觉得厌恶的事情或者人。
 
-<Pronunciation word="Unpleasant" uk="/ʌnˈplezənt/" us="/ʌnˈplezənt/" client:only />
+<Pronunciation
+  word="Unpleasant"
+  uk="/ʌnˈplezənt/"
+  us="/ʌnˈplezənt/"
+  client:only
+/>
 
 ### 列举例句
 
@@ -50,7 +55,4 @@ Unpleasant 是由词根"pleasant"加上否定词缀"un-"组成。"Pleasant"意�
 John had an unpleasant meeting with his boss. His boss criticized him for not completing the work on time. John left the office feeling disheartened.
 约翰与他的老板进行了一次不愉快的会议。他的老板批评他没有按时完成工作。约翰沮丧地离开了办公室。
 
-<WordRelations
-  synonyms={["disagreeable"]}
-  client:only
-/>
+<WordRelations synonyms={["disagreeable"]} client:only />

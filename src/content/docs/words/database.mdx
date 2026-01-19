@@ -6,14 +6,19 @@ sidebar:
 tableOfContents: false
 ---
 
-import Pronunciation from '../../../components/Pronunciation.svelte';
-import WordRelations from '../../../components/WordRelations.svelte';
+import Pronunciation from "../../../components/Pronunciation.svelte";
+import WordRelations from "../../../components/WordRelations.svelte";
 
 ### 分析词义
 
 Database 是一个英文名词，中文翻译为“数据库”。“数据库”是一个组织的、能从中查找并从中得到信息的集合。
 
-<Pronunciation word="Database" uk="/ˈdeɪtəˌbeɪs/" us="/ˈdeɪtəˌbeɪs/" client:only />
+<Pronunciation
+  word="Database"
+  uk="/ˈdeɪtəˌbeɪs/"
+  us="/ˈdeɪtəˌbeɪs/"
+  client:only
+/>
 
 ### 列举例句
 
@@ -49,7 +54,4 @@ Database 是名词，它的复数形式为 “databases”。
 Tom is a programmer who deals with databases every day. Today, he received a task to update a company’s database.
 汤姆是个程序员，每天都在处理数据库。今天，他收到了一个更新公司数据库的任务。
 
-<WordRelations
-  synonyms={["databank"]}
-  client:only
-/>
+<WordRelations synonyms={["databank"]} client:only />

@@ -6,14 +6,19 @@ sidebar:
 tableOfContents: false
 ---
 
-import Pronunciation from '../../../components/Pronunciation.svelte';
-import WordRelations from '../../../components/WordRelations.svelte';
+import Pronunciation from "../../../components/Pronunciation.svelte";
+import WordRelations from "../../../components/WordRelations.svelte";
 
 ### 分析词义
 
 "Institution"是英语中的一个常见词汇，它的主要含义是“制度”或“机构”。这个词的含义可以根据具体语境有所变化。
 
-<Pronunciation word="Institution" uk="/ˌɪnstɪˈtjuːʃən/" us="/ˌɪnstɪˈtuːʃən/" client:only />
+<Pronunciation
+  word="Institution"
+  uk="/ˌɪnstɪˈtjuːʃən/"
+  us="/ˌɪnstɪˈtuːʃən/"
+  client:only
+/>
 
 ### 列举例句
 
@@ -48,7 +53,4 @@ import WordRelations from '../../../components/WordRelations.svelte';
 In the small town, there was an institution known for its dedication to teaching science. Everyone admired it and many young people aspired to study there.
 （在这个小城镇里，有一个以致力于教学科学而闻名的机构。每个人都对它充满敬仰，很多年轻人都渴望在那里学习。）
 
-<WordRelations
-  synonyms={["establishment"]}
-  client:only
-/>
+<WordRelations synonyms={["establishment"]} client:only />

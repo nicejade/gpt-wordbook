@@ -8,14 +8,19 @@ sidebar:
 tableOfContents: false
 ---
 
-import Pronunciation from '../../../components/Pronunciation.svelte';
-import WordRelations from '../../../components/WordRelations.svelte';
+import Pronunciation from "../../../components/Pronunciation.svelte";
+import WordRelations from "../../../components/WordRelations.svelte";
 
 ### 分析词义
 
 "Envelope" 是名词，来源于法语 "envelopper"，意为包，信封。在日常生活中常作为“信封”解释，指我们写信后装进去邮寄的纸质包装，也可以用来指包裹、覆盖物等。
 
-<Pronunciation word="Envelope" uk="/ˈɒn.və.ləʊp/" us="/ˈɑn.vəˌloʊp/" client:only />
+<Pronunciation
+  word="Envelope"
+  uk="/ˈɒn.və.ləʊp/"
+  us="/ˈɑn.vəˌloʊp/"
+  client:only
+/>
 
 ### 列举例句
 
@@ -45,7 +50,4 @@ import WordRelations from '../../../components/WordRelations.svelte';
 
 It was a chilly morning. Joe's hand trembled as he reached for the envelope on the table. He closed his eyes, took a deep breath, and opened it slowly. Inside was the acceptance letter to his dream university.（在寒冷的早晨，乔的手在伸向桌上的信封时颤抖了。他闭上眼睛，深深地吸了一口气，然后慢慢地打开了它。里面是他梦想大学的录取通知书。）
 
-<WordRelations
-  synonyms={["gasbag", "wrapper"]}
-  client:only
-/>
+<WordRelations synonyms={["gasbag", "wrapper"]} client:only />

@@ -6,14 +6,19 @@ sidebar:
 tableOfContents: false
 ---
 
-import Pronunciation from '../../../components/Pronunciation.svelte';
-import WordRelations from '../../../components/WordRelations.svelte';
+import Pronunciation from "../../../components/Pronunciation.svelte";
+import WordRelations from "../../../components/WordRelations.svelte";
 
 ### 分析词义
 
 "Responsible"是一个形容词，原意是“负责的，负有责任的”，常用于描述一个人对他的任务、工作、决定、行为等负有责任。
 
-<Pronunciation word="Responsible" uk="/ɹɪˈspɒnsəbl̩/" us="/ɹɪˈspɑnsəbl̩/" client:only />
+<Pronunciation
+  word="Responsible"
+  uk="/ɹɪˈspɒnsəbl̩/"
+  us="/ɹɪˈspɑnsəbl̩/"
+  client:only
+/>
 
 ### 列举例句
 
@@ -50,7 +55,4 @@ Tom was always the responsible one in his family, even as a child. When his pare
 
 汤姆在家中总是负责任的那个人，即使他还是个孩子。每当他的父母外出，他都会照看他的小妹妹，打扫房子，还会准备餐食。
 
-<WordRelations
-  antonyms={["irresponsible"]}
-  client:only
-/>
+<WordRelations antonyms={["irresponsible"]} client:only />

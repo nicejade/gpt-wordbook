@@ -6,14 +6,19 @@ sidebar:
 tableOfContents: false
 ---
 
-import Pronunciation from '../../../components/Pronunciation.svelte';
-import WordRelations from '../../../components/WordRelations.svelte';
+import Pronunciation from "../../../components/Pronunciation.svelte";
+import WordRelations from "../../../components/WordRelations.svelte";
 
 ### 分析词义
 
 "Headmaster"是个名词，主要用在英式英语中，意为“校长”，特指男性校长。在美式英语中，这个词更常见的用法是“Principal”。
 
-<Pronunciation word="Headmaster" uk="/ˈhɛdˌmɑːstə/" us="/ˈhɛdˌmɑːstə/" client:only />
+<Pronunciation
+  word="Headmaster"
+  uk="/ˈhɛdˌmɑːstə/"
+  us="/ˈhɛdˌmɑːstə/"
+  client:only
+/>
 
 ### 列举例句
 
@@ -52,7 +57,4 @@ Once, a diligent student asked the headmaster for some advice on how to succeed.
 
 曾经，一个勤奋的学生向校长（headmaster）寻求如何取得成功的建议。校长温和地说：“努力工作，诚实做人，好事就会随之而来。”
 
-<WordRelations
-  synonyms={["headteacher", "principal"]}
-  client:only
-/>
+<WordRelations synonyms={["headteacher", "principal"]} client:only />

@@ -6,14 +6,19 @@ sidebar:
 tableOfContents: false
 ---
 
-import Pronunciation from '../../../components/Pronunciation.svelte';
-import WordRelations from '../../../components/WordRelations.svelte';
+import Pronunciation from "../../../components/Pronunciation.svelte";
+import WordRelations from "../../../components/WordRelations.svelte";
 
 ### 分析词义
 
 "Exceptional"是一个形容词，它的含义是"非常好的"或"杰出的"，常常用于形容某事或某人在很大程度超出了普通水平或者预期。
 
-<Pronunciation word="Exceptional" uk="/ɪkˈsɛpʃənəl/" us="/ɪkˈsɛpʃənəl/" client:only />
+<Pronunciation
+  word="Exceptional"
+  uk="/ɪkˈsɛpʃənəl/"
+  us="/ɪkˈsɛpʃənəl/"
+  client:only
+/>
 
 ### 列举例句
 
@@ -56,6 +61,14 @@ There was an exceptional artist in the small town. Exceptionally humble, she use
 
 <WordRelations
   synonyms={["egregious"]}
-  antonyms={["categorical", "common", "general", "ordinary", "usual", "commonplace", "mediocre"]}
+  antonyms={[
+    "categorical",
+    "common",
+    "general",
+    "ordinary",
+    "usual",
+    "commonplace",
+    "mediocre",
+  ]}
   client:only
 />

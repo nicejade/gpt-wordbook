@@ -8,14 +8,19 @@ sidebar:
 tableOfContents: false
 ---
 
-import Pronunciation from '../../../components/Pronunciation.svelte';
-import WordRelations from '../../../components/WordRelations.svelte';
+import Pronunciation from "../../../components/Pronunciation.svelte";
+import WordRelations from "../../../components/WordRelations.svelte";
 
 ### 分析词义
 
 "Compression" 这个单词的意思是压缩，减少，或者是压制。在生活中我们经常用这个词，比如电脑的文件压缩，音乐的压缩版本，从而使得文件或者音乐占用的存储空间变小。在医学上也使用这个词，比如压迫绷带等等。
 
-<Pronunciation word="Compression" uk="/kɒm.pɹɛʃ.ən/" us="/kɒm.pɹɛʃ.ən/" client:only />
+<Pronunciation
+  word="Compression"
+  uk="/kɒm.pɹɛʃ.ən/"
+  us="/kɒm.pɹɛʃ.ən/"
+  client:only
+/>
 
 ### 列举例句
 
@@ -58,7 +63,4 @@ Amelia was saving an important file, but it was too large. She used a compressio
 
 艾米莉亚正在保存一个重要的文件，可文件太大了。她使用一个压缩算法来在不损失任何重要信息的情况下，减小其大小。现在，文件不仅更小，而且更容易通过电子邮件发送。
 
-<WordRelations
-  antonyms={["decompression", "rarefaction"]}
-  client:only
-/>
+<WordRelations antonyms={["decompression", "rarefaction"]} client:only />

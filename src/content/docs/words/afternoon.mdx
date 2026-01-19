@@ -8,14 +8,19 @@ sidebar:
 tableOfContents: false
 ---
 
-import Pronunciation from '../../../components/Pronunciation.svelte';
-import WordRelations from '../../../components/WordRelations.svelte';
+import Pronunciation from "../../../components/Pronunciation.svelte";
+import WordRelations from "../../../components/WordRelations.svelte";
 
 ### 分析词义
 
 "Afternoon" 是一个时间相关的英文单词，指的是从正午（midday）过后到黄昏（dusk）之前的一段时间。在日常英文中，它主要用来表示一天中的下午时间。
 
-<Pronunciation word="Afternoon" uk="/ˌɑːf.tə.ˈnuːn/" us="/ˌæf.tɚ.ˈnun/" client:only />
+<Pronunciation
+  word="Afternoon"
+  uk="/ˌɑːf.tə.ˈnuːn/"
+  us="/ˌæf.tɚ.ˈnun/"
+  client:only
+/>
 
 ### 列举例句
 
@@ -49,7 +54,4 @@ Mike promised to fix the broken bicycle this afternoon. But now it's already dus
 
 迈克承诺今天下午修理坏掉的自行车。但是现在已经是黄昏了，自行车还没有修好。迈克叹了口气，"我应该早点开始的。
 
-<WordRelations
-  synonyms={["aft", "arvo", "undern"]}
-  client:only
-/>
+<WordRelations synonyms={["aft", "arvo", "undern"]} client:only />

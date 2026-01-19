@@ -6,14 +6,19 @@ sidebar:
 tableOfContents: false
 ---
 
-import Pronunciation from '../../../components/Pronunciation.svelte';
-import WordRelations from '../../../components/WordRelations.svelte';
+import Pronunciation from "../../../components/Pronunciation.svelte";
+import WordRelations from "../../../components/WordRelations.svelte";
 
 ### 分析词义
 
 "Exemplary" 是形容词，引导的含义是"极好的"，或者"可作为模范的"。
 
-<Pronunciation word="Exemplary" uk="/ɛɡˈzɛmpləɹi/" us="/ɛɡˈzɛmpləɹi/" client:only />
+<Pronunciation
+  word="Exemplary"
+  uk="/ɛɡˈzɛmpləɹi/"
+  us="/ɛɡˈzɛmpləɹi/"
+  client:only
+/>
 
 ### 列举例句
 
@@ -46,7 +51,4 @@ import WordRelations from '../../../components/WordRelations.svelte';
 
 Tom was an exemplary student, always getting top grades. People began to view him as a model student（Tom 是一个优秀的学生，总是取得最高成绩。人们开始把他视为模范生。）
 
-<WordRelations
-  synonyms={["exemplar", "paradigm", "admonitory"]}
-  client:only
-/>
+<WordRelations synonyms={["exemplar", "paradigm", "admonitory"]} client:only />

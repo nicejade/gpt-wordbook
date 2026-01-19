@@ -6,14 +6,19 @@ sidebar:
 tableOfContents: false
 ---
 
-import Pronunciation from '../../../components/Pronunciation.svelte';
-import WordRelations from '../../../components/WordRelations.svelte';
+import Pronunciation from "../../../components/Pronunciation.svelte";
+import WordRelations from "../../../components/WordRelations.svelte";
 
 ### 分析词义
 
 "Everyone" 是一个不定代词，表示“每个人”，“任何人”，“所有人”。
 
-<Pronunciation word="Everyone" uk="/ˈɛv.ɹi.wʌn/" us="/ˈɛv.ɹi.wʌn/" client:only />
+<Pronunciation
+  word="Everyone"
+  uk="/ˈɛv.ɹi.wʌn/"
+  us="/ˈɛv.ɹi.wʌn/"
+  client:only
+/>
 
 ### 列举例句
 
@@ -47,7 +52,4 @@ import WordRelations from '../../../components/WordRelations.svelte';
 
 “有一天，小镇上的每个人都聚在一起举行一场盛大的庆祝活动。空气中充满了欢乐和笑声。每个人都很快乐。”
 
-<WordRelations
-  synonyms={["everybody"]}
-  client:only
-/>
+<WordRelations synonyms={["everybody"]} client:only />

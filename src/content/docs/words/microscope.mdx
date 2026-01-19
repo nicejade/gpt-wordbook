@@ -8,14 +8,19 @@ sidebar:
 tableOfContents: false
 ---
 
-import Pronunciation from '../../../components/Pronunciation.svelte';
-import WordRelations from '../../../components/WordRelations.svelte';
+import Pronunciation from "../../../components/Pronunciation.svelte";
+import WordRelations from "../../../components/WordRelations.svelte";
 
 ### 分析词义
 
 "Microscope" 是一个名词，来源于希腊语“micros”（小的）和“skopein”（看）。所以，Microscope 即为用来看小东西的工具，也就是“显微镜”。
 
-<Pronunciation word="Microscope" uk="/ˈmaɪkɹəˌskəʊp/" us="/ˈmaɪkɹəˌskəʊp/" client:only />
+<Pronunciation
+  word="Microscope"
+  uk="/ˈmaɪkɹəˌskəʊp/"
+  us="/ˈmaɪkɹəˌskəʊp/"
+  client:only
+/>
 
 ### 列举例句
 
@@ -51,7 +56,4 @@ One day, Lisa found a strange leaf in the garden. She was curious and decided to
 
 有一天，丽莎在花园里发现了一片奇怪的叶子。她产生了好奇心，决定用显微镜来检查它。那是一个充满了她从未见过的奇妙微小生物的世界。
 
-<WordRelations
-  synonyms={["microscopize"]}
-  client:only
-/>
+<WordRelations synonyms={["microscopize"]} client:only />

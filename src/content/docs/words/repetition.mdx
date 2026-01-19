@@ -6,14 +6,19 @@ sidebar:
 tableOfContents: false
 ---
 
-import Pronunciation from '../../../components/Pronunciation.svelte';
-import WordRelations from '../../../components/WordRelations.svelte';
+import Pronunciation from "../../../components/Pronunciation.svelte";
+import WordRelations from "../../../components/WordRelations.svelte";
 
 ### 分析词义
 
 "Repetition" 是一个名词，意为“重复”，指的是一个动作或一句话在一段时间内重复发生或说出的现象。
 
-<Pronunciation word="Repetition" uk="/ɹɛpəˈtɪʃən/" us="/ɹɛpəˈtɪʃən/" client:only />
+<Pronunciation
+  word="Repetition"
+  uk="/ɹɛpəˈtɪʃən/"
+  us="/ɹɛpəˈtɪʃən/"
+  client:only
+/>
 
 ### 列举例句
 
@@ -51,7 +56,4 @@ A man named Peter, who was learning piano, understood the power of repetition. E
 
 翻译:名叫彼得的男子，在学习钢琴时，理解了重复的力量。每天，他会反复地演练同一首乐曲，直到他可以完美地演奏出来。
 
-<WordRelations
-  synonyms={["rep"]}
-  client:only
-/>
+<WordRelations synonyms={["rep"]} client:only />

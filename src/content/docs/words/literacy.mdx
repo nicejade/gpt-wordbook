@@ -7,14 +7,19 @@ sidebar:
 tableOfContents: false
 ---
 
-import Pronunciation from '../../../components/Pronunciation.svelte';
-import WordRelations from '../../../components/WordRelations.svelte';
+import Pronunciation from "../../../components/Pronunciation.svelte";
+import WordRelations from "../../../components/WordRelations.svelte";
 
 ### 分析词义
 
 "literacy"是一个名词，主要意思是读写能力、文化水平或者素养。在不同的上下文中它的含义可以稍有不同。基础的意思是指个体能够阅读、理解并写作本国语言的能力。扩展的含义可以是指熟悉或了解某一特定领域的知识或技能。
 
-<Pronunciation word="Literacy" uk="/ˈlɪt.ɹə.si/" us="/ˈlɪt.əɹ.ə.si/" client:only />
+<Pronunciation
+  word="Literacy"
+  uk="/ˈlɪt.ɹə.si/"
+  us="/ˈlɪt.əɹ.ə.si/"
+  client:only
+/>
 
 ### 列举例句
 
@@ -47,7 +52,4 @@ import WordRelations from '../../../components/WordRelations.svelte';
 John, despite his young age, already showed impressive literacy. He would spend his free time reading all kinds of books and then writing reviews. His parents were really happy about his love for learning.
 John 尽管年纪小，但已经展现出令人印象深刻的读写能力。他会利用空闲时间阅读各种各样的书籍，然后写书评。他的父母对他对学习的热爱感到非常高兴。
 
-<WordRelations
-  antonyms={["illiteracy"]}
-  client:only
-/>
+<WordRelations antonyms={["illiteracy"]} client:only />

@@ -6,14 +6,19 @@ sidebar:
 tableOfContents: false
 ---
 
-import Pronunciation from '../../../components/Pronunciation.svelte';
-import WordRelations from '../../../components/WordRelations.svelte';
+import Pronunciation from "../../../components/Pronunciation.svelte";
+import WordRelations from "../../../components/WordRelations.svelte";
 
 ### 分析词义
 
 "Vocabulary" 是一个名词，它通常指一个人知道的词汇的总汇或者一个特定语言、领域、或者人群的所有词汇。
 
-<Pronunciation word="Vocabulary" uk="/vəʊˈkabjʊləɹɪ/" us="/voʊˈkæbjəlɛɹi/" client:only />
+<Pronunciation
+  word="Vocabulary"
+  uk="/vəʊˈkabjʊləɹɪ/"
+  us="/voʊˈkæbjəlɛɹi/"
+  client:only
+/>
 
 ### 列举例句
 
@@ -50,7 +55,4 @@ John wanted to be a writer, so he read voraciously to build his vocabulary. Ever
 
 约翰想成为一名作家，为了扩充他的词汇量，他饥渴地阅读。他学到的每一个新词都是一笔财富。
 
-<WordRelations
-  synonyms={["clavis","glossary","idioticon"]}
-  client:only
-/>
+<WordRelations synonyms={["clavis", "glossary", "idioticon"]} client:only />

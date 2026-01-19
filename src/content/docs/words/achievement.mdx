@@ -6,14 +6,19 @@ sidebar:
 tableOfContents: false
 ---
 
-import Pronunciation from '../../../components/Pronunciation.svelte';
-import WordRelations from '../../../components/WordRelations.svelte';
+import Pronunciation from "../../../components/Pronunciation.svelte";
+import WordRelations from "../../../components/WordRelations.svelte";
 
 ### 分析词义
 
 "Achievement" 是一个名词，主要表示一项成就或者完成的事情。它既可以用来指代一个人的个人功绩和突出成就，也可以用来指某个困难的成功尝试或完成的项目。
 
-<Pronunciation word="Achievement" uk="/əˈtʃiːvmənt/" us="/əˈtʃiːvmənt/" client:only />
+<Pronunciation
+  word="Achievement"
+  uk="/əˈtʃiːvmənt/"
+  us="/əˈtʃiːvmənt/"
+  client:only
+/>
 
 ### 列举例句
 
@@ -46,7 +51,4 @@ import WordRelations from '../../../components/WordRelations.svelte';
 "John was overjoyed when he finally completed the marathon, considering it a significant achievement in his life."
 翻译：“约翰当他终于完成马拉松比赛时非常高兴，他认为这是他人生中的一项重要成就。”
 
-<WordRelations
-  synonyms={["accomplishment", "trophy"]}
-  client:only
-/>
+<WordRelations synonyms={["accomplishment", "trophy"]} client:only />

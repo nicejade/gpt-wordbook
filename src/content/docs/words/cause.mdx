@@ -6,18 +6,18 @@ sidebar:
 tableOfContents: false
 ---
 
-import Pronunciation from '../../../components/Pronunciation.svelte';
-import WordRelations from '../../../components/WordRelations.svelte';
+import Pronunciation from "../../../components/Pronunciation.svelte";
+import WordRelations from "../../../components/WordRelations.svelte";
 
 ### 分析词义
 
 "cause" 是一个英文词汇，可以作为名词使用，也可作为动词使用。
 
-<Pronunciation word="Cause" uk="/kɔːz/" us="/kɔz/" client:only />
-
 当"cause"作为名词使用时，其主要词义为“原因”，“起因”。例如："The cause of the fire is being investigated."(火灾的起因正在调查中)
 
 当"cause"作为动词使用时，其主要词义为“导致”，“引起”。例如："The heavy rain caused a flood."(暴雨导致了洪水)
+
+<Pronunciation word="Cause" uk="/kɔːz/" us="/kɔz/" client:only />
 
 ### 列举例句
 
@@ -53,7 +53,4 @@ import WordRelations from '../../../components/WordRelations.svelte';
 Laura caused a big scene at the party. She admitted to being the cause of all the gossip.
 (劳拉在派对上制造了大骚动。她承认自己是所有谣言的源头。)
 
-<WordRelations
-  synonyms={["grounds", "justification"]}
-  client:only
-/>
+<WordRelations synonyms={["grounds", "justification"]} client:only />

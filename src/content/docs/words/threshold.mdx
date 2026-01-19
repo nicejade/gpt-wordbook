@@ -8,14 +8,19 @@ sidebar:
 tableOfContents: false
 ---
 
-import Pronunciation from '../../../components/Pronunciation.svelte';
-import WordRelations from '../../../components/WordRelations.svelte';
+import Pronunciation from "../../../components/Pronunciation.svelte";
+import WordRelations from "../../../components/WordRelations.svelte";
 
 ### 分析词义
 
 "Threshold" 在英文中是个名词，最常见的意义是“门槛”，比如用在描述房屋或房间入口的地方。此外，"threshold" 也常用于比喻语境中，表示“界限”或“起始点”。
 
-<Pronunciation word="Threshold" uk="/ˈθɹeʃ(h)əʊld/" us="/ˈθɹɛʃ(h)oʊld/" client:only />
+<Pronunciation
+  word="Threshold"
+  uk="/ˈθɹeʃ(h)əʊld/"
+  us="/ˈθɹɛʃ(h)oʊld/"
+  client:only
+/>
 
 ### 列举例句
 
@@ -49,7 +54,4 @@ import WordRelations from '../../../components/WordRelations.svelte';
 On a bright morning, Tim stood at the threshold of his home, filled with determination. The village outside marked the beginning of his adventure, that is, the 'threshold' of his journey.
 (在一个明亮的早晨，蒂姆站在他家的门口，充满了决心。外面的村庄标志着他的冒险之旅的开始，也就是他旅程的'起点'。)
 
-<WordRelations
-  antonyms={["lintel"]}
-  client:only
-/>
+<WordRelations antonyms={["lintel"]} client:only />

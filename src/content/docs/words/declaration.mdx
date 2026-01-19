@@ -6,14 +6,19 @@ sidebar:
 tableOfContents: false
 ---
 
-import Pronunciation from '../../../components/Pronunciation.svelte';
-import WordRelations from '../../../components/WordRelations.svelte';
+import Pronunciation from "../../../components/Pronunciation.svelte";
+import WordRelations from "../../../components/WordRelations.svelte";
 
 ### 分析词义
 
 "Declaration" 是一个名词，意思是“声明”、“宣告”或“申报”。可用于描述某人公开、正式地宣布或声明某件事情，或者在法律文件如法庭声明中使用。
 
-<Pronunciation word="Declaration" uk="/ˌdɛkləˈɹeɪʃən/" us="/ˌdɛkləˈɹeɪʃən/" client:only />
+<Pronunciation
+  word="Declaration"
+  uk="/ˌdɛkləˈɹeɪʃən/"
+  us="/ˌdɛkləˈɹeɪʃən/"
+  client:only
+/>
 
 ### 列举例句
 
@@ -46,7 +51,4 @@ import WordRelations from '../../../components/WordRelations.svelte';
 Once upon a time, there was a king who made a declaration of love to a commoner. The news spread throughout the kingdom and it surprised everyone. The commoner declared her love for the king in return, making it a lovely story.
 (从前，有一位国王向一个平民女子发表了爱情宣言。消息在全国传播开来，人们都感到非常震惊。那个平民女子也回应了国王得爱情宣言，这成了一个美丽的爱情故事。)
 
-<WordRelations
-  synonyms={["notice", "statement", "avowal"]}
-  client:only
-/>
+<WordRelations synonyms={["notice", "statement", "avowal"]} client:only />

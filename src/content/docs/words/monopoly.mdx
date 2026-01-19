@@ -6,15 +6,20 @@ sidebar:
 tableOfContents: false
 ---
 
-import Pronunciation from '../../../components/Pronunciation.svelte';
-import WordRelations from '../../../components/WordRelations.svelte';
+import Pronunciation from "../../../components/Pronunciation.svelte";
+import WordRelations from "../../../components/WordRelations.svelte";
 
 ### 分析词义
 
 "Monopoly"是一个英语名词，意为"垄断"，指的是一个企业、机构或个体在某一领域或行业中的主导地位，无任何竞争对手。
 例如：A company becomes a monopoly when it is the only one in a particular market selling a product.
 
-<Pronunciation word="Monopoly" uk="/məˈnɒpəˌli/" us="/məˈnɑpəˌli/" client:only />
+<Pronunciation
+  word="Monopoly"
+  uk="/məˈnɒpəˌli/"
+  us="/məˈnɑpəˌli/"
+  client:only
+/>
 
 ### 列举例句
 
@@ -50,8 +55,4 @@ import WordRelations from '../../../components/WordRelations.svelte';
 
 In the small town existed a baker who had a monopoly on bread-making. His bread was so delicious that no other baker's bread could compare. This made him very influential in the town. (在这个小镇上，有一个面包师傅对面包制作拥有垄断地位。他的面包如此美味，以至于没有其他面包师傅的面包可以比拟。这使他在镇上非常有影响力。)
 
-<WordRelations
-  synonyms={["monopolist"]}
-  antonyms={["monopsony"]}
-  client:only
-/>
+<WordRelations synonyms={["monopolist"]} antonyms={["monopsony"]} client:only />

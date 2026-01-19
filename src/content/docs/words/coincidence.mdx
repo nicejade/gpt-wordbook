@@ -6,14 +6,19 @@ sidebar:
 tableOfContents: false
 ---
 
-import Pronunciation from '../../../components/Pronunciation.svelte';
-import WordRelations from '../../../components/WordRelations.svelte';
+import Pronunciation from "../../../components/Pronunciation.svelte";
+import WordRelations from "../../../components/WordRelations.svelte";
 
 ### 分析词义
 
 "Coincidence" 是一个名词，表示两件或多件事件同时或近乎同时发生的情况，尤其是以意想不到或难以置信的方式发生的事件。用中文来解释，就是“巧合”。
 
-<Pronunciation word="Coincidence" uk="/kəʊˈɪnsɪdəns/" us="/koʊˈɪnsɪdəns/" client:only />
+<Pronunciation
+  word="Coincidence"
+  uk="/kəʊˈɪnsɪdəns/"
+  us="/koʊˈɪnsɪdəns/"
+  client:only
+/>
 
 ### 列举例句
 
@@ -47,7 +52,4 @@ On vacation, Alice unexpectedly met her long-lost friend on a seemingly remote i
 
 度假时，爱丽丝在一个看似偏远的岛屿上意外地遇到了她久违的朋友。这真是个完全的巧合！
 
-<WordRelations
-  synonyms={["concurrentness","synchronicity"]}
-  client:only
-/>
+<WordRelations synonyms={["concurrentness", "synchronicity"]} client:only />

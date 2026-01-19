@@ -8,14 +8,19 @@ sidebar:
 tableOfContents: false
 ---
 
-import Pronunciation from '../../../components/Pronunciation.svelte';
-import WordRelations from '../../../components/WordRelations.svelte';
+import Pronunciation from "../../../components/Pronunciation.svelte";
+import WordRelations from "../../../components/WordRelations.svelte";
 
 ### 分析词义
 
 "Loudspeaker" 可以被定义为一个设备，主要用于转换电能为声波，从而扩大声音的传播。我们常常在大型活动，比如音乐会或者公众集会，再或者家用电子设备，比如电视和音响中看到它的使用。
 
-<Pronunciation word="Loudspeaker" uk="/laʊdˈspiːkə/" us="/laʊdˈspiːkə/" client:only />
+<Pronunciation
+  word="Loudspeaker"
+  uk="/laʊdˈspiːkə/"
+  us="/laʊdˈspiːkə/"
+  client:only
+/>
 
 ### 列举例句
 
@@ -50,7 +55,4 @@ import WordRelations from '../../../components/WordRelations.svelte';
 At the annual fair, the loudspeaker echoed with the note, "Three minutes to the ferris wheel ride!" Everyone hurried towards it!
 翻译：在年度集市上，扬声器里回荡着注解："距离摩天轮乘坐还有三分钟！" 每个人都向着它赶过去！
 
-<WordRelations
-  synonyms={["speaker"]}
-  client:only
-/>
+<WordRelations synonyms={["speaker"]} client:only />

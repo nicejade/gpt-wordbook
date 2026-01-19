@@ -8,14 +8,19 @@ sidebar:
 tableOfContents: false
 ---
 
-import Pronunciation from '../../../components/Pronunciation.svelte';
-import WordRelations from '../../../components/WordRelations.svelte';
+import Pronunciation from "../../../components/Pronunciation.svelte";
+import WordRelations from "../../../components/WordRelations.svelte";
 
 ### 分析词义
 
 例如：In retrospect, I could have handled the situation better. （回过头来看，我本可以更好地处理那个情况。）
 
-<Pronunciation word="Retrospect" uk="/ˈɹɛtɹoˌspɛkt/" us="/ˈɹɛtɹoˌspɛkt/" client:only />
+<Pronunciation
+  word="Retrospect"
+  uk="/ˈɹɛtɹoˌspɛkt/"
+  us="/ˈɹɛtɹoˌspɛkt/"
+  client:only
+/>
 
 ### 列举例句
 
@@ -48,7 +53,4 @@ import WordRelations from '../../../components/WordRelations.svelte';
 David, after years of hard work, finally became the CEO. Sitting in his new office, he retrospect the journey — the challenges, the failures, the successes. It's been tough, but in retrospect, every step was worth it.
 (大卫在经过多年的努力后，终于成为了 CEO。坐在他的新办公室，他回顾了这段旅程——挑战，失败，成功。这很艰难，但回头看，每一步都是值得的。)
 
-<WordRelations
-  antonyms={["prospect"]}
-  client:only
-/>
+<WordRelations antonyms={["prospect"]} client:only />

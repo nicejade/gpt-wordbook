@@ -8,14 +8,19 @@ sidebar:
 tableOfContents: false
 ---
 
-import Pronunciation from '../../../components/Pronunciation.svelte';
-import WordRelations from '../../../components/WordRelations.svelte';
+import Pronunciation from "../../../components/Pronunciation.svelte";
+import WordRelations from "../../../components/WordRelations.svelte";
 
 ### 分析词义
 
 "Portable" 是一个形容词，意思是“轻便的”，“手提式的”，表示某物易于携带或移动。如 portable computer (便携式电脑)，portable speaker (便携式音箱)。
 
-<Pronunciation word="Portable" uk="/ˈpɔː(ɹ)təbl̩/" us="/ˈpɔː(ɹ)təbl̩/" client:only />
+<Pronunciation
+  word="Portable"
+  uk="/ˈpɔː(ɹ)təbl̩/"
+  us="/ˈpɔː(ɹ)təbl̩/"
+  client:only
+/>
 
 ### 列举例句
 
@@ -49,7 +54,4 @@ import WordRelations from '../../../components/WordRelations.svelte';
 Tom found a portable printer online. It was small, lightweight, and could be easily packed in his backpack. Now he could print his documents even when he was on the move.
 (汤姆在网上找到了一款便携式打印机。它小巧轻便，可以轻松装进他的背包里。现在他就算在旅行的路上也能打印文件了。)
 
-<WordRelations
-  synonyms={["portable"]}
-  client:only
-/>
+<WordRelations synonyms={["portable"]} client:only />

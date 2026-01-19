@@ -6,14 +6,19 @@ sidebar:
 tableOfContents: false
 ---
 
-import Pronunciation from '../../../components/Pronunciation.svelte';
-import WordRelations from '../../../components/WordRelations.svelte';
+import Pronunciation from "../../../components/Pronunciation.svelte";
+import WordRelations from "../../../components/WordRelations.svelte";
 
 ### 分析词义
 
 "Superiority" 这个单词的意思是“优越性”、“优势”或“上级”，是形容某人或某物在某方面具有优于他人或他物的品质或状态。
 
-<Pronunciation word="Superiority" uk="/ˈsʊu.pɪə(ɹ)ˌi.ɒ.ɹɪ.ti/" us="/ˈsʊu.pɪə(ɹ)ˌi.ɒ.ɹɪ.ti/" client:only />
+<Pronunciation
+  word="Superiority"
+  uk="/ˈsʊu.pɪə(ɹ)ˌi.ɒ.ɹɪ.ti/"
+  us="/ˈsʊu.pɪə(ɹ)ˌi.ɒ.ɹɪ.ti/"
+  client:only
+/>
 
 ### 列举例句
 
@@ -45,7 +50,4 @@ import WordRelations from '../../../components/WordRelations.svelte';
 
 In the animal kingdom, the lion's superiority is evident. It is admired by other animals and enjoys the kingship. 在动物王国中，狮子的优越性是显而易见的。它被其他动物所仰慕，并享有王者的地位。
 
-<WordRelations
-  antonyms={["inferiority"]}
-  client:only
-/>
+<WordRelations antonyms={["inferiority"]} client:only />

@@ -8,14 +8,19 @@ sidebar:
 tableOfContents: false
 ---
 
-import Pronunciation from '../../../components/Pronunciation.svelte';
-import WordRelations from '../../../components/WordRelations.svelte';
+import Pronunciation from "../../../components/Pronunciation.svelte";
+import WordRelations from "../../../components/WordRelations.svelte";
 
 ### 分析词义
 
 "Disposable" 这个词在英语中是个形容词，通常被用来形容在用过之后就被丢弃，而不是被重复使用或保存的物品。例如，"disposable cup"意为"一次性杯子"。
 
-<Pronunciation word="Disposable" uk="/dɪsˈpəʊzəbl̩/" us="/dɪsˈpəʊzəbl̩/" client:only />
+<Pronunciation
+  word="Disposable"
+  uk="/dɪsˈpəʊzəbl̩/"
+  us="/dɪsˈpəʊzəbl̩/"
+  client:only
+/>
 
 ### 列举例句
 
@@ -59,6 +64,6 @@ Tom traveled with a disposable camera. He knew the photos wouldn't be the highes
 
 <WordRelations
   synonyms={["throwaway"]}
-  antonyms={["indisposable","nondisposable","undisposable"]}
+  antonyms={["indisposable", "nondisposable", "undisposable"]}
   client:only
 />

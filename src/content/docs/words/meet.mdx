@@ -6,18 +6,18 @@ sidebar:
 tableOfContents: false
 ---
 
-import Pronunciation from '../../../components/Pronunciation.svelte';
-import WordRelations from '../../../components/WordRelations.svelte';
+import Pronunciation from "../../../components/Pronunciation.svelte";
+import WordRelations from "../../../components/WordRelations.svelte";
 
 ### 分析词义
 
 "Meet" 是一个常用的动词，通常有以下的含义：
 
-<Pronunciation word="Meet" uk="/miːt/" us="/mit/" client:only />
-
 1.  遇见, 和...相见（如 I'm excited to meet you. 我很高兴见到你。）
 2.  满足, 符合（如 The product does not meet our quality standards.这个产品未达到我们的质量标准。）
 3.  接触, 相交（如 The two roads meet here. 这两条路在这里相交。）
+
+<Pronunciation word="Meet" uk="/miːt/" us="/mit/" client:only />
 
 ### 列举例句
 
@@ -51,7 +51,4 @@ import WordRelations from '../../../components/WordRelations.svelte';
 Every Tuesday, Lucy would meet her friends at the small café down the street. They had a special bond that only intensified with each meet-up. Although it was simple, it meant the world to her.
 (每个星期二，露西都会和她的朋友们在街边的小咖啡馆见面。他们之间有一种特殊的联系，每次见面都会加深。虽然这很简单，但对她来说意义非凡。)
 
-<WordRelations
-  antonyms={["join", "pass"]}
-  client:only
-/>
+<WordRelations antonyms={["join", "pass"]} client:only />

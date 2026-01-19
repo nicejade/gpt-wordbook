@@ -6,14 +6,19 @@ sidebar:
 tableOfContents: false
 ---
 
-import Pronunciation from '../../../components/Pronunciation.svelte';
-import WordRelations from '../../../components/WordRelations.svelte';
+import Pronunciation from "../../../components/Pronunciation.svelte";
+import WordRelations from "../../../components/WordRelations.svelte";
 
 ### 分析词义
 
 "Locomotive" 是一个名词，用来指动力机，通常是火车头。
 
-<Pronunciation word="Locomotive" uk="/ˌləʊkəʊˈməʊtiv/" us="/ˌloʊkəˈmoʊtiv/" client:only />
+<Pronunciation
+  word="Locomotive"
+  uk="/ˌləʊkəʊˈməʊtiv/"
+  us="/ˌloʊkəˈmoʊtiv/"
+  client:only
+/>
 
 ### 列举例句
 
@@ -47,7 +52,4 @@ The old locomotive in the park was a reminder of the glorious past of the railwa
 
 公园里的老旧火车头是铁路工业辉煌过去的提醒。孩子们喜欢爬上去，想象自己是勇敢的工程师，驾驶着强大的火车越过全国。
 
-<WordRelations
-  synonyms={["loco"]}
-  client:only
-/>
+<WordRelations synonyms={["loco"]} client:only />

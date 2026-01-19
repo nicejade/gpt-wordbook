@@ -6,17 +6,22 @@ sidebar:
 tableOfContents: false
 ---
 
-import Pronunciation from '../../../components/Pronunciation.svelte';
-import WordRelations from '../../../components/WordRelations.svelte';
+import Pronunciation from "../../../components/Pronunciation.svelte";
+import WordRelations from "../../../components/WordRelations.svelte";
 
 ### 分析词义
 
 "Republican" 是一个英语单词，常见的含义包括：
 
-<Pronunciation word="Republican" uk="/ɹɪˈpʌblɪkən/" us="/ɹɪˈpʌblɪkən/" client:only />
-
 1.  "共和主义者"：指认同或拥护共和制（社会或政治制度中的一种，国家元首不是世袭的君主）。例如："He is a strong republican."
 2.  "美国共和党党员"：在美国，共和党是两大主要政党之一，"republican"也常用来指代共和党的支持者或成员。例如："The Republican candidate won the election."
+
+<Pronunciation
+  word="Republican"
+  uk="/ɹɪˈpʌblɪkən/"
+  us="/ɹɪˈpʌblɪkən/"
+  client:only
+/>
 
 ### 列举例句
 
@@ -48,7 +53,4 @@ import WordRelations from '../../../components/WordRelations.svelte';
 Tom, a passionate republican, believes that the power of a nation should reside in its people. Every day, he worked tirelessly to spread his ideas, hoping that one day, his motherland could also become a republic.
 (汤姆，一位热情的共和主义者，他认为一个国家的力量应该属于它的人民。他每天都在不懈努力地传播他的思想，希望有一天，他的祖国也能成为一个共和国。)
 
-<WordRelations
-  synonyms={["antiroyalist"]}
-  client:only
-/>
+<WordRelations synonyms={["antiroyalist"]} client:only />

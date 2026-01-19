@@ -8,14 +8,19 @@ sidebar:
 tableOfContents: false
 ---
 
-import Pronunciation from '../../../components/Pronunciation.svelte';
-import WordRelations from '../../../components/WordRelations.svelte';
+import Pronunciation from "../../../components/Pronunciation.svelte";
+import WordRelations from "../../../components/WordRelations.svelte";
 
 ### 分析词义
 
 "Masterpiece" 是一个名词，意思是“杰作”，“巨匠之作”。它通常用来描述哪些在艺术、文学或其他创作领域里的超凡作品。这些作品在技艺上独树一帜，是作者精心创作出来的。
 
-<Pronunciation word="Masterpiece" uk="/ˈmɑːstəˌpiːs/" us="/ˈmæstɚˌpis/" client:only />
+<Pronunciation
+  word="Masterpiece"
+  uk="/ˈmɑːstəˌpiːs/"
+  us="/ˈmæstɚˌpis/"
+  client:only
+/>
 
 ### 列举例句
 
@@ -47,7 +52,4 @@ Masterpiece 是不可数名词，没有复数形式。与它相关的变形词�
 
 The artist worked tirelessly for months, every brushstroke carefully considered. When he finally revealed his painting, everyone agreed it was a masterpiece. (艺术家辛勤工作了几个月，每一笔都经过精心考虑。当他最后揭开他的画作时，所有人都一致认为这是一幅杰作。)
 
-<WordRelations
-  synonyms={["masterwork"]}
-  client:only
-/>
+<WordRelations synonyms={["masterwork"]} client:only />

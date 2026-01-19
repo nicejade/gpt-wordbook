@@ -6,14 +6,19 @@ sidebar:
 tableOfContents: false
 ---
 
-import Pronunciation from '../../../components/Pronunciation.svelte';
-import WordRelations from '../../../components/WordRelations.svelte';
+import Pronunciation from "../../../components/Pronunciation.svelte";
+import WordRelations from "../../../components/WordRelations.svelte";
 
 ### 分析词义
 
 "Culminate" 是一个动词，它的意思是达到顶峰或最终结果。它通常用于指高潮，重大事件，或一番努力的最后结果。
 
-<Pronunciation word="Culminate" uk="/ˈkʌlmɪneɪt/" us="/ˈkʌlmɪneɪt/" client:only />
+<Pronunciation
+  word="Culminate"
+  uk="/ˈkʌlmɪneɪt/"
+  us="/ˈkʌlmɪneɪt/"
+  client:only
+/>
 
 ### 列举例句
 
@@ -54,7 +59,4 @@ import WordRelations from '../../../components/WordRelations.svelte';
 In the valley, the annual harvest festival was in full swing. It culminated in an enormous feast attended by all villagers.
 在山谷中，一年一度的丰收节正如火如荼地进行。它以一个由所有村民参加的盛大宴会达到了高潮。
 
-<WordRelations
-  synonyms={["peak"]}
-  client:only
-/>
+<WordRelations synonyms={["peak"]} client:only />

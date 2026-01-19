@@ -6,14 +6,19 @@ sidebar:
 tableOfContents: false
 ---
 
-import Pronunciation from '../../../components/Pronunciation.svelte';
-import WordRelations from '../../../components/WordRelations.svelte';
+import Pronunciation from "../../../components/Pronunciation.svelte";
+import WordRelations from "../../../components/WordRelations.svelte";
 
 ### 分析词义
 
 Philosophy 这个英文单词在中文中的意思是哲学，主要表示一系列对人生、宇宙与实在的问题产生罗嗦、深远、系统化且严肃的理性探讨。
 
-<Pronunciation word="Philosophy" uk="/fɪˈlɒsəfi/" us="/fɪˈlɑsəfi/" client:only />
+<Pronunciation
+  word="Philosophy"
+  uk="/fɪˈlɒsəfi/"
+  us="/fɪˈlɑsəfi/"
+  client:only
+/>
 
 ### 列举例句
 
@@ -51,7 +56,4 @@ Philosophy 这个单词的词根来自于两个希腊语词根： "Philo-" 意�
 Once there was a boy who loved reading philosophy books. The more he read, the more questions he had. Nonetheless, he enjoyed the process of seeking answers.
 曾经有个男孩，他热爱阅读哲学书籍，他阅读的越多，问题就越多，但他很享受寻找答案的过程。
 
-<WordRelations
-  synonyms={["philosophy"]}
-  client:only
-/>
+<WordRelations synonyms={["philosophy"]} client:only />

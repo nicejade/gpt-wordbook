@@ -6,14 +6,19 @@ sidebar:
 tableOfContents: false
 ---
 
-import Pronunciation from '../../../components/Pronunciation.svelte';
-import WordRelations from '../../../components/WordRelations.svelte';
+import Pronunciation from "../../../components/Pronunciation.svelte";
+import WordRelations from "../../../components/WordRelations.svelte";
 
 ### 分析词义
 
 "Diamond" 是一个英语单词，其主要含义是“钻石”。这是一种非常硬的闪亮的透明宝石，由碳原子在极高温度和压力下形成的。
 
-<Pronunciation word="Diamond" uk="/ˈdaɪ(ə)mənd/" us="/ˈdaɪ(ə)mənd/" client:only />
+<Pronunciation
+  word="Diamond"
+  uk="/ˈdaɪ(ə)mənd/"
+  us="/ˈdaɪ(ə)mənd/"
+  client:only
+/>
 
 ### 列举例句
 
@@ -46,7 +51,7 @@ import WordRelations from '../../../components/WordRelations.svelte';
 One day, Jack found a diamond in his backyard. He was so excited that he couldn't sleep. The next day, he sold the diamond and became a millionaire. (有一天，杰克在后院发现了一颗钻石。他激动得无法入睡。第二天，他卖掉了钻石，成了百万富翁。)
 
 <WordRelations
-  synonyms={["infield","sparkler","lozenge","rhomb","rhombus","adamant"]}
+  synonyms={["infield", "sparkler", "lozenge", "rhomb", "rhombus", "adamant"]}
   antonyms={["outfield"]}
   client:only
 />

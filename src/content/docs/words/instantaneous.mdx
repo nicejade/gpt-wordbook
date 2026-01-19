@@ -8,14 +8,19 @@ sidebar:
 tableOfContents: false
 ---
 
-import Pronunciation from '../../../components/Pronunciation.svelte';
-import WordRelations from '../../../components/WordRelations.svelte';
+import Pronunciation from "../../../components/Pronunciation.svelte";
+import WordRelations from "../../../components/WordRelations.svelte";
 
 ### 分析词义
 
 "Instantaneous" 是一个形容词，源自于拉丁文 "instantāneus"。它的基本含义是“立即的，瞬间的”，用来形容发生得非常快，如同一瞬间的事情或者现象。
 
-<Pronunciation word="Instantaneous" uk="/ɪnstənˈteɪni.əs/" us="/ɪnstənˈteɪni.əs/" client:only />
+<Pronunciation
+  word="Instantaneous"
+  uk="/ɪnstənˈteɪni.əs/"
+  us="/ɪnstənˈteɪni.əs/"
+  client:only
+/>
 
 ### 列举例句
 
@@ -52,7 +57,4 @@ When she walked into the room, it was as if time had stopped. There was an insta
 中文翻译：
 当她走进房间的时候，就好像时间停止了一样。我们之间立即产生了联系。
 
-<WordRelations
-  synonyms={["immediate", "instant"]}
-  client:only
-/>
+<WordRelations synonyms={["immediate", "instant"]} client:only />

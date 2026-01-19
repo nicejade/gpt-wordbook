@@ -6,14 +6,19 @@ sidebar:
 tableOfContents: false
 ---
 
-import Pronunciation from '../../../components/Pronunciation.svelte';
-import WordRelations from '../../../components/WordRelations.svelte';
+import Pronunciation from "../../../components/Pronunciation.svelte";
+import WordRelations from "../../../components/WordRelations.svelte";
 
 ### 分析词义
 
 Mathematics，中文翻译为“数学”，是一种以数量，结构，空间和变化等为研究对象的科学。
 
-<Pronunciation word="Mathematics" uk="/mæθ(ə)ˈmætɪks/" us="/mæθ(ə)ˈmætɪks/" client:only />
+<Pronunciation
+  word="Mathematics"
+  uk="/mæθ(ə)ˈmætɪks/"
+  us="/mæθ(ə)ˈmætɪks/"
+  client:only
+/>
 
 ### 列举例句
 
@@ -49,7 +54,4 @@ Mathematics 是不可数名词，没有复数形式。
 Peter loves Mathematics. He often stays up late to solve mathematical problems. Once, his mother asked, "Why are you so obsessed with Mathematics?" Peter laughed and said, "Because only Mathematics can't lie to me."
 (彼得热爱数学。他常常熬夜解数学题。一次，他的妈妈问：“你为什么这么迷恋数学？”彼得笑着说：“因为只有数学不会骗我。”)
 
-<WordRelations
-  synonyms={["numeracy", "math", "maths"]}
-  client:only
-/>
+<WordRelations synonyms={["numeracy", "math", "maths"]} client:only />

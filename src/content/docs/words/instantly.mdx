@@ -6,14 +6,19 @@ sidebar:
 tableOfContents: false
 ---
 
-import Pronunciation from '../../../components/Pronunciation.svelte';
-import WordRelations from '../../../components/WordRelations.svelte';
+import Pronunciation from "../../../components/Pronunciation.svelte";
+import WordRelations from "../../../components/WordRelations.svelte";
 
 ### 分析词义
 
 Instantly 是一个副词，意思是"立即"，"马上"。
 
-<Pronunciation word="Instantly" uk="/ˈɪnstəntli/" us="/ˈɪnstəntli/" client:only />
+<Pronunciation
+  word="Instantly"
+  uk="/ˈɪnstəntli/"
+  us="/ˈɪnstəntli/"
+  client:only
+/>
 
 ### 列举例句
 
@@ -45,7 +50,4 @@ Instantly 这个单词属于副词，它的形容词形式为 instant。
 
 Tom was feeling down because of his recent breakup. His phone buzzed, and he instantly felt a jolt of happiness upon seeing a message from his old friend. (Tom 因为最近的分手感到沮丧。他的手机震动了，看到老朋友的消息，他立刻感到一阵快乐。)
 
-<WordRelations
-  synonyms={["immediately", "instantaneously"]}
-  client:only
-/>
+<WordRelations synonyms={["immediately", "instantaneously"]} client:only />

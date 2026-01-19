@@ -6,14 +6,19 @@ sidebar:
 tableOfContents: false
 ---
 
-import Pronunciation from '../../../components/Pronunciation.svelte';
-import WordRelations from '../../../components/WordRelations.svelte';
+import Pronunciation from "../../../components/Pronunciation.svelte";
+import WordRelations from "../../../components/WordRelations.svelte";
 
 ### 分析词义
 
 "Presumably"是一个副词，用于表示某事被猜测或推测是正确的，经常用于推测还未确认的情况。它有“大概”，“推测”，“可能”等含义。
 
-<Pronunciation word="Presumably" uk="/pɹɪˈzjuːməbli/" us="/pɹɪˈzuːməbli/" client:only />
+<Pronunciation
+  word="Presumably"
+  uk="/pɹɪˈzjuːməbli/"
+  us="/pɹɪˈzuːməbli/"
+  client:only
+/>
 
 ### 列举例句
 
@@ -50,7 +55,4 @@ import WordRelations from '../../../components/WordRelations.svelte';
 
 Tom received a letter with no return address, presumably would be from his anonymous friend. (汤姆收到一封没有寄件人地址的信，可能是他那位匿名的朋友寄来的。)
 
-<WordRelations
-  synonyms={["presumedly", "presumptively"]}
-  client:only
-/>
+<WordRelations synonyms={["presumedly", "presumptively"]} client:only />

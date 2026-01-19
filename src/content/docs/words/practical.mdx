@@ -8,14 +8,19 @@ sidebar:
 tableOfContents: false
 ---
 
-import Pronunciation from '../../../components/Pronunciation.svelte';
-import WordRelations from '../../../components/WordRelations.svelte';
+import Pronunciation from "../../../components/Pronunciation.svelte";
+import WordRelations from "../../../components/WordRelations.svelte";
 
 ### 分析词义
 
 "Practical" 是一个形容词，用来描述一种基于经验、事实或者实际情况的行动或想法，相对于理论或者抽象的思考，它更注重实际效果和可操作性。例如，我们可以谈论“实际的建议”、“实际的经验”或“实际的技能”。
 
-<Pronunciation word="Practical" uk="/ˈpɹæktɪkəl/" us="/ˈpɹæktɪkəl/" client:only />
+<Pronunciation
+  word="Practical"
+  uk="/ˈpɹæktɪkəl/"
+  us="/ˈpɹæktɪkəl/"
+  client:only
+/>
 
 ### 列举例句
 
@@ -48,7 +53,4 @@ import WordRelations from '../../../components/WordRelations.svelte';
 Amy is a practical girl. She never makes decisions without considering the practical consequences.
 (艾米是一个实事求是的女孩。她从不在不考虑实际后果的情况下做决定。)
 
-<WordRelations
-  antonyms={["theoretical", "impractical"]}
-  client:only
-/>
+<WordRelations antonyms={["theoretical", "impractical"]} client:only />

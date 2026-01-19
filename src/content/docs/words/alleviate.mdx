@@ -6,14 +6,19 @@ sidebar:
 tableOfContents: false
 ---
 
-import Pronunciation from '../../../components/Pronunciation.svelte';
-import WordRelations from '../../../components/WordRelations.svelte';
+import Pronunciation from "../../../components/Pronunciation.svelte";
+import WordRelations from "../../../components/WordRelations.svelte";
 
 ### 分析词义
 
 "Alleviate" 是个英文动词，意思是"减轻"，"缓解"。通常被用来指的是减轻疼痛，负担或者压力等。
 
-<Pronunciation word="Alleviate" uk="/əˈli.vi.eɪt/" us="/əˈli.vi.eɪt/" client:only />
+<Pronunciation
+  word="Alleviate"
+  uk="/əˈli.vi.eɪt/"
+  us="/əˈli.vi.eɪt/"
+  client:only
+/>
 
 ### 列举例句
 
@@ -55,7 +60,15 @@ import WordRelations from '../../../components/WordRelations.svelte';
 "乔治背部拉伤时，用加热垫来缓解他的不适。"
 
 <WordRelations
-  synonyms={["address", "allay", "ameliorate", "assuage", "ease", "mitigate", "relieve"]}
+  synonyms={[
+    "address",
+    "allay",
+    "ameliorate",
+    "assuage",
+    "ease",
+    "mitigate",
+    "relieve",
+  ]}
   antonyms={["aggravate"]}
   client:only
 />

@@ -6,14 +6,19 @@ sidebar:
 tableOfContents: false
 ---
 
-import Pronunciation from '../../../components/Pronunciation.svelte';
-import WordRelations from '../../../components/WordRelations.svelte';
+import Pronunciation from "../../../components/Pronunciation.svelte";
+import WordRelations from "../../../components/WordRelations.svelte";
 
 ### 分析词义
 
 "Ridicule" 是一个英语单词，它的意思是嘲笑或者奚落。这是一个贬义词，指的是用尖刻或者侮辱的语言来指责或者嘲笑他人。
 
-<Pronunciation word="Ridicule" uk="/ˈɹɪdɪkjuːl/" us="/ˈɹɪdɪkjuːl/" client:only />
+<Pronunciation
+  word="Ridicule"
+  uk="/ˈɹɪdɪkjuːl/"
+  us="/ˈɹɪdɪkjuːl/"
+  client:only
+/>
 
 ### 列举例句
 
@@ -48,7 +53,4 @@ import WordRelations from '../../../components/WordRelations.svelte';
 John was always quick to ridicule others' mistakes in math class. But one day, he made a simple error himself, and everyone started to laugh.
 约翰在数学课上总是很快挖苦别人的错误。但有一天，他自己犯了一个简单的错误，然后大家开始笑了。
 
-<WordRelations
-  synonyms={["outlaugh"]}
-  client:only
-/>
+<WordRelations synonyms={["outlaugh"]} client:only />

@@ -6,18 +6,23 @@ sidebar:
 tableOfContents: false
 ---
 
-import Pronunciation from '../../../components/Pronunciation.svelte';
-import WordRelations from '../../../components/WordRelations.svelte';
+import Pronunciation from "../../../components/Pronunciation.svelte";
+import WordRelations from "../../../components/WordRelations.svelte";
 
 ### 分析词义
 
 “Citation” 是一个英文名词，主要有以下含义：
 
-<Pronunciation word="Citation" uk="/ˌsaɪˈteɪ.ʃən/" us="/ˌsaɪˈteɪ.ʃən/" client:only />
-
 1.  引用：该词最常用于学术论文中，用于指作者引用其他人的研究作为自己观点的支持。
 2.  表扬，嘉奖：该词在军事领域中常用，指表扬或嘉奖某人的行为或功绩。
 3.  罚单，传票：这是在法律领域中的用法，指法官或警察为了某种违法行为而给予的罚单或传唤证。
+
+<Pronunciation
+  word="Citation"
+  uk="/ˌsaɪˈteɪ.ʃən/"
+  us="/ˌsaɪˈteɪ.ʃən/"
+  client:only
+/>
 
 ### 列举例句
 
@@ -51,7 +56,4 @@ John was reading a research paper when he came across a statistic he found hard 
 
 约翰在阅读一篇研究论文时，他遇到了一个他难以置信的统计数据。 "你能给我一个关于那个统计的引用吗?" 他向他的教授提问。
 
-<WordRelations
-  synonyms={["quotation", "quote"]}
-  client:only
-/>
+<WordRelations synonyms={["quotation", "quote"]} client:only />

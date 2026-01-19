@@ -8,14 +8,19 @@ sidebar:
 tableOfContents: false
 ---
 
-import Pronunciation from '../../../components/Pronunciation.svelte';
-import WordRelations from '../../../components/WordRelations.svelte';
+import Pronunciation from "../../../components/Pronunciation.svelte";
+import WordRelations from "../../../components/WordRelations.svelte";
 
 ### 分析词义
 
 super 这个单词在英语中是一个广泛使用的感叹词、名词、形容词、副词和前缀。其最普遍的用法是作为形容词，“super”用于形容一种超越一般或超出预期的程度，其含义类似于“极好的”、“特别的”或“非常的”。
 
-<Pronunciation word="Super" uk="/ˈs(j)uːpə(ɹ)/" us="/ˈs(j)uːpə(ɹ)/" client:only />
+<Pronunciation
+  word="Super"
+  uk="/ˈs(j)uːpə(ɹ)/"
+  us="/ˈs(j)uːpə(ɹ)/"
+  client:only
+/>
 
 ### 列举例句
 
@@ -49,7 +54,4 @@ John is a super cook in the small town. His dishes are loved by everyone. People
 
 (约翰在小镇上是一个超级厨师。他的菜肴深受大家喜爱。人们经常说：“约翰的食物超级好吃！”一天，一个超级富翁来到约翰的小餐馆。他赞美说：“这里超级好，你的食物超级好吃！”)
 
-<WordRelations
-  synonyms={["awesome", "excellent"]}
-  client:only
-/>
+<WordRelations synonyms={["awesome", "excellent"]} client:only />

@@ -8,14 +8,19 @@ sidebar:
 tableOfContents: false
 ---
 
-import Pronunciation from '../../../components/Pronunciation.svelte';
-import WordRelations from '../../../components/WordRelations.svelte';
+import Pronunciation from "../../../components/Pronunciation.svelte";
+import WordRelations from "../../../components/WordRelations.svelte";
 
 ### 分析词义
 
 "Converge" 是个英文动词，它有两个主要的含义。第一个是“（两个或更多的事物）交汇，聚集”，一般来说，这是指某些事物自不同的方向向一个点或一条线上汇集。第二个意思是"逐渐靠近"，指两个或更多的事物逐渐靠近或趋于一致。
 
-<Pronunciation word="Converge" uk="/kən.ˈvɜːdʒ/" us="/kən.ˈvɜːdʒ/" client:only />
+<Pronunciation
+  word="Converge"
+  uk="/kən.ˈvɜːdʒ/"
+  us="/kən.ˈvɜːdʒ/"
+  client:only
+/>
 
 ### 列举例句
 
@@ -51,7 +56,4 @@ import WordRelations from '../../../components/WordRelations.svelte';
 One day, two strangers were traveling from different places. Surprisingly, their paths converged in a small village. Here, they discovered that they had a lot in common.
 （有一天，两个陌生人从不同的地方出发。令人惊讶的是，他们的路径在一个小村庄汇集。在那里，他们发现他们有很多共同点。）
 
-<WordRelations
-  antonyms={["diverge"]}
-  client:only
-/>
+<WordRelations antonyms={["diverge"]} client:only />

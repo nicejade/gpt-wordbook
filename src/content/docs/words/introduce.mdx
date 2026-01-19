@@ -8,14 +8,19 @@ sidebar:
 tableOfContents: false
 ---
 
-import Pronunciation from '../../../components/Pronunciation.svelte';
-import WordRelations from '../../../components/WordRelations.svelte';
+import Pronunciation from "../../../components/Pronunciation.svelte";
+import WordRelations from "../../../components/WordRelations.svelte";
 
 ### 分析词义
 
 "Introduce" 是一个英语动词，主要含义是"介绍","引入","采用"等。举例来说，当我们说 "Let me introduce myself" 的时候，意思就是让我自我介绍一下。
 
-<Pronunciation word="Introduce" uk="/ˌɪntɹəˈdjuːs/" us="/ˌɪntɹəˈdus/" client:only />
+<Pronunciation
+  word="Introduce"
+  uk="/ˌɪntɹəˈdjuːs/"
+  us="/ˌɪntɹəˈdus/"
+  client:only
+/>
 
 ### 列举例句
 
@@ -47,7 +52,4 @@ import WordRelations from '../../../components/WordRelations.svelte';
 
 Once, in a small town, a new coffee shop was introduced. It quickly became popular and brought warmth and happiness to the town. (曾经，在一个小镇上， 一家新的咖啡店被引入。它很快就变得很受欢迎，给这个小镇带来了温暖和快乐。)
 
-<WordRelations
-  synonyms={["announce"]}
-  client:only
-/>
+<WordRelations synonyms={["announce"]} client:only />

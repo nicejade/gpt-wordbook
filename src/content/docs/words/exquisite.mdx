@@ -6,14 +6,19 @@ sidebar:
 tableOfContents: false
 ---
 
-import Pronunciation from '../../../components/Pronunciation.svelte';
-import WordRelations from '../../../components/WordRelations.svelte';
+import Pronunciation from "../../../components/Pronunciation.svelte";
+import WordRelations from "../../../components/WordRelations.svelte";
 
 ### 分析词义
 
 单词“exquisite”是一个形容词，用来描述某个对象（包括人和事物）极其精致，优美，优雅或它们极其高超，精巧。
 
-<Pronunciation word="exquisite" uk="/ɪkˈskwɪzɪt/" us="/ɪkˈskwɪzɪt/" client:only />
+<Pronunciation
+  word="exquisite"
+  uk="/ɪkˈskwɪzɪt/"
+  us="/ɪkˈskwɪzɪt/"
+  client:only
+/>
 
 ### 列举例句
 
@@ -47,8 +52,28 @@ import WordRelations from '../../../components/WordRelations.svelte';
 
 "The jeweler crafted an exquisite necklace with such detail, it was as if stars were plucked from the night sky to adorn it."（珠宝商精心打造了一条精致的项链，每个细节都被处理的有如夜空中被拔下的星星一般，用以装饰它。）
 
-<WordRelations 
-  synonyms={["beautiful", "elegant", "delicate", "fine", "refined", "superb", "perfect", "flawless", "magnificent", "lovely"]}
-  antonyms={["crude", "rough", "coarse", "inferior", "poor", "ugly", "clumsy", "imperfect"]}
+<WordRelations
+  synonyms={[
+    "beautiful",
+    "elegant",
+    "delicate",
+    "fine",
+    "refined",
+    "superb",
+    "perfect",
+    "flawless",
+    "magnificent",
+    "lovely",
+  ]}
+  antonyms={[
+    "crude",
+    "rough",
+    "coarse",
+    "inferior",
+    "poor",
+    "ugly",
+    "clumsy",
+    "imperfect",
+  ]}
   client:only
 />

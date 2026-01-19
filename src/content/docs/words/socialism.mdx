@@ -8,14 +8,19 @@ sidebar:
 tableOfContents: false
 ---
 
-import Pronunciation from '../../../components/Pronunciation.svelte';
-import WordRelations from '../../../components/WordRelations.svelte';
+import Pronunciation from "../../../components/Pronunciation.svelte";
+import WordRelations from "../../../components/WordRelations.svelte";
 
 ### 分析词义
 
 'Socialism' 是一个名词，它指的是一种政治和经济理论，其中生产资料（如工厂和机器）由社会全体（通常通过政府）拥有和管理。社会主义主张生产力的公共所有权和按劳分配。
 
-<Pronunciation word="Socialism" uk="/ˈsəʊʃəlɪzəm/" us="/ˈsəʊʃəlɪzəm/" client:only />
+<Pronunciation
+  word="Socialism"
+  uk="/ˈsəʊʃəlɪzəm/"
+  us="/ˈsəʊʃəlɪzəm/"
+  client:only
+/>
 
 ### 列举例句
 
@@ -49,7 +54,4 @@ import WordRelations from '../../../components/WordRelations.svelte';
 In Harmony Town, everyone practiced socialism. They shared resources and everyone had equal rights and opportunities. The town flourished in an environment of mutual cooperation.
 (在和谐镇，每个人都实行社会主义。他们共享资源，每个人都有平等的权利和机会。在相互合作的环境中，这个镇子繁荣昌盛。)
 
-<WordRelations
-  antonyms={["capitalism"]}
-  client:only
-/>
+<WordRelations antonyms={["capitalism"]} client:only />

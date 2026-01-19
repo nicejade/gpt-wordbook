@@ -6,14 +6,19 @@ sidebar:
 tableOfContents: false
 ---
 
-import Pronunciation from '../../../components/Pronunciation.svelte';
-import WordRelations from '../../../components/WordRelations.svelte';
+import Pronunciation from "../../../components/Pronunciation.svelte";
+import WordRelations from "../../../components/WordRelations.svelte";
 
 ### 分析词义
 
 Productivity 是一个名词，意味着生产力或者效率，通常用于衡量一个人或机构在给定时间内完成任务的速度和效果。
 
-<Pronunciation word="Productivity" uk="/ˌpɹɒdʌkˈtɪvəti/" us="/ˌpɹoʊdʌkˈtɪvəti/" client:only />
+<Pronunciation
+  word="Productivity"
+  uk="/ˌpɹɒdʌkˈtɪvəti/"
+  us="/ˌpɹoʊdʌkˈtɪvəti/"
+  client:only
+/>
 
 ### 列举例句
 
@@ -57,7 +62,4 @@ Lucy signed up for a productivity seminar and was amazed by the results. She org
 
 中文翻译：露西报名参加了一个提升工作效率的研讨会，她被所得到的结果惊愕不已。她有效地管理了自己的时间，以前所未有的速度完成了工作。
 
-<WordRelations
-  synonyms={["productiveness"]}
-  client:only
-/>
+<WordRelations synonyms={["productiveness"]} client:only />

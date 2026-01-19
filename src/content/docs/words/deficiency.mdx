@@ -8,14 +8,19 @@ sidebar:
 tableOfContents: false
 ---
 
-import Pronunciation from '../../../components/Pronunciation.svelte';
-import WordRelations from '../../../components/WordRelations.svelte';
+import Pronunciation from "../../../components/Pronunciation.svelte";
+import WordRelations from "../../../components/WordRelations.svelte";
 
 ### 分析词义
 
 "Deficiency" 是一个名词，表示缺乏或不足，通常用于描述一种状态，其中某样东西的数量或质量低于正常或期望的水平。例如，它可以描述缺乏营养（例如，维生素 D 缺乏）或其它的不足（例如，资金的缺乏）。
 
-<Pronunciation word="Deficiency" uk="/dɪˈfɪʃənsi/" us="/dɪˈfɪʃənsi/" client:only />
+<Pronunciation
+  word="Deficiency"
+  uk="/dɪˈfɪʃənsi/"
+  us="/dɪˈfɪʃənsi/"
+  client:only
+/>
 
 ### 列举例句
 
@@ -47,7 +52,4 @@ import WordRelations from '../../../components/WordRelations.svelte';
 
 Peter is always top of his class, but when it comes to sports, he has a severe deficiency. （Peter 在班级学业成绩总是顶尖，但在体育方面，他有严重的缺陷。）
 
-<WordRelations
-  antonyms={["excess", "sufficiency"]}
-  client:only
-/>
+<WordRelations antonyms={["excess", "sufficiency"]} client:only />

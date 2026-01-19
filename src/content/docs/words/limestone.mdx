@@ -6,14 +6,19 @@ sidebar:
 tableOfContents: false
 ---
 
-import Pronunciation from '../../../components/Pronunciation.svelte';
-import WordRelations from '../../../components/WordRelations.svelte';
+import Pronunciation from "../../../components/Pronunciation.svelte";
+import WordRelations from "../../../components/WordRelations.svelte";
 
 ### 分析词义
 
 "Limestone" 是一个英文名词，指的是 "石灰石"，这种自然矿石主要由碳酸钙构成。
 
-<Pronunciation word="Limestone" uk="/ˈlaɪmstəʊn/" us="/ˈlaɪmstəʊn/" client:only />
+<Pronunciation
+  word="Limestone"
+  uk="/ˈlaɪmstəʊn/"
+  us="/ˈlaɪmstəʊn/"
+  client:only
+/>
 
 ### 列举例句
 
@@ -45,7 +50,4 @@ import WordRelations from '../../../components/WordRelations.svelte';
 
 In a town renowned for limestone extraction, miners worked tirelessly day and night. They knew the value of the treasure they dwelled in: limestone, a builder of civilizations. （在一个以开采石灰石而闻名的小镇上，矿工们日夜不停地努力工作。他们知道他们居住的这个地方的宝藏价值：石灰石，一个文明的建筑者。）
 
-<WordRelations
-  synonyms={["lime"]}
-  client:only
-/>
+<WordRelations synonyms={["lime"]} client:only />

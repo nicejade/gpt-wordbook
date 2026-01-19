@@ -6,20 +6,25 @@ sidebar:
 tableOfContents: false
 ---
 
-import Pronunciation from '../../../components/Pronunciation.svelte';
-import WordRelations from '../../../components/WordRelations.svelte';
+import Pronunciation from "../../../components/Pronunciation.svelte";
+import WordRelations from "../../../components/WordRelations.svelte";
 
 ### 分析词义
 
 Operation 这个单词在英语中有多重含义，它通常被用作名词，主要表示以下几个意思：
-
-<Pronunciation word="Operation" uk="/ˌɒpəˈɹeɪʃən/" us="/ˌɑpəˈɹeɪʃən/" client:only />
 
 1.  运作，操作。如：The operation of this machine is simple.（这台机器的操作很简单。）
 
 2.  手术。如：She underwent an operation to remove her appendix.（她接受了一个切除阑尾的手术。）
 
 3.  战斗行动。如：The operation was a success.（这个战斗行动是成功的。）
+
+<Pronunciation
+  word="Operation"
+  uk="/ˌɒpəˈɹeɪʃən/"
+  us="/ˌɑpəˈɹeɪʃən/"
+  client:only
+/>
 
 ### 列举例句
 
@@ -61,7 +66,4 @@ There was a crucial military operation last night. Our troops infiltrated the en
 
 昨晚有一个关键的军事行动。我们的部队秘密地渗透到敌人的基地并捕获了敌人的领导。这次行动非常成功。
 
-<WordRelations
-  synonyms={["function", "transformation"]}
-  client:only
-/>
+<WordRelations synonyms={["function", "transformation"]} client:only />

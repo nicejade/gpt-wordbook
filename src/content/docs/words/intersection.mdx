@@ -7,14 +7,19 @@ sidebar:
 tableOfContents: false
 ---
 
-import Pronunciation from '../../../components/Pronunciation.svelte';
-import WordRelations from '../../../components/WordRelations.svelte';
+import Pronunciation from "../../../components/Pronunciation.svelte";
+import WordRelations from "../../../components/WordRelations.svelte";
 
 ### 分析词义
 
 "Intersection"一词在英语中，最常见的含义是"交叉点"，“路口”。它可以表示两条或更多的道路在一个点相交。在数学中，它可以表示两个集合中的共有元素。在一般语境中，它也常用来形容不同事务、理念或观点的交融和相交。
 
-<Pronunciation word="Intersection" uk="/ˈɪntəɹˌsɛkʃən/" us="/ˈɪntəɹˌsɛkʃən/" client:only />
+<Pronunciation
+  word="Intersection"
+  uk="/ˈɪntəɹˌsɛkʃən/"
+  us="/ˈɪntəɹˌsɛkʃən/"
+  client:only
+/>
 
 ### 列举例句
 
@@ -52,7 +57,4 @@ import WordRelations from '../../../components/WordRelations.svelte';
 Andy lived near an intersection where a bakery and a flower shop stood side by side, always flooded with the smell of fresh bread and blooming flowers.
 (安迪住在一个交叉路口附近，那里有面包店和花店并排而立，总是充满了新鲜面包和绽放花朵的香气.)
 
-<WordRelations
-  synonyms={["crossroads"]}
-  client:only
-/>
+<WordRelations synonyms={["crossroads"]} client:only />

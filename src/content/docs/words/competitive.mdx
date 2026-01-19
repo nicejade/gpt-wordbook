@@ -9,14 +9,19 @@ sidebar:
 tableOfContents: false
 ---
 
-import Pronunciation from '../../../components/Pronunciation.svelte';
-import WordRelations from '../../../components/WordRelations.svelte';
+import Pronunciation from "../../../components/Pronunciation.svelte";
+import WordRelations from "../../../components/WordRelations.svelte";
 
 ### 分析词义
 
 Competitive 是一个形容词，表示"有竞争力的"、"竞争激烈的"或"好胜的"。它用于描述人或物在某种程度或某种特殊环境下具有优势或有利条件，并能够在"比赛"或"竞争"中占据有利地位。例如: "This industry is highly competitive."
 
-<Pronunciation word="Competitive" uk="/kəmˈpɛtɪtɪv/" us="/kəmˈpɛtɪtɪv/" client:only />
+<Pronunciation
+  word="Competitive"
+  uk="/kəmˈpɛtɪtɪv/"
+  us="/kəmˈpɛtɪtɪv/"
+  client:only
+/>
 
 ### 列举例句
 
@@ -55,7 +60,4 @@ Competitive 是由"competit-" 词根加上后缀"-ive"构成的。词根"competi
 Tom was the most competitive player on our team. He always kept challenging himself and never backed down from a match, hoping to bring victory for the team.
 (汤姆是我们队伍中最有竞争力的选手。他总是不断挑战自己，从不畏惧比赛，总是希望能为团队带来胜利。)
 
-<WordRelations
-  antonyms={["cooperative"]}
-  client:only
-/>
+<WordRelations antonyms={["cooperative"]} client:only />

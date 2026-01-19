@@ -6,14 +6,19 @@ sidebar:
 tableOfContents: false
 ---
 
-import Pronunciation from '../../../components/Pronunciation.svelte';
-import WordRelations from '../../../components/WordRelations.svelte';
+import Pronunciation from "../../../components/Pronunciation.svelte";
+import WordRelations from "../../../components/WordRelations.svelte";
 
 ### 分析词义
 
 "unexpected"是一个形容词，用来形容某事或某物是未预料到的或出乎意料的。
 
-<Pronunciation word="Unexpected" uk="/ʌnɪkˈspɛktɪd/" us="/ʌnɪkˈspɛktɪd/" client:only />
+<Pronunciation
+  word="Unexpected"
+  uk="/ʌnɪkˈspɛktɪd/"
+  us="/ʌnɪkˈspɛktɪd/"
+  client:only
+/>
 
 ### 列举例句
 
@@ -45,7 +50,4 @@ import WordRelations from '../../../components/WordRelations.svelte';
 
 Once, a little boy who was expected to be the last in a race won the contest. It was totally unexpected. (曾经，一个被期待在比赛中垫底的小男孩赢了比赛。这完全出乎意料。)
 
-<WordRelations
-  antonyms={["expected"]}
-  client:only
-/>
+<WordRelations antonyms={["expected"]} client:only />

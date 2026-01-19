@@ -8,14 +8,19 @@ sidebar:
 tableOfContents: false
 ---
 
-import Pronunciation from '../../../components/Pronunciation.svelte';
-import WordRelations from '../../../components/WordRelations.svelte';
+import Pronunciation from "../../../components/Pronunciation.svelte";
+import WordRelations from "../../../components/WordRelations.svelte";
 
 ### 分析词义
 
 "Manual" 在英语中有两种主要的含义。第一种是作为形容词时，表示“手工的，体力的”，通常指需要用手进行的工作或活动。第二种是作为名词，指“手册，指南”。这种含义通常用于描述一本提供特定信息、指示或程序的书籍或册子。
 
-<Pronunciation word="Manual" uk="/ˈman.j(ʊ)əl/" us="/ˈmænjə(wə)l/" client:only />
+<Pronunciation
+  word="Manual"
+  uk="/ˈman.j(ʊ)əl/"
+  us="/ˈmænjə(wə)l/"
+  client:only
+/>
 
 ### 列举例句
 
@@ -48,7 +53,4 @@ import WordRelations from '../../../components/WordRelations.svelte';
 Tom found an old typewriter in the attic. To use it, he needed a user's manual, which was luckily still with it. After reading the manual, he typed his first manual typewriter letter.
 （汤姆在阁楼里找到一台旧打字机。为了使用它，他需要一个用户手册，幸运的是手册还在。读完手册后，他打出了他的第一封手动打字机信。）
 
-<WordRelations
-  synonyms={["enchiridion", "handbook"]}
-  client:only
-/>
+<WordRelations synonyms={["enchiridion", "handbook"]} client:only />

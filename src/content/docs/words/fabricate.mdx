@@ -8,14 +8,19 @@ sidebar:
 tableOfContents: false
 ---
 
-import Pronunciation from '../../../components/Pronunciation.svelte';
-import WordRelations from '../../../components/WordRelations.svelte';
+import Pronunciation from "../../../components/Pronunciation.svelte";
+import WordRelations from "../../../components/WordRelations.svelte";
 
 ### 分析词义
 
 英文单词 "fabricate" 的主要含义是制造、编造、虚构。这个词可以用在物质制造的意义上，像制造家具或者工厂的产品这样的实体物品，也可以用在虚构谎言或者故事这样无形的概念上。
 
-<Pronunciation word="Fabricate" uk="/ˈfæb.ɹɪ.keɪt/" us="/ˈfæb.ɹɪ.keɪt/" client:only />
+<Pronunciation
+  word="Fabricate"
+  uk="/ˈfæb.ɹɪ.keɪt/"
+  us="/ˈfæb.ɹɪ.keɪt/"
+  client:only
+/>
 
 ### 列举例句
 
@@ -54,7 +59,4 @@ import WordRelations from '../../../components/WordRelations.svelte';
 Bob needed to fabricate a lie to his boss about why he was late, but he was terrible at making stuff up. He wound up telling the truth.
 (鲍勃需要对他的老板编造一个关于他为什么迟到的谎言，但他不擅长编造事情。结果他说了真相。)
 
-<WordRelations
-  synonyms={["invent","manufacture"]}
-  client:only
-/>
+<WordRelations synonyms={["invent", "manufacture"]} client:only />

@@ -6,14 +6,19 @@ sidebar:
 tableOfContents: false
 ---
 
-import Pronunciation from '../../../components/Pronunciation.svelte';
-import WordRelations from '../../../components/WordRelations.svelte';
+import Pronunciation from "../../../components/Pronunciation.svelte";
+import WordRelations from "../../../components/WordRelations.svelte";
 
 ### 分析词义
 
 "Postpone"是一个动词，意思是“推迟”，“延期”。它经常用来指一个任何类型的计划或事件被延后进行，出于各种原因。
 
-<Pronunciation word="Postpone" uk="/poʊstˈpoʊn/" us="/poʊstˈpoʊn/" client:only />
+<Pronunciation
+  word="Postpone"
+  uk="/poʊstˈpoʊn/"
+  us="/poʊstˈpoʊn/"
+  client:only
+/>
 
 ### 列举例句
 
@@ -55,7 +60,15 @@ Jenny wanted to postpone her vacation due to unexpected work commitments.
 珍妮想要因为意外的工作承诺推迟她的假期。
 
 <WordRelations
-  synonyms={["defer","delay","forestay","posticipate","procrastinate","stay","suspend"]}
-  antonyms={["advance","antedate","expedite","hasten"]}
+  synonyms={[
+    "defer",
+    "delay",
+    "forestay",
+    "posticipate",
+    "procrastinate",
+    "stay",
+    "suspend",
+  ]}
+  antonyms={["advance", "antedate", "expedite", "hasten"]}
   client:only
 />

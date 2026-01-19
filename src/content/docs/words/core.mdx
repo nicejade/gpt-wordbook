@@ -6,14 +6,12 @@ sidebar:
 tableOfContents: false
 ---
 
-import Pronunciation from '../../../components/Pronunciation.svelte';
-import WordRelations from '../../../components/WordRelations.svelte';
+import Pronunciation from "../../../components/Pronunciation.svelte";
+import WordRelations from "../../../components/WordRelations.svelte";
 
 ### 分析词义
 
 "Core"是英语单词，主要有以下三种基本含义：
-
-<Pronunciation word="Core" uk="/kɔː/" us="/kɔɹ/" client:only />
 
 1.  核心 region、中心，在某种事物的最中央或最重要的部分，例如：The core of the earth（地球的核心）。
 2.  果核，果实的中心结构，例如：The apple has a sweet crunchy core（苹果有一个甜脆的核）。
@@ -24,6 +22,8 @@ import WordRelations from '../../../components/WordRelations.svelte';
 1.  The core of the earth is very hot. ——地球的核心温度非常高。
 2.  The apple core is in the compost. ——苹果核在堆肥里。
 3.  Have we arrived at the core of the problem yet? ——我们已经找到问题的核心了吗？
+
+<Pronunciation word="Core" uk="/kɔː/" us="/kɔɹ/" client:only />
 
 ### 词根分析
 
@@ -49,7 +49,4 @@ import WordRelations from '../../../components/WordRelations.svelte';
 
 John runs a small core company that creates software. ——约翰经营着一个小型核心公司，该公司生产软件。
 
-<WordRelations
-  synonyms={["crux", "gist"]}
-  client:only
-/>
+<WordRelations synonyms={["crux", "gist"]} client:only />

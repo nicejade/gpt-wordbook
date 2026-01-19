@@ -6,14 +6,19 @@ sidebar:
 tableOfContents: false
 ---
 
-import Pronunciation from '../../../components/Pronunciation.svelte';
-import WordRelations from '../../../components/WordRelations.svelte';
+import Pronunciation from "../../../components/Pronunciation.svelte";
+import WordRelations from "../../../components/WordRelations.svelte";
 
 ### 分析词义
 
 Permanent 这个词在英语中是一个形容词，表示“永久的，长期的”。
 
-<Pronunciation word="Permanent" uk="/ˈpɜːmənənt/" us="/ˈpɝmənənt/" client:only />
+<Pronunciation
+  word="Permanent"
+  uk="/ˈpɜːmənənt/"
+  us="/ˈpɝmənənt/"
+  client:only
+/>
 
 ### 列举例句
 
@@ -52,7 +57,13 @@ Donna found a permanent job in a small town. Every morning, she walks to work an
 Panpan 在小镇找到了一份永久性的工作。每天早晨，她都会步行上班，享受那宁静的生活。
 
 <WordRelations
-  synonyms={["durable", "intransient", "everlasting", "neverending", "unending"]}
+  synonyms={[
+    "durable",
+    "intransient",
+    "everlasting",
+    "neverending",
+    "unending",
+  ]}
   antonyms={["impermanent", "temporary"]}
   client:only
 />

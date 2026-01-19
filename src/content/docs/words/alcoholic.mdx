@@ -8,14 +8,19 @@ sidebar:
 tableOfContents: false
 ---
 
-import Pronunciation from '../../../components/Pronunciation.svelte';
-import WordRelations from '../../../components/WordRelations.svelte';
+import Pronunciation from "../../../components/Pronunciation.svelte";
+import WordRelations from "../../../components/WordRelations.svelte";
 
 ### 分析词义
 
 "Alcoholic"是形容词，用于描述一个人饮酒过度，对酒精产生依赖，这是一种病态的依赖。可以直接用来形容人，例如"He is an alcoholic"，也可以用来形容和酒精相关的事物，例如"alcoholic beverages"。
 
-<Pronunciation word="Alcoholic" uk="/ˌælkəˈhɒlɪk/" us="/ˌælkəˈhɔlɪk/" client:only />
+<Pronunciation
+  word="Alcoholic"
+  uk="/ˌælkəˈhɒlɪk/"
+  us="/ˌælkəˈhɔlɪk/"
+  client:only
+/>
 
 ### 列举例句
 
@@ -48,7 +53,4 @@ import WordRelations from '../../../components/WordRelations.svelte';
 Tom was fond of parties and alcoholic beverages, but his excesses led him down a path of self-destruction. He finally realized the gravity of his situation and decided to fight back. Now he's an advocate for alcoholic rehabilitation.
 (汤姆非常喜欢聚会和酒精饮料，但他的过度嗜酒却让他自我毁灭。 最后，他意识到了自己的处境严重，决定改变。现在，他是酒精康复的倡导者。)
 
-<WordRelations
-  antonyms={["teetotaler","nonalcoholic"]}
-  client:only
-/>
+<WordRelations antonyms={["teetotaler", "nonalcoholic"]} client:only />

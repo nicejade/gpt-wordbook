@@ -8,14 +8,19 @@ sidebar:
 tableOfContents: false
 ---
 
-import Pronunciation from '../../../components/Pronunciation.svelte';
-import WordRelations from '../../../components/WordRelations.svelte';
+import Pronunciation from "../../../components/Pronunciation.svelte";
+import WordRelations from "../../../components/WordRelations.svelte";
 
 ### 分析词义
 
 "Diplomat" 是个名词，描述一种职业，是指代表一个国家政府与别国政府或国际性组织进行谈判及处理国际事务等活动的公务员或外交官员。家庭生活，商业社会，人际关系中，"diplomat"也可描述很擅长处理敏感或困难问题的人。
 
-<Pronunciation word="Diplomat" uk="/ˈdɪ.plə.mæt/" us="/ˈdɪ.plə.mæt/" client:only />
+<Pronunciation
+  word="Diplomat"
+  uk="/ˈdɪ.plə.mæt/"
+  us="/ˈdɪ.plə.mæt/"
+  client:only
+/>
 
 ### 列举例句
 
@@ -48,7 +53,4 @@ Diplomat 本身是名词。形容词形式为"diplomatic"，意为外交的，�
 John, the diplomat, was in a tough negotiation with a rival country. However, with his patience and wit, the situation was defused, and peace prevailed.
 约翰，这名外交官，正在与一个敌对国家进行艰难的谈判。然而，凭借他的耐心和智慧，局势被化解，和平占据了主导。
 
-<WordRelations
-  synonyms={["diplomatist"]}
-  client:only
-/>
+<WordRelations synonyms={["diplomatist"]} client:only />

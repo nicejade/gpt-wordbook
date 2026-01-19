@@ -6,20 +6,20 @@ sidebar:
 tableOfContents: false
 ---
 
-import Pronunciation from '../../../components/Pronunciation.svelte';
-import WordRelations from '../../../components/WordRelations.svelte';
+import Pronunciation from "../../../components/Pronunciation.svelte";
+import WordRelations from "../../../components/WordRelations.svelte";
 
 ### 分析词义
 
 "Sex"这个单词在英文中主要有两个含义。
-
-<Pronunciation word="Sex" uk="/sɛks/" us="/sɛks/" client:only />
 
 1.  表示性别，包括男性和女性。
     例句：What's the sex of the new-born baby?（新生儿是什么性别？）
 
 2.  表示性行为，是指生物为了生育后代进行的行为。
     例句：Sex education is important for adolescents.（青少年性教育很重要。）
+
+<Pronunciation word="Sex" uk="/sɛks/" us="/sɛks/" client:only />
 
 ### 词根分析
 
@@ -49,7 +49,4 @@ import WordRelations from '../../../components/WordRelations.svelte';
 John and Mary are both biology students. Once, they were asked to determine the sex of a turtle for their experiment. They had fun and learned a lot from it.
 （约翰和玛丽都是生物学学生。有一次，他们被要求确定一只乌龟的性别作为他们的实验。他们在这过程中既开心又学到了很多。）
 
-<WordRelations
-  synonyms={["gender"]}
-  client:only
-/>
+<WordRelations synonyms={["gender"]} client:only />

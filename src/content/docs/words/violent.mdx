@@ -6,14 +6,19 @@ sidebar:
 tableOfContents: false
 ---
 
-import Pronunciation from '../../../components/Pronunciation.svelte';
-import WordRelations from '../../../components/WordRelations.svelte';
+import Pronunciation from "../../../components/Pronunciation.svelte";
+import WordRelations from "../../../components/WordRelations.svelte";
 
 ### 分析词义
 
 "Violent" 是一个形容词，描述一种强烈的、剧烈的，甚至有理地野蛮或暴力的行为，触动，改变或感情等.
 
-<Pronunciation word="Violent" uk="/ˈvaɪ(ə)lənt/" us="/ˈvaɪ(ə)lənt/" client:only />
+<Pronunciation
+  word="Violent"
+  uk="/ˈvaɪ(ə)lənt/"
+  us="/ˈvaɪ(ə)lənt/"
+  client:only
+/>
 
 ### 列举例句
 
@@ -46,7 +51,4 @@ import WordRelations from '../../../components/WordRelations.svelte';
 Once, a young man with a violent temper came across a gentle old monk. The monk's tranquility eventually calmed him down.
 (曾经，一个脾气暴躁的年轻人遇到了一个温和的老僧人。僧人的平静最终使他冷静下来。)
 
-<WordRelations
-  antonyms={["peaceful"]}
-  client:only
-/>
+<WordRelations antonyms={["peaceful"]} client:only />

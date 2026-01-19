@@ -6,17 +6,17 @@ sidebar:
 tableOfContents: false
 ---
 
-import Pronunciation from '../../../components/Pronunciation.svelte';
-import WordRelations from '../../../components/WordRelations.svelte';
+import Pronunciation from "../../../components/Pronunciation.svelte";
+import WordRelations from "../../../components/WordRelations.svelte";
 
 ### 分析词义
 
 "Account"是一个既可以做名词也可以做动词的单词。
 
-<Pronunciation word="Account" uk="/ə.ˈkaʊnt/" us="/ə.ˈkaʊnt/" client:only />
-
 - 作为名词时，可以表示“账户，帐目”，例如：bank account (银行账户)，也可以表示“描述，说明”，例如：She gave a detailed account of the incident. (她详细描述了这个事件。)
 - 作为动词时，表示"解释",例如：You'll need to account for the missing money. (你需要解释钱去哪了。)
+
+<Pronunciation word="Account" uk="/ə.ˈkaʊnt/" us="/ə.ˈkaʊnt/" client:only />
 
 ### 列举例句
 
@@ -50,6 +50,19 @@ Peter loves his job as an accountant. He is great at keeping accounts and always
 (彼得非常喜欢他的会计工作。他擅长保持帐目清晰，并始终确保一切都加起来。一天，他的老板要他解释一些失踪的资金。这让彼得感到震惊，他开始进行调查。他必须查到底。最后，他发现是一个同事负责，并让他对此负责。)
 
 <WordRelations
-  synonyms={["accounting", "explanation", "defense", "excuse", "membership", "registration", "username", "description", "narration", "narrative", "recital", "relation"]}
+  synonyms={[
+    "accounting",
+    "explanation",
+    "defense",
+    "excuse",
+    "membership",
+    "registration",
+    "username",
+    "description",
+    "narration",
+    "narrative",
+    "recital",
+    "relation",
+  ]}
   client:only
 />

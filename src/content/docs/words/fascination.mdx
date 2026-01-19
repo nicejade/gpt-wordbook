@@ -6,14 +6,19 @@ sidebar:
 tableOfContents: false
 ---
 
-import Pronunciation from '../../../components/Pronunciation.svelte';
-import WordRelations from '../../../components/WordRelations.svelte';
+import Pronunciation from "../../../components/Pronunciation.svelte";
+import WordRelations from "../../../components/WordRelations.svelte";
 
 ### 分析词义
 
 "Fascination" 是一个名词，它的意思是强烈的兴趣或吸引力，经常使人感到充满了好奇和吸引，且无法抗拒。
 
-<Pronunciation word="Fascination" uk="/fæsɪˈneɪʃən/" us="/fæsɪˈneɪʃən/" client:only />
+<Pronunciation
+  word="Fascination"
+  uk="/fæsɪˈneɪʃən/"
+  us="/fæsɪˈneɪʃən/"
+  client:only
+/>
 
 ### 列举例句
 
@@ -46,7 +51,4 @@ import WordRelations from '../../../components/WordRelations.svelte';
 Sarah found herself with a fascination for the stars during a school astronomy lesson. She spent hours gazing at the night sky, completely mesmerised by its beauty.
 (在一堂学校的天文课上，莎拉发现自己对星星充满了着迷。她花了好几个小时凝视夜空，完全被它的美丽迷住了。)
 
-<WordRelations
-  synonyms={["enchantment", "witchcraft"]}
-  client:only
-/>
+<WordRelations synonyms={["enchantment", "witchcraft"]} client:only />

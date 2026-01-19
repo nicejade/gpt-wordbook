@@ -6,14 +6,19 @@ sidebar:
 tableOfContents: false
 ---
 
-import Pronunciation from '../../../components/Pronunciation.svelte';
-import WordRelations from '../../../components/WordRelations.svelte';
+import Pronunciation from "../../../components/Pronunciation.svelte";
+import WordRelations from "../../../components/WordRelations.svelte";
 
 ### 分析词义
 
 Communication（发音： /kəˌmjuːnɪˈkeɪʃən/ ）是一个名词，意思是沟通、交流，也指运输、通信等方式的联络。
 
-<Pronunciation word="Communication" uk="/kəˌmjuːnɪˈkeɪʃən/" us="/kəˌmjuːnɪˈkeɪʃən/" client:only />
+<Pronunciation
+  word="Communication"
+  uk="/kəˌmjuːnɪˈkeɪʃən/"
+  us="/kəˌmjuːnɪˈkeɪʃən/"
+  client:only
+/>
 
 ### 列举例句
 
@@ -52,7 +57,4 @@ In our community, communication is key. We share messages, updates, and news thr
 
 在我们的社区里，沟通是关键。我们通过各种通信工具，如电话和电子邮件，分享信息、更新和新闻。
 
-<WordRelations
-  antonyms={["anticommunication"]}
-  client:only
-/>
+<WordRelations antonyms={["anticommunication"]} client:only />

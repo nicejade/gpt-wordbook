@@ -6,14 +6,12 @@ sidebar:
 tableOfContents: false
 ---
 
-import Pronunciation from '../../../components/Pronunciation.svelte';
-import WordRelations from '../../../components/WordRelations.svelte';
+import Pronunciation from "../../../components/Pronunciation.svelte";
+import WordRelations from "../../../components/WordRelations.svelte";
 
 ### 分析词义
 
 "Check" 是一个非常常用的英文单词，既可以当动词，也可以当名词使用。
-
-<Pronunciation word="Check" uk="/t͡ʃɛk/" us="/t͡ʃɛk/" client:only />
 
 当 "check" 作为动词使用时，含义较多，比如：
 
@@ -26,6 +24,8 @@ import WordRelations from '../../../components/WordRelations.svelte';
 1.  检查，例如：A routine health check (常规健康检查)。
 2.  支票，例如：Can I pay by check? (我可以用支票付款吗？)
 3.  （在国际象棋中的）将，例如：I have a check. (我将了对方。)
+
+<Pronunciation word="Check" uk="/t͡ʃɛk/" us="/t͡ʃɛk/" client:only />
 
 ### 列举例句
 
@@ -60,7 +60,4 @@ John was preparing a big presentation for work. Before he started, he double-che
 
 中文翻译：约翰正在为工作准备一场大的演讲。在开始之前，他仔细地检查了他的材料，确保一切都符合标准。
 
-<WordRelations
-  synonyms={["bill", "cheque", "checkmark", "tick"]}
-  client:only
-/>
+<WordRelations synonyms={["bill", "cheque", "checkmark", "tick"]} client:only />

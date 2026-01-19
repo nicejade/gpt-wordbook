@@ -8,14 +8,19 @@ sidebar:
 tableOfContents: false
 ---
 
-import Pronunciation from '../../../components/Pronunciation.svelte';
-import WordRelations from '../../../components/WordRelations.svelte';
+import Pronunciation from "../../../components/Pronunciation.svelte";
+import WordRelations from "../../../components/WordRelations.svelte";
 
 ### 分析词义
 
 "Provided" 主要用作连接词，表示在某些条件或假设的前提下，类似"如果"、"只要"等意思。例如："You can play games provided you finished your homework." (只要你完成了作业，你就可以玩游戏。)
 
-<Pronunciation word="Provided" uk="/pɹəˈvaɪdɪd/" us="/pɹəˈvaɪdɪd/" client:only />
+<Pronunciation
+  word="Provided"
+  uk="/pɹəˈvaɪdɪd/"
+  us="/pɹəˈvaɪdɪd/"
+  client:only
+/>
 
 ### 列举例句
 
@@ -24,7 +29,6 @@ import WordRelations from '../../../components/WordRelations.svelte';
 3.  "They will arrive tomorrow, provided there are no unforeseen problems."（如果没有不可预见的问题，他们将在明天到达。）
 
 ### 词根词缀分析
-
 
 这个单词没有明显的词源词根或词缀。"Provide"的词源来自拉丁语'providere'，'pro-'表示前面，'videre'意为看见。所以， "provided" 的意义更趋向于“如果预见到”。
 
@@ -46,8 +50,4 @@ import WordRelations from '../../../components/WordRelations.svelte';
 
 （妈妈会在我这学期成绩优秀的情况下，给我买一辆新自行车。这极大地激励了我更努力地学习。）
 
-<WordRelations
-  synonyms={["providing"]}
-  antonyms={["unless"]}
-  client:only
-/>
+<WordRelations synonyms={["providing"]} antonyms={["unless"]} client:only />

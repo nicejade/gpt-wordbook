@@ -6,14 +6,19 @@ sidebar:
 tableOfContents: false
 ---
 
-import Pronunciation from '../../../components/Pronunciation.svelte';
-import WordRelations from '../../../components/WordRelations.svelte';
+import Pronunciation from "../../../components/Pronunciation.svelte";
+import WordRelations from "../../../components/WordRelations.svelte";
 
 ### 分析词义
 
 Consumer 在英文中主要指的是“消费者”，就是购买商品或服务并为其付款的个人或团体。
 
-<Pronunciation word="Consumer" uk="/kənˈsjuːmə/" us="/kənˈsjuːmə/" client:only />
+<Pronunciation
+  word="Consumer"
+  uk="/kənˈsjuːmə/"
+  us="/kənˈsjuːmə/"
+  client:only
+/>
 
 ### 列举例句
 
@@ -47,7 +52,4 @@ Nina, a vigilant consumer, always checks the expiration date on products before 
 
 尼娜是一个警惕的消费者，她总是在购买产品前检查保质期。
 
-<WordRelations
-  antonyms={["producer"]}
-  client:only
-/>
+<WordRelations antonyms={["producer"]} client:only />

@@ -6,14 +6,19 @@ sidebar:
 tableOfContents: false
 ---
 
-import Pronunciation from '../../../components/Pronunciation.svelte';
-import WordRelations from '../../../components/WordRelations.svelte';
+import Pronunciation from "../../../components/Pronunciation.svelte";
+import WordRelations from "../../../components/WordRelations.svelte";
 
 ### 分析词义
 
 "Inefficient" 是形容词，用来描述一个人或者事物不够高效，效率低下，无法做事或者完成任务，或者是耗费大量的不必要的时间、精力或资源。
 
-<Pronunciation word="Inefficient" uk="/ɪnɪˈfɪʃənt/" us="/ɪnɪˈfɪʃənt/" client:only />
+<Pronunciation
+  word="Inefficient"
+  uk="/ɪnɪˈfɪʃənt/"
+  us="/ɪnɪˈfɪʃənt/"
+  client:only
+/>
 
 ### 列举例句
 
@@ -52,7 +57,4 @@ Inefficient 的词根是 "-effic-"，源于拉丁文的 "efficere"，意思是 "
 Martin was late for work every day. He was slow and easily distracted, often forgetting about tasks halfway. His co-workers often said, "Martin is an inefficient worker."
 马丁每天都会迟到。他工作很慢，容易分心，常常半途而废。他的同事经常说，“马丁是个效率低下的员工。”
 
-<WordRelations
-  antonyms={["efficient"]}
-  client:only
-/>
+<WordRelations antonyms={["efficient"]} client:only />

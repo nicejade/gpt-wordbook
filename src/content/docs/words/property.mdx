@@ -6,14 +6,19 @@ sidebar:
 tableOfContents: false
 ---
 
-import Pronunciation from '../../../components/Pronunciation.svelte';
-import WordRelations from '../../../components/WordRelations.svelte';
+import Pronunciation from "../../../components/Pronunciation.svelte";
+import WordRelations from "../../../components/WordRelations.svelte";
 
 ### 分析词义
 
 "Property"主要有两个含义，一个是指“财产，所有权”，比如房屋、土地或一座城市。另一个是“性质，属性”，指的是一个物体或者一个人的特征或特性。
 
-<Pronunciation word="Property" uk="/ˈpɹɒp.ət.i/" us="/ˈpɹɑp.ɚt.i/" client:only />
+<Pronunciation
+  word="Property"
+  uk="/ˈpɹɒp.ət.i/"
+  us="/ˈpɹɑp.ɚt.i/"
+  client:only
+/>
 
 ### 列举例句
 
@@ -46,7 +51,4 @@ Property 作为名词，没有单复数、动词、形容词和副词等变形�
 John had many properties around, but his favourite one was the house at the heart of London. (约翰在各地都有很多财产，但他最喜欢的还是伦敦市中心的那座房子。)
 约翰在各地都有很多财产，但他最爱的还是伦敦市中心的那座房子。
 
-<WordRelations
-  synonyms={["land", "parcel", "prop"]}
-  client:only
-/>
+<WordRelations synonyms={["land", "parcel", "prop"]} client:only />

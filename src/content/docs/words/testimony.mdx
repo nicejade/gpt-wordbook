@@ -6,14 +6,19 @@ sidebar:
 tableOfContents: false
 ---
 
-import Pronunciation from '../../../components/Pronunciation.svelte';
-import WordRelations from '../../../components/WordRelations.svelte';
+import Pronunciation from "../../../components/Pronunciation.svelte";
+import WordRelations from "../../../components/WordRelations.svelte";
 
 ### 分析词义
 
 "Testimony" 是一种形式的证明或者证据，一般用于指法庭中作证的陈述或抗辩。
 
-<Pronunciation word="Testimony" uk="/ˈtɛstɪməni/" us="/ˈtɛstɪmoʊni/" client:only />
+<Pronunciation
+  word="Testimony"
+  uk="/ˈtɛstɪməni/"
+  us="/ˈtɛstɪmoʊni/"
+  client:only
+/>
 
 ### 列举例句
 
@@ -52,7 +57,4 @@ John was called to the court to give his testimony. He stood firmly, looked at t
 
 约翰被召到法庭提供证词。他坚定地站立，看着法官说道：“我亲眼看到了所有的事情。”
 
-<WordRelations
-  synonyms={["deposition"]}
-  client:only
-/>
+<WordRelations synonyms={["deposition"]} client:only />

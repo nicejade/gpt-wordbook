@@ -8,14 +8,19 @@ sidebar:
 tableOfContents: false
 ---
 
-import Pronunciation from '../../../components/Pronunciation.svelte';
-import WordRelations from '../../../components/WordRelations.svelte';
+import Pronunciation from "../../../components/Pronunciation.svelte";
+import WordRelations from "../../../components/WordRelations.svelte";
 
 ### 分析词义
 
 "Specific"是英语单词，作为形容词使用时，其含义通常翻译为“具体的，特定的”。它是指明确的、详细的，区别于‘‘general’’（一般的）。例如，我们说 "specific details"（具体的细节）。作为名词使用时，它指特性，例如医学中的抗原或特效药等。
 
-<Pronunciation word="Specific" uk="/spəˈsɪf.ɪk/" us="/spəˈsɪf.ɪk/" client:only />
+<Pronunciation
+  word="Specific"
+  uk="/spəˈsɪf.ɪk/"
+  us="/spəˈsɪf.ɪk/"
+  client:only
+/>
 
 ### 列举例句
 
@@ -50,6 +55,13 @@ Specific 的发音比较特殊，可以联想成”c 在特定的结果就 doubl
 
 <WordRelations
   synonyms={["express", "monosemous", "unambiguous", "peculiar", "singular"]}
-  antonyms={["broad", "general", "generic", "universal", "nonspecific", "unspecific"]}
+  antonyms={[
+    "broad",
+    "general",
+    "generic",
+    "universal",
+    "nonspecific",
+    "unspecific",
+  ]}
   client:only
 />

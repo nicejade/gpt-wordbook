@@ -8,14 +8,19 @@ sidebar:
 tableOfContents: false
 ---
 
-import Pronunciation from '../../../components/Pronunciation.svelte';
-import WordRelations from '../../../components/WordRelations.svelte';
+import Pronunciation from "../../../components/Pronunciation.svelte";
+import WordRelations from "../../../components/WordRelations.svelte";
 
 ### 分析词义
 
 "Pollution" 是一个名词，指的是污染或污染物，特别强调的是自然环境被有毒或有害物质污染。它可以用来描述不同的环境问题，包括空气污染，水污染，土壤污染等。
 
-<Pronunciation word="Pollution" uk="/pəˈl(j)uːʃn̩/" us="/pəˈl(j)uːʃn̩/" client:only />
+<Pronunciation
+  word="Pollution"
+  uk="/pəˈl(j)uːʃn̩/"
+  us="/pəˈl(j)uːʃn̩/"
+  client:only
+/>
 
 ### 列举例句
 
@@ -52,6 +57,6 @@ Once upon a time, there was a beautiful village. However, due to constant pollut
 
 <WordRelations
   synonyms={["soilage"]}
-  antonyms={["conservation","purity"]}
+  antonyms={["conservation", "purity"]}
   client:only
 />

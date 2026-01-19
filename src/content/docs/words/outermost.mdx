@@ -6,14 +6,19 @@ sidebar:
 tableOfContents: false
 ---
 
-import Pronunciation from '../../../components/Pronunciation.svelte';
-import WordRelations from '../../../components/WordRelations.svelte';
+import Pronunciation from "../../../components/Pronunciation.svelte";
+import WordRelations from "../../../components/WordRelations.svelte";
 
 ### 分析词义
 
 "Outermost" 是一个形容词，用来描述处在最外面，离中心最远的位置或状态。这个词可以用来形容物理空间上的远近，或者抽象概念上的层次。
 
-<Pronunciation word="Outermost" uk="/ˈaʊtɚmoʊst/" us="/ˈaʊtɚmoʊst/" client:only />
+<Pronunciation
+  word="Outermost"
+  uk="/ˈaʊtɚmoʊst/"
+  us="/ˈaʊtɚmoʊst/"
+  client:only
+/>
 
 ### 列举例句
 
@@ -50,7 +55,4 @@ import WordRelations from '../../../components/WordRelations.svelte';
 There's a hidden treasure in the outermost island of the archipelago. Many adventurers have tried to find it but in vain.
 （在群岛最外围的岛屿上，藏着一件隐秘的宝藏。许多冒险家都试图去寻找，但都未能成功。）
 
-<WordRelations
-  antonyms={["inner"]}
-  client:only
-/>
+<WordRelations antonyms={["inner"]} client:only />

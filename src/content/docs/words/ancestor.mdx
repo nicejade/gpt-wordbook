@@ -6,14 +6,19 @@ sidebar:
 tableOfContents: false
 ---
 
-import Pronunciation from '../../../components/Pronunciation.svelte';
-import WordRelations from '../../../components/WordRelations.svelte';
+import Pronunciation from "../../../components/Pronunciation.svelte";
+import WordRelations from "../../../components/WordRelations.svelte";
 
 ### 分析词义
 
 "Ancestor" 是一个名词，表示我们的祖先或者先人，通常指的是一种由血缘关系或遗传关系确定的家庭关系。
 
-<Pronunciation word="Ancestor" uk="/ˈæn.sɛs.tə/" us="/ˈæn.sɛs.tɚ/" client:only />
+<Pronunciation
+  word="Ancestor"
+  uk="/ˈæn.sɛs.tə/"
+  us="/ˈæn.sɛs.tɚ/"
+  client:only
+/>
 
 ### 列举例句
 
@@ -47,7 +52,14 @@ In a small village, everyone gathered on "Ancestor Day" to celebrate and remembe
 在一个小村庄里，每个人都在“祖先日”聚集在一起，庆祝和纪念他们的祖先。他们共享老故事，并从过去学习宝贵的经验。
 
 <WordRelations
-  synonyms={["origin","reflex","source","forebear","forefather","predecessor"]}
-  antonyms={["afterbear","descendant"]}
+  synonyms={[
+    "origin",
+    "reflex",
+    "source",
+    "forebear",
+    "forefather",
+    "predecessor",
+  ]}
+  antonyms={["afterbear", "descendant"]}
   client:only
 />

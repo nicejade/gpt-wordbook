@@ -6,14 +6,19 @@ sidebar:
 tableOfContents: false
 ---
 
-import Pronunciation from '../../../components/Pronunciation.svelte';
-import WordRelations from '../../../components/WordRelations.svelte';
+import Pronunciation from "../../../components/Pronunciation.svelte";
+import WordRelations from "../../../components/WordRelations.svelte";
 
 ### 分析词义
 
 “Accidentally” 是一个副词，意为“无意中，偶然地，意外地”。
 
-<Pronunciation word="Accidentally" uk="/ˌæksəˈdɛnt(ə)li/" us="/ˌæksəˈdɛnt(ə)li/" client:only />
+<Pronunciation
+  word="Accidentally"
+  uk="/ˌæksəˈdɛnt(ə)li/"
+  us="/ˌæksəˈdɛnt(ə)li/"
+  client:only
+/>
 
 ### 列举例句
 
@@ -50,7 +55,13 @@ import WordRelations from '../../../components/WordRelations.svelte';
 Here is a little scene: Bob, engrossed in his new book, was walking down the street. He accidentally bumped into a lady and dropped his book. "Oh, I'm terribly sorry!" He said, blushing. (以下是一个小场景：鲍勃，沉浸在他的新书中，走在街道上。他无意间撞到了一位女士，并且掉了他的书。"哦，我非常抱歉！"他说，满脸通红。)
 
 <WordRelations
-  synonyms={["casually","fortuitously"]}
-  antonyms={["advisedly","deliberately","designedly","intentionally","purposely"]}
+  synonyms={["casually", "fortuitously"]}
+  antonyms={[
+    "advisedly",
+    "deliberately",
+    "designedly",
+    "intentionally",
+    "purposely",
+  ]}
   client:only
 />

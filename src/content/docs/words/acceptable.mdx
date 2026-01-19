@@ -6,14 +6,19 @@ sidebar:
 tableOfContents: false
 ---
 
-import Pronunciation from '../../../components/Pronunciation.svelte';
-import WordRelations from '../../../components/WordRelations.svelte';
+import Pronunciation from "../../../components/Pronunciation.svelte";
+import WordRelations from "../../../components/WordRelations.svelte";
 
 ### 分析词义
 
 "Acceptable" 是一个形容词，表示可以接受的，令人满意的，适当的，符合预期的。
 
-<Pronunciation word="Acceptable" uk="/æk.ˈsɛp.tə.bəl/" us="/æk.ˈsɛp.tə.bəl/" client:only />
+<Pronunciation
+  word="Acceptable"
+  uk="/æk.ˈsɛp.tə.bəl/"
+  us="/æk.ˈsɛp.tə.bəl/"
+  client:only
+/>
 
 ### 列举例句
 
@@ -46,7 +51,4 @@ import WordRelations from '../../../components/WordRelations.svelte';
 Tom looked at the project proposal carefully and found it acceptable. (汤姆仔细审阅了项目提案，认为它是可以接受的。)
 汤姆仔细地看着项目提案，并发现它是令人满意的。
 
-<WordRelations
-  antonyms={["inacceptable", "unacceptable"]}
-  client:only
-/>
+<WordRelations antonyms={["inacceptable", "unacceptable"]} client:only />

@@ -8,14 +8,19 @@ sidebar:
 tableOfContents: false
 ---
 
-import Pronunciation from '../../../components/Pronunciation.svelte';
-import WordRelations from '../../../components/WordRelations.svelte';
+import Pronunciation from "../../../components/Pronunciation.svelte";
+import WordRelations from "../../../components/WordRelations.svelte";
 
 ### 分析词义
 
 "Attorney" 是英语中的一个名词，主要用来指代专门从事法律事务，具有法律资格并可以为客户提供法律咨询和代理诉讼的人，或者被人委托处理某种事务的人。通常在美国语境下用来指代律师。
 
-<Pronunciation word="Attorney" uk="/əˈtɜː(ɹ)ni/" us="/əˈtɜː(ɹ)ni/" client:only />
+<Pronunciation
+  word="Attorney"
+  uk="/əˈtɜː(ɹ)ni/"
+  us="/əˈtɜː(ɹ)ni/"
+  client:only
+/>
 
 ### 列举例句
 
@@ -48,7 +53,4 @@ import WordRelations from '../../../components/WordRelations.svelte';
 At a turning point in her life, Jane decided to consult an attorney. The attorney, known for his expertise, imparted legal advice and helped her to smoothly transition this phase. Her trust in her attorney made all the difference.
 (在生活的转折点，简决定咨询一位律师。这位以专业知识著称的律师给予法律建议，帮助她顺利度过这一阶段。她对律师的信任起了决定性的作用。)
 
-<WordRelations
-  synonyms={["advocate", "mouthpiece"]}
-  client:only
-/>
+<WordRelations synonyms={["advocate", "mouthpiece"]} client:only />

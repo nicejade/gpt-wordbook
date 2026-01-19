@@ -8,14 +8,19 @@ sidebar:
 tableOfContents: false
 ---
 
-import Pronunciation from '../../../components/Pronunciation.svelte';
-import WordRelations from '../../../components/WordRelations.svelte';
+import Pronunciation from "../../../components/Pronunciation.svelte";
+import WordRelations from "../../../components/WordRelations.svelte";
 
 ### 分析词义
 
 - "Planetary" 是一个形容词，主要在两个情境中使用。第一个是用于描述与行星有关的事物，如 "planetary system"（行星系统）。 第二个是用于形容规模巨大的或影响广泛的事物，就像行星对地球的影响那么大。
 
-<Pronunciation word="Planetary" uk="/ˈplæ.nə.ˌtɛr.i/" us="/ˈplæ.nə.ˌtɛr.i/" client:only />
+<Pronunciation
+  word="Planetary"
+  uk="/ˈplæ.nə.ˌtɛr.i/"
+  us="/ˈplæ.nə.ˌtɛr.i/"
+  client:only
+/>
 
 ### 列举例句
 
@@ -48,7 +53,4 @@ import WordRelations from '../../../components/WordRelations.svelte';
 - One day, a group of students started a project on planetary defense. They wanted to find ways to protect Earth from potential asteroid impacts.
 - （一天，一群学生开启了一个关于行星防御的项目。他们想要寻找方法保护地球免受潜在的小行星撞击。）
 
-<WordRelations
-  synonyms={["epicyclic", "global"]}
-  client:only
-/>
+<WordRelations synonyms={["epicyclic", "global"]} client:only />

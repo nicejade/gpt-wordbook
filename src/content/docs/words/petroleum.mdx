@@ -6,14 +6,19 @@ sidebar:
 tableOfContents: false
 ---
 
-import Pronunciation from '../../../components/Pronunciation.svelte';
-import WordRelations from '../../../components/WordRelations.svelte';
+import Pronunciation from "../../../components/Pronunciation.svelte";
+import WordRelations from "../../../components/WordRelations.svelte";
 
 ### 分析词义
 
 "Petroleum" 是一种液态的化石燃料，通常被用作工业燃料，可以处理和炼制出汽油、柴油、喷气燃料等。也被叫做石油。
 
-<Pronunciation word="Petroleum" uk="/pəˈtɹoʊliəm/" us="/pəˈtɹoʊliəm/" client:only />
+<Pronunciation
+  word="Petroleum"
+  uk="/pəˈtɹoʊliəm/"
+  us="/pəˈtɹoʊliəm/"
+  client:only
+/>
 
 ### 列举例句
 
@@ -51,7 +56,4 @@ import WordRelations from '../../../components/WordRelations.svelte';
 Once upon a time, a curious teenager found a black liquid bubbling up from the ground. This strange liquid—petroleum changed his life and his town.
 曾经，一个好奇的少年发现地面上冒出了黑色的液体。这种奇特的液体—石油，改变了他的生活和他的小镇。
 
-<WordRelations
-  synonyms={["oil"]}
-  client:only
-/>
+<WordRelations synonyms={["oil"]} client:only />

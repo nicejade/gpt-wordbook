@@ -8,14 +8,19 @@ sidebar:
 tableOfContents: false
 ---
 
-import Pronunciation from '../../../components/Pronunciation.svelte';
-import WordRelations from '../../../components/WordRelations.svelte';
+import Pronunciation from "../../../components/Pronunciation.svelte";
+import WordRelations from "../../../components/WordRelations.svelte";
 
 ### 分析词义
 
 英文单词 "reduction" 来自于拉丁语 "reductionem"，意译为"把...带回"，"复原"。现在它的意思涵盖了"减少”，"缩小"，或者指在数学，化学等领域的专业术语。
 
-<Pronunciation word="Reduction" uk="/ɹiˈdɑk.ʃən/" us="/ɹiˈdɑk.ʃən/" client:only />
+<Pronunciation
+  word="Reduction"
+  uk="/ɹiˈdɑk.ʃən/"
+  us="/ɹiˈdɑk.ʃən/"
+  client:only
+/>
 
 ### 列举例句
 
@@ -59,6 +64,14 @@ Andy has been consuming a lot of soda recently. Seeing this, his doctor advised 
 
 <WordRelations
   synonyms={["decline", "lessening", "extract", "reduction"]}
-  antonyms={["elevation", "expansion", "increase", "promotion", "addition", "supplement", "oxidation"]}
+  antonyms={[
+    "elevation",
+    "expansion",
+    "increase",
+    "promotion",
+    "addition",
+    "supplement",
+    "oxidation",
+  ]}
   client:only
 />

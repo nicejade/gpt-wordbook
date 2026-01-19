@@ -6,14 +6,19 @@ sidebar:
 tableOfContents: false
 ---
 
-import Pronunciation from '../../../components/Pronunciation.svelte';
-import WordRelations from '../../../components/WordRelations.svelte';
+import Pronunciation from "../../../components/Pronunciation.svelte";
+import WordRelations from "../../../components/WordRelations.svelte";
 
 ### 分析词义
 
 “Concerning” 是一个英语介词，用于引导一个词语或从句，表示“关于”或“涉及到”的含义。它通常用于形容具体的事情、主题或问题。
 
-<Pronunciation word="Concerning" uk="/kənˈsɜːnɪŋ/" us="/kənˈsɝnɪŋ/" client:only />
+<Pronunciation
+  word="Concerning"
+  uk="/kənˈsɜːnɪŋ/"
+  us="/kənˈsɝnɪŋ/"
+  client:only
+/>
 
 ### 列举例句
 
@@ -48,7 +53,4 @@ import WordRelations from '../../../components/WordRelations.svelte';
 Once upon a time, there was a meeting concerning saving the environment. Everyone was so passionate that they came up with innovative ideas to protect Mother Earth.
 (从前，有一个关于保护环境的会议。每个人都充满激情，他们提出了创新的想法来保护地球母亲。)
 
-<WordRelations
-  synonyms={["apropos"]}
-  client:only
-/>
+<WordRelations synonyms={["apropos"]} client:only />

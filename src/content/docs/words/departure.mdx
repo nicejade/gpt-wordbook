@@ -8,14 +8,19 @@ sidebar:
 tableOfContents: false
 ---
 
-import Pronunciation from '../../../components/Pronunciation.svelte';
-import WordRelations from '../../../components/WordRelations.svelte';
+import Pronunciation from "../../../components/Pronunciation.svelte";
+import WordRelations from "../../../components/WordRelations.svelte";
 
 ### 分析词义
 
 "Departure" 是一个名词，意思是“离开，出发，启程”。这个词可以用来形容人或者事物从一个地方离开，去另一个地方。这个地方可以是具体的位置，也可以是抽象的状态或者场合。
 
-<Pronunciation word="Departure" uk="/dɪˈpɑː(ɹ)tjə(ɹ)/" us="/dɪˈpɑː(ɹ)tjə(ɹ)/" client:only />
+<Pronunciation
+  word="Departure"
+  uk="/dɪˈpɑː(ɹ)tjə(ɹ)/"
+  us="/dɪˈpɑː(ɹ)tjə(ɹ)/"
+  client:only
+/>
 
 ### 列举例句
 
@@ -47,8 +52,4 @@ import WordRelations from '../../../components/WordRelations.svelte';
 
 There was a sense of both excitement and nervousness in the air at the airport, as we said our goodbyes ahead of my departure to a new city for college. It felt like the start of a new chapter of my life. (在机场，在我即将去新的城市上大学的出发前，我们道别时，空气中既有兴奋也有紧张的感觉。感觉像是我生活新篇章的开始)
 
-<WordRelations
-  synonyms={["leaving"]}
-  antonyms={["arrival"]}
-  client:only
-/>
+<WordRelations synonyms={["leaving"]} antonyms={["arrival"]} client:only />

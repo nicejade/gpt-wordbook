@@ -6,14 +6,19 @@ sidebar:
 tableOfContents: false
 ---
 
-import Pronunciation from '../../../components/Pronunciation.svelte';
-import WordRelations from '../../../components/WordRelations.svelte';
+import Pronunciation from "../../../components/Pronunciation.svelte";
+import WordRelations from "../../../components/WordRelations.svelte";
 
 ### 分析词义
 
 "Fragrance" 是一个名词，它的主要含义是"香气"或"香味"，指的是让人愉快的、吸引人的气味。它常用于描述花朵、香水、香皂或其他具有良好气味的产品。
 
-<Pronunciation word="Fragrance" uk="/ˈfɹeɪɡɹəns/" us="/ˈfɹeɪɡɹəns/" client:only />
+<Pronunciation
+  word="Fragrance"
+  uk="/ˈfɹeɪɡɹəns/"
+  us="/ˈfɹeɪɡɹəns/"
+  client:only
+/>
 
 ### 列举例句
 
@@ -46,7 +51,4 @@ import WordRelations from '../../../components/WordRelations.svelte';
 In the early morning, Lily opened the window of her room. The fragrance of fresh flowers poured in, filling her heart with joy.
 (在清晨，莉莉开了房间的窗户。新鲜花朵的芬芳涌了进来，充满了她的心房。)
 
-<WordRelations
-  synonyms={["aroma"]}
-  client:only
-/>
+<WordRelations synonyms={["aroma"]} client:only />

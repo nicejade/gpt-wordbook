@@ -6,14 +6,19 @@ sidebar:
 tableOfContents: false
 ---
 
-import Pronunciation from '../../../components/Pronunciation.svelte';
-import WordRelations from '../../../components/WordRelations.svelte';
+import Pronunciation from "../../../components/Pronunciation.svelte";
+import WordRelations from "../../../components/WordRelations.svelte";
 
 ### 分析词义
 
 "carpenter"这个单词来自英语，意为“木匠”。它通常用来形容那些专门制作木质产品如家具，或者在建筑领域进行木工活动的人。
 
-<Pronunciation word="Carpenter" uk="/ˈkɑː.pən.tə/" us="/ˈkɑː.pən.tə/" client:only />
+<Pronunciation
+  word="Carpenter"
+  uk="/ˈkɑː.pən.tə/"
+  us="/ˈkɑː.pən.tə/"
+  client:only
+/>
 
 ### 列举例句
 
@@ -51,7 +56,4 @@ import WordRelations from '../../../components/WordRelations.svelte';
 Once a carpenter named Bob, crafted a perfect chair with his skilled hands, appreciated by everyone.
 曾经有一个名叫 Bob 的木匠，他用熟练的手艺制作出一把完美的椅子，受到了大家的喜爱。
 
-<WordRelations
-  synonyms={["chippy", "joiner", "carpent"]}
-  client:only
-/>
+<WordRelations synonyms={["chippy", "joiner", "carpent"]} client:only />

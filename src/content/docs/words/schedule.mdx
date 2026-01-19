@@ -6,17 +6,22 @@ sidebar:
 tableOfContents: false
 ---
 
-import Pronunciation from '../../../components/Pronunciation.svelte';
-import WordRelations from '../../../components/WordRelations.svelte';
+import Pronunciation from "../../../components/Pronunciation.svelte";
+import WordRelations from "../../../components/WordRelations.svelte";
 
 ### 分析词义
 
 "Schedule" 是一个名词和动词。
 
-<Pronunciation word="Schedule" uk="/ˈskɛ.dʒu.əl/" us="/ˈskɛ.dʒu.əl/" client:only />
-
 - 名词：用于指出一系列事情（比如会议、列车等）的时间表。
 - 动词：代表安排一项事件或行动在特定的时间发生。
+
+<Pronunciation
+  word="Schedule"
+  uk="/ˈskɛ.dʒu.əl/"
+  us="/ˈskɛ.dʒu.əl/"
+  client:only
+/>
 
 ### 列举例句
 
@@ -54,6 +59,15 @@ Tom's schedule today is very tight. First, he had a meeting at 9 a.m., then he h
 汤姆今天的日程安排非常紧张。首先，他早上 9 点有个会议，然后他必须赶上 10 点半的火车去市里会见一个客户。晚上，他要和家人一起吃饭。
 
 <WordRelations
-  synonyms={["catalog", "list", "listing", "register", "registry", "table", "timeline", "timetable"]}
+  synonyms={[
+    "catalog",
+    "list",
+    "listing",
+    "register",
+    "registry",
+    "table",
+    "timeline",
+    "timetable",
+  ]}
   client:only
 />

@@ -6,14 +6,19 @@ sidebar:
 tableOfContents: false
 ---
 
-import Pronunciation from '../../../components/Pronunciation.svelte';
-import WordRelations from '../../../components/WordRelations.svelte';
+import Pronunciation from "../../../components/Pronunciation.svelte";
+import WordRelations from "../../../components/WordRelations.svelte";
 
 ### 分析词义
 
 "Badminton"是一种在游戏场地内，两人或四人用拍子将羽毛球打过高网的运动。因原产于英国的"Badminton House"而得名。
 
-<Pronunciation word="Badminton" uk="/ˈbæd.mɪn.tən/" us="/ˈbæd.mɪn.tən/" client:only />
+<Pronunciation
+  word="Badminton"
+  uk="/ˈbæd.mɪn.tən/"
+  us="/ˈbæd.mɪn.tən/"
+  client:only
+/>
 
 ### 列举例句
 
@@ -46,7 +51,4 @@ import WordRelations from '../../../components/WordRelations.svelte';
 One beautiful morning, Jim decided to play badminton in the park. The crisp sound of the shuttlecock hitting his racket was music to his ears.
 （一个美丽的早晨，Jim 决定到公园打羽毛球。羽毛球击中球拍的清脆声音像音乐一样在他耳边回荡。）
 
-<WordRelations
-  synonyms={["badders"]}
-  client:only
-/>
+<WordRelations synonyms={["badders"]} client:only />

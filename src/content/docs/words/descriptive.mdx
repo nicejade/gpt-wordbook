@@ -6,14 +6,19 @@ sidebar:
 tableOfContents: false
 ---
 
-import Pronunciation from '../../../components/Pronunciation.svelte';
-import WordRelations from '../../../components/WordRelations.svelte';
+import Pronunciation from "../../../components/Pronunciation.svelte";
+import WordRelations from "../../../components/WordRelations.svelte";
 
 ### 分析词义
 
 "Descriptive" 是一个形容词，它的意思是包含很多描述的，或者给人详细描述的。这个词通常被用于说明某种语言，文字或者方法具有详尽的描述性。
 
-<Pronunciation word="Descriptive" uk="/dɪˈskɹɪptɪv/" us="/dɪˈskɹɪptɪv/" client:only />
+<Pronunciation
+  word="Descriptive"
+  uk="/dɪˈskɹɪptɪv/"
+  us="/dɪˈskɹɪptɪv/"
+  client:only
+/>
 
 ### 列举例句
 
@@ -49,7 +54,4 @@ import WordRelations from '../../../components/WordRelations.svelte';
 Ann read a descriptive book about the Egyptian Pyramids. The vivid details made her feel as if she were there.
 Ann 阅读了一本关于埃及金字塔的描述性的书。生动的细节让她仿佛身临其境。
 
-<WordRelations
-  antonyms={["normative","prescriptive"]}
-  client:only
-/>
+<WordRelations antonyms={["normative", "prescriptive"]} client:only />

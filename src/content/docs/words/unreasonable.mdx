@@ -8,14 +8,19 @@ sidebar:
 tableOfContents: false
 ---
 
-import Pronunciation from '../../../components/Pronunciation.svelte';
-import WordRelations from '../../../components/WordRelations.svelte';
+import Pronunciation from "../../../components/Pronunciation.svelte";
+import WordRelations from "../../../components/WordRelations.svelte";
 
 ### 分析词义
 
 "Unreasonable" 是一个形容词，用于描述对事物、行为或人的观点不符合理性或公理。这个词通常使用在负面的语境中，来表示缺乏公正、公平或逻辑的概念。在中文中，我们常常翻译成“不合理”或者“非理智”。
 
-<Pronunciation word="Unreasonable" uk="/ʌnˈɹiːz(ə)nəbl̩/" us="/ʌnˈɹiːz(ə)nəbl̩/" client:only />
+<Pronunciation
+  word="Unreasonable"
+  uk="/ʌnˈɹiːz(ə)nəbl̩/"
+  us="/ʌnˈɹiːz(ə)nəbl̩/"
+  client:only
+/>
 
 ### 列举例句
 
@@ -47,7 +52,4 @@ import WordRelations from '../../../components/WordRelations.svelte';
 
 Amy thought it was unreasonable that her boss expected her to work late on a Friday night. After all, she had plans to celebrate her birthday with her family. (艾米认为，她的老板居然指望她在周五晚上加班，实在是太不合理了。毕竟，她已经和家人计划好要过生日了。)
 
-<WordRelations
-  antonyms={["reasonable"]}
-  client:only
-/>
+<WordRelations antonyms={["reasonable"]} client:only />

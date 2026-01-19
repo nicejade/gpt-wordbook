@@ -6,14 +6,19 @@ sidebar:
 tableOfContents: false
 ---
 
-import Pronunciation from '../../../components/Pronunciation.svelte';
-import WordRelations from '../../../components/WordRelations.svelte';
+import Pronunciation from "../../../components/Pronunciation.svelte";
+import WordRelations from "../../../components/WordRelations.svelte";
 
 ### 分析词义
 
 "Likewise" 是一个副词，表示 "同样地" 或者 "也"。这个词在英语中是用来表示某人或某事与前文所述有相同或者相似的行为、特征或者观点。
 
-<Pronunciation word="Likewise" uk="/ˈlaɪkˌwaɪz/" us="/ˈlaɪkˌwaɪz/" client:only />
+<Pronunciation
+  word="Likewise"
+  uk="/ˈlaɪkˌwaɪz/"
+  us="/ˈlaɪkˌwaɪz/"
+  client:only
+/>
 
 ### 列举例句
 
@@ -45,7 +50,4 @@ import WordRelations from '../../../components/WordRelations.svelte';
 
 "John always helps his neighbors. Likewise, his neighbors are always there for him when he needs help." (约翰总是帮助他的邻居们，同样地，他的邻居们也总会在他需要帮助的时候支持他。)
 
-<WordRelations
-  synonyms={["similarly"]}
-  client:only
-/>
+<WordRelations synonyms={["similarly"]} client:only />

@@ -8,14 +8,19 @@ sidebar:
 tableOfContents: false
 ---
 
-import Pronunciation from '../../../components/Pronunciation.svelte';
-import WordRelations from '../../../components/WordRelations.svelte';
+import Pronunciation from "../../../components/Pronunciation.svelte";
+import WordRelations from "../../../components/WordRelations.svelte";
 
 ### 分析词义
 
 "Abalone" 是英语中的一个名词，主要用来指一种住在海底的贝类动物，也被称为鲍鱼。在烹饪中，鲍鱼被广泛用于各种菜肴，特别是在亚洲，鲍鱼被视为一种奢侈的海鲜 delicacy。
 
-<Pronunciation word="Abalone" uk="/æb.əˈləʊ.ni/" us="/æb.əˈloʊ.ni/" client:only />
+<Pronunciation
+  word="Abalone"
+  uk="/æb.əˈləʊ.ni/"
+  us="/æb.əˈloʊ.ni/"
+  client:only
+/>
 
 ### 列举例句
 
@@ -47,7 +52,4 @@ Abalone 这个词在英语中没有词缀使用。
 
 "There was an abalone on the dinner table, shimmering with iridescent colors. Everyone at the feast was impressed by its beauty and savored its rich, delicate taste." （餐桌上有一只闪烁着七彩光泽的鲍鱼。宴席上的每一个人都被它的美丽所惊叹，品尝着它丰富、细腻的味道。）
 
-<WordRelations
-  synonyms={["ormer","paua","pawa","perlemoen"]}
-  client:only
-/>
+<WordRelations synonyms={["ormer", "paua", "pawa", "perlemoen"]} client:only />

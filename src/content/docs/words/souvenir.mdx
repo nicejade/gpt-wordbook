@@ -6,14 +6,19 @@ sidebar:
 tableOfContents: false
 ---
 
-import Pronunciation from '../../../components/Pronunciation.svelte';
-import WordRelations from '../../../components/WordRelations.svelte';
+import Pronunciation from "../../../components/Pronunciation.svelte";
+import WordRelations from "../../../components/WordRelations.svelte";
 
 ### 分析词义
 
 "souvenir" 是一个名词，源自法语，意思是纪念品或礼品，通常是参观地方或活动后带回的小物品，用来回忆或纪念那个地方或活动。
 
-<Pronunciation word="Souvenir" uk="/ˌsuːvəˈnɪə(ɹ)/" us="/ˌsuːvəˈnɪə(ɹ)/" client:only />
+<Pronunciation
+  word="Souvenir"
+  uk="/ˌsuːvəˈnɪə(ɹ)/"
+  us="/ˌsuːvəˈnɪə(ɹ)/"
+  client:only
+/>
 
 ### 列举例句
 
@@ -46,7 +51,4 @@ import WordRelations from '../../../components/WordRelations.svelte';
 During her journey, Emily bought a tiny Eiffel Tower, a souvenir from Paris. This souvenir stirred memories each time she saw it, reminding her of the amazing trip to the city of love.
 （在她的旅程中，Emily 买了一个小巧的埃菲尔铁塔，这是从巴黎带回的纪念品。每次看到这个纪念品时，她都会回想起在爱情之城的那次奇妙旅行）
 
-<WordRelations
-  synonyms={["keepsake", "memento", "memorabilia"]}
-  client:only
-/>
+<WordRelations synonyms={["keepsake", "memento", "memorabilia"]} client:only />

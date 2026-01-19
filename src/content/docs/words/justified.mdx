@@ -7,14 +7,19 @@ sidebar:
 tableOfContents: false
 ---
 
-import Pronunciation from '../../../components/Pronunciation.svelte';
-import WordRelations from '../../../components/WordRelations.svelte';
+import Pronunciation from "../../../components/Pronunciation.svelte";
+import WordRelations from "../../../components/WordRelations.svelte";
 
 ### 分析词义
 
 "Justified"是一个形容词，它的基本含义是"有正当理由的"或"正确的"。例如，你做的事情是"justified"，那么就意味着你有充分的理由去做那件事，或者你的做法是正确的。
 
-<Pronunciation word="Justified" uk="/ˈdʒʌstɪfaɪd/" us="/ˈdʒʌstɪfaɪd/" client:only />
+<Pronunciation
+  word="Justified"
+  uk="/ˈdʒʌstɪfaɪd/"
+  us="/ˈdʒʌstɪfaɪd/"
+  client:only
+/>
 
 ### 列举例句
 
@@ -57,7 +62,4 @@ import WordRelations from '../../../components/WordRelations.svelte';
 
 戴夫犹豫不决地从冰箱里取出室友的食物。然而，由于他之前未经询问就吃了戴夫的食物，戴夫觉得他完全有理由做同样的事情。
 
-<WordRelations
-  antonyms={["unjustified"]}
-  client:only
-/>
+<WordRelations antonyms={["unjustified"]} client:only />

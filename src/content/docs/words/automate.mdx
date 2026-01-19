@@ -7,14 +7,19 @@ sidebar:
 tableOfContents: false
 ---
 
-import Pronunciation from '../../../components/Pronunciation.svelte';
-import WordRelations from '../../../components/WordRelations.svelte';
+import Pronunciation from "../../../components/Pronunciation.svelte";
+import WordRelations from "../../../components/WordRelations.svelte";
 
 ### 分析词义
 
 "Automate"是一个动词，源自于希腊词汇“αὐτόματος”，这个词在希腊语中的意思是“自动的”。在英语中，“automate”的基本意思是“使自动化”，也就是通过使用计算机和其他技术设备，使得某个过程或者任务可以无需人类干预就可以独立完成。
 
-<Pronunciation word="Automate" uk="/ˈɔtoʊˌmeɪt/" us="/ˈɔtoʊˌmeɪt/" client:only />
+<Pronunciation
+  word="Automate"
+  uk="/ˈɔtoʊˌmeɪt/"
+  us="/ˈɔtoʊˌmeɪt/"
+  client:only
+/>
 
 ### 列举例句
 
@@ -53,7 +58,4 @@ Lucy's father owned a bakery, which was small but very popular. With the rapid i
 
 露西的父亲拥有一个面包店，店虽小，但非常受欢迎。随着客户数量的迅速增加，他决定自动化制作面团的过程以提高效率。他买了一台机器，这台机器可以自动混合面粉和水，将它们揉捏成面团，这样节省了很多时间。
 
-<WordRelations
-  synonyms={["robotize"]}
-  client:only
-/>
+<WordRelations synonyms={["robotize"]} client:only />

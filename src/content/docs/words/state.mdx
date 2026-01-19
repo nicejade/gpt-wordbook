@@ -6,18 +6,18 @@ sidebar:
 tableOfContents: false
 ---
 
-import Pronunciation from '../../../components/Pronunciation.svelte';
-import WordRelations from '../../../components/WordRelations.svelte';
+import Pronunciation from "../../../components/Pronunciation.svelte";
+import WordRelations from "../../../components/WordRelations.svelte";
 
 ### 分析词义
 
 "State" 是一个非常常见的英语词汇，根据上下文的不同，它可以有许多不同的含义。
 
-<Pronunciation word="State" uk="/steɪt/" us="/steɪt/" client:only />
-
 - 名词时，它经常被用来表示一个国家或者政权，如："United States"（美国）。此外，它还用于描述某种状态或者状况，例如：“The state of the economy is not promising.”（经济状况不容乐观）。
 
 - 动词时， "state" 指的是声明或者明确提出，例如："Please state your name and occupation."（请说出您的姓名和职业）。
+
+<Pronunciation word="State" uk="/steɪt/" us="/steɪt/" client:only />
 
 ### 列举例句
 
@@ -50,7 +50,4 @@ import WordRelations from '../../../components/WordRelations.svelte';
 In the United States, John stated that he was in a state of complete happiness.
 （在美国，约翰声称他处于一种完全的幸福状态。）
 
-<WordRelations
-  antonyms={["occurrence"]}
-  client:only
-/>
+<WordRelations antonyms={["occurrence"]} client:only />

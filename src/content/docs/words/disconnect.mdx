@@ -6,14 +6,19 @@ sidebar:
 tableOfContents: false
 ---
 
-import Pronunciation from '../../../components/Pronunciation.svelte';
-import WordRelations from '../../../components/WordRelations.svelte';
+import Pronunciation from "../../../components/Pronunciation.svelte";
+import WordRelations from "../../../components/WordRelations.svelte";
 
 ### 分析词义
 
 "Disconnect" 是一个英语动词，其基本含义是“断开，切断”，如电力、网络连接、电话线等的断开。它也广泛地用于形容人与人、人与事物之间关系的断裂。
 
-<Pronunciation word="Disconnect" uk="/dɪskəˈnɛkt/" us="/dɪskəˈnɛkt/" client:only />
+<Pronunciation
+  word="Disconnect"
+  uk="/dɪskəˈnɛkt/"
+  us="/dɪskəˈnɛkt/"
+  client:only
+/>
 
 ### 列举例句
 
@@ -50,8 +55,4 @@ import WordRelations from '../../../components/WordRelations.svelte';
 The boy was playing a game on his computer when suddenly the internet disconnected, causing him to lose the game.
 （男孩在电脑上玩游戏时，网络突然断开，导致他输掉了游戏。）
 
-<WordRelations
-  synonyms={["disconnector"]}
-  antonyms={["connect"]}
-  client:only
-/>
+<WordRelations synonyms={["disconnector"]} antonyms={["connect"]} client:only />

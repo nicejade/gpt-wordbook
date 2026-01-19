@@ -9,14 +9,19 @@ sidebar:
 tableOfContents: false
 ---
 
-import Pronunciation from '../../../components/Pronunciation.svelte';
-import WordRelations from '../../../components/WordRelations.svelte';
+import Pronunciation from "../../../components/Pronunciation.svelte";
+import WordRelations from "../../../components/WordRelations.svelte";
 
 ### 分析词义
 
 "Solution"主要有两个含义。第一个是"解答"或"解决方案"，常常用来指某一个问题或者困扰的答案。例如："We need to find the solution to this problem." 我们需要找到这个问题的解决方案。第二个是"溶液"的含义，指的是在化学中，某物质溶解于另一物质形成的混合物。
 
-<Pronunciation word="Solution" uk="/səˈl(j)uːʃən/" us="/səˈl(j)uːʃən/" client:only />
+<Pronunciation
+  word="Solution"
+  uk="/səˈl(j)uːʃən/"
+  us="/səˈl(j)uːʃən/"
+  client:only
+/>
 
 ### 列举例句
 
@@ -49,7 +54,4 @@ import WordRelations from '../../../components/WordRelations.svelte';
 Once upon a time, there was a lady who couldn't find her glasses. After hours of searching, she found them in the most unusual place - the fish tank! Her grandson said, "Well, there's an unusual solution to the problem!"
 从前，有个女士找不到她的眼镜。在寻找了几个小时后，在最不寻常的地方找到了它们--鱼缸中！她的孙子说：“嗯，这可真是一个不寻常的解决方案。”
 
-<WordRelations
-  antonyms={["precipitation", "problem"]}
-  client:only
-/>
+<WordRelations antonyms={["precipitation", "problem"]} client:only />

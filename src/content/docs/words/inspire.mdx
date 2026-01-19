@@ -8,14 +8,19 @@ sidebar:
 tableOfContents: false
 ---
 
-import Pronunciation from '../../../components/Pronunciation.svelte';
-import WordRelations from '../../../components/WordRelations.svelte';
+import Pronunciation from "../../../components/Pronunciation.svelte";
+import WordRelations from "../../../components/WordRelations.svelte";
 
 ### 分析词义
 
 "Inspire"是一个动词，它来自于拉丁语"inspirare"，意思是"吹入"，引申为"激发"，"燃起"。所以在英语中， "inspire"的意思是激发某人的想法或感情，更具体的说，是提供创新的思维或行为的动机。
 
-<Pronunciation word="Inspire" uk="/ɪn.ˈspaɪə(ɹ)/" us="/ɪn.ˈspaɪə(ɹ)/" client:only />
+<Pronunciation
+  word="Inspire"
+  uk="/ɪn.ˈspaɪə(ɹ)/"
+  us="/ɪn.ˈspaɪə(ɹ)/"
+  client:only
+/>
 
 ### 列举例句
 
@@ -50,8 +55,4 @@ import WordRelations from '../../../components/WordRelations.svelte';
 In a village so remote, a teacher named John devoted his life inspiring the kids with limited resources. Every child was a seed of change in his eyes.
 （在一个偏远的村庄里，一个名叫约翰的教师致力于激发有限资源的孩子们。在他眼中，每个孩子都是改变的种子。）
 
-<WordRelations
-  synonyms={["beghast"]}
-  antonyms={["expire"]}
-  client:only
-/>
+<WordRelations synonyms={["beghast"]} antonyms={["expire"]} client:only />

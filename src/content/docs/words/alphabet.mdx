@@ -6,14 +6,19 @@ sidebar:
 tableOfContents: false
 ---
 
-import Pronunciation from '../../../components/Pronunciation.svelte';
-import WordRelations from '../../../components/WordRelations.svelte';
+import Pronunciation from "../../../components/Pronunciation.svelte";
+import WordRelations from "../../../components/WordRelations.svelte";
 
 ### 分析词义
 
 "Alphabet" 是表示一套系统化的文字或语言标识的单词。
 
-<Pronunciation word="Alphabet" uk="/ˈæl.fə.bɛt/" us="/ˈæl.fə.bɛt/" client:only />
+<Pronunciation
+  word="Alphabet"
+  uk="/ˈæl.fə.bɛt/"
+  us="/ˈæl.fə.bɛt/"
+  client:only
+/>
 
 ### 列举例句
 
@@ -47,7 +52,4 @@ Once there was a little boy named Timmy, who had an incredible fascination with 
 
 曾经有一个名叫蒂米的小男孩，他对字母表有着难以置信的喜爱。他每天都会花几个小时玩字母积木，形成单词并欢快地笑。
 
-<WordRelations
-  synonyms={["ABC", "absey", "alphabetize"]}
-  client:only
-/>
+<WordRelations synonyms={["ABC", "absey", "alphabetize"]} client:only />

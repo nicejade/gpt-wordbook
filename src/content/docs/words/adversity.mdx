@@ -8,14 +8,19 @@ sidebar:
 tableOfContents: false
 ---
 
-import Pronunciation from '../../../components/Pronunciation.svelte';
-import WordRelations from '../../../components/WordRelations.svelte';
+import Pronunciation from "../../../components/Pronunciation.svelte";
+import WordRelations from "../../../components/WordRelations.svelte";
 
 ### 分析词义
 
 "Adversity"是一个名词，意思是“困难，逆境”。它通常用于描述一个人面临的困难情况或者不利的环境。例如，"He faced many adversities in his life."
 
-<Pronunciation word="Adversity" uk="/ædˈvɜː.sɪ.ti/" us="/ædˈvɜː.sɪ.ti/" client:only />
+<Pronunciation
+  word="Adversity"
+  uk="/ædˈvɜː.sɪ.ti/"
+  us="/ædˈvɜː.sɪ.ti/"
+  client:only
+/>
 
 ### 列举例句
 
@@ -47,7 +52,4 @@ import WordRelations from '../../../components/WordRelations.svelte';
 
 When he lost his job, Jack faced a period of great adversity. However, he used the adversity as a motivation to start his own business. Now, he is a successful businessman. (当杰克失去工作时，他面临了一段富有挑战的时期。然而，他把逆境当做创业的动力。现在，他是一个成功的商人。)
 
-<WordRelations
-  synonyms={["nakba"]}
-  client:only
-/>
+<WordRelations synonyms={["nakba"]} client:only />

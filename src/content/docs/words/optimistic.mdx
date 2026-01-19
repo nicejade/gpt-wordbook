@@ -6,14 +6,19 @@ sidebar:
 tableOfContents: false
 ---
 
-import Pronunciation from '../../../components/Pronunciation.svelte';
-import WordRelations from '../../../components/WordRelations.svelte';
+import Pronunciation from "../../../components/Pronunciation.svelte";
+import WordRelations from "../../../components/WordRelations.svelte";
 
 ### 分析词义
 
 "Optimistic"是一个形容词，表示持有积极乐观的态度，对未来充满期待。同义词包括 "hopeful" 和 "positive"。
 
-<Pronunciation word="Optimistic" uk="/ˌɒptɪˈmɪstɪk/" us="/ˌɒptɪˈmɪstɪk/" client:only />
+<Pronunciation
+  word="Optimistic"
+  uk="/ˌɒptɪˈmɪstɪk/"
+  us="/ˌɒptɪˈmɪstɪk/"
+  client:only
+/>
 
 ### 列举例句
 
@@ -45,7 +50,4 @@ import WordRelations from '../../../components/WordRelations.svelte';
 
 Sara was always optimistic, even when the rain poured down on her picnic, she smiled and said: "What a perfect chance to dance in the rain!"（Sara 总是乐观的，即使是在她的野餐被大雨淋湿时，她也微笑着说：“这多好的跳雨中舞的机会呀！”。）
 
-<WordRelations
-  antonyms={["pessimistic"]}
-  client:only
-/>
+<WordRelations antonyms={["pessimistic"]} client:only />

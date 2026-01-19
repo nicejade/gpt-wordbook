@@ -8,14 +8,19 @@ sidebar:
 tableOfContents: false
 ---
 
-import Pronunciation from '../../../components/Pronunciation.svelte';
-import WordRelations from '../../../components/WordRelations.svelte';
+import Pronunciation from "../../../components/Pronunciation.svelte";
+import WordRelations from "../../../components/WordRelations.svelte";
 
 ### 分析词义
 
 英文单词 "unstable" 是形容词，其基本意思是"不稳定的"，被用于描述物品、情况、人、感情等无法保持稳定的状态。这个词也经常用来指代快速变化的状态，或者预测难以准确的状况。
 
-<Pronunciation word="Unstable" uk="/ʌnˈsteɪbəɫ/" us="/ʌnˈsteɪbəɫ/" client:only />
+<Pronunciation
+  word="Unstable"
+  uk="/ʌnˈsteɪbəɫ/"
+  us="/ʌnˈsteɪbəɫ/"
+  client:only
+/>
 
 ### 列举例句
 
@@ -50,7 +55,15 @@ Mike was known to be unstable. One moment, he was laughing heartily, and the nex
 (迈克被人们认为是一位情绪不稳定的人。他此刻可能正哈哈大笑，下一刻就对某人愤然大呼。他突然的情绪转变把他的同班同学吓跑了。)
 
 <WordRelations
-  synonyms={["arbitrary", "capricious", "instable", "labile", "tottering", "unsteady", "wobbly"]}
+  synonyms={[
+    "arbitrary",
+    "capricious",
+    "instable",
+    "labile",
+    "tottering",
+    "unsteady",
+    "wobbly",
+  ]}
   antonyms={["stable"]}
   client:only
 />

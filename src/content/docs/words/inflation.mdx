@@ -6,14 +6,19 @@ sidebar:
 tableOfContents: false
 ---
 
-import Pronunciation from '../../../components/Pronunciation.svelte';
-import WordRelations from '../../../components/WordRelations.svelte';
+import Pronunciation from "../../../components/Pronunciation.svelte";
+import WordRelations from "../../../components/WordRelations.svelte";
 
 ### 分析词义
 
 "Inflation" 是一个名词，主要指经济学上的通货膨胀，即货币供应过多导致价格上涨的现象。但在物理学中，"Inflation" 也可能指宇宙膨胀的理论。
 
-<Pronunciation word="Inflation" uk="/ɪnˈfleɪʃən/" us="/ɪnˈfleɪʃən/" client:only />
+<Pronunciation
+  word="Inflation"
+  uk="/ɪnˈfleɪʃən/"
+  us="/ɪnˈfleɪʃən/"
+  client:only
+/>
 
 ### 列举例句
 
@@ -46,7 +51,4 @@ import WordRelations from '../../../components/WordRelations.svelte';
 In a small town, when the government printed too much money, people found that the price of bread rose from one dollar to five dollars. That was an obvious inflation.
 在一个小镇上，当政府印制了过多的钱币时，人们发现面包的价格从一美元上涨到五美元。这就是一种明显的通货膨胀。
 
-<WordRelations
-  antonyms={["deflation"]}
-  client:only
-/>
+<WordRelations antonyms={["deflation"]} client:only />

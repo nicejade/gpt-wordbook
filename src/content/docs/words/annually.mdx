@@ -6,14 +6,19 @@ sidebar:
 tableOfContents: false
 ---
 
-import Pronunciation from '../../../components/Pronunciation.svelte';
-import WordRelations from '../../../components/WordRelations.svelte';
+import Pronunciation from "../../../components/Pronunciation.svelte";
+import WordRelations from "../../../components/WordRelations.svelte";
 
 ### 分析词义
 
 "Annually" 是一个副词，意思是"每年"，表示一些事情或动作每年都会发生。
 
-<Pronunciation word="Annually" uk="/ˈæn.jʊə.li/" us="/ˈæn.ju.ə.li/" client:only />
+<Pronunciation
+  word="Annually"
+  uk="/ˈæn.jʊə.li/"
+  us="/ˈæn.ju.ə.li/"
+  client:only
+/>
 
 ### 列举例句
 
@@ -47,7 +52,4 @@ Every fall, the Hamilton family would annually embark on a journey to their home
 
 每年秋天，汉密尔顿一家都会固定返回他们的家乡。他们会回忆他们的童年，每年都感觉就像是朝圣回到他们的根本。
 
-<WordRelations
-  synonyms={["perennially"]}
-  client:only
-/>
+<WordRelations synonyms={["perennially"]} client:only />

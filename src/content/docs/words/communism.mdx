@@ -6,14 +6,19 @@ sidebar:
 tableOfContents: false
 ---
 
-import Pronunciation from '../../../components/Pronunciation.svelte';
-import WordRelations from '../../../components/WordRelations.svelte';
+import Pronunciation from "../../../components/Pronunciation.svelte";
+import WordRelations from "../../../components/WordRelations.svelte";
 
 ### 分析词义
 
 "Communism"是一个政治理念，指的是一种社会政治结构，它的目标是创建一个无阶级差别，财产公有，社会资源公平分配的社会。
 
-<Pronunciation word="Communism" uk="/ˈkɒm.juˌnɪzm̩/" us="/ˈkɒm.juˌnɪzm̩/" client:only />
+<Pronunciation
+  word="Communism"
+  uk="/ˈkɒm.juˌnɪzm̩/"
+  us="/ˈkɒm.juˌnɪzm̩/"
+  client:only
+/>
 
 ### 列举例句
 
@@ -47,7 +52,4 @@ In a remote village, communism was applied thoroughly. Villagers worked collecti
 
 在一个偏远的村庄里，共产主义被彻底地应用。村民们在他们的共享田地里集体劳作。没有私人财产，只有共享的食堂，孩子们接受集体教育。这是他们的小乌托邦。
 
-<WordRelations
-  synonyms={["aspheterism"]}
-  client:only
-/>
+<WordRelations synonyms={["aspheterism"]} client:only />

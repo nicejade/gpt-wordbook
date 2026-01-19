@@ -8,14 +8,19 @@ sidebar:
 tableOfContents: false
 ---
 
-import Pronunciation from '../../../components/Pronunciation.svelte';
-import WordRelations from '../../../components/WordRelations.svelte';
+import Pronunciation from "../../../components/Pronunciation.svelte";
+import WordRelations from "../../../components/WordRelations.svelte";
 
 ### 分析词义
 
 "Dormitory" 是英语单词，用中文来表达就是“宿舍”。这个词大多数情况下是用在学校的环境，描述学生们居住的地方。也可以用在其他环境中，诸如工厂的宿舍等等。
 
-<Pronunciation word="Dormitory" uk="/ˈdɔɹmɪˌtɔɹi/" us="/ˈdɔɹmɪˌtɔɹi/" client:only />
+<Pronunciation
+  word="Dormitory"
+  uk="/ˈdɔɹmɪˌtɔɹi/"
+  us="/ˈdɔɹmɪˌtɔɹi/"
+  client:only
+/>
 
 ### 列举例句
 
@@ -52,7 +57,4 @@ Dormitory 的词根是来自拉丁语的 "dormire" ，意为 "to sleep"（睡觉
 Jake was excited about moving into the dormitory. He imagined all the fun he would have with his dormitory mates.
 杰克对搬进宿舍感到很兴奋。他想象着与宿舍伙伴们的所有乐趣。
 
-<WordRelations
-  synonyms={["dorm"]}
-  client:only
-/>
+<WordRelations synonyms={["dorm"]} client:only />

@@ -6,14 +6,19 @@ sidebar:
 tableOfContents: false
 ---
 
-import Pronunciation from '../../../components/Pronunciation.svelte';
-import WordRelations from '../../../components/WordRelations.svelte';
+import Pronunciation from "../../../components/Pronunciation.svelte";
+import WordRelations from "../../../components/WordRelations.svelte";
 
 ### 分析词义
 
 "Difference" 是一个英语名词，原意为“不同”、“差异”，常用于形容两个或更多的事物在某些方面存在不同。
 
-<Pronunciation word="Difference" uk="/ˈdɪfəɹən(t)s/" us="/ˈdɪfəɹən(t)s/" client:only />
+<Pronunciation
+  word="Difference"
+  uk="/ˈdɪfəɹən(t)s/"
+  us="/ˈdɪfəɹən(t)s/"
+  client:only
+/>
 
 ### 列举例句
 
@@ -48,7 +53,19 @@ import WordRelations from '../../../components/WordRelations.svelte';
 Smith and Williams were twin brothers. The biggest difference between them was their hobbies. Smith loved reading, while Williams was passionate about sports.（Smith 和 Williams 是一对双胞胎兄弟。他们之间最大的差异是他们的爱好。Smith 喜欢阅读，而 Williams 对运动充满热情。）
 
 <WordRelations
-  synonyms={["departure","deviation","disparity","divergence","conflict","dispute","dissension","remainder","nevermind","differentiate","distinguish"]}
-  antonyms={["identity","sameness"]}
+  synonyms={[
+    "departure",
+    "deviation",
+    "disparity",
+    "divergence",
+    "conflict",
+    "dispute",
+    "dissension",
+    "remainder",
+    "nevermind",
+    "differentiate",
+    "distinguish",
+  ]}
+  antonyms={["identity", "sameness"]}
   client:only
 />

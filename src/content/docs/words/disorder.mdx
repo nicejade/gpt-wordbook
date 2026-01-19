@@ -6,14 +6,19 @@ sidebar:
 tableOfContents: false
 ---
 
-import Pronunciation from '../../../components/Pronunciation.svelte';
-import WordRelations from '../../../components/WordRelations.svelte';
+import Pronunciation from "../../../components/Pronunciation.svelte";
+import WordRelations from "../../../components/WordRelations.svelte";
 
 ### 分析词义
 
 "Disorder" 是一个名词，主要有两个含义：(1) 混乱，无秩序 （2）疾病。这个词可用于描述混乱的情况或者身体及心理上的疾病。
 
-<Pronunciation word="Disorder" uk="/dɪsˈɔːdə(ɹ)/" us="/dɪsˈɔːɹdɚ/" client:only />
+<Pronunciation
+  word="Disorder"
+  uk="/dɪsˈɔːdə(ɹ)/"
+  us="/dɪsˈɔːɹdɚ/"
+  client:only
+/>
 
 ### 列举例句
 
@@ -49,7 +54,4 @@ import WordRelations from '../../../components/WordRelations.svelte';
 It was a complete disorder when the teacher left the classroom. Students were running around, and books were all over the floor. The usually quiet classroom turned into a wild playground.
 当老师离开教室时，一切都变得一片混乱。学生们在四处奔跑，书都散落在地板上。平时安静的教室变成了一个疯狂的游乐场。
 
-<WordRelations
-  synonyms={["chaos", "entropy"]}
-  client:only
-/>
+<WordRelations synonyms={["chaos", "entropy"]} client:only />

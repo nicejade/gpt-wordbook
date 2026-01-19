@@ -6,14 +6,19 @@ sidebar:
 tableOfContents: false
 ---
 
-import Pronunciation from '../../../components/Pronunciation.svelte';
-import WordRelations from '../../../components/WordRelations.svelte';
+import Pronunciation from "../../../components/Pronunciation.svelte";
+import WordRelations from "../../../components/WordRelations.svelte";
 
 ### 分析词义
 
 'Interrupt'是一个动词，主要含义是"打断另一人或事情的进程"。它也可以表示"使事情被迫暂停或终止"。
 
-<Pronunciation word="Interrupt" uk="/ˌɪntəˈɹʌpt/" us="/ˌɪntəˈɹʌpt/" client:only />
+<Pronunciation
+  word="Interrupt"
+  uk="/ˌɪntəˈɹʌpt/"
+  us="/ˌɪntəˈɹʌpt/"
+  client:only
+/>
 
 ### 列举例句
 
@@ -50,7 +55,4 @@ import WordRelations from '../../../components/WordRelations.svelte';
 
 "Tom was about to propose to Lily, when their dog suddenly jumped and interrupted him." (Tom 正准备向 Lily 求婚，突然他们的狗跳了起来，打断了他。)
 
-<WordRelations
-  antonyms={["continue", "resume"]}
-  client:only
-/>
+<WordRelations antonyms={["continue", "resume"]} client:only />

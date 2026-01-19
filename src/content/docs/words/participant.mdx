@@ -9,14 +9,19 @@ sidebar:
 tableOfContents: false
 ---
 
-import Pronunciation from '../../../components/Pronunciation.svelte';
-import WordRelations from '../../../components/WordRelations.svelte';
+import Pronunciation from "../../../components/Pronunciation.svelte";
+import WordRelations from "../../../components/WordRelations.svelte";
 
 ### 分析词义
 
 "Participant" 是一个英语单词，常用来描述一个活动、事件或者程序中的一部分或参与者的人员或事物。它通常是由"参与"和"实体(人或者事物)"这两个意思综合而来。例如：在这次会议中，所有的"participant" 都是专业的软件工程师；林立的"participant"正在玩一款新的电子游戏。
 
-<Pronunciation word="Participant" uk="/pɑːˈtɪsɪpənt/" us="/pɑːˈtɪsɪpənt/" client:only />
+<Pronunciation
+  word="Participant"
+  uk="/pɑːˈtɪsɪpənt/"
+  us="/pɑːˈtɪsɪpənt/"
+  client:only
+/>
 
 ### 列举例句
 
@@ -55,7 +60,4 @@ import WordRelations from '../../../components/WordRelations.svelte';
 John was a dedicated participant in the annual marathon. Every year, he trained hard, braving the weather and physical discomfort, always enthusiastic and never late.
 约翰是年度马拉松的一名忠实参与者。每年，他都会刻苦训练，不畏恶劣的天气和身体的不适，总是充满热情并且从未迟到过。
 
-<WordRelations
-  synonyms={["entrant", "partaker", "participator"]}
-  client:only
-/>
+<WordRelations synonyms={["entrant", "partaker", "participator"]} client:only />

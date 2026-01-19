@@ -9,14 +9,19 @@ sidebar:
 tableOfContents: false
 ---
 
-import Pronunciation from '../../../components/Pronunciation.svelte';
-import WordRelations from '../../../components/WordRelations.svelte';
+import Pronunciation from "../../../components/Pronunciation.svelte";
+import WordRelations from "../../../components/WordRelations.svelte";
 
 ### 分析词义
 
 "Exclusive" 是一个形容词，它有几个主要的含义。首先，"exclusive" 可以描述某物仅供某些特定的人或群体使用或享有，意味着排斥其他人或群体。此外，它也能表示某事物是独一无二的，无可替代的。最后，"exclusive" 在新闻报道中也常常用来表示“独家新闻”。
 
-<Pronunciation word="Exclusive" uk="/ɪkˈsklu.sɪv/" us="/ɪkˈsklu.sɪv/" client:only />
+<Pronunciation
+  word="Exclusive"
+  uk="/ɪkˈsklu.sɪv/"
+  us="/ɪkˈsklu.sɪv/"
+  client:only
+/>
 
 ### 列举例句
 
@@ -54,7 +59,4 @@ import WordRelations from '../../../components/WordRelations.svelte';
 "Tom won an exclusive ticket to the concert. He was thrilled, as only 10 people had this privilege."
 汤姆赢得了音乐会的专享门票，他感到无比开心，因为只有 10 个人有这份特权。
 
-<WordRelations
-  antonyms={["inclusive"]}
-  client:only
-/>
+<WordRelations antonyms={["inclusive"]} client:only />

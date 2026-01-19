@@ -6,14 +6,19 @@ sidebar:
 tableOfContents: false
 ---
 
-import Pronunciation from '../../../components/Pronunciation.svelte';
-import WordRelations from '../../../components/WordRelations.svelte';
+import Pronunciation from "../../../components/Pronunciation.svelte";
+import WordRelations from "../../../components/WordRelations.svelte";
 
 ### 分析词义
 
 "Hospital"是一个名词，它指的是一个提供医疗护理，有专门医生和护士的地方。有时候，它也可以用于指称为病人提供长期关护的设施。
 
-<Pronunciation word="Hospital" uk="/ˈhɒs.pɪ.tl̩/" us="/ˈhɑs.pɪ.tl̩/" client:only />
+<Pronunciation
+  word="Hospital"
+  uk="/ˈhɒs.pɪ.tl̩/"
+  us="/ˈhɑs.pɪ.tl̩/"
+  client:only
+/>
 
 ### 列举例句
 
@@ -47,7 +52,4 @@ Jack got injured during a soccer game. He was immediately taken to the hospital,
 
 （杰克在一场足球比赛中受伤了。他被立刻带到了医院，被一位友好的医生治疗。休息了几天后，杰克终于能回家了。）
 
-<WordRelations
-  synonyms={["infirmary", "sickhouse"]}
-  client:only
-/>
+<WordRelations synonyms={["infirmary", "sickhouse"]} client:only />

@@ -8,14 +8,19 @@ sidebar:
 tableOfContents: false
 ---
 
-import Pronunciation from '../../../components/Pronunciation.svelte';
-import WordRelations from '../../../components/WordRelations.svelte';
+import Pronunciation from "../../../components/Pronunciation.svelte";
+import WordRelations from "../../../components/WordRelations.svelte";
 
 ### 分析词义
 
 - **Nitrogen** 是一种化学元素，符号为 N，原子序数为 7。在常温常压下是一种无色、无味、无毒的气体,占大气体积的 78%以上，对生物生存非常重要。
 
-<Pronunciation word="Nitrogen" uk="/ˈnaɪ.tɹə.dʒən/" us="/ˈnaɪ.tɹə.dʒən/" client:only />
+<Pronunciation
+  word="Nitrogen"
+  uk="/ˈnaɪ.tɹə.dʒən/"
+  us="/ˈnaɪ.tɹə.dʒən/"
+  client:only
+/>
 
 ### 列举例句
 
@@ -57,7 +62,4 @@ import WordRelations from '../../../components/WordRelations.svelte';
 
 (在一次科学实验课上，老师提到：“氮是我们大气层中最丰富的元素。”这时候，小明惊讶地举手问道：“但是我看不见也闻不到啊!” 老师笑着回答：“是的，它就是我们空气里无形但不可或缺的一部分。”)
 
-<WordRelations
-  synonyms={["E941","propellant","azote"]}
-  client:only
-/>
+<WordRelations synonyms={["E941", "propellant", "azote"]} client:only />

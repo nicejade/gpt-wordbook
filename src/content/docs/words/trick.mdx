@@ -6,20 +6,20 @@ sidebar:
 tableOfContents: false
 ---
 
-import Pronunciation from '../../../components/Pronunciation.svelte';
-import WordRelations from '../../../components/WordRelations.svelte';
+import Pronunciation from "../../../components/Pronunciation.svelte";
+import WordRelations from "../../../components/WordRelations.svelte";
 
 ### 分析词义
 
 "Trick" 是一个英语单词，表示欺骗，诡计，或者技巧的意思。它可以用作名词和动词。
-
-<Pronunciation word="Trick" uk="/tɹɪk/" us="/tɹɪk/" client:only />
 
 举例例句:
 
 1.  He played a trick on his friend. (他对他的朋友开了个玩笑。)
 2.  That's a neat trick you did with the cards. (你用那些卡片做的把戏真绝。)
 3.  I was tricked into buying a useless device. (我被骗买了一个无用的设备。)
+
+<Pronunciation word="Trick" uk="/tɹɪk/" us="/tɹɪk/" client:only />
 
 ### 词根分析
 
@@ -49,6 +49,20 @@ import WordRelations from '../../../components/WordRelations.svelte';
 (汤姆用一种把戏劝服杰瑞用他的奶酪来交换一个假金币。杰瑞不知道，那块金币只是一块毫无价值的金属。)
 
 <WordRelations
-  synonyms={["john","shift","illusion","artifice","con","gambit","ploy","dupe","fool","gull","have","hoodwink","mod"]}
+  synonyms={[
+    "john",
+    "shift",
+    "illusion",
+    "artifice",
+    "con",
+    "gambit",
+    "ploy",
+    "dupe",
+    "fool",
+    "gull",
+    "have",
+    "hoodwink",
+    "mod",
+  ]}
   client:only
 />

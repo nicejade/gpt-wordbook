@@ -6,14 +6,19 @@ sidebar:
 tableOfContents: false
 ---
 
-import Pronunciation from '../../../components/Pronunciation.svelte';
-import WordRelations from '../../../components/WordRelations.svelte';
+import Pronunciation from "../../../components/Pronunciation.svelte";
+import WordRelations from "../../../components/WordRelations.svelte";
 
 ### 分析词义
 
 "Strengthen" 是一个动词，表达了对力量、信心、防护等方面的加强或变得更强的意思。
 
-<Pronunciation word="Strengthen" uk="/ˈstɹɛŋ(k)θən/" us="/ˈstɹɛŋ(k)θən/" client:only />
+<Pronunciation
+  word="Strengthen"
+  uk="/ˈstɹɛŋ(k)θən/"
+  us="/ˈstɹɛŋ(k)θən/"
+  client:only
+/>
 
 ### 列举例句
 
@@ -49,7 +54,4 @@ import WordRelations from '../../../components/WordRelations.svelte';
 James was thin and weak, but after he started going to the gym, he began to strengthen. Now he is strong and confident. 局外人都看到他的可能性和力量的增强，并对他表示鼓励和支持。
 (詹姆斯是瘦弱的，但当他开始去健身房后，他开始变得强壮。 现在他既强壮又有信心。旁观者都看到他的可能性和力量的增强，并对他表示鼓励和支持。)
 
-<WordRelations
-  antonyms={["atrophy", "weaken"]}
-  client:only
-/>
+<WordRelations antonyms={["atrophy", "weaken"]} client:only />

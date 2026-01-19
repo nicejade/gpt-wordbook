@@ -6,14 +6,19 @@ sidebar:
 tableOfContents: false
 ---
 
-import Pronunciation from '../../../components/Pronunciation.svelte';
-import WordRelations from '../../../components/WordRelations.svelte';
+import Pronunciation from "../../../components/Pronunciation.svelte";
+import WordRelations from "../../../components/WordRelations.svelte";
 
 ### 分析词义
 
 "Intelligent" 是一个形容词，主要用来描述有较高智商的人或能进行复杂操作和理解复杂概念的机器。也经常用来表示具备良好理解力、领悟能力和判断力的品质。
 
-<Pronunciation word="Intelligent" uk="/ɪnˈtɛlɪd͡ʒənt/" us="/ɪnˈtɛlɪd͡ʒənt/" client:only />
+<Pronunciation
+  word="Intelligent"
+  uk="/ɪnˈtɛlɪd͡ʒənt/"
+  us="/ɪnˈtɛlɪd͡ʒənt/"
+  client:only
+/>
 
 ### 列举例句
 
@@ -50,7 +55,4 @@ import WordRelations from '../../../components/WordRelations.svelte';
 Lucy, the most intelligent girl in our class, always sits quietly in the corner yet speaks out when necessary. You can always learn something new from her.
 (露西，我们班上最聪明的女孩，总是静静地坐在角落里，但在必要时会发言。你总能从她那里学到新东西。)
 
-<WordRelations
-  antonyms={["stupid"]}
-  client:only
-/>
+<WordRelations antonyms={["stupid"]} client:only />

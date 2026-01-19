@@ -6,14 +6,19 @@ sidebar:
 tableOfContents: false
 ---
 
-import Pronunciation from '../../../components/Pronunciation.svelte';
-import WordRelations from '../../../components/WordRelations.svelte';
+import Pronunciation from "../../../components/Pronunciation.svelte";
+import WordRelations from "../../../components/WordRelations.svelte";
 
 ### 分析词义
 
 “Inevitably” 是一个副词，意为 "无可避免地"，它表明某种情况或结果强制性和必然性。
 
-<Pronunciation word="Inevitably" uk="/ɪˈnɛvətəbli/" us="/ɪˈnɛvətəbli/" client:only />
+<Pronunciation
+  word="Inevitably"
+  uk="/ɪˈnɛvətəbli/"
+  us="/ɪˈnɛvətəbli/"
+  client:only
+/>
 
 ### 列举例句
 
@@ -47,7 +52,22 @@ James packed his umbrella every day, even when the sun was shining. It was a hab
 詹姆斯每天都会带伞，即使阳光明媚。因为在这个城市，雨水总是无可避免地紧随着阳光，就如同夜晚跟着白天。
 
 <WordRelations
-  synonyms={["always", "predictably", "regularly", "certainly", "inexorably", "necessarily", "unavoidably"]}
-  antonyms={["unexpectedly", "unusually", "avoidably", "evitably", "impossibly", "incidentally"]}
+  synonyms={[
+    "always",
+    "predictably",
+    "regularly",
+    "certainly",
+    "inexorably",
+    "necessarily",
+    "unavoidably",
+  ]}
+  antonyms={[
+    "unexpectedly",
+    "unusually",
+    "avoidably",
+    "evitably",
+    "impossibly",
+    "incidentally",
+  ]}
   client:only
 />

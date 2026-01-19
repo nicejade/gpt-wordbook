@@ -7,14 +7,19 @@ sidebar:
 tableOfContents: false
 ---
 
-import Pronunciation from '../../../components/Pronunciation.svelte';
-import WordRelations from '../../../components/WordRelations.svelte';
+import Pronunciation from "../../../components/Pronunciation.svelte";
+import WordRelations from "../../../components/WordRelations.svelte";
 
 ### 分析词义
 
 "Utopia"是一个名词，指的是一个理论上的、理想的社会或社区，其中的生活条件、法律、政府等都是完美的，无可挑剔的。在这样的社会或社区中，人们生活在和平、和谐、健康、幸福中。
 
-<Pronunciation word="Utopia" uk="/juːˈtəʊ.pi.ə/" us="/juːˈtəʊ.pi.ə/" client:only />
+<Pronunciation
+  word="Utopia"
+  uk="/juːˈtəʊ.pi.ə/"
+  us="/juːˈtəʊ.pi.ə/"
+  client:only
+/>
 
 ### 列举例句
 
@@ -48,7 +53,4 @@ In Emma's mind, she always had a vision of Utopia. A place where people lived in
 
 在艾玛的心中，她总是有一个乌托邦的梦想。在那里，人们和谐相处，没有冲突或不和。那里没有偏见，没有贫穷，只有平等和宁静。她梦想有一天可以让这个乌托邦成为现实。
 
-<WordRelations
-  antonyms={["dystopia", "unutopia"]}
-  client:only
-/>
+<WordRelations antonyms={["dystopia", "unutopia"]} client:only />

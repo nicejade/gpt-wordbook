@@ -6,20 +6,25 @@ sidebar:
 tableOfContents: false
 ---
 
-import Pronunciation from '../../../components/Pronunciation.svelte';
-import WordRelations from '../../../components/WordRelations.svelte';
+import Pronunciation from "../../../components/Pronunciation.svelte";
+import WordRelations from "../../../components/WordRelations.svelte";
 
 ### 分析词义
 
 "Apartment" 是英语单词，指的是“公寓”，一种集中式的住宅类型。它一般指一个建筑的单一居住空间，通常是建筑物的一部分，并且常常指向城市的高密度住宅。
-
-<Pronunciation word="Apartment" uk="/əˈpɑːt.mənt/" us="/əˈpɑɹt.mənt/" client:only />
 
 **例句展示**：
 
 1.  I finally found the perfect apartment after months of searching. (我在几个月的寻找后终于找到了一间理想的公寓。)
 2.  They moved into a luxurious apartment overlooking the city. (他们搬进了一间可以看到全城景色的豪华公寓。)
 3.  My new apartment is close to my workplace. (我的新公寓离我的工作地点很近。)
+
+<Pronunciation
+  word="Apartment"
+  uk="/əˈpɑːt.mənt/"
+  us="/əˈpɑɹt.mənt/"
+  client:only
+/>
 
 ### 词根分析
 
@@ -45,7 +50,4 @@ import WordRelations from '../../../components/WordRelations.svelte';
 
 My friend Julia found a sweet little apartment in the heart of the city. It's her own slice of heaven in the bustling cityscape. (我朋友朱莉亚在城市的中心找到了一座温馨的小公寓。在繁华的城市景观中，这是她自己的一片天空。)
 
-<WordRelations
-  synonyms={["condominium", "flat", "unit"]}
-  client:only
-/>
+<WordRelations synonyms={["condominium", "flat", "unit"]} client:only />

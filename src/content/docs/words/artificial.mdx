@@ -8,14 +8,19 @@ sidebar:
 tableOfContents: false
 ---
 
-import Pronunciation from '../../../components/Pronunciation.svelte';
-import WordRelations from '../../../components/WordRelations.svelte';
+import Pronunciation from "../../../components/Pronunciation.svelte";
+import WordRelations from "../../../components/WordRelations.svelte";
 
 ### 分析词义
 
 "Artificial" 是一个英语形容词，意思是 "人造的" 或 "非天然的"。它通常被用来描述由人类创建或修改的事物，而不是由自然决定或产生的。比如 artificial intelligence（人工智能），artificial light（人造光源）。
 
-<Pronunciation word="Artificial" uk="/ɑː(ɹ)təˈfɪʃəl/" us="/ɑː(ɹ)təˈfɪʃəl/" client:only />
+<Pronunciation
+  word="Artificial"
+  uk="/ɑː(ɹ)təˈfɪʃəl/"
+  us="/ɑː(ɹ)təˈfɪʃəl/"
+  client:only
+/>
 
 ### 列举例句
 
@@ -47,8 +52,4 @@ import WordRelations from '../../../components/WordRelations.svelte';
 
 "People are debating whether we should depend on artificial intelligence too much. They worried it might take over human jobs."（人们正在争论我们是否应该过度依赖人工智能，他们担心这可能会取代人类的工作。）
 
-<WordRelations
-  synonyms={["artificious"]}
-  antonyms={["natural"]}
-  client:only
-/>
+<WordRelations synonyms={["artificious"]} antonyms={["natural"]} client:only />

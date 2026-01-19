@@ -6,14 +6,19 @@ sidebar:
 tableOfContents: false
 ---
 
-import Pronunciation from '../../../components/Pronunciation.svelte';
-import WordRelations from '../../../components/WordRelations.svelte';
+import Pronunciation from "../../../components/Pronunciation.svelte";
+import WordRelations from "../../../components/WordRelations.svelte";
 
 ### 分析词义
 
 Grandparent 是英文中的一个名词，对应中文里的"祖父母"的意思，它包括了祖父（grandfather）和祖母（grandmother）。
 
-<Pronunciation word="Grandparent" uk="/ˈɡɹæn(d)pæɹənt/" us="/ˈɡɹæn(d)pæɹənt/" client:only />
+<Pronunciation
+  word="Grandparent"
+  uk="/ˈɡɹæn(d)pæɹənt/"
+  us="/ˈɡɹæn(d)pæɹənt/"
+  client:only
+/>
 
 ### 列举例句
 
@@ -47,7 +52,4 @@ Grandparent 是英文中的一个名词，对应中文里的"祖父母"的意思
 Tom likes his grandparent's house in the countryside, because it is peaceful and beautiful.
 （汤姆非常喜欢他祖父母在乡下的房子，因为那里宁静而美丽。）
 
-<WordRelations
-  antonyms={["grandchild"]}
-  client:only
-/>
+<WordRelations antonyms={["grandchild"]} client:only />

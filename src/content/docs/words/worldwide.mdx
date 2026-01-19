@@ -8,14 +8,19 @@ sidebar:
 tableOfContents: false
 ---
 
-import Pronunciation from '../../../components/Pronunciation.svelte';
-import WordRelations from '../../../components/WordRelations.svelte';
+import Pronunciation from "../../../components/Pronunciation.svelte";
+import WordRelations from "../../../components/WordRelations.svelte";
 
 ### 分析词义
 
 "Worldwide" 是一个形容词，用来描述某些事物或现象遍布全球或全世界。例如：“This company has worldwide distribution.”(这个公司在全世界有分销商).
 
-<Pronunciation word="Worldwide" uk="/ˈwɜːldwaɪd/" us="/ˈwɝldˌwaɪd/" client:only />
+<Pronunciation
+  word="Worldwide"
+  uk="/ˈwɜːldwaɪd/"
+  us="/ˈwɝldˌwaɪd/"
+  client:only
+/>
 
 ### 列举例句
 
@@ -50,7 +55,4 @@ import WordRelations from '../../../components/WordRelations.svelte';
 The artist had a humble beginning, but his work is now recognized worldwide. Artists across the globe are influenced by his unique style.
 (这个艺术家起初很卑微，但他的作品现在被全世界认可。全球的艺术家都受到他独特风格的影响。)
 
-<WordRelations
-  synonyms={["globally","internationally"]}
-  client:only
-/>
+<WordRelations synonyms={["globally", "internationally"]} client:only />

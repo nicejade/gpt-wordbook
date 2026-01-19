@@ -8,14 +8,19 @@ sidebar:
 tableOfContents: false
 ---
 
-import Pronunciation from '../../../components/Pronunciation.svelte';
-import WordRelations from '../../../components/WordRelations.svelte';
+import Pronunciation from "../../../components/Pronunciation.svelte";
+import WordRelations from "../../../components/WordRelations.svelte";
 
 ### 分析词义
 
 "Establishment" 是一个名词，表示设立，建立；或者指被创建或已经设立的事务、机构或系统。在更广义上，它也被用来表示社会的主流或权威，例如 "the Establishment" 这个短语常用来指代控制社会的权威性机构或精英阶层。
 
-<Pronunciation word="Establishment" uk="/ɪˈstæblɪʃmənt/" us="/ɪˈstæblɪʃmənt/" client:only />
+<Pronunciation
+  word="Establishment"
+  uk="/ɪˈstæblɪʃmənt/"
+  us="/ɪˈstæblɪʃmənt/"
+  client:only
+/>
 
 ### 列举例句
 
@@ -52,8 +57,4 @@ import WordRelations from '../../../components/WordRelations.svelte';
 
 In a small town, an educational establishment was being built. Almost all the townspeople participated in it, hoping it would bring a brighter future for their children. （在一个小镇上，人们正在建造一个教育机构。几乎所有的镇民都参与其中，希望它能给他们的孩子带来更美好的未来。）
 
-<WordRelations
-  synonyms={["foundation"]}
-  antonyms={["abolition"]}
-  client:only
-/>
+<WordRelations synonyms={["foundation"]} antonyms={["abolition"]} client:only />

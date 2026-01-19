@@ -6,14 +6,19 @@ sidebar:
 tableOfContents: false
 ---
 
-import Pronunciation from '../../../components/Pronunciation.svelte';
-import WordRelations from '../../../components/WordRelations.svelte';
+import Pronunciation from "../../../components/Pronunciation.svelte";
+import WordRelations from "../../../components/WordRelations.svelte";
 
 ### 分析词义
 
 单词 "extinguish" 来自拉丁语 "exstinguere"，意思是“熄灭”，“扑灭”。我们通常用它来描述消灭火焰或者结束某种现象的行为。
 
-<Pronunciation word="Extinguish" uk="/ɪkˈstɪŋ.ɡwɪʃ/" us="/ɪkˈstɪŋ.ɡwɪʃ/" client:only />
+<Pronunciation
+  word="Extinguish"
+  uk="/ɪkˈstɪŋ.ɡwɪʃ/"
+  us="/ɪkˈstɪŋ.ɡwɪʃ/"
+  client:only
+/>
 
 ### 列举例句
 
@@ -64,7 +69,4 @@ In the desert nights, travelers gathered around a cozy bonfire, laughing and sin
 
 在沙漠的夜晚，旅行者们围坐在舒适的篝火旁，大笑着，唱歌。但是，当黎明来临的时候，他们必须扑灭火焰，然后继续他们的旅程。
 
-<WordRelations
-  synonyms={["douse","quench"]}
-  client:only
-/>
+<WordRelations synonyms={["douse", "quench"]} client:only />

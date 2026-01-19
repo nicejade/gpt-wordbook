@@ -8,14 +8,19 @@ sidebar:
 tableOfContents: false
 ---
 
-import Pronunciation from '../../../components/Pronunciation.svelte';
-import WordRelations from '../../../components/WordRelations.svelte';
+import Pronunciation from "../../../components/Pronunciation.svelte";
+import WordRelations from "../../../components/WordRelations.svelte";
 
 ### 分析词义
 
 "Highlight" 这个单词在英语中有两个基本的词义。第一，作为动词，意味着“强调，突出显示”，通常用于强调重要的信息或事实；第二，作为名词，意味着“最精彩的部分、焦点”，常用于描述活动或事件中最重要、最值得关注的部分。
 
-<Pronunciation word="Highlight" uk="/ˈhaɪ.ˌlaɪt/" us="/ˈhaɪ.ˌlaɪt/" client:only />
+<Pronunciation
+  word="Highlight"
+  uk="/ˈhaɪ.ˌlaɪt/"
+  us="/ˈhaɪ.ˌlaɪt/"
+  client:only
+/>
 
 ### 列举例句
 
@@ -49,7 +54,4 @@ In the classroom, Lucy often used her colorful highlighters to make key points i
 
 在课堂上，露西经常用她五颜六色的荧光笔让教科书中的重点部分突出。对她而言，学习的过程总是一个不断“突出重点”的过程。
 
-<WordRelations
-  antonyms={["lowlight"]}
-  client:only
-/>
+<WordRelations antonyms={["lowlight"]} client:only />

@@ -8,14 +8,19 @@ sidebar:
 tableOfContents: false
 ---
 
-import Pronunciation from '../../../components/Pronunciation.svelte';
-import WordRelations from '../../../components/WordRelations.svelte';
+import Pronunciation from "../../../components/Pronunciation.svelte";
+import WordRelations from "../../../components/WordRelations.svelte";
 
 ### 分析词义
 
 "Notorious" 是一个形容词，用于描述因为坏事或恶劣行为而众所周知的人或事情。很多时候它会用在具有负面公众形象的人身上。比如说，罪犯，或者做了不好的事情的公众人物。
 
-<Pronunciation word="Notorious" uk="/nəʊˈtɔːɹɪəs/" us="/noʊˈtɔɹiəs/" client:only />
+<Pronunciation
+  word="Notorious"
+  uk="/nəʊˈtɔːɹɪəs/"
+  us="/noʊˈtɔɹiəs/"
+  client:only
+/>
 
 ### 列举例句
 
@@ -48,8 +53,4 @@ import WordRelations from '../../../components/WordRelations.svelte';
 There was a notorious pirate who was feared across all seven seas. No ship dared to cross his path.
 翻译:有一个臭名昭著的海盗，在七海中都是人人畏惧。没有哪艘船敢于冲撞他的路径。
 
-<WordRelations
-  synonyms={["infamous"]}
-  antonyms={["famous"]}
-  client:only
-/>
+<WordRelations synonyms={["infamous"]} antonyms={["famous"]} client:only />

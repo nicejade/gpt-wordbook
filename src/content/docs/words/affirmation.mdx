@@ -8,14 +8,19 @@ sidebar:
 tableOfContents: false
 ---
 
-import Pronunciation from '../../../components/Pronunciation.svelte';
-import WordRelations from '../../../components/WordRelations.svelte';
+import Pronunciation from "../../../components/Pronunciation.svelte";
+import WordRelations from "../../../components/WordRelations.svelte";
 
 ### 分析词义
 
 "Affirmation" 这个词主要用于描述一种表达强烈肯定或支持的行为或陈述。它可以用于指代个人的情绪宣泄，也可以用于正式的情境，比如在法律中表达确认或证实的动作。
 
-<Pronunciation word="Affirmation" uk="/æfɝˈmeɪʃn/" us="/æfɝˈmeɪʃn/" client:only />
+<Pronunciation
+  word="Affirmation"
+  uk="/æfɝˈmeɪʃn/"
+  us="/æfɝˈmeɪʃn/"
+  client:only
+/>
 
 ### 列举例句
 
@@ -50,7 +55,4 @@ import WordRelations from '../../../components/WordRelations.svelte';
 Every morning, she would stand in front of the mirror, her eyes meeting her reflection. "I am strong, I am capable," she whispered, her daily affirmation setting the tone for the day.
 (每天早上，她都会站在镜子前，眼睛看着自己的倒影。"我很强大，我有能力，"她低声说，这是她每日的自我肯定，为她的一天定下了基调。)
 
-<WordRelations
-  synonyms={["assertion"]}
-  client:only
-/>
+<WordRelations synonyms={["assertion"]} client:only />

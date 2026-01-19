@@ -6,14 +6,19 @@ sidebar:
 tableOfContents: false
 ---
 
-import Pronunciation from '../../../components/Pronunciation.svelte';
-import WordRelations from '../../../components/WordRelations.svelte';
+import Pronunciation from "../../../components/Pronunciation.svelte";
+import WordRelations from "../../../components/WordRelations.svelte";
 
 ### 分析词义
 
 "Lavatory"是英语中的一种比较正式的说法，它指的是厕所或卫生间，用于公共场所或正式场合。
 
-<Pronunciation word="Lavatory" uk="/ˈlæv.ə.təɹ.i/" us="/ˈlæv.ə.təɹ.i/" client:only />
+<Pronunciation
+  word="Lavatory"
+  uk="/ˈlæv.ə.təɹ.i/"
+  us="/ˈlæv.ə.təɹ.i/"
+  client:only
+/>
 
 ### 列举例句
 
@@ -46,7 +51,4 @@ Lavatory 作为名词，没有特殊的变形。
 Everyday, after playing in the muddy field, Jimmy would run into the lavatory to wash his hands and face, leaving it as clean as new.
 (每天，吉米在泥泞的田野里玩耍后，都会跑进洗手间洗脸洗手，让它恢复得犹如新的一样。)
 
-<WordRelations
-  synonyms={["washbasin", "sink"]}
-  client:only
-/>
+<WordRelations synonyms={["washbasin", "sink"]} client:only />

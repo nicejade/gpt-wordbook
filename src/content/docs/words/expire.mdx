@@ -7,14 +7,19 @@ sidebar:
 tableOfContents: false
 ---
 
-import Pronunciation from '../../../components/Pronunciation.svelte';
-import WordRelations from '../../../components/WordRelations.svelte';
+import Pronunciation from "../../../components/Pronunciation.svelte";
+import WordRelations from "../../../components/WordRelations.svelte";
 
 ### 分析词义
 
 "Expire"这个英语单词主要有两个含义：其一，意为“逾期，过期”；其二，意为“去世，死亡”。它多用于表示一个期限（如合约、许可证或商品保质期）结束，或者生命终止这样的状态。
 
-<Pronunciation word="Expire" uk="/ɛkˈspaɪ.ə(ɹ)/" us="/ɛkˈspaɪ.ə(ɹ)/" client:only />
+<Pronunciation
+  word="Expire"
+  uk="/ɛkˈspaɪ.ə(ɹ)/"
+  us="/ɛkˈspaɪ.ə(ɹ)/"
+  client:only
+/>
 
 ### 列举例句
 
@@ -47,7 +52,4 @@ import WordRelations from '../../../components/WordRelations.svelte';
 In a quiet room, an old clock was ticking. Suddenly, a loud alarm rang out: the batteries had expired.
 （在一个安静的房间里，一只老钟正在滴答作响。突然，一个响亮的警报声就响了起来：电池过期了。）
 
-<WordRelations
-  antonyms={["inspire"]}
-  client:only
-/>
+<WordRelations antonyms={["inspire"]} client:only />

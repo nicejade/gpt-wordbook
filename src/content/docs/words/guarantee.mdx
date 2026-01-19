@@ -6,14 +6,19 @@ sidebar:
 tableOfContents: false
 ---
 
-import Pronunciation from '../../../components/Pronunciation.svelte';
-import WordRelations from '../../../components/WordRelations.svelte';
+import Pronunciation from "../../../components/Pronunciation.svelte";
+import WordRelations from "../../../components/WordRelations.svelte";
 
 ### 分析词义
 
 "Guarantee" 是一个英语单词，作为名词时作"保证，保障" 解，作为动词时是"保证，担保"的意思。
 
-<Pronunciation word="Guarantee" uk="/ˌɡæɹənˈtiː/" us="/ˌɡæɹənˈtiː/" client:only />
+<Pronunciation
+  word="Guarantee"
+  uk="/ˌɡæɹənˈtiː/"
+  us="/ˌɡæɹənˈtiː/"
+  client:only
+/>
 
 ### 列举例句
 
@@ -49,7 +54,4 @@ There was a young man who wanted to rent a house, but the landlord required a gu
 
 有一个年轻人想租房，但是房东需要一份保证。幸运的是，这个男人的叔叔同意作为担保人，签署了一份文档以保证租金。
 
-<WordRelations
-  synonyms={["assure", "warrant"]}
-  client:only
-/>
+<WordRelations synonyms={["assure", "warrant"]} client:only />

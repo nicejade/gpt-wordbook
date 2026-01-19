@@ -6,14 +6,19 @@ sidebar:
 tableOfContents: false
 ---
 
-import Pronunciation from '../../../components/Pronunciation.svelte';
-import WordRelations from '../../../components/WordRelations.svelte';
+import Pronunciation from "../../../components/Pronunciation.svelte";
+import WordRelations from "../../../components/WordRelations.svelte";
 
 ### 分析词义
 
 "Vulnerable" 是一个英语形容词，表示"易受攻击的、易受伤害的，脆弱的"，具有暴露于伤害、风险、或者危险之中的含义。
 
-<Pronunciation word="Vulnerable" uk="/ˈvʌln(ə)ɹəbl̩/" us="/ˈvʌln(ə)ɹəbl̩/" client:only />
+<Pronunciation
+  word="Vulnerable"
+  uk="/ˈvʌln(ə)ɹəbl̩/"
+  us="/ˈvʌln(ə)ɹəbl̩/"
+  client:only
+/>
 
 ### 列举例句
 
@@ -49,7 +54,21 @@ In a large forest, lived a small, vulnerable rabbit. He was always careful, as h
 （在一片大森林里，住着一只小而脆弱的兔子。他总是非常小心，因为他知道自己容易成为猎物。尽管如此，他过得很快乐。）
 
 <WordRelations
-  synonyms={["defenceless", "helpless", "powerless", "unguarded", "unprotected", "weak"]}
-  antonyms={["durable", "indomitable", "invincible", "invulnerable", "powerful", "strong"]}
+  synonyms={[
+    "defenceless",
+    "helpless",
+    "powerless",
+    "unguarded",
+    "unprotected",
+    "weak",
+  ]}
+  antonyms={[
+    "durable",
+    "indomitable",
+    "invincible",
+    "invulnerable",
+    "powerful",
+    "strong",
+  ]}
   client:only
 />

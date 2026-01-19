@@ -6,14 +6,19 @@ sidebar:
 tableOfContents: false
 ---
 
-import Pronunciation from '../../../components/Pronunciation.svelte';
-import WordRelations from '../../../components/WordRelations.svelte';
+import Pronunciation from "../../../components/Pronunciation.svelte";
+import WordRelations from "../../../components/WordRelations.svelte";
 
 ### 分析词义
 
 "Perimeter" 是一个英语单词，它的基本含义是 "边界" 或 "周长"。
 
-<Pronunciation word="Perimeter" uk="/pəˈɹɪmɪtə(ɹ)/" us="/pəˈɹɪmɪtə(ɹ)/" client:only />
+<Pronunciation
+  word="Perimeter"
+  uk="/pəˈɹɪmɪtə(ɹ)/"
+  us="/pəˈɹɪmɪtə(ɹ)/"
+  client:only
+/>
 
 ### 列举例句
 
@@ -51,7 +56,4 @@ Every day, Mr. Johnson takes his dog Max around the perimeter of his property fo
 
 每天，约翰逊先生都会带着他的狗马克思沿着他的房子的周边散步。这是给马克思锻炼的机会，也给约翰逊先生检查他的房子是否安全的机会。
 
-<WordRelations
-  synonyms={["premises", "circumference"]}
-  client:only
-/>
+<WordRelations synonyms={["premises", "circumference"]} client:only />

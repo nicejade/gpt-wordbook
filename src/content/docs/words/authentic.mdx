@@ -6,14 +6,19 @@ sidebar:
 tableOfContents: false
 ---
 
-import Pronunciation from '../../../components/Pronunciation.svelte';
-import WordRelations from '../../../components/WordRelations.svelte';
+import Pronunciation from "../../../components/Pronunciation.svelte";
+import WordRelations from "../../../components/WordRelations.svelte";
 
 ### 分析词义
 
 "Authentic" 是一个形容词，表示“真正的”或者“真实的”，通常用来描述事物原始的、未经篡改的或者真实可信的特性。
 
-<Pronunciation word="Authentic" uk="/ɒ.ˈθɛn.tɪk/" us="/ɒ.ˈθɛn.tɪk/" client:only />
+<Pronunciation
+  word="Authentic"
+  uk="/ɒ.ˈθɛn.tɪk/"
+  us="/ɒ.ˈθɛn.tɪk/"
+  client:only
+/>
 
 ### 列举例句
 
@@ -51,7 +56,15 @@ Authentic 的分词是 "-ic" 这个后缀常用于形容词。
 这个小故事通过汤姆真实的艺术家发现，帮助我们记住 authentic 表示的是一种真实和原始的状态。
 
 <WordRelations
-  synonyms={["credible","reliable","trustworthy","unfaked","bonafide","genuine","real"]}
-  antonyms={["fake","ingenuine","phony"]}
+  synonyms={[
+    "credible",
+    "reliable",
+    "trustworthy",
+    "unfaked",
+    "bonafide",
+    "genuine",
+    "real",
+  ]}
+  antonyms={["fake", "ingenuine", "phony"]}
   client:only
 />

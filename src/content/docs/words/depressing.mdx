@@ -6,14 +6,19 @@ sidebar:
 tableOfContents: false
 ---
 
-import Pronunciation from '../../../components/Pronunciation.svelte';
-import WordRelations from '../../../components/WordRelations.svelte';
+import Pronunciation from "../../../components/Pronunciation.svelte";
+import WordRelations from "../../../components/WordRelations.svelte";
 
 ### 分析词义
 
 "Depressing"是一个形容词，主要用来形容一种令人沮丧、忧郁的感觉。通常可以用来描述情绪、环境、景色、音乐、电影等各种可以给人带来忧郁或悲哀感觉的事物。
 
-<Pronunciation word="Depressing" uk="/dɪˈpɹɛsɪŋ(ɡ)/" us="/dɪˈpɹɛsɪŋ(ɡ)/" client:only />
+<Pronunciation
+  word="Depressing"
+  uk="/dɪˈpɹɛsɪŋ(ɡ)/"
+  us="/dɪˈpɹɛsɪŋ(ɡ)/"
+  client:only
+/>
 
 ### 列举例句
 
@@ -49,7 +54,4 @@ Mike walked through the cold, barely lit street. The disturbing graffiti, the ab
 
 迈克走过寒冷、昏暗的街道。骇人的涂鸦，废弃的建筑...这是他家乡令人沮丧的一幕。
 
-<WordRelations
-  synonyms={["downbear", "unpleasant"]}
-  client:only
-/>
+<WordRelations synonyms={["downbear", "unpleasant"]} client:only />

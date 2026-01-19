@@ -9,14 +9,19 @@ sidebar:
 tableOfContents: false
 ---
 
-import Pronunciation from '../../../components/Pronunciation.svelte';
-import WordRelations from '../../../components/WordRelations.svelte';
+import Pronunciation from "../../../components/Pronunciation.svelte";
+import WordRelations from "../../../components/WordRelations.svelte";
 
 ### 分析词义
 
 "Apology" 是一个名词，主要有两个含义：1. 对错事行为的悔过或者表示歉意的言语或行为，例如：“I owe you an apology.”(我应该向你道歉。) 2. 辩解，辩护，例如："This book is an apology for capitalism."(这本书是对资本主义的辩护)。
 
-<Pronunciation word="Apology" uk="/əˈpɒl.ə.dʒi/" us="/əˈpɒl.ə.dʒi/" client:only />
+<Pronunciation
+  word="Apology"
+  uk="/əˈpɒl.ə.dʒi/"
+  us="/əˈpɒl.ə.dʒi/"
+  client:only
+/>
 
 ### 列举例句
 
@@ -49,7 +54,4 @@ import WordRelations from '../../../components/WordRelations.svelte';
 Sarah couldn't attend her friend's party. The next day, she sent a sincere apology to her friend for missing the event.
 (萨拉没有参加朋友的聚会。 第二天，她向朋友发了道歉，因为错过了活动。)
 
-<WordRelations
-  synonyms={["apologia"]}
-  client:only
-/>
+<WordRelations synonyms={["apologia"]} client:only />

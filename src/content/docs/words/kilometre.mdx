@@ -6,14 +6,19 @@ sidebar:
 tableOfContents: false
 ---
 
-import Pronunciation from '../../../components/Pronunciation.svelte';
-import WordRelations from '../../../components/WordRelations.svelte';
+import Pronunciation from "../../../components/Pronunciation.svelte";
+import WordRelations from "../../../components/WordRelations.svelte";
 
 ### 分析词义
 
 "Kilometre" 是一个计量单位，用于测量距离。它是公制单位系统中的长度单位，1 个公里(kilometre)等于 1000 米。
 
-<Pronunciation word="Kilometre" uk="/kɪˈlɒmɪtə/" us="/kəˈlɑmɪtəɹ/" client:only />
+<Pronunciation
+  word="Kilometre"
+  uk="/kɪˈlɒmɪtə/"
+  us="/kəˈlɑmɪtəɹ/"
+  client:only
+/>
 
 ### 列举例句
 
@@ -45,7 +50,4 @@ import WordRelations from '../../../components/WordRelations.svelte';
 
 Amy lives 5 kilometres away from school. Every morning, she rides her bike to school. She loves the morning air and the scenery on the road.（Amy 住在离学校 5 公里的地方。每天早晨，她都会骑自行车上学。她喜欢早晨的空气和路上的风景。）
 
-<WordRelations
-  synonyms={["SI", "km", "klick"]}
-  client:only
-/>
+<WordRelations synonyms={["SI", "km", "klick"]} client:only />

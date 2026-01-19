@@ -8,20 +8,20 @@ sidebar:
 tableOfContents: false
 ---
 
-import Pronunciation from '../../../components/Pronunciation.svelte';
-import WordRelations from '../../../components/WordRelations.svelte';
+import Pronunciation from "../../../components/Pronunciation.svelte";
+import WordRelations from "../../../components/WordRelations.svelte";
 
 ### 分析词义
 
 "Give"是一个基本的英语动词，意思是“给予”，在多种上下文中有着各种不同的含义，最常见的是传递某物，例如：“Give me the book.”（把书给我。）也可以表示产生或引发某种情感或反应，例如：“Give me a headache.”（让我头疼。）
-
-<Pronunciation word="Give" uk="/ɡɪv/" us="/ɡɪv/" client:only />
 
 **举例**
 
 1.  Give me a chance.（给我一个机会。）
 2.  She gave him a strange look.（她给了他一个奇怪的眼神。）
 3.  The experience gave me a new perspective on life.（这次经历让我对生活有了新的看法。）
+
+<Pronunciation word="Give" uk="/ɡɪv/" us="/ɡɪv/" client:only />
 
 ### 词根分析
 
@@ -51,7 +51,16 @@ import WordRelations from '../../../components/WordRelations.svelte';
 （“你能把那个苹果给我吗？”汤姆一边说，一边指着置于最高架上的红色水果。他的哥哥把果子递给了他，汤姆满意地笑了。）
 
 <WordRelations
-  synonyms={["bend", "cede", "flex", "move", "yield", "estimate", "guess", "predict"]}
+  synonyms={[
+    "bend",
+    "cede",
+    "flex",
+    "move",
+    "yield",
+    "estimate",
+    "guess",
+    "predict",
+  ]}
   antonyms={["resist", "get", "obtain", "receive", "take"]}
   client:only
 />

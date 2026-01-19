@@ -5,18 +5,23 @@ sidebar:
 tableOfContents: false
 ---
 
-import Pronunciation from '../../../components/Pronunciation.svelte';
-import WordRelations from '../../../components/WordRelations.svelte';
+import Pronunciation from "../../../components/Pronunciation.svelte";
+import WordRelations from "../../../components/WordRelations.svelte";
 
 ### 分析词义单词 "Resistance" 是英语中的一个名词，它的意思包含"抵抗"、"阻力"或者"反抗"等含义。它可以被用在很多领域比如物理学（指导体对电流的阻力），生物学（指生物体对疾病或病原体的抵抗力）以及社会学（指群体或个人对不公正现象的反抗或抵制）。
+
+<Pronunciation
+  word="Resistance"
+  uk="/ɹɪˈzɪstəns/"
+  us="/ɹɪˈzɪstəns/"
+  client:only
+/>
 
 ### 列举例句
 
 1.  Non-violent resistance is a powerful tool for social change. （非暴力抵抗是一种强大的社会变革工具。）
 2.  The wire has a high resistance to electric current. （这根导线对电流有很高的阻力。）
 3.  The bacteria developed a resistance to the antibiotic. （这种细菌对抗生素产生了抵抗力。）
-
-<Pronunciation word="Resistance" uk="/ɹɪˈzɪstəns/" us="/ɹɪˈzɪstəns/" client:only />
 
 ### 词根分析
 
@@ -42,7 +47,4 @@ import WordRelations from '../../../components/WordRelations.svelte';
 
 The king’s cruel behavior ignited the spark of resistance in the heart of the citizens. People started to resist his oppressive rules, showing unparalleled courage and unity. (国王的残酷行为点燃了公民心中的抵抗火花。人们开始反抗他的压迫规则，显示出无比的勇气和团结。)
 
-<WordRelations
-  synonyms={["opposition"]}
-  client:only
-/>
+<WordRelations synonyms={["opposition"]} client:only />

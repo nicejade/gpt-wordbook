@@ -8,14 +8,19 @@ sidebar:
 tableOfContents: false
 ---
 
-import Pronunciation from '../../../components/Pronunciation.svelte';
-import WordRelations from '../../../components/WordRelations.svelte';
+import Pronunciation from "../../../components/Pronunciation.svelte";
+import WordRelations from "../../../components/WordRelations.svelte";
 
 ### 分析词义
 
 "Breakdown" 是一个名词，有两个主要含义。首先，它可以指机械、车辆或系统的故障，不能正常运行。其次，它还可以指分解或分析某事的过程。例如，项目的细节分解或预算分解。
 
-<Pronunciation word="Breakdown" uk="/ˈbɹeɪkdaʊn/" us="/ˈbɹeɪkdaʊn/" client:only />
+<Pronunciation
+  word="Breakdown"
+  uk="/ˈbɹeɪkdaʊn/"
+  us="/ˈbɹeɪkdaʊn/"
+  client:only
+/>
 
 ### 列举例句
 
@@ -47,7 +52,4 @@ import WordRelations from '../../../components/WordRelations.svelte';
 
 One day, Jake's old car had a breakdown on his way to work. He was stuck on the road for hours.（有一天，杰克在上班路上的旧车抛锚了，他在路上困了几个小时。）
 
-<WordRelations
-  synonyms={["degradation"]}
-  client:only
-/>
+<WordRelations synonyms={["degradation"]} client:only />

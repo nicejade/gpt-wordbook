@@ -7,14 +7,19 @@ sidebar:
 tableOfContents: false
 ---
 
-import Pronunciation from '../../../components/Pronunciation.svelte';
-import WordRelations from '../../../components/WordRelations.svelte';
+import Pronunciation from "../../../components/Pronunciation.svelte";
+import WordRelations from "../../../components/WordRelations.svelte";
 
 ### 分析词义
 
 "Installment"是一个名词，主要有两个含义，一是指“分期付款”，二是指“（故事、情节等的）一部分”。当我们购买大宗商品如汽车或房产时，人们通常选择分期付款，这就是"installment"。另外，如果一个故事或电视连续剧是逐个部分发行的，我们也可以称每个部分为“installment”。
 
-<Pronunciation word="Installment" uk="/ɪnˈstɔːlmənt/" us="/ɪnˈstɔːlmənt/" client:only />
+<Pronunciation
+  word="Installment"
+  uk="/ɪnˈstɔːlmənt/"
+  us="/ɪnˈstɔːlmənt/"
+  client:only
+/>
 
 ### 列举例句
 
@@ -50,7 +55,4 @@ import WordRelations from '../../../components/WordRelations.svelte';
 Jerry finally got the guitar he dreamt in monthly installments.
 （杰瑞终于通过月付方式买到了他梦寐以求的吉他。）
 
-<WordRelations
-  synonyms={["episode", "part"]}
-  client:only
-/>
+<WordRelations synonyms={["episode", "part"]} client:only />

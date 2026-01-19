@@ -6,14 +6,19 @@ sidebar:
 tableOfContents: false
 ---
 
-import Pronunciation from '../../../components/Pronunciation.svelte';
-import WordRelations from '../../../components/WordRelations.svelte';
+import Pronunciation from "../../../components/Pronunciation.svelte";
+import WordRelations from "../../../components/WordRelations.svelte";
 
 ### 分析词义
 
 "Community"是一个英文名词，它一般用来描述一个共享某种共同事物（例如地域、信仰、兴趣等）的人群。
 
-<Pronunciation word="Community" uk="/k(ə)ˈmjunəti/" us="/k(ə)ˈmjunəti/" client:only />
+<Pronunciation
+  word="Community"
+  uk="/k(ə)ˈmjunəti/"
+  us="/k(ə)ˈmjunəti/"
+  client:only
+/>
 
 ### 列举例句
 
@@ -45,7 +50,4 @@ import WordRelations from '../../../components/WordRelations.svelte';
 
 Once upon a time, a small community lived on the edge of the forest. They shared everything and lived in harmony with each other and nature. (从前，有一个小社区位于森林的边缘。他们分享一切，和彼此以及自然和谐共处。)
 
-<WordRelations
-  antonyms={["anticommunity", "noncommunity"]}
-  client:only
-/>
+<WordRelations antonyms={["anticommunity", "noncommunity"]} client:only />

@@ -8,14 +8,19 @@ sidebar:
 tableOfContents: false
 ---
 
-import Pronunciation from '../../../components/Pronunciation.svelte';
-import WordRelations from '../../../components/WordRelations.svelte';
+import Pronunciation from "../../../components/Pronunciation.svelte";
+import WordRelations from "../../../components/WordRelations.svelte";
 
 ### 分析词义
 
 Constitution 是一个英语名词，可以有许多不同的含义。大多数时候，它的意思是 "宪法" 或 "章程"，也就是国家或组织的基本法规。此外，它还可以指人的体质或身体状况。
 
-<Pronunciation word="Constitution" uk="/ˌkɒnstɪˈtjuːʃən/" us="/ˌkɑnstɪˈtuʃən/" client:only />
+<Pronunciation
+  word="Constitution"
+  uk="/ˌkɒnstɪˈtjuːʃən/"
+  us="/ˌkɑnstɪˈtuʃən/"
+  client:only
+/>
 
 ### 列举例句
 
@@ -49,7 +54,4 @@ The new country needed to establish a constitution. People from all walks of lif
 
 新成立的国家需要制定一部宪法。来自各行各业的人齐聚一堂，讨论和商定构成他们国家的法规。他们一起起草了这部将以宪法形式管理他们的宪法。
 
-<WordRelations
-  synonyms={["configuration", "form"]}
-  client:only
-/>
+<WordRelations synonyms={["configuration", "form"]} client:only />

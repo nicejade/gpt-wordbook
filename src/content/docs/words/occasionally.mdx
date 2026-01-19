@@ -6,14 +6,19 @@ sidebar:
 tableOfContents: false
 ---
 
-import Pronunciation from '../../../components/Pronunciation.svelte';
-import WordRelations from '../../../components/WordRelations.svelte';
+import Pronunciation from "../../../components/Pronunciation.svelte";
+import WordRelations from "../../../components/WordRelations.svelte";
 
 ### 分析词义
 
 "Occasionally"是一个副词，表示“有时，偶尔”，多用于描述一个行为、事件或现象的发生并不是常常而只是偶尔会发生。
 
-<Pronunciation word="Occasionally" uk="/əˈkeɪʒnəli/" us="/əˈkeɪʒnəli/" client:only />
+<Pronunciation
+  word="Occasionally"
+  uk="/əˈkeɪʒnəli/"
+  us="/əˈkeɪʒnəli/"
+  client:only
+/>
 
 ### 列举例句
 
@@ -48,7 +53,4 @@ import WordRelations from '../../../components/WordRelations.svelte';
 
 Paul is a busy businessman, but occasionally, he would go to the park and enjoy the peaceful afternoon by feeding the pigeons. (保罗是一个忙碌的商人，但他偶尔会去公园，通过喂鸽子来享受宁静的下午。)
 
-<WordRelations
-  synonyms={["sometimes"]}
-  client:only
-/>
+<WordRelations synonyms={["sometimes"]} client:only />

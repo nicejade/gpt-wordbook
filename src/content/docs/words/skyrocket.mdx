@@ -8,14 +8,19 @@ sidebar:
 tableOfContents: false
 ---
 
-import Pronunciation from '../../../components/Pronunciation.svelte';
-import WordRelations from '../../../components/WordRelations.svelte';
+import Pronunciation from "../../../components/Pronunciation.svelte";
+import WordRelations from "../../../components/WordRelations.svelte";
 
 ### 分析词义
 
 "Skyrocket" 这个词在英语中通常具有两个主要含义。首先，“skyrocket”作为动词，意味着“急剧上升”，可以和价格、数量、需求等有关。其次，它也可以作为名词，指的是一种会飞到空中并爆炸的烟火，相当于汉语中的“烟花”。
 
-<Pronunciation word="Skyrocket" uk="/ˈskaɪˌɹɒk.ɪt/" us="/ˈskaɪˌɹɒk.ɪt/" client:only />
+<Pronunciation
+  word="Skyrocket"
+  uk="/ˈskaɪˌɹɒk.ɪt/"
+  us="/ˈskaɪˌɹɒk.ɪt/"
+  client:only
+/>
 
 ### 列举例句
 
@@ -49,8 +54,4 @@ Tom watched as the rocket he built himself skyrocketed straight up into the clea
 
 汤姆看着自己制造的火箭直线向清蓝的天空上升。速度瞩目惊人，他自己都感到无比的自豪。“我的火箭真的在瞬间飞上了天空，”他自言自语。
 
-<WordRelations
-  synonyms={["maroon"]}
-  antonyms={["plummet"]}
-  client:only
-/>
+<WordRelations synonyms={["maroon"]} antonyms={["plummet"]} client:only />

@@ -6,14 +6,19 @@ sidebar:
 tableOfContents: false
 ---
 
-import Pronunciation from '../../../components/Pronunciation.svelte';
-import WordRelations from '../../../components/WordRelations.svelte';
+import Pronunciation from "../../../components/Pronunciation.svelte";
+import WordRelations from "../../../components/WordRelations.svelte";
 
 ### 分析词义
 
 "Nonetheless"是一个副词，用于引出对前面陈述的一个反对或不同的看法，可以理解为“然而”，或者“尽管这样”。
 
-<Pronunciation word="Nonetheless" uk="/ˌnʌnðəˈlɛs/" us="/ˌnʌnðəˈlɛs/" client:only />
+<Pronunciation
+  word="Nonetheless"
+  uk="/ˌnʌnðəˈlɛs/"
+  us="/ˌnʌnðəˈlɛs/"
+  client:only
+/>
 
 ### 列举例句
 
@@ -46,7 +51,4 @@ import WordRelations from '../../../components/WordRelations.svelte';
 She was a small, frail girl. Nonetheless, she had a spirit as mighty as a lion.
 (她是个瘦弱的小女孩。然而，她有着像狮子一样强大的精神。)
 
-<WordRelations
-  synonyms={["still", "though", "yet"]}
-  client:only
-/>
+<WordRelations synonyms={["still", "though", "yet"]} client:only />

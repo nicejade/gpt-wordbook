@@ -6,14 +6,19 @@ sidebar:
 tableOfContents: false
 ---
 
-import Pronunciation from '../../../components/Pronunciation.svelte';
-import WordRelations from '../../../components/WordRelations.svelte';
+import Pronunciation from "../../../components/Pronunciation.svelte";
+import WordRelations from "../../../components/WordRelations.svelte";
 
 ### 分析词义
 
 "accessible" 是一个形容词，它的基本含义是"可接近的"、"可达到的"或"易接受的"。
 
-<Pronunciation word="Accessible" uk="/əkˈsɛs.ə.bəl/" us="/əkˈsɛs.ə.bəl/" client:only />
+<Pronunciation
+  word="Accessible"
+  uk="/əkˈsɛs.ə.bəl/"
+  us="/əkˈsɛs.ə.bəl/"
+  client:only
+/>
 
 ### 列举例句
 
@@ -46,7 +51,7 @@ import WordRelations from '../../../components/WordRelations.svelte';
 There's a tree in my yard, the fruit on the lower branches is very accessible, kids often come to pick them. (我的院子里有一棵树，下面的果子很容易摘，孩子们经常过来摘取。)
 
 <WordRelations
-  synonyms={["approachable","friendly","welcoming"]}
+  synonyms={["approachable", "friendly", "welcoming"]}
   antonyms={["inaccessible"]}
   client:only
 />

@@ -6,14 +6,19 @@ sidebar:
 tableOfContents: false
 ---
 
-import Pronunciation from '../../../components/Pronunciation.svelte';
-import WordRelations from '../../../components/WordRelations.svelte';
+import Pronunciation from "../../../components/Pronunciation.svelte";
+import WordRelations from "../../../components/WordRelations.svelte";
 
 ### 分析词义
 
 "Diagram" 是一个名词，意思是“图表”或“示意图”，用于把复杂的信息、系统或过程用视觉的方式简单、明了地表示出来。
 
-<Pronunciation word="Diagram" uk="/ˈdaɪ.ə.ɡɹæm/" us="/ˈdaɪ.ə.ɡɹæm/" client:only />
+<Pronunciation
+  word="Diagram"
+  uk="/ˈdaɪ.ə.ɡɹæm/"
+  us="/ˈdaɪ.ə.ɡɹæm/"
+  client:only
+/>
 
 ### 列举例句
 
@@ -53,7 +58,4 @@ Early in the morning, Mike found a complex problem in his study. He was getting 
 
 （早上，麦克在研究中发现了一个复杂的问题。他开始感到沮丧，于是决定画个图解。突然，一切都变得清晰起来！）
 
-<WordRelations
-  synonyms={["schematic"]}
-  client:only
-/>
+<WordRelations synonyms={["schematic"]} client:only />

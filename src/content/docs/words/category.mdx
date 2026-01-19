@@ -6,14 +6,19 @@ sidebar:
 tableOfContents: false
 ---
 
-import Pronunciation from '../../../components/Pronunciation.svelte';
-import WordRelations from '../../../components/WordRelations.svelte';
+import Pronunciation from "../../../components/Pronunciation.svelte";
+import WordRelations from "../../../components/WordRelations.svelte";
 
 ### 分析词义
 
 "Category"是一个名词，意为"类别"或"分类"，通常用来将人、事物或概念以某种特性或特征进行分组。
 
-<Pronunciation word="Category" uk="/ˈkætəˌɡɔɹi/" us="/ˈkætəˌɡɔɹi/" client:only />
+<Pronunciation
+  word="Category"
+  uk="/ˈkætəˌɡɔɹi/"
+  us="/ˈkætəˌɡɔɹi/"
+  client:only
+/>
 
 ### 列举例句
 
@@ -49,6 +54,17 @@ Category，单复数形式，单数为"category"，复数为"categories".
 中文翻译：汤姆打开了他的新桌游。每种类别的棋子都被放在了单独的袋子里。
 
 <WordRelations
-  synonyms={["class", "family", "genus", "group", "kingdom", "order", "phylum", "race", "tribe", "type"]}
+  synonyms={[
+    "class",
+    "family",
+    "genus",
+    "group",
+    "kingdom",
+    "order",
+    "phylum",
+    "race",
+    "tribe",
+    "type",
+  ]}
   client:only
 />

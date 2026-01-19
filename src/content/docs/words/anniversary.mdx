@@ -6,14 +6,19 @@ sidebar:
 tableOfContents: false
 ---
 
-import Pronunciation from '../../../components/Pronunciation.svelte';
-import WordRelations from '../../../components/WordRelations.svelte';
+import Pronunciation from "../../../components/Pronunciation.svelte";
+import WordRelations from "../../../components/WordRelations.svelte";
 
 ### 分析词义
 
 “Anniversary”是一种英文单词，用于指示特定事件或情况在某年的同一日期的重现，通常用于庆祝或纪念重要的历史或个人事件。
 
-<Pronunciation word="Anniversary" uk="/ˌænɪˈvɜːs(ə)ɹi/" us="/ˌænəˈvɝs(ə)ɹi/" client:only />
+<Pronunciation
+  word="Anniversary"
+  uk="/ˌænɪˈvɜːs(ə)ɹi/"
+  us="/ˌænəˈvɝs(ə)ɹi/"
+  client:only
+/>
 
 ### 列举例句
 
@@ -45,7 +50,4 @@ import WordRelations from '../../../components/WordRelations.svelte';
 
 Today marks the 5th anniversary of our journey across the Pacific Ocean. The journey was filled with ups and downs, but most importantly, it was worth it. (今天是我们横穿太平洋旅行的五周年纪念日。这个旅程充满了起起落落，但最重要的是，它很值得。)
 
-<WordRelations
-  synonyms={["yearday", "yeartide"]}
-  client:only
-/>
+<WordRelations synonyms={["yearday", "yeartide"]} client:only />

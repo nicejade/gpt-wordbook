@@ -6,14 +6,19 @@ sidebar:
 tableOfContents: false
 ---
 
-import Pronunciation from '../../../components/Pronunciation.svelte';
-import WordRelations from '../../../components/WordRelations.svelte';
+import Pronunciation from "../../../components/Pronunciation.svelte";
+import WordRelations from "../../../components/WordRelations.svelte";
 
 ### 分析词义
 
 "Astronaut" 是一个名词，意为“宇航员”。它是指受过专业训练，有能力驾驶或乘坐宇宙飞船进行太空探索的人员。
 
-<Pronunciation word="Astronaut" uk="/ˈæstɹəˌnɒt/" us="/ˈæstɹəˌnɒt/" client:only />
+<Pronunciation
+  word="Astronaut"
+  uk="/ˈæstɹəˌnɒt/"
+  us="/ˈæstɹəˌnɒt/"
+  client:only
+/>
 
 ### 列举例句
 
@@ -51,7 +56,4 @@ Astronaut 中没有词缀，主要是由两个词根组成：Astro- (星星) 和
 An excited astronaut was stepping out of the spaceship, gazing at the stars. He had finally become a true navigator of the cosmos.
 一个兴奋的宇航员走出了宇宙飞船，凝视着星星。他终于成为了真正的宇宙航海者。
 
-<WordRelations
-  synonyms={["cosmonaut"]}
-  client:only
-/>
+<WordRelations synonyms={["cosmonaut"]} client:only />

@@ -8,14 +8,19 @@ sidebar:
 tableOfContents: false
 ---
 
-import Pronunciation from '../../../components/Pronunciation.svelte';
-import WordRelations from '../../../components/WordRelations.svelte';
+import Pronunciation from "../../../components/Pronunciation.svelte";
+import WordRelations from "../../../components/WordRelations.svelte";
 
 ### 分析词义
 
 "Conjunction" 在英语中是名词，它的主要含义是连接，联接，合并。在句法学里，它被用作连接词、连词的意义，起到连接那些相互独立的短语、子句或句子的作用。
 
-<Pronunciation word="Conjunction" uk="/kənˈdʒʌŋkʃən/" us="/kənˈdʒʌŋkʃən/" client:only />
+<Pronunciation
+  word="Conjunction"
+  uk="/kənˈdʒʌŋkʃən/"
+  us="/kənˈdʒʌŋkʃən/"
+  client:only
+/>
 
 ### 列举例句
 
@@ -53,7 +58,4 @@ import WordRelations from '../../../components/WordRelations.svelte';
 
 The conjunction of their efforts brought about unexpected results. The whole class was excited and enjoyed the success.（他们努力的结合带来了意想不到的结果。整个班级都很兴奋，并享受这个成功。)
 
-<WordRelations
-  synonyms={["connection", "union"]}
-  client:only
-/>
+<WordRelations synonyms={["connection", "union"]} client:only />

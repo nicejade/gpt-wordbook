@@ -6,14 +6,19 @@ sidebar:
 tableOfContents: false
 ---
 
-import Pronunciation from '../../../components/Pronunciation.svelte';
-import WordRelations from '../../../components/WordRelations.svelte';
+import Pronunciation from "../../../components/Pronunciation.svelte";
+import WordRelations from "../../../components/WordRelations.svelte";
 
 ### 分析词义
 
 "Roundabout"作为形容词，意味着不直接或明确的；绕圈子的；迂回的。作为名词，常常指交通环岛或旋转路口。
 
-<Pronunciation word="Roundabout" uk="/ˈɹaʊndəˌbaʊt/" us="/ˈɹaʊndəˌbaʊt/" client:only />
+<Pronunciation
+  word="Roundabout"
+  uk="/ˈɹaʊndəˌbaʊt/"
+  us="/ˈɹaʊndəˌbaʊt/"
+  client:only
+/>
 
 ### 列举例句
 
@@ -46,7 +51,4 @@ import WordRelations from '../../../components/WordRelations.svelte';
 There was a roundabout in the middle of the town, which confused some new drivers. But over time, it became the town's symbol.
 （城镇中心有一个交通环岛，这曾经让一些新司机感到困惑。但随着时间的推移，它成了小镇的象征。）
 
-<WordRelations
-  synonyms={["rotary"]}
-  client:only
-/>
+<WordRelations synonyms={["rotary"]} client:only />

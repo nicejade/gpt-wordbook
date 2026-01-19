@@ -6,14 +6,19 @@ sidebar:
 tableOfContents: false
 ---
 
-import Pronunciation from '../../../components/Pronunciation.svelte';
-import WordRelations from '../../../components/WordRelations.svelte';
+import Pronunciation from "../../../components/Pronunciation.svelte";
+import WordRelations from "../../../components/WordRelations.svelte";
 
 ### 分析词义
 
 "irrational" 是一个形容词，意思是"不合理的"或"无逻辑的"。它用来描述不符合逻辑或常理的事物或行为。
 
-<Pronunciation word="Irrational" uk="/ɪˈɹæʃ.(ə.)nəl/" us="/ɪˈɹæʃ.(ə.)nəl/" client:only />
+<Pronunciation
+  word="Irrational"
+  uk="/ɪˈɹæʃ.(ə.)nəl/"
+  us="/ɪˈɹæʃ.(ə.)nəl/"
+  client:only
+/>
 
 ### 列举例句
 
@@ -46,7 +51,4 @@ import WordRelations from '../../../components/WordRelations.svelte';
 
 Once there was a king who made an irrational rule: Taxes would be determined by a roll of dice. People were upset about this randomness.(曾经有一个国王做出了一个不合理的规定：税收将由骰子的结果决定。人们对这种随机性感到很不满。)
 
-<WordRelations
-  antonyms={["rational"]}
-  client:only
-/>
+<WordRelations antonyms={["rational"]} client:only />

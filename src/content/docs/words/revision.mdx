@@ -6,14 +6,19 @@ sidebar:
 tableOfContents: false
 ---
 
-import Pronunciation from '../../../components/Pronunciation.svelte';
-import WordRelations from '../../../components/WordRelations.svelte';
+import Pronunciation from "../../../components/Pronunciation.svelte";
+import WordRelations from "../../../components/WordRelations.svelte";
 
 ### 分析词义
 
 "Revision"是一个名词，由动词"revise"转化而来，主要意思是"修改"、"修订"或者"复习"。
 
-<Pronunciation word="Revision" uk="/riˈvɪ.ʒ(ə)n/" us="/riˈvɪ.ʒ(ə)n/" client:only />
+<Pronunciation
+  word="Revision"
+  uk="/riˈvɪ.ʒ(ə)n/"
+  us="/riˈvɪ.ʒ(ə)n/"
+  client:only
+/>
 
 ### 列举例句
 
@@ -49,7 +54,4 @@ import WordRelations from '../../../components/WordRelations.svelte';
 Lucy spent the whole weekend on the revision of her report, hoping to impress her new boss. Seeing her efforts, the boss gave her a thumbs up.
 （露西花了整个周末时间来修改她的报告，希望能够给她的新老板留下深刻的印象。看到她的努力，老板为她竖起了大拇指。）
 
-<WordRelations
-  synonyms={["review"]}
-  client:only
-/>
+<WordRelations synonyms={["review"]} client:only />

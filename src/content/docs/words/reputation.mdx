@@ -6,14 +6,19 @@ sidebar:
 tableOfContents: false
 ---
 
-import Pronunciation from '../../../components/Pronunciation.svelte';
-import WordRelations from '../../../components/WordRelations.svelte';
+import Pronunciation from "../../../components/Pronunciation.svelte";
+import WordRelations from "../../../components/WordRelations.svelte";
 
 ### 分析词义
 
 "Reputation" 是一个名词，指的是一个人或一个组织在别人眼中的印象或评价，类似中文中的“名声”，“声誉”。
 
-<Pronunciation word="Reputation" uk="/ˌɹɛpjʊˈteɪʃən/" us="/ˌɹɛpjʊˈteɪʃən/" client:only />
+<Pronunciation
+  word="Reputation"
+  uk="/ˌɹɛpjʊˈteɪʃən/"
+  us="/ˌɹɛpjʊˈteɪʃən/"
+  client:only
+/>
 
 ### 列举例句
 
@@ -45,7 +50,4 @@ import WordRelations from '../../../components/WordRelations.svelte';
 
 Once a man named Jack won the lottery. But instead of living a luxurious life, he donated all his money to charity. This earned him a reputation of being selfless in his small town. (一位叫杰克的男子赢了彩票。但他并没有过上奢华的生活，而是把所有的钱捐给了慈善机构。这使他在他的小镇上赢得了无私大方的好名声。
 
-<WordRelations
-  synonyms={["name"]}
-  client:only
-/>
+<WordRelations synonyms={["name"]} client:only />

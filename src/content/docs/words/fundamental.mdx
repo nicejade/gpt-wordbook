@@ -8,14 +8,19 @@ sidebar:
 tableOfContents: false
 ---
 
-import Pronunciation from '../../../components/Pronunciation.svelte';
-import WordRelations from '../../../components/WordRelations.svelte';
+import Pronunciation from "../../../components/Pronunciation.svelte";
+import WordRelations from "../../../components/WordRelations.svelte";
 
 ### 分析词义
 
 英文单词 "fundamental" 是一个形容词，表示“基础的”或者“根本的”。它是用来描述一些事情最基本、最重要的部分。这个词通常与原则、信仰、规则等词语搭配使用。
 
-<Pronunciation word="Fundamental" uk="/ˌfʌndəˈmɛntəl/" us="/ˌfʌndəˈmɛntəl/" client:only />
+<Pronunciation
+  word="Fundamental"
+  uk="/ˌfʌndəˈmɛntəl/"
+  us="/ˌfʌndəˈmɛntəl/"
+  client:only
+/>
 
 ### 列举例句
 
@@ -65,7 +70,4 @@ import WordRelations from '../../../components/WordRelations.svelte';
 John realized he lacked the fundamental knowledge to understand the complex physics problem. He decided to go back to basics and revisited his old textbooks.（约翰意识到他缺乏理解复杂物理问题的基本知识。他决定回归基础，重温他的旧教科书。）
 约翰意识到他缺乏理解复杂物理问题的基础知识。他决定回归基础，重温他的旧教科书。
 
-<WordRelations
-  synonyms={["groundlaying"]}
-  client:only
-/>
+<WordRelations synonyms={["groundlaying"]} client:only />

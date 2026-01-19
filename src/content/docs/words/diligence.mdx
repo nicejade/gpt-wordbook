@@ -6,14 +6,19 @@ sidebar:
 tableOfContents: false
 ---
 
-import Pronunciation from '../../../components/Pronunciation.svelte';
-import WordRelations from '../../../components/WordRelations.svelte';
+import Pronunciation from "../../../components/Pronunciation.svelte";
+import WordRelations from "../../../components/WordRelations.svelte";
 
 ### 分析词义
 
 "Diligence" 是苦勤，尽职的意思，通常用于形容一个人认真勤奋的工作态度。
 
-<Pronunciation word="Diligence" uk="/ˈdɪlɪdʒəns/" us="/ˈdɪlɪdʒəns/" client:only />
+<Pronunciation
+  word="Diligence"
+  uk="/ˈdɪlɪdʒəns/"
+  us="/ˈdɪlɪdʒəns/"
+  client:only
+/>
 
 ### 列举例句
 
@@ -46,7 +51,4 @@ import WordRelations from '../../../components/WordRelations.svelte';
 Tom was always praised for his diligence. He stayed late every night to ensure his job was done perfectly. His friends admired his dedication.
 (汤姆总是因为他的勤奋而受到赞扬。他每晚都留下来工作，以确保他的工作做得完美。他的朋友们都佩服他的敬业精神。)
 
-<WordRelations
-  synonyms={["worksomeness"]}
-  client:only
-/>
+<WordRelations synonyms={["worksomeness"]} client:only />

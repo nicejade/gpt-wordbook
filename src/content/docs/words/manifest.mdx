@@ -6,14 +6,19 @@ sidebar:
 tableOfContents: false
 ---
 
-import Pronunciation from '../../../components/Pronunciation.svelte';
-import WordRelations from '../../../components/WordRelations.svelte';
+import Pronunciation from "../../../components/Pronunciation.svelte";
+import WordRelations from "../../../components/WordRelations.svelte";
 
 ### 分析词义
 
 "Manifest" 是一个英文单词，具有明显、明显显示，或者证明的含义。在不同的语境中，它的用法可能会有所不同。
 
-<Pronunciation word="Manifest" uk="/ˈmæn.ə.fɛst/" us="/ˈmæn.ə.fɛst/" client:only />
+<Pronunciation
+  word="Manifest"
+  uk="/ˈmæn.ə.fɛst/"
+  us="/ˈmæn.ə.fɛst/"
+  client:only
+/>
 
 ### 列举例句
 
@@ -50,6 +55,14 @@ The man showed his manifest excitement by beaming from ear to ear at the parade.
 翻译: 在游行上，这个男人满脸笑容，显而易见的兴奋。这是自从疫情以来他参加的第一个节日活动。
 
 <WordRelations
-  synonyms={["apparent", "clear", "distinct", "obvious", "palpable", "patent", "plain"]}
+  synonyms={[
+    "apparent",
+    "clear",
+    "distinct",
+    "obvious",
+    "palpable",
+    "patent",
+    "plain",
+  ]}
   client:only
 />

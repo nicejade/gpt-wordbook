@@ -6,17 +6,22 @@ sidebar:
 tableOfContents: false
 ---
 
-import Pronunciation from '../../../components/Pronunciation.svelte';
-import WordRelations from '../../../components/WordRelations.svelte';
+import Pronunciation from "../../../components/Pronunciation.svelte";
+import WordRelations from "../../../components/WordRelations.svelte";
 
 ### 分析词义
 
 议会"tournament"是个名词，主要指代两种场景：
 
-<Pronunciation word="Tournament" uk="/ˈtɔːnəmənt/" us="/ˈtɔːnəmənt/" client:only />
-
 1.  一系列比赛，其中参与者会争夺最终的冠军。例如，足球比赛、棋盘游戏比赛，或者电子游戏比赛等；
 2.  军事上，它表示中世纪的骑士比赛。
+
+<Pronunciation
+  word="Tournament"
+  uk="/ˈtɔːnəmənt/"
+  us="/ˈtɔːnəmənt/"
+  client:only
+/>
 
 ### 列举例句
 
@@ -50,7 +55,4 @@ import WordRelations from '../../../components/WordRelations.svelte';
 
 在全球象棋比赛中，一个新手约翰与老手玩家对抗。他的策略让每个人都感到震惊。
 
-<WordRelations
-  synonyms={["tourney"]}
-  client:only
-/>
+<WordRelations synonyms={["tourney"]} client:only />

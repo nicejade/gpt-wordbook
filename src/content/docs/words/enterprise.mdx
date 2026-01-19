@@ -6,14 +6,19 @@ sidebar:
 tableOfContents: false
 ---
 
-import Pronunciation from '../../../components/Pronunciation.svelte';
-import WordRelations from '../../../components/WordRelations.svelte';
+import Pronunciation from "../../../components/Pronunciation.svelte";
+import WordRelations from "../../../components/WordRelations.svelte";
 
 ### 分析词义
 
 "Enterprise" 是个英文字，意指“企业”或“事业”，不仅指代商业组织，也可以指任何大型的、有组织的尝试和事业。
 
-<Pronunciation word="Enterprise" uk="/ˈɛntɚˌpɹaɪz/" us="/ˈɛntɚˌpɹaɪz/" client:only />
+<Pronunciation
+  word="Enterprise"
+  uk="/ˈɛntɚˌpɹaɪz/"
+  us="/ˈɛntɚˌpɹaɪz/"
+  client:only
+/>
 
 ### 列举例句
 
@@ -45,7 +50,4 @@ Enterprise 这个单词来自于法语体系，引用自"entreprise"，而法语
 
 John always dreamed of creating his own enterprise. One day, he finally took a leap of faith and set up his dream company. It was a fruitful yet challenging journey. （约翰总是梦想着创建自己的企业。一天，他终于决定迈出那一步，成立了他的梦想公司。那是一个收获满满但却充满挑战的旅程。）
 
-<WordRelations
-  synonyms={["initiative"]}
-  client:only
-/>
+<WordRelations synonyms={["initiative"]} client:only />

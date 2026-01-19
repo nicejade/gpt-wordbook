@@ -8,14 +8,19 @@ sidebar:
 tableOfContents: false
 ---
 
-import Pronunciation from '../../../components/Pronunciation.svelte';
-import WordRelations from '../../../components/WordRelations.svelte';
+import Pronunciation from "../../../components/Pronunciation.svelte";
+import WordRelations from "../../../components/WordRelations.svelte";
 
 ### 分析词义
 
 "Horsepower" 是一个英文单词，用来衡量动力的单位，常用在汽车、机器等含有发动机的物品上，以描述其动力大小。它的源自 18 世纪，当时被用来描述蒸汽机的功率。中文翻译为“马力”。
 
-<Pronunciation word="Horsepower" uk="/ˈhɔːsˌpaʊə/" us="/ˈhɔɹsˌpaʊɚ/" client:only />
+<Pronunciation
+  word="Horsepower"
+  uk="/ˈhɔːsˌpaʊə/"
+  us="/ˈhɔɹsˌpaʊɚ/"
+  client:only
+/>
 
 ### 列举例句
 
@@ -49,7 +54,4 @@ Tom's first car was not fancy, but it had high horsepower. He loved the roar of 
 
 汤姆的第一辆车并不豪华，但是它的马力很大。他喜欢发动机的轰鸣声和瞬间的加速度。汤姆的朋友们总是对他的车的动力印象深刻。
 
-<WordRelations
-  synonyms={["hp"]}
-  client:only
-/>
+<WordRelations synonyms={["hp"]} client:only />

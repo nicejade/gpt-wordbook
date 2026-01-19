@@ -8,14 +8,19 @@ sidebar:
 tableOfContents: false
 ---
 
-import Pronunciation from '../../../components/Pronunciation.svelte';
-import WordRelations from '../../../components/WordRelations.svelte';
+import Pronunciation from "../../../components/Pronunciation.svelte";
+import WordRelations from "../../../components/WordRelations.svelte";
 
 ### 分析词义
 
 "Homogeneous" 是一个形容词，来源于希腊文的'homos'，意为 '同样的'，和'genos'，意为 '种类'。此词表示由完全相同或相似的元素或个体组成的。在数学、科学和社会学等领域广泛使用。
 
-<Pronunciation word="Homogeneous" uk="/ˌhɒ.mə(ʊ)ˈdʒiː.nɪəs/" us="/ˌhɒ.mə(ʊ)ˈdʒiː.nɪəs/" client:only />
+<Pronunciation
+  word="Homogeneous"
+  uk="/ˌhɒ.mə(ʊ)ˈdʒiː.nɪəs/"
+  us="/ˌhɒ.mə(ʊ)ˈdʒiː.nɪəs/"
+  client:only
+/>
 
 ### 列举例句
 
@@ -49,7 +54,4 @@ In a homogeneous group of students, everyone shares the same love for arts and c
 
 在一个同质的学生群体中，每个人都对艺术和手工艺有着共同的热爱。他们喜欢每一节艺术课，急切地创作出美丽的作品。这样的一个群体在热情上真正达到了同质化。
 
-<WordRelations
-  antonyms={["heterogeneous"]}
-  client:only
-/>
+<WordRelations antonyms={["heterogeneous"]} client:only />

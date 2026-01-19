@@ -6,14 +6,19 @@ sidebar:
 tableOfContents: false
 ---
 
-import Pronunciation from '../../../components/Pronunciation.svelte';
-import WordRelations from '../../../components/WordRelations.svelte';
+import Pronunciation from "../../../components/Pronunciation.svelte";
+import WordRelations from "../../../components/WordRelations.svelte";
 
 ### 分析词义
 
 英文单词 "acknowledge" 是一种动词，表示接收、确认或承认某事。通常在确认接收到信息或承认事实或权威时使用。
 
-<Pronunciation word="Acknowledge" uk="/əkˈnɒ.lɪdʒ/" us="/ækˈnɑː.lɪdʒ/" client:only />
+<Pronunciation
+  word="Acknowledge"
+  uk="/əkˈnɒ.lɪdʒ/"
+  us="/ækˈnɑː.lɪdʒ/"
+  client:only
+/>
 
 ### 列举例句
 
@@ -46,6 +51,15 @@ import WordRelations from '../../../components/WordRelations.svelte';
 In a competition, Tom lost to his competitor, Jerry. He unfortunately acknowledged his defeat and promised to try harder next time. (在一场比赛中，汤姆输给了竞争对手杰瑞。他不幸地承认了他的失败，并承诺下次会更努力。)
 
 <WordRelations
-  synonyms={["admit", "allow", "avow", "concede", "confess", "own", "proclaim", "recognize"]}
+  synonyms={[
+    "admit",
+    "allow",
+    "avow",
+    "concede",
+    "confess",
+    "own",
+    "proclaim",
+    "recognize",
+  ]}
   client:only
 />

@@ -6,14 +6,19 @@ sidebar:
 tableOfContents: false
 ---
 
-import Pronunciation from '../../../components/Pronunciation.svelte';
-import WordRelations from '../../../components/WordRelations.svelte';
+import Pronunciation from "../../../components/Pronunciation.svelte";
+import WordRelations from "../../../components/WordRelations.svelte";
 
 ### 分析词义
 
 "Ultimately" 是一个副词，代表 "在最后" 或 "终究"。它表示一种最终的结果或结局，或者一个长时间过程的终点。
 
-<Pronunciation word="Ultimately" uk="/ˈʌltɪmətli/" us="/ˈʌltɪmətli/" client:only />
+<Pronunciation
+  word="Ultimately"
+  uk="/ˈʌltɪmətli/"
+  us="/ˈʌltɪmətli/"
+  client:only
+/>
 
 ### 列举例句
 
@@ -49,7 +54,4 @@ import WordRelations from '../../../components/WordRelations.svelte';
 
 "After a long study, she found the book which contains the ultimate truth. And ultimately, she started her own spiritual journey." —— 长时间的学习后，她发现了一本包含终极真理的书。最终，她开始了自己的精神旅程。
 
-<WordRelations
-  synonyms={["finally"]}
-  client:only
-/>
+<WordRelations synonyms={["finally"]} client:only />

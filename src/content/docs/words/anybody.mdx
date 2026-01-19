@@ -6,14 +6,19 @@ sidebar:
 tableOfContents: false
 ---
 
-import Pronunciation from '../../../components/Pronunciation.svelte';
-import WordRelations from '../../../components/WordRelations.svelte';
+import Pronunciation from "../../../components/Pronunciation.svelte";
+import WordRelations from "../../../components/WordRelations.svelte";
 
 ### 分析词义
 
 "Anybody" 是一个不定代词，它常常用在否定句和疑问句中，意指“任何人”。它也可用于肯定句，此时表示强调，意为“无论哪个人”。
 
-<Pronunciation word="Anybody" uk="/ˈɛn.i.bɒd.i/" us="/ˈɛn.i.bɑd.i/" client:only />
+<Pronunciation
+  word="Anybody"
+  uk="/ˈɛn.i.bɒd.i/"
+  us="/ˈɛn.i.bɑd.i/"
+  client:only
+/>
 
 ### 列举例句
 
@@ -48,7 +53,4 @@ import WordRelations from '../../../components/WordRelations.svelte';
 At the party, she thought she wouldn't know anybody. After all, she had just moved to this city. But to her surprise, she saw her old friend Jake.
 在派对上，她以为自己不会认识任何人。毕竟，她刚刚搬到这个城市。但令她惊讶的是，她看到了她的老朋友杰克。
 
-<WordRelations
-  synonyms={["anyone"]}
-  client:only
-/>
+<WordRelations synonyms={["anyone"]} client:only />

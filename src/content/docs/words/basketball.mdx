@@ -9,14 +9,19 @@ sidebar:
 tableOfContents: false
 ---
 
-import Pronunciation from '../../../components/Pronunciation.svelte';
-import WordRelations from '../../../components/WordRelations.svelte';
+import Pronunciation from "../../../components/Pronunciation.svelte";
+import WordRelations from "../../../components/WordRelations.svelte";
 
 ### 分析词义
 
 Basketball 是一种团队运动项目，两队的对象是尝试将篮球射入对方队伍的篮筐中，以得分。这个词经常用于描述一场篮球比赛或者是篮球这种具体的运动设备。在中文里，我们通常把这个单词翻译成 "篮球"。
 
-<Pronunciation word="Basketball" uk="/ˈbɑːs.kɪt.bɔːl/" us="/ˈbæs.kɪt.bɔːl/" client:only />
+<Pronunciation
+  word="Basketball"
+  uk="/ˈbɑːs.kɪt.bɔːl/"
+  us="/ˈbæs.kɪt.bɔːl/"
+  client:only
+/>
 
 ### 列举例句
 
@@ -49,7 +54,4 @@ Basketball 作为一个由两个名词组成的词组，在英文中没有特别
 James was always the last one picked for the basketball team. But he kept practicing, never losing heart. One day, he was the one to score the winning shot. It was the best day of his life.
 (詹姆斯总是被最后一个选进篮球队。但他一直在练习，从未灰心。有一天，他投出了取胜的一球。那是他人生中最好的一天。）
 
-<WordRelations
-  synonyms={["hoops"]}
-  client:only
-/>
+<WordRelations synonyms={["hoops"]} client:only />

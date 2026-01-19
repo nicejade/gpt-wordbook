@@ -6,14 +6,19 @@ sidebar:
 tableOfContents: false
 ---
 
-import Pronunciation from '../../../components/Pronunciation.svelte';
-import WordRelations from '../../../components/WordRelations.svelte';
+import Pronunciation from "../../../components/Pronunciation.svelte";
+import WordRelations from "../../../components/WordRelations.svelte";
 
 ### 分析词义
 
 "Ability" 是一个英语名词，主要指个体的能力、才能或技能，无论是自然天赋的，还是后天通过学习和努力获得的。
 
-<Pronunciation word="Ability" uk="/əˈ.bɪl.ɪ.ti/" us="/əˈ.bɪl.ɪ.ti/" client:only />
+<Pronunciation
+  word="Ability"
+  uk="/əˈ.bɪl.ɪ.ti/"
+  us="/əˈ.bɪl.ɪ.ti/"
+  client:only
+/>
 
 ### 列举例句
 
@@ -50,7 +55,16 @@ import WordRelations from '../../../components/WordRelations.svelte';
 Tom has always doubted his ability to paint, but his teacher encouraged him, saying that everyone has their unique ability. After hours of practice, Tom finally produced a beautiful painting, proving that with patience and effort, ability can be crafted.（汤姆一直对他的绘画能力有疑虑，但他的老师鼓励他，说每个人都有他们独特的能力。经过数小时的练习，汤姆终于画出了一幅漂亮的画，证明了只要有耐心和努力，能力是可以被雕琢的。）
 
 <WordRelations
-  synonyms={["aptitude", "cleverness", "dexterity", "talent", "capability", "capacity", "faculty", "aptness"]}
+  synonyms={[
+    "aptitude",
+    "cleverness",
+    "dexterity",
+    "talent",
+    "capability",
+    "capacity",
+    "faculty",
+    "aptness",
+  ]}
   antonyms={["disability", "inability", "unability"]}
   client:only
 />

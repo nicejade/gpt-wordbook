@@ -1,19 +1,24 @@
 ---
 title: Dictionary
-description: '- Dictionary（字典）是一个资料收集器，提供各类词汇及其定义、发音、词性、来源等信息。'
+description: "- Dictionary（字典）是一个资料收集器，提供各类词汇及其定义、发音、词性、来源等信息。"
 sidebar:
   hidden: true
 tableOfContents: false
 ---
 
-import Pronunciation from '../../../components/Pronunciation.svelte';
-import WordRelations from '../../../components/WordRelations.svelte';
+import Pronunciation from "../../../components/Pronunciation.svelte";
+import WordRelations from "../../../components/WordRelations.svelte";
 
 ### 分析词义
 
 - Dictionary（字典）是一个资料收集器，提供各类词汇及其定义、发音、词性、来源等信息。
 
-<Pronunciation word="Dictionary" uk="/ˈdɪkʃ(ə)n(ə)ɹi/" us="/ˈdɪkʃəˌnɛɹi/" client:only />
+<Pronunciation
+  word="Dictionary"
+  uk="/ˈdɪkʃ(ə)n(ə)ɹi/"
+  us="/ˈdɪkʃəˌnɛɹi/"
+  client:only
+/>
 
 ### 列举例句
 
@@ -47,7 +52,4 @@ import WordRelations from '../../../components/WordRelations.svelte';
 - Alex waved his dictionary triumphantly. "Found it!" he exclaimed, seeing the exact meaning of the word.
 - 亚历克斯兴奋地挥舞着他的字典。 "找到了!"" 他看到了那个词的确切意义后兴奋地喊道。
 
-<WordRelations
-  synonyms={["wordbook"]}
-  client:only
-/>
+<WordRelations synonyms={["wordbook"]} client:only />

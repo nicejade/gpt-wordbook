@@ -8,14 +8,19 @@ sidebar:
 tableOfContents: false
 ---
 
-import Pronunciation from '../../../components/Pronunciation.svelte';
-import WordRelations from '../../../components/WordRelations.svelte';
+import Pronunciation from "../../../components/Pronunciation.svelte";
+import WordRelations from "../../../components/WordRelations.svelte";
 
 ### 分析词义
 
 Accident 这个单词在英语中通常指的是“意外事件”，特别是那些造成伤害或损失的事件。它通常用来指损害类的意外，如车祸（car accident）或工作事故（work accident）。
 
-<Pronunciation word="Accident" uk="/ˈæk.sə.dənt/" us="/ˈæk.sə.dənt/" client:only />
+<Pronunciation
+  word="Accident"
+  uk="/ˈæk.sə.dənt/"
+  us="/ˈæk.sə.dənt/"
+  client:only
+/>
 
 ### 列举例句
 
@@ -52,6 +57,15 @@ Tom was driving his car with his daughter. Suddenly, a cat dashed across the str
 → 汤姆带着女儿驾驶着他的汽车。突然，一只猫飞奔过马路，导致他急忙转向，发生了一次小型事故。
 
 <WordRelations
-  synonyms={["fortune", "luck", "casus", "befalling", "casualty", "chance", "contingency", "mishap"]}
+  synonyms={[
+    "fortune",
+    "luck",
+    "casus",
+    "befalling",
+    "casualty",
+    "chance",
+    "contingency",
+    "mishap",
+  ]}
   client:only
 />

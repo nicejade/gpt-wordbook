@@ -8,14 +8,19 @@ sidebar:
 tableOfContents: false
 ---
 
-import Pronunciation from '../../../components/Pronunciation.svelte';
-import WordRelations from '../../../components/WordRelations.svelte';
+import Pronunciation from "../../../components/Pronunciation.svelte";
+import WordRelations from "../../../components/WordRelations.svelte";
 
 ### 分析词义
 
 "Inspection" 是名词，主要有两个含义。第一是审查，检查，它通常指查看物品或设施以确认其状态或保证其质量。第二是审视，研究，这是指深思熟虑或详细分析某物。
 
-<Pronunciation word="Inspection" uk="/ɪnˈspɛkʃən/" us="/ɪnˈspɛkʃən/" client:only />
+<Pronunciation
+  word="Inspection"
+  uk="/ɪnˈspɛkʃən/"
+  us="/ɪnˈspɛkʃən/"
+  client:only
+/>
 
 ### 列举例句
 
@@ -48,7 +53,4 @@ import WordRelations from '../../../components/WordRelations.svelte';
 "Every morning, Officer Smith carries out an inspection of the premises. All doors must be secured and all alarms on."
 (每天早上，史密斯警官都会对该处进行检查。所有的门都必须关闭，所有的警铃都必须打开。)
 
-<WordRelations
-  synonyms={["examination", "scrutiny"]}
-  client:only
-/>
+<WordRelations synonyms={["examination", "scrutiny"]} client:only />

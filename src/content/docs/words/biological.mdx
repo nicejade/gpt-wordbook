@@ -8,14 +8,19 @@ sidebar:
 tableOfContents: false
 ---
 
-import Pronunciation from '../../../components/Pronunciation.svelte';
-import WordRelations from '../../../components/WordRelations.svelte';
+import Pronunciation from "../../../components/Pronunciation.svelte";
+import WordRelations from "../../../components/WordRelations.svelte";
 
 ### 分析词义
 
 "Biological" 是一个英语形容词，在大部分情况下，它与生物学、生物或生物过程有关。例如，当我们说"biological research"（生物学研究）时，我们是在讨论关于生命和生物体的科学研究。
 
-<Pronunciation word="Biological" uk="/ˌbaɪə(ʊ)ˈlɒdʒɪkəl/" us="/ˌbaɪə(ʊ)ˈlɒdʒɪkəl/" client:only />
+<Pronunciation
+  word="Biological"
+  uk="/ˌbaɪə(ʊ)ˈlɒdʒɪkəl/"
+  us="/ˌbaɪə(ʊ)ˈlɒdʒɪkəl/"
+  client:only
+/>
 
 ### 列举例句
 
@@ -47,7 +52,4 @@ import WordRelations from '../../../components/WordRelations.svelte';
 
 "John is a biological scientist, fascinated by the complexity of nature. One day, he discovered a new species of frog during his research in the Amazon rainforest."（约翰是一名生物科学家，他对大自然的复杂性深感着迷。有一天，在亚马逊雨林的研究过程中，他发现了一种新的青蛙物种。）
 
-<WordRelations
-  synonyms={["biologic"]}
-  client:only
-/>
+<WordRelations synonyms={["biologic"]} client:only />

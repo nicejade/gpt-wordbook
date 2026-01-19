@@ -8,14 +8,19 @@ sidebar:
 tableOfContents: false
 ---
 
-import Pronunciation from '../../../components/Pronunciation.svelte';
-import WordRelations from '../../../components/WordRelations.svelte';
+import Pronunciation from "../../../components/Pronunciation.svelte";
+import WordRelations from "../../../components/WordRelations.svelte";
 
 ### 分析词义
 
 Orientation 这个词源自于拉丁语'orient'，直译含义是东方，后来的含义逐渐透露出了“朝向”以及“方向”的概念。现在，我们主要用它来描述一个人或事物的方向或位置，或者是一个人的观点、情感和态度的方向性，比如性取向。
 
-<Pronunciation word="Orientation" uk="/ˌɔɹiɛnˈteɪʃən/" us="/ˌɔɹiɛnˈteɪʃən/" client:only />
+<Pronunciation
+  word="Orientation"
+  uk="/ˌɔɹiɛnˈteɪʃən/"
+  us="/ˌɔɹiɛnˈteɪʃən/"
+  client:only
+/>
 
 ### 列举例句
 
@@ -50,7 +55,4 @@ There's a famous tower in our city. Its unique orientation makes people amazed. 
 
 我们城市有一座著名的塔。它独特的方向让人感到惊奇。每天早上，当太阳升起时，塔就会被照亮，美丽地闪闪发光。
 
-<WordRelations
-  antonyms={["disorientation"]}
-  client:only
-/>
+<WordRelations antonyms={["disorientation"]} client:only />

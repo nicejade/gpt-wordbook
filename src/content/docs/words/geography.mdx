@@ -6,14 +6,19 @@ sidebar:
 tableOfContents: false
 ---
 
-import Pronunciation from '../../../components/Pronunciation.svelte';
-import WordRelations from '../../../components/WordRelations.svelte';
+import Pronunciation from "../../../components/Pronunciation.svelte";
+import WordRelations from "../../../components/WordRelations.svelte";
 
 ### 分析词义
 
 "Geography"主要是指地理学，它是一个研究地球物理特征、气候、植被、人口、文化等特性以及他们相互之间关系的学科。
 
-<Pronunciation word="Geography" uk="/dʒɪˈɒɡɹəfi/" us="/dʒiˈɑɡɹəfi/" client:only />
+<Pronunciation
+  word="Geography"
+  uk="/dʒɪˈɒɡɹəfi/"
+  us="/dʒiˈɑɡɹəfi/"
+  client:only
+/>
 
 ### 列举例句
 
@@ -48,7 +53,4 @@ John was keen on geography. He could tell you every country's capital, climate a
 
 约翰对地理非常热衷。他可以告诉你每一个国家的首都、气候，甚至当地的风俗习惯。他的梦想是探索世界的每一个角落。
 
-<WordRelations
-  synonyms={["loo"]}
-  client:only
-/>
+<WordRelations synonyms={["loo"]} client:only />

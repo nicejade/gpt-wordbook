@@ -6,14 +6,19 @@ sidebar:
 tableOfContents: false
 ---
 
-import Pronunciation from '../../../components/Pronunciation.svelte';
-import WordRelations from '../../../components/WordRelations.svelte';
+import Pronunciation from "../../../components/Pronunciation.svelte";
+import WordRelations from "../../../components/WordRelations.svelte";
 
 ### 分析词义
 
 "Rebellion" 是一个名词，意为 "反叛" 或 "起义"，指的是对权威或者控制力量的公开反抗和反对。
 
-<Pronunciation word="Rebellion" uk="/ɹɪˈbɛl.i.ən/" us="/ɹɪˈbɛl.i.ən/" client:only />
+<Pronunciation
+  word="Rebellion"
+  uk="/ɹɪˈbɛl.i.ən/"
+  us="/ɹɪˈbɛl.i.ən/"
+  client:only
+/>
 
 ### 列举例句
 
@@ -45,7 +50,4 @@ import WordRelations from '../../../components/WordRelations.svelte';
 
 A group of villagers started a rebellion against the corrupt local official, fighting for justice and their rights. (一个村庄的居民发起了反抗腐败地方官员的叛乱，他们为正义和权利而战。)
 
-<WordRelations
-  antonyms={["obedience", "submission"]}
-  client:only
-/>
+<WordRelations antonyms={["obedience", "submission"]} client:only />

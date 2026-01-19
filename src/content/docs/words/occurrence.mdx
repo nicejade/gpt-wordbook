@@ -8,14 +8,19 @@ sidebar:
 tableOfContents: false
 ---
 
-import Pronunciation from '../../../components/Pronunciation.svelte';
-import WordRelations from '../../../components/WordRelations.svelte';
+import Pronunciation from "../../../components/Pronunciation.svelte";
+import WordRelations from "../../../components/WordRelations.svelte";
 
 ### 分析词义
 
 "Occurrence" 是一个英文名词，主要用于指代"发生的事"或"事件”，在一些情况下也可表示"存在"或"出现"。如："the occurrence of an accident" (意外的发生) 或 "an occurrence of gold" (黄金的存在)。
 
-<Pronunciation word="Occurrence" uk="/əˈkɐɹən(t)s/" us="/əˈkɐɹən(t)s/" client:only />
+<Pronunciation
+  word="Occurrence"
+  uk="/əˈkɐɹən(t)s/"
+  us="/əˈkɐɹən(t)s/"
+  client:only
+/>
 
 ### 列举例句
 
@@ -51,7 +56,4 @@ After prolonged rainfall, the sudden **occurrence** of a landslide left the town
 
 长时间的降雨后，山体滑坡的突然**发生**使整个城镇陷入了恐慌和混乱。
 
-<WordRelations
-  antonyms={["state"]}
-  client:only
-/>
+<WordRelations antonyms={["state"]} client:only />

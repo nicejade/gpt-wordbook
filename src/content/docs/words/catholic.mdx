@@ -7,14 +7,19 @@ sidebar:
 tableOfContents: false
 ---
 
-import Pronunciation from '../../../components/Pronunciation.svelte';
-import WordRelations from '../../../components/WordRelations.svelte';
+import Pronunciation from "../../../components/Pronunciation.svelte";
+import WordRelations from "../../../components/WordRelations.svelte";
 
 ### 分析词义
 
 "Catholic"主要有两个意思，第一个意思是"全面的，普遍的"，通常用来形容一个观点或理念被广大人群接受或理解。第二个意思是"天主教的"。因此，根据上下文，这个词可能指的是一个广大无边的观念，或者是天主教的信仰。
 
-<Pronunciation word="Catholic" uk="/ˈkaθ(ə)lɪk/" us="/ˈkæθ(ə)lɪk/" client:only />
+<Pronunciation
+  word="Catholic"
+  uk="/ˈkaθ(ə)lɪk/"
+  us="/ˈkæθ(ə)lɪk/"
+  client:only
+/>
 
 ### 列举例句
 
@@ -48,7 +53,4 @@ import WordRelations from '../../../components/WordRelations.svelte';
 
 "John is a Catholic who appreciates the beauty in everyone and everything. His catholic taste extends from music to art, and he believes in embracing diversity."（约翰是一个天主教徒，他欣赏每个人和事物的美。他的品味十分广泛，从音乐到艺术，他相信应该接纳多样性。）
 
-<WordRelations
-  synonyms={["eclectic", "universal"]}
-  client:only
-/>
+<WordRelations synonyms={["eclectic", "universal"]} client:only />

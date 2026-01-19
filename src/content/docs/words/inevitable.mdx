@@ -8,14 +8,19 @@ sidebar:
 tableOfContents: false
 ---
 
-import Pronunciation from '../../../components/Pronunciation.svelte';
-import WordRelations from '../../../components/WordRelations.svelte';
+import Pronunciation from "../../../components/Pronunciation.svelte";
+import WordRelations from "../../../components/WordRelations.svelte";
 
 ### 分析词义
 
 单词 "inevitable" 是一个英文形容词，来自于拉丁词 "inevitabilis"，表示不可避免的，必然发生的。我们可以用它来描述某件事情肯定会发生，不管我们怎么试图阻止。
 
-<Pronunciation word="Inevitable" uk="/ɪnˈɛvɪtəbəl/" us="/ɪnˈɛvɪtəbəl/" client:only />
+<Pronunciation
+  word="Inevitable"
+  uk="/ɪnˈɛvɪtəbəl/"
+  us="/ɪnˈɛvɪtəbəl/"
+  client:only
+/>
 
 ### 列举例句
 
@@ -48,7 +53,21 @@ import WordRelations from '../../../components/WordRelations.svelte';
 Despite his efforts, John lost the chess game. It was inevitable, as his opponent was a grandmaster. (尽管约翰努力了，但他还是输掉了象棋比赛。这是不可避免的，因为他的对手是个大师。)
 
 <WordRelations
-  synonyms={["certain", "necessary", "impreventable", "inescapable", "unavoidable", "natural"]}
-  antonyms={["evitable", "impossible", "incidental", "avoidable", "escapable", "preventable"]}
+  synonyms={[
+    "certain",
+    "necessary",
+    "impreventable",
+    "inescapable",
+    "unavoidable",
+    "natural",
+  ]}
+  antonyms={[
+    "evitable",
+    "impossible",
+    "incidental",
+    "avoidable",
+    "escapable",
+    "preventable",
+  ]}
   client:only
 />

@@ -7,14 +7,19 @@ sidebar:
 tableOfContents: false
 ---
 
-import Pronunciation from '../../../components/Pronunciation.svelte';
-import WordRelations from '../../../components/WordRelations.svelte';
+import Pronunciation from "../../../components/Pronunciation.svelte";
+import WordRelations from "../../../components/WordRelations.svelte";
 
 ### 分析词义
 
 Subjective，有时翻译为“主观的”，指的是基于或影响于个人的感觉，想象或者观点，与个体具有强烈的关系，无法被广泛认为是普遍真理的，对它们的理解因人而异。
 
-<Pronunciation word="Subjective" uk="/səbˈdʒɛktɪv/" us="/səbˈdʒɛktɪv/" client:only />
+<Pronunciation
+  word="Subjective"
+  uk="/səbˈdʒɛktɪv/"
+  us="/səbˈdʒɛktɪv/"
+  client:only
+/>
 
 ### 列举例句
 
@@ -47,7 +52,4 @@ Subjective 作为形容词，没有太多的单词变形，但其相关的名词
 Once there was a painting competition in a school. Many children painted their best. Some liked the colorful butterfly, some favored the tranquil sea. After all, aesthetic judgment is subjective.
 （曾经一个学校举办了一个绘画比赛。许多孩子们尽力画出自己的最好。有的喜欢五彩斑斓的蝴蝶，有的喜欢宁静的大海。毕竟，审美的判断是主观的。）
 
-<WordRelations
-  antonyms={["objective"]}
-  client:only
-/>
+<WordRelations antonyms={["objective"]} client:only />

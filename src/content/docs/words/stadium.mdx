@@ -6,14 +6,19 @@ sidebar:
 tableOfContents: false
 ---
 
-import Pronunciation from '../../../components/Pronunciation.svelte';
-import WordRelations from '../../../components/WordRelations.svelte';
+import Pronunciation from "../../../components/Pronunciation.svelte";
+import WordRelations from "../../../components/WordRelations.svelte";
 
 ### 分析词义
 
 "Stadium"是一个英语名词，意思是"体育场"，一般指用于足球、田径等大型体育赛事的场地。
 
-<Pronunciation word="Stadium" uk="/ˈsteɪ.di.əm/" us="/ˈsteɪ.di.əm/" client:only />
+<Pronunciation
+  word="Stadium"
+  uk="/ˈsteɪ.di.əm/"
+  us="/ˈsteɪ.di.əm/"
+  client:only
+/>
 
 ### 列举例句
 
@@ -47,7 +52,4 @@ import WordRelations from '../../../components/WordRelations.svelte';
 
 每年的夏天，John 和他的朋友们都会去体育场看棒球比赛。他们带着小便当，热烈的欢呼，享受着球赛的热烈和激动。
 
-<WordRelations
-  synonyms={["stadia","arena"]}
-  client:only
-/>
+<WordRelations synonyms={["stadia", "arena"]} client:only />

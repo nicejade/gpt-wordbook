@@ -6,14 +6,19 @@ sidebar:
 tableOfContents: false
 ---
 
-import Pronunciation from '../../../components/Pronunciation.svelte';
-import WordRelations from '../../../components/WordRelations.svelte';
+import Pronunciation from "../../../components/Pronunciation.svelte";
+import WordRelations from "../../../components/WordRelations.svelte";
 
 ### 分析词义
 
 "Proximity" 是一个名词，表示"靠近"，"接近"或"邻近"的意思。它经常用在描述两个事物在空间或关系上的近度。
 
-<Pronunciation word="Proximity" uk="/pɹɑkˈsɪ.mɪ.ti/" us="/pɹɑkˈsɪ.mɪ.ti/" client:only />
+<Pronunciation
+  word="Proximity"
+  uk="/pɹɑkˈsɪ.mɪ.ti/"
+  us="/pɹɑkˈsɪ.mɪ.ti/"
+  client:only
+/>
 
 ### 列举例句
 
@@ -51,7 +56,4 @@ import WordRelations from '../../../components/WordRelations.svelte';
 Because of the proximity of her house to the school, Mary always walks to school instead of taking a bus.
 因为家离学校很近，玛丽总是走路上学，而不是坐公交车。
 
-<WordRelations
-  synonyms={["closeness", "nearness"]}
-  client:only
-/>
+<WordRelations synonyms={["closeness", "nearness"]} client:only />

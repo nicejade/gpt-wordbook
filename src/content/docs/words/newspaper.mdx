@@ -8,14 +8,19 @@ sidebar:
 tableOfContents: false
 ---
 
-import Pronunciation from '../../../components/Pronunciation.svelte';
-import WordRelations from '../../../components/WordRelations.svelte';
+import Pronunciation from "../../../components/Pronunciation.svelte";
+import WordRelations from "../../../components/WordRelations.svelte";
 
 ### 分析词义
 
 "Newspaper" 是一个英文名词，中文简单翻译为“报纸”，意味着被印刷出来，定期发行（通常是每天或每周），并包含新闻，特稿，评论以及其他主题的文章的出版物。
 
-<Pronunciation word="Newspaper" uk="/ˈnjuːsˌpeɪpə/" us="/ˈn(j)uzˌpeɪpɚ/" client:only />
+<Pronunciation
+  word="Newspaper"
+  uk="/ˈnjuːsˌpeɪpə/"
+  us="/ˈn(j)uzˌpeɪpɚ/"
+  client:only
+/>
 
 ### 列举例句
 
@@ -47,7 +52,4 @@ import WordRelations from '../../../components/WordRelations.svelte';
 
 John wakes up every morning and brews a pot of coffee. As the aroma fills the room, he retrieves the newspaper from his doorstep, savouring the moment of quiet before the day begins. (约翰每天早上醒来都会煮一壶咖啡。当香气弥漫整个房间时，他会去门口取报纸，享受一天忙碌开始之前的宁静时光。)
 
-<WordRelations
-  synonyms={["daily", "paper", "rag", "newsprint"]}
-  client:only
-/>
+<WordRelations synonyms={["daily", "paper", "rag", "newsprint"]} client:only />

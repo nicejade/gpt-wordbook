@@ -6,14 +6,19 @@ sidebar:
 tableOfContents: false
 ---
 
-import Pronunciation from '../../../components/Pronunciation.svelte';
-import WordRelations from '../../../components/WordRelations.svelte';
+import Pronunciation from "../../../components/Pronunciation.svelte";
+import WordRelations from "../../../components/WordRelations.svelte";
 
 ### 分析词义
 
 "Dominate" 是一个英语动词，基本含义是 "主宰，支配，占据主导地位"。此外，它也可以表示 "在……中占优势" 或者 "优越于……"。
 
-<Pronunciation word="Dominate" uk="/ˈdɒməˌneɪt/" us="/ˈdɒməˌneɪt/" client:only />
+<Pronunciation
+  word="Dominate"
+  uk="/ˈdɒməˌneɪt/"
+  us="/ˈdɒməˌneɪt/"
+  client:only
+/>
 
 ### 列举例句
 
@@ -52,6 +57,13 @@ Don loved to dominate every meeting. He believed that his ideas were superior an
 
 <WordRelations
   synonyms={["prevalent", "imposing"]}
-  antonyms={["defiant", "obedient", "rebellious", "submissive", "obey", "submit"]}
+  antonyms={[
+    "defiant",
+    "obedient",
+    "rebellious",
+    "submissive",
+    "obey",
+    "submit",
+  ]}
   client:only
 />

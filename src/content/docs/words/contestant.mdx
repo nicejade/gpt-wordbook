@@ -6,14 +6,19 @@ sidebar:
 tableOfContents: false
 ---
 
-import Pronunciation from '../../../components/Pronunciation.svelte';
-import WordRelations from '../../../components/WordRelations.svelte';
+import Pronunciation from "../../../components/Pronunciation.svelte";
+import WordRelations from "../../../components/WordRelations.svelte";
 
 ### 分析词义
 
 "Contestant"这个词是一个名词，用来指参与竞赛或比赛的人。
 
-<Pronunciation word="Contestant" uk="/kənˈtɛstənt/" us="/kənˈtɛstənt/" client:only />
+<Pronunciation
+  word="Contestant"
+  uk="/kənˈtɛstənt/"
+  us="/kənˈtɛstənt/"
+  client:only
+/>
 
 ### 列举例句
 
@@ -47,7 +52,4 @@ In a talent show, one contestant stood out. He was not the most outstanding, but
 
 在一个才艺展示中，有一个参赛者引人瞩目。他可能不是最出色的，但是他是最充满热情的。这使他难以忘记。
 
-<WordRelations
-  synonyms={["competitor"]}
-  client:only
-/>
+<WordRelations synonyms={["competitor"]} client:only />

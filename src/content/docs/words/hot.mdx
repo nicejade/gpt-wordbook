@@ -6,18 +6,18 @@ sidebar:
 tableOfContents: false
 ---
 
-import Pronunciation from '../../../components/Pronunciation.svelte';
-import WordRelations from '../../../components/WordRelations.svelte';
+import Pronunciation from "../../../components/Pronunciation.svelte";
+import WordRelations from "../../../components/WordRelations.svelte";
 
 ### 分析词义
 
 "Hot" 这个英语单词，
 
-<Pronunciation word="Hot" uk="/hɒt/" us="/hɑt/" client:only />
-
 1.  主要用作形容词，其基本含义为"热的，高温的"，比如 "It's hot today"(今天很热)；
 2.  另外，"Hot"也可以表示"辣的"，例如："This is a hot pepper" (这是一个辣椒)。
 3.  "Hot"还可以形象地用来描述"受欢迎，热门"的事物或人，例如："This band is hot right now" (这个乐队现在很火)。
+
+<Pronunciation word="Hot" uk="/hɒt/" us="/hɑt/" client:only />
 
 ### 列举例句
 
@@ -52,7 +52,38 @@ import WordRelations from '../../../components/WordRelations.svelte';
 我希望这些信息对你理解和记忆 "hot" 这个单词有所帮助!
 
 <WordRelations
-  synonyms={["heat","live","baking","boiling","feverish","temperature","heated","bad","rubber","sultry","sweltering","radioactive","attractive","beautiful","cute","fit","foxy"]}
-  antonyms={["dead","neutral","freezing","chilled","chilly","cold","frigid","glacial","icy","lifeless","bland","mild"]}
+  synonyms={[
+    "heat",
+    "live",
+    "baking",
+    "boiling",
+    "feverish",
+    "temperature",
+    "heated",
+    "bad",
+    "rubber",
+    "sultry",
+    "sweltering",
+    "radioactive",
+    "attractive",
+    "beautiful",
+    "cute",
+    "fit",
+    "foxy",
+  ]}
+  antonyms={[
+    "dead",
+    "neutral",
+    "freezing",
+    "chilled",
+    "chilly",
+    "cold",
+    "frigid",
+    "glacial",
+    "icy",
+    "lifeless",
+    "bland",
+    "mild",
+  ]}
   client:only
 />

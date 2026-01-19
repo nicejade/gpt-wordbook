@@ -6,14 +6,19 @@ sidebar:
 tableOfContents: false
 ---
 
-import Pronunciation from '../../../components/Pronunciation.svelte';
-import WordRelations from '../../../components/WordRelations.svelte';
+import Pronunciation from "../../../components/Pronunciation.svelte";
+import WordRelations from "../../../components/WordRelations.svelte";
 
 ### 分析词义
 
 "Astronomy" 是以考察和研究宇宙一切物质和发生的各类天文现象为主要目标的科学。"天文学"是对它的中文翻译。
 
-<Pronunciation word="Astronomy" uk="/æˈstɹɑnəˌmi/" us="/æˈstɹɑnəˌmi/" client:only />
+<Pronunciation
+  word="Astronomy"
+  uk="/æˈstɹɑnəˌmi/"
+  us="/æˈstɹɑnəˌmi/"
+  client:only
+/>
 
 ### 列举例句
 
@@ -49,7 +54,4 @@ Astronomy 隶属名词，没有复数形式。动词可变形为 "Astronomize"�
 
 David, a child prodigy, had a deep love for astronomy since he was young. He would spend hours observing the stars with his telescope. (从小就特别爱好天文学的神童 David, 将大把时间耗在用望远镜观测星星上。)
 
-<WordRelations
-  synonyms={["stargazing"]}
-  client:only
-/>
+<WordRelations synonyms={["stargazing"]} client:only />

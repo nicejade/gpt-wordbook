@@ -6,14 +6,19 @@ sidebar:
 tableOfContents: false
 ---
 
-import Pronunciation from '../../../components/Pronunciation.svelte';
-import WordRelations from '../../../components/WordRelations.svelte';
+import Pronunciation from "../../../components/Pronunciation.svelte";
+import WordRelations from "../../../components/WordRelations.svelte";
 
 ### 分析词义
 
 "Available" 是形容词，其基本含义是可以获得的，手头上有的或自由的。这个词可以用于描述物品，服务，人或者时间的可用性。
 
-<Pronunciation word="Available" uk="/əˈveɪləb(ə)l/" us="/əˈveɪləb(ə)l/" client:only />
+<Pronunciation
+  word="Available"
+  uk="/əˈveɪləb(ə)l/"
+  us="/əˈveɪləb(ə)l/"
+  client:only
+/>
 
 ### 列举例句
 
@@ -52,7 +57,14 @@ Once upon a time, there was a boy named Jack, who always made himself available 
 曾经有一个叫杰克的男孩，他总是愿意帮助他人。无论白天还是夜晚，只要有人需要帮助，杰克总会在那里。
 
 <WordRelations
-  synonyms={["effectual", "valid", "advantageous", "profitable", "usable", "vacant"]}
+  synonyms={[
+    "effectual",
+    "valid",
+    "advantageous",
+    "profitable",
+    "usable",
+    "vacant",
+  ]}
   antonyms={["unavailable"]}
   client:only
 />

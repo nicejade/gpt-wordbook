@@ -6,14 +6,19 @@ sidebar:
 tableOfContents: false
 ---
 
-import Pronunciation from '../../../components/Pronunciation.svelte';
-import WordRelations from '../../../components/WordRelations.svelte';
+import Pronunciation from "../../../components/Pronunciation.svelte";
+import WordRelations from "../../../components/WordRelations.svelte";
 
 ### 分析词义
 
 Ordinary 是一个形容词，意味着“平常的，普通的”。
 
-<Pronunciation word="Ordinary" uk="/ˈɔːdənɹi/" us="/ˈɔɹdɪnɛ(ə)ɹi/" client:only />
+<Pronunciation
+  word="Ordinary"
+  uk="/ˈɔːdənɹi/"
+  us="/ˈɔɹdɪnɛ(ə)ɹi/"
+  client:only
+/>
 
 ### 列举例句
 
@@ -46,7 +51,4 @@ Ordinary 这个单词来源于拉丁语的 ordō，意为顺序、状态或等�
 
 Lucy loved her ordinary life: waking up early, a cup of coffee, reading, and then work. It was predictable, but it brought her peace. (露西热爱她平凡的生活：早起，一杯咖啡，阅读，然后工作。虽然这过于平凡，可是它带给她安宁。)
 
-<WordRelations
-  antonyms={["extraordinary", "special"]}
-  client:only
-/>
+<WordRelations antonyms={["extraordinary", "special"]} client:only />

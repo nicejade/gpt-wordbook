@@ -7,14 +7,19 @@ sidebar:
 tableOfContents: false
 ---
 
-import Pronunciation from '../../../components/Pronunciation.svelte';
-import WordRelations from '../../../components/WordRelations.svelte';
+import Pronunciation from "../../../components/Pronunciation.svelte";
+import WordRelations from "../../../components/WordRelations.svelte";
 
 ### 分析词义
 
 "Regularity"是一个名词，它表示的是事物符合某种规则、顺序或者模式的性质。它可以用于描述时间、空间或者行为的连贯性和一致性。例如，经常使用来说明一个人做事有序，时间处理得好。
 
-<Pronunciation word="Regularity" uk="/ˌɹɛɡjuˈlæɹəti/" us="/ˌɹɛɡjuˈlæɹəti/" client:only />
+<Pronunciation
+  word="Regularity"
+  uk="/ˌɹɛɡjuˈlæɹəti/"
+  us="/ˌɹɛɡjuˈlæɹəti/"
+  client:only
+/>
 
 ### 列举例句
 
@@ -51,7 +56,4 @@ Tom loves to live in regularity. Every morning, he wakes up at 6:30 am, finishes
 
 汤姆非常喜欢规律的生活。每天早晨，他都会在 6:30 准时起床，在 7:00 之前吃完早餐，然后开启他的工作。他的朋友们都羡慕他生活的规律性，认为这是他成功的秘诀之一。
 
-<WordRelations
-  antonyms={["irregularity"]}
-  client:only
-/>
+<WordRelations antonyms={["irregularity"]} client:only />

@@ -6,14 +6,19 @@ sidebar:
 tableOfContents: false
 ---
 
-import Pronunciation from '../../../components/Pronunciation.svelte';
-import WordRelations from '../../../components/WordRelations.svelte';
+import Pronunciation from "../../../components/Pronunciation.svelte";
+import WordRelations from "../../../components/WordRelations.svelte";
 
 ### 分析词义
 
 "Longevity" 是英文的一个名词，意思是“长寿”或“寿命”。它也可用来指“持久”或“耐久性”，在这种情况下，它是指某物或状况持续存在的时间长短。
 
-<Pronunciation word="Longevity" uk="/lɒnˈdʒɛ.vɪ.ti/" us="/lɒnˈdʒɛ.vɪ.ti/" client:only />
+<Pronunciation
+  word="Longevity"
+  uk="/lɒnˈdʒɛ.vɪ.ti/"
+  us="/lɒnˈdʒɛ.vɪ.ti/"
+  client:only
+/>
 
 ### 列举例句
 
@@ -45,7 +50,4 @@ import WordRelations from '../../../components/WordRelations.svelte';
 
 John had an old tortoise that surprised everyone with its longevity, living for over 100 years. (约翰有一只老龟，它的长寿让每个人都感到惊讶，活了超过 100 岁。)
 
-<WordRelations
-  synonyms={["permanence"]}
-  client:only
-/>
+<WordRelations synonyms={["permanence"]} client:only />

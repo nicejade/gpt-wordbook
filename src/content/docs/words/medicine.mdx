@@ -8,14 +8,19 @@ sidebar:
 tableOfContents: false
 ---
 
-import Pronunciation from '../../../components/Pronunciation.svelte';
-import WordRelations from '../../../components/WordRelations.svelte';
+import Pronunciation from "../../../components/Pronunciation.svelte";
+import WordRelations from "../../../components/WordRelations.svelte";
 
 ### 分析词义
 
 "Medicine" 这个词主要用来表示“医学”或者“药品”。它可以 refer to the science of healing，也可以指的是用于治疗的药物。
 
-<Pronunciation word="Medicine" uk="/ˈmed(ɪ).sn̩/" us="/ˈmɛ.dɪ.sɪn/" client:only />
+<Pronunciation
+  word="Medicine"
+  uk="/ˈmed(ɪ).sn̩/"
+  us="/ˈmɛ.dɪ.sɪn/"
+  client:only
+/>
 
 ### 列举例句
 
@@ -56,6 +61,14 @@ John has been studying medicine for five years, and he dreams of finding a medic
 约翰已经学习医学五年了，他梦想着找到一种能治愈癌症的药物。
 
 <WordRelations
-  synonyms={["drug", "elixir", "pharmaceutical", "prescription", "course", "program", "regimen"]}
+  synonyms={[
+    "drug",
+    "elixir",
+    "pharmaceutical",
+    "prescription",
+    "course",
+    "program",
+    "regimen",
+  ]}
   client:only
 />

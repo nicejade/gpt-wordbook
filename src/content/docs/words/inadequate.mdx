@@ -6,14 +6,19 @@ sidebar:
 tableOfContents: false
 ---
 
-import Pronunciation from '../../../components/Pronunciation.svelte';
-import WordRelations from '../../../components/WordRelations.svelte';
+import Pronunciation from "../../../components/Pronunciation.svelte";
+import WordRelations from "../../../components/WordRelations.svelte";
 
 ### 分析词义
 
 "Inadequate"是一个形容词，主要意思是“不充分的，不足的，不适当的”。一般用来形容某件事情、物品或者人不足以满足一定的要求。
 
-<Pronunciation word="Inadequate" uk="/ɪnˈædəkwɪt/" us="/ɪnˈædəkwɪt/" client:only />
+<Pronunciation
+  word="Inadequate"
+  uk="/ɪnˈædəkwɪt/"
+  us="/ɪnˈædəkwɪt/"
+  client:only
+/>
 
 ### 列举例句
 
@@ -47,7 +52,4 @@ import WordRelations from '../../../components/WordRelations.svelte';
 Bill felt inadequate when he was the only one who didn't get a promotion at work. He decided to take some courses to improve himself. (当比尔发现自己是工作场上唯一一个没有得到提升的人时，他感到自己不足以胜任。他决定上一些课程提升自己。)
 (比尔在发现自己是工作中唯一一个没有被提升的人时，感到自己不够格。他决定参加一些课程来提升自己。)
 
-<WordRelations
-  synonyms={["deficient", "insufficient"]}
-  client:only
-/>
+<WordRelations synonyms={["deficient", "insufficient"]} client:only />

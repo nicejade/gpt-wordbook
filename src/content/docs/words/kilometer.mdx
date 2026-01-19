@@ -6,14 +6,19 @@ sidebar:
 tableOfContents: false
 ---
 
-import Pronunciation from '../../../components/Pronunciation.svelte';
-import WordRelations from '../../../components/WordRelations.svelte';
+import Pronunciation from "../../../components/Pronunciation.svelte";
+import WordRelations from "../../../components/WordRelations.svelte";
 
 ### 分析词义
 
 "kilometer" 是一个用于测量距离的单位，等于 1000 米。
 
-<Pronunciation word="Kilometer" uk="/kɪˈlɒmɪtə/" us="/kəˈlɑmɪtəɹ/" client:only />
+<Pronunciation
+  word="Kilometer"
+  uk="/kɪˈlɒmɪtə/"
+  us="/kəˈlɑmɪtəɹ/"
+  client:only
+/>
 
 ### 列举例句
 
@@ -51,7 +56,4 @@ He decided to cycle ten kilometers to the hilltop to enjoy the sunset.
 
 他决定骑行十公里到山顶去欣赏日落。
 
-<WordRelations
-  synonyms={["SI", "km", "klick"]}
-  client:only
-/>
+<WordRelations synonyms={["SI", "km", "klick"]} client:only />

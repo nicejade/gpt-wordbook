@@ -6,14 +6,19 @@ sidebar:
 tableOfContents: false
 ---
 
-import Pronunciation from '../../../components/Pronunciation.svelte';
-import WordRelations from '../../../components/WordRelations.svelte';
+import Pronunciation from "../../../components/Pronunciation.svelte";
+import WordRelations from "../../../components/WordRelations.svelte";
 
 ### 分析词义
 
 “Downstairs” 是一个名词和副词。作为名词，它意思是“楼下”，是指位于地面或地板以下的楼层。作为副词，它指的是向楼下或在楼下的动作。
 
-<Pronunciation word="Downstairs" uk="/daʊnˈstɛəz/" us="/daʊnˈstɛɹz/" client:only />
+<Pronunciation
+  word="Downstairs"
+  uk="/daʊnˈstɛəz/"
+  us="/daʊnˈstɛɹz/"
+  client:only
+/>
 
 ### 列举例句
 
@@ -48,7 +53,4 @@ import WordRelations from '../../../components/WordRelations.svelte';
 
 这样帮你理解"downstairs"这个词了吗？如果有其他单词也欢迎提问哦！
 
-<WordRelations
-  antonyms={["upstairs"]}
-  client:only
-/>
+<WordRelations antonyms={["upstairs"]} client:only />

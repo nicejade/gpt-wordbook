@@ -8,14 +8,19 @@ sidebar:
 tableOfContents: false
 ---
 
-import Pronunciation from '../../../components/Pronunciation.svelte';
-import WordRelations from '../../../components/WordRelations.svelte';
+import Pronunciation from "../../../components/Pronunciation.svelte";
+import WordRelations from "../../../components/WordRelations.svelte";
 
 ### 分析词义
 
 "Qualify" 是动词，它有几个常见的意思。其一是 “使有资格；使具备条件”，常用在谈论有特定能力或合格从事某事的能力。其二是“限定”，一般用来指明、修饰或限制声明或观点的性质、幅度或面向。
 
-<Pronunciation word="Qualify" uk="/ˈkwɒl.ɪ.faɪ/" us="/ˈkwɑl.ɪ.faɪ/" client:only />
+<Pronunciation
+  word="Qualify"
+  uk="/ˈkwɒl.ɪ.faɪ/"
+  us="/ˈkwɑl.ɪ.faɪ/"
+  client:only
+/>
 
 ### 列举例句
 
@@ -54,7 +59,4 @@ import WordRelations from '../../../components/WordRelations.svelte';
 
 "Jack wasn't sure that he could qualify for the elite football team, but after days of rigorous practice and hard work, he finally made it."（杰克并不确定他是否有资格进入精英足球队，但经过几天的严格训练和辛勤工作，他最终做到了。）
 
-<WordRelations
-  antonyms={["unqualify"]}
-  client:only
-/>
+<WordRelations antonyms={["unqualify"]} client:only />

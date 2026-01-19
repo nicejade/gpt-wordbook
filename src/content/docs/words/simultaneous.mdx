@@ -6,14 +6,19 @@ sidebar:
 tableOfContents: false
 ---
 
-import Pronunciation from '../../../components/Pronunciation.svelte';
-import WordRelations from '../../../components/WordRelations.svelte';
+import Pronunciation from "../../../components/Pronunciation.svelte";
+import WordRelations from "../../../components/WordRelations.svelte";
 
 ### 分析词义
 
 "Simultaneous"是一个形容词，定义为"发生在同一时间"或"同时进行的"。它描述的是两个或更多的事件，动作或过程在同一时间发生。
 
-<Pronunciation word="Simultaneous" uk="/sɪm.əlˈteɪ̯n.i.əs/" us="/ˌsaɪ̯m.əlˈteɪ̯n.i.əs/" client:only />
+<Pronunciation
+  word="Simultaneous"
+  uk="/sɪm.əlˈteɪ̯n.i.əs/"
+  us="/ˌsaɪ̯m.əlˈteɪ̯n.i.əs/"
+  client:only
+/>
 
 ### 列举例句
 
@@ -45,7 +50,4 @@ import WordRelations from '../../../components/WordRelations.svelte';
 A simultaneous clap of thunder and flash of lightning made me jolt up from sleep, scaring me awake.
 雷声和闪电同时响起，让我从睡梦中惊醒，吓得我立刻醒来。
 
-<WordRelations
-  antonyms={["sequential"]}
-  client:only
-/>
+<WordRelations antonyms={["sequential"]} client:only />

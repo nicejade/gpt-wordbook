@@ -6,17 +6,22 @@ sidebar:
 tableOfContents: false
 ---
 
-import Pronunciation from '../../../components/Pronunciation.svelte';
-import WordRelations from '../../../components/WordRelations.svelte';
+import Pronunciation from "../../../components/Pronunciation.svelte";
+import WordRelations from "../../../components/WordRelations.svelte";
 
 ### 分析词义
 
 "Suggestion" 是一个名词，主要有两种含义：
 
-<Pronunciation word="Suggestion" uk="/səˈd͡ʒɛstjən/" us="/səɡˈd͡ʒɛstʃən/" client:only />
-
 1.  建议，提议。例如，提出一个关于改善现状的建议。
 2.  暗示，引导。例如，通过一些细微的线索或行为给别人留下暗示。
+
+<Pronunciation
+  word="Suggestion"
+  uk="/səˈd͡ʒɛstjən/"
+  us="/səɡˈd͡ʒɛstʃən/"
+  client:only
+/>
 
 ### 列举例句
 
@@ -56,7 +61,4 @@ import WordRelations from '../../../components/WordRelations.svelte';
 Tom noticed a fault in the company's system, so he made a suggestion to his manager. His proactive attitude was praised by everyone in the team.
 (汤姆注意到公司系统中的一个错误，所以他向经理提了一个建议。他主动的态度得到了团队所有人的赞扬。)
 
-<WordRelations
-  synonyms={["hint", "incitement", "proposal"]}
-  client:only
-/>
+<WordRelations synonyms={["hint", "incitement", "proposal"]} client:only />

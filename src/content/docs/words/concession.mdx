@@ -6,14 +6,19 @@ sidebar:
 tableOfContents: false
 ---
 
-import Pronunciation from '../../../components/Pronunciation.svelte';
-import WordRelations from '../../../components/WordRelations.svelte';
+import Pronunciation from "../../../components/Pronunciation.svelte";
+import WordRelations from "../../../components/WordRelations.svelte";
 
 ### 分析词义
 
 "Concession" 这个单词指的是为了和解、达成共识或结束争论而做出的让步或妥协。一般来说，这通常涉及到某种形式的牺牲或放弃。
 
-<Pronunciation word="Concession" uk="/kənˈsɛʃən/" us="/kənˈsɛʃən/" client:only />
+<Pronunciation
+  word="Concession"
+  uk="/kənˈsɛʃən/"
+  us="/kənˈsɛʃən/"
+  client:only
+/>
 
 ### 列举例句
 
@@ -46,7 +51,4 @@ import WordRelations from '../../../components/WordRelations.svelte';
 In the negotiation to end the conflict, the two countries had to make significant concessions, leading to a peace agreement.
 在结束冲突的谈判中，两国不得不作出重大让步，最终达成和平协议。
 
-<WordRelations
-  synonyms={["franchise", "tithe"]}
-  client:only
-/>
+<WordRelations synonyms={["franchise", "tithe"]} client:only />

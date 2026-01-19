@@ -6,14 +6,19 @@ sidebar:
 tableOfContents: false
 ---
 
-import Pronunciation from '../../../components/Pronunciation.svelte';
-import WordRelations from '../../../components/WordRelations.svelte';
+import Pronunciation from "../../../components/Pronunciation.svelte";
+import WordRelations from "../../../components/WordRelations.svelte";
 
 ### 分析词义
 
 单词 "formula" 在英语中常作名词使用，具有多种含义，包括公式、方程式、配方、秘诀等，一般用于描述某种特定的标准或方法。
 
-<Pronunciation word="Formula" uk="/ˈfɔː.mjʊ.lə/" us="/ˈfɔː.mjʊ.lə/" client:only />
+<Pronunciation
+  word="Formula"
+  uk="/ˈfɔː.mjʊ.lə/"
+  us="/ˈfɔː.mjʊ.lə/"
+  client:only
+/>
 
 ### 列举例句
 
@@ -51,7 +56,4 @@ import WordRelations from '../../../components/WordRelations.svelte';
 Once a student was struggling with his Chemistry project. His mentor said, “Don’t panic. To find the right answer, all you need is the right formula."
 曾经，有个学生在化学项目上遇到了困难。他的导师说：“别急。要找到正确的答案，你只需要正确的公式。”
 
-<WordRelations
-  synonyms={["formula"]}
-  client:only
-/>
+<WordRelations synonyms={["formula"]} client:only />

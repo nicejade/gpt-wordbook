@@ -8,14 +8,19 @@ sidebar:
 tableOfContents: false
 ---
 
-import Pronunciation from '../../../components/Pronunciation.svelte';
-import WordRelations from '../../../components/WordRelations.svelte';
+import Pronunciation from "../../../components/Pronunciation.svelte";
+import WordRelations from "../../../components/WordRelations.svelte";
 
 ### 分析词义
 
 "Timetable" 是一个名词。它的基本词义是一种时间表或者日程表。通常是列出列车、公交车或者飞机等公共交通工具的发车或起飞时间，或者列出学校或大学的课程表。具有计划和秩序的蕴含。
 
-<Pronunciation word="Timetable" uk="/ˈtaɪmˌteɪbəl/" us="/ˈtaɪmˌteɪbəl/" client:only />
+<Pronunciation
+  word="Timetable"
+  uk="/ˈtaɪmˌteɪbəl/"
+  us="/ˈtaɪmˌteɪbəl/"
+  client:only
+/>
 
 ### 列举例句
 
@@ -51,7 +56,4 @@ Timetable 是一个复合词，由"Time"和 "Table"两个词组成。
 
 One day, I lost my schooldays' timetable. I was upset because I didn't know what classes I had the next day. Luckily, my best friend had a copy of the timetable. She saved my day! (有一天，我丢失了我的学校时间表。我很烦恼，因为我不知道第二天有什么课程。幸运的是，我最好的朋友有一份时间表。她救了我的一天！)
 
-<WordRelations
-  synonyms={["schedule", "timeline"]}
-  client:only
-/>
+<WordRelations synonyms={["schedule", "timeline"]} client:only />

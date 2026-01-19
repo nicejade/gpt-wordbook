@@ -6,17 +6,22 @@ sidebar:
 tableOfContents: false
 ---
 
-import Pronunciation from '../../../components/Pronunciation.svelte';
-import WordRelations from '../../../components/WordRelations.svelte';
+import Pronunciation from "../../../components/Pronunciation.svelte";
+import WordRelations from "../../../components/WordRelations.svelte";
 
 ### 分析词义
 
 "Directory"是一个名词，主要有两种含义：
 
-<Pronunciation word="Directory" uk="/daɪˈɹɛktəɹi/" us="/daɪˈɹɛktəɹi/" client:only />
-
 1.  指示或导向某个地方的指南，例如电话簿或商业目录。
 2.  计算机术语中，指代文件系统中文件和其它目录的组织方式，俗称文件夹。
+
+<Pronunciation
+  word="Directory"
+  uk="/daɪˈɹɛktəɹi/"
+  us="/daɪˈɹɛktəɹi/"
+  client:only
+/>
 
 ### 列举例句
 
@@ -50,7 +55,4 @@ import WordRelations from '../../../components/WordRelations.svelte';
 Every morning, John checked the directory to find out the office numbers of new clients. Today, he found Mr. Brown's number and made a fruitful call.
 (每天早上，约翰都会查看目录，查找新客户的办公室号码。今天，他找到了布朗先生的号码，并打了一通很有成果的电话。)
 
-<WordRelations
-  synonyms={["folder"]}
-  client:only
-/>
+<WordRelations synonyms={["folder"]} client:only />

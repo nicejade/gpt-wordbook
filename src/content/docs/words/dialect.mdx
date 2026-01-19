@@ -8,14 +8,19 @@ sidebar:
 tableOfContents: false
 ---
 
-import Pronunciation from '../../../components/Pronunciation.svelte';
-import WordRelations from '../../../components/WordRelations.svelte';
+import Pronunciation from "../../../components/Pronunciation.svelte";
+import WordRelations from "../../../components/WordRelations.svelte";
 
 ### 分析词义
 
 "Dialect" 是一个名词，指的是一个特定的社区、地区或社会群体中的语言形式，这种语言与同样使用同一种语言但在其他地方的人们的语言有所不同。这种差异可能体现在词汇、语法和发音上。
 
-<Pronunciation word="Dialect" uk="/ˈdaɪ.əˌlɛkt/" us="/ˈdaɪ.əˌlɛkt/" client:only />
+<Pronunciation
+  word="Dialect"
+  uk="/ˈdaɪ.əˌlɛkt/"
+  us="/ˈdaɪ.əˌlɛkt/"
+  client:only
+/>
 
 ### 列举例句
 
@@ -52,7 +57,4 @@ import WordRelations from '../../../components/WordRelations.svelte';
 Once upon a time, a traveler arrived at a small town. He was amazed by the unique dialect the villagers spoke, which he had never heard before.
 (从前，一位旅行者来到了一个小镇。他被村民们讲的独特方言吸引住了，这是他从未听过的。)
 
-<WordRelations
-  synonyms={["patois", "vernacular"]}
-  client:only
-/>
+<WordRelations synonyms={["patois", "vernacular"]} client:only />

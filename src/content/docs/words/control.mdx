@@ -6,14 +6,19 @@ sidebar:
 tableOfContents: false
 ---
 
-import Pronunciation from '../../../components/Pronunciation.svelte';
-import WordRelations from '../../../components/WordRelations.svelte';
+import Pronunciation from "../../../components/Pronunciation.svelte";
+import WordRelations from "../../../components/WordRelations.svelte";
 
 ### 分析词义
 
 "Control"这个单词作为动词时，主要含义是"控制"，"制约"，"管理"；作为名词时，主要指的是"控制"，"管理"，"调节设备"。
 
-<Pronunciation word="Control" uk="/kənˈtɹəʊl/" us="/kənˈt(ʃ)ɹoʊl/" client:only />
+<Pronunciation
+  word="Control"
+  uk="/kənˈtɹəʊl/"
+  us="/kənˈt(ʃ)ɹoʊl/"
+  client:only
+/>
 
 ### 列举例句
 
@@ -48,7 +53,15 @@ import WordRelations from '../../../components/WordRelations.svelte';
 In the robot factory, each worker was equipped with a control device. John, a new worker, was amazing at using it. With these controls, he guided robots skillfully like a conductor leads a symphony orchestra. (在机器人工厂里，每个工人都配备了一个控制设备。约翰，一名新工人，擅长使用这个装置。凭借这些控制装置，他巧妙地引领着机器人们，就像指挥家领导一场交响乐团一样。)
 
 <WordRelations
-  synonyms={["widget", "besteer", "bewield", "manage", "puppeteer", "rule", "ctrl."]}
+  synonyms={[
+    "widget",
+    "besteer",
+    "bewield",
+    "manage",
+    "puppeteer",
+    "rule",
+    "ctrl.",
+  ]}
   antonyms={["defy", "rebel", "resist", "obey", "submit"]}
   client:only
 />

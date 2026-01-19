@@ -7,14 +7,19 @@ sidebar:
 tableOfContents: false
 ---
 
-import Pronunciation from '../../../components/Pronunciation.svelte';
-import WordRelations from '../../../components/WordRelations.svelte';
+import Pronunciation from "../../../components/Pronunciation.svelte";
+import WordRelations from "../../../components/WordRelations.svelte";
 
 ### 分析词义
 
 "Compulsory"是一个形容词，它的中文含义是“强制的，必须的”。当一件事情被认为是必须要做的，或者被法律、规定或者权威所强制要求的时候，我们通常会用到这个词。
 
-<Pronunciation word="Compulsory" uk="/kəmˈpʌlsəri/" us="/kəmˈpʌlsəri/" client:only />
+<Pronunciation
+  word="Compulsory"
+  uk="/kəmˈpʌlsəri/"
+  us="/kəmˈpʌlsəri/"
+  client:only
+/>
 
 ### 列举例句
 
@@ -47,8 +52,4 @@ import WordRelations from '../../../components/WordRelations.svelte';
 "In the kingdom of Mathland, it was compulsory for every citizen to solve a math problem before breakfast. Many people were found with calculators at the breakfast table."
 （在数学之国，每个公民在吃早餐前都必须解决一个数学问题。许多人在早餐桌上都找到了计算器。）
 
-<WordRelations
-  synonyms={["mandatory"]}
-  antonyms={["optional"]}
-  client:only
-/>
+<WordRelations synonyms={["mandatory"]} antonyms={["optional"]} client:only />

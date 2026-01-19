@@ -6,14 +6,19 @@ sidebar:
 tableOfContents: false
 ---
 
-import Pronunciation from '../../../components/Pronunciation.svelte';
-import WordRelations from '../../../components/WordRelations.svelte';
+import Pronunciation from "../../../components/Pronunciation.svelte";
+import WordRelations from "../../../components/WordRelations.svelte";
 
 ### 分析词义
 
 "Appreciation" 这个单词的主要含义是“感谢”或“赞赏”，也可指的是对物品价值的认知。由动词 "appreciate" 转变而来。
 
-<Pronunciation word="Appreciation" uk="/əˌpɹiː.ʃiˈeɪ.ʃən/" us="/əˌpɹiː.ʃiˈeɪ.ʃən/" client:only />
+<Pronunciation
+  word="Appreciation"
+  uk="/əˌpɹiː.ʃiˈeɪ.ʃən/"
+  us="/əˌpɹiː.ʃiˈeɪ.ʃən/"
+  client:only
+/>
 
 ### 列举例句
 
@@ -45,7 +50,4 @@ import WordRelations from '../../../components/WordRelations.svelte';
 
 Tom received a certificate of appreciation from his boss in front of all his colleagues. He felt proud and vowed to work harder. (Tom 在同事面前收到了老板的感谢证书，他感到很自豪，发誓要更努力工作。)
 
-<WordRelations
-  antonyms={["depreciation"]}
-  client:only
-/>
+<WordRelations antonyms={["depreciation"]} client:only />

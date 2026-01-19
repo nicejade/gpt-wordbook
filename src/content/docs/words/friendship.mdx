@@ -6,14 +6,19 @@ sidebar:
 tableOfContents: false
 ---
 
-import Pronunciation from '../../../components/Pronunciation.svelte';
-import WordRelations from '../../../components/WordRelations.svelte';
+import Pronunciation from "../../../components/Pronunciation.svelte";
+import WordRelations from "../../../components/WordRelations.svelte";
 
 ### 分析词义
 
 "Friendship" 是一个名词，意思是“友谊，友情”，描述的是一种亲密且非浪漫的感情或情感信任，通常存在于朋友之间。
 
-<Pronunciation word="Friendship" uk="/ˈfɹɛndʃɪp/" us="/ˈfɹɛndʃɪp/" client:only />
+<Pronunciation
+  word="Friendship"
+  uk="/ˈfɹɛndʃɪp/"
+  us="/ˈfɹɛndʃɪp/"
+  client:only
+/>
 
 ### 列举例句
 
@@ -46,7 +51,4 @@ import WordRelations from '../../../components/WordRelations.svelte';
 Tom and Jerry had a solid friendship. They helped each other in difficulties, shared joys, and cherished every moment they spent together.
 汤姆和杰瑞有一份坚固的友谊。他们在困难中互相帮助，分享喜悦，珍惜他们一起度过的每一刻。
 
-<WordRelations
-  antonyms={["enemyship","foeship"]}
-  client:only
-/>
+<WordRelations antonyms={["enemyship", "foeship"]} client:only />

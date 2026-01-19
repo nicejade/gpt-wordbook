@@ -8,14 +8,19 @@ sidebar:
 tableOfContents: false
 ---
 
-import Pronunciation from '../../../components/Pronunciation.svelte';
-import WordRelations from '../../../components/WordRelations.svelte';
+import Pronunciation from "../../../components/Pronunciation.svelte";
+import WordRelations from "../../../components/WordRelations.svelte";
 
 ### 分析词义
 
 "Competition" 是一个英文名词，意思是 "比赛，竞赛；竞争；（生物的）竞争，抢食"。这个词描述了人，组织，或者物种之间，为了达到某种目的，而进行努力的过程。
 
-<Pronunciation word="Competition" uk="/ˌkɒmpəˈtɪʃən/" us="/ˌkɑːmpəˈtɪʃən/" client:only />
+<Pronunciation
+  word="Competition"
+  uk="/ˌkɒmpəˈtɪʃən/"
+  us="/ˌkɑːmpəˈtɪʃən/"
+  client:only
+/>
 
 ### 列举例句
 
@@ -50,7 +55,4 @@ com-"一起"+ "petition" "追求" ) 胜利，这个画面能帮助你记住这�
 
 （尽管缺乏经验，汤姆还是报名参加了市区一年一度的马拉松比赛。他勤奋培训了几个月，他追求的不是胜利，而是自我提升）
 
-<WordRelations
-  antonyms={["cooperation"]}
-  client:only
-/>
+<WordRelations antonyms={["cooperation"]} client:only />

@@ -6,14 +6,19 @@ sidebar:
 tableOfContents: false
 ---
 
-import Pronunciation from '../../../components/Pronunciation.svelte';
-import WordRelations from '../../../components/WordRelations.svelte';
+import Pronunciation from "../../../components/Pronunciation.svelte";
+import WordRelations from "../../../components/WordRelations.svelte";
 
 ### 分析词义
 
 "Microphone"是一个名词，意为“麦克风”，用于放大声音或番送声音到另一个地方。
 
-<Pronunciation word="Microphone" uk="/ˈmaɪ.kɹəˌfəʊn/" us="/ˈmaɪ.kɹəˌfəʊn/" client:only />
+<Pronunciation
+  word="Microphone"
+  uk="/ˈmaɪ.kɹəˌfəʊn/"
+  us="/ˈmaɪ.kɹəˌfəʊn/"
+  client:only
+/>
 
 ### 列举例句
 
@@ -53,7 +58,4 @@ import WordRelations from '../../../components/WordRelations.svelte';
 Tom stood on the stage, his hands shaking as he adjusted the microphone.
 汤姆站在舞台上，他紧张地调整着麦克风。
 
-<WordRelations
-  synonyms={["mic","mike","bug"]}
-  client:only
-/>
+<WordRelations synonyms={["mic", "mike", "bug"]} client:only />

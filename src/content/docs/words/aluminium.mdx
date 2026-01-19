@@ -6,14 +6,19 @@ sidebar:
 tableOfContents: false
 ---
 
-import Pronunciation from '../../../components/Pronunciation.svelte';
-import WordRelations from '../../../components/WordRelations.svelte';
+import Pronunciation from "../../../components/Pronunciation.svelte";
+import WordRelations from "../../../components/WordRelations.svelte";
 
 ### 分析词义
 
 "Aluminium" 是一种轻质但坚韧的金属元素，化学符号为 Al。它是地壳中含量第三大的元素，广泛应用于飞机、建筑、电线等多个行业。
 
-<Pronunciation word="Aluminium" uk="/ˌæl.(j)ʊˈmɪn.i.əm/" us="/ˌæl(j)uˈmɪn.j.əm/" client:only />
+<Pronunciation
+  word="Aluminium"
+  uk="/ˌæl.(j)ʊˈmɪn.i.əm/"
+  us="/ˌæl(j)uˈmɪn.j.əm/"
+  client:only
+/>
 
 ### 列举例句
 
@@ -47,7 +52,4 @@ Tom's new bicycle was light yet sturdy, all thanks to the aluminium frame. This 
 
 Tom 的新自行车轻而坚韧，这都归功于铝制的车架。这与他之前沉重的铁制自行车形成了鲜明的对比。
 
-<WordRelations
-  synonyms={["E173","alumium"]}
-  client:only
-/>
+<WordRelations synonyms={["E173", "alumium"]} client:only />

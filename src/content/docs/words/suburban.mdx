@@ -8,14 +8,19 @@ sidebar:
 tableOfContents: false
 ---
 
-import Pronunciation from '../../../components/Pronunciation.svelte';
-import WordRelations from '../../../components/WordRelations.svelte';
+import Pronunciation from "../../../components/Pronunciation.svelte";
+import WordRelations from "../../../components/WordRelations.svelte";
 
 ### 分析词义
 
 "Suburban" 是一个形容词，形容居住或位于城市周边的住宅区，通常被用于描述舒适安静的居住环境，许多人们更倾向于在郊区寻找房子。它的中文翻译通常为"郊区的”。
 
-<Pronunciation word="Suburban" uk="/səˈbɜː(ɹ)bən/" us="/səˈbɜː(ɹ)bən/" client:only />
+<Pronunciation
+  word="Suburban"
+  uk="/səˈbɜː(ɹ)bən/"
+  us="/səˈbɜː(ɹ)bən/"
+  client:only
+/>
 
 ### 列举例句
 
@@ -53,7 +58,4 @@ import WordRelations from '../../../components/WordRelations.svelte';
 
 In the tranquil suburban neighborhood, where the houses are relatively larger, and the speed limits lower, everyone seems to savor a relaxed lifestyle far from urban hustle and bustle.（在宁静的郊区社区，房屋相对较大，速度限制也更低。每个人似乎都在享受远离城市喧嚣的轻松生活。）
 
-<WordRelations
-  antonyms={["nonsuburban"]}
-  client:only
-/>
+<WordRelations antonyms={["nonsuburban"]} client:only />

@@ -8,14 +8,19 @@ sidebar:
 tableOfContents: false
 ---
 
-import Pronunciation from '../../../components/Pronunciation.svelte';
-import WordRelations from '../../../components/WordRelations.svelte';
+import Pronunciation from "../../../components/Pronunciation.svelte";
+import WordRelations from "../../../components/WordRelations.svelte";
 
 ### 分析词义
 
 "Appointment" 这个单词是英语中的一个常见词汇，主要是名词，表示“约会，预约，任命”，经常用在商务场合中，也有用于非正式场合的时候。当指商务场合的时候，其含义主要为"安排会面或者商谈的时间"；在非正式场合使用时，则更多地指与朋友或者家人的约定见面的时间。此外，这个词还可以表示在一项职务或官职上的任命。
 
-<Pronunciation word="Appointment" uk="/əˈpɔɪnt.mɛnt/" us="/əˈpɔɪnt.mɛnt/" client:only />
+<Pronunciation
+  word="Appointment"
+  uk="/əˈpɔɪnt.mɛnt/"
+  us="/əˈpɔɪnt.mɛnt/"
+  client:only
+/>
 
 ### 列举例句
 
@@ -54,7 +59,14 @@ One day, Lucy got a phone call, it was an appointment for a job interview next M
 （有一天，露西接到一个电话，那是一个关于下周一的面试预约。她感到很兴奋，但也有一点紧张。）
 
 <WordRelations
-  synonyms={["command", "designation", "direction", "equipment", "establishment", "order"]}
+  synonyms={[
+    "command",
+    "designation",
+    "direction",
+    "equipment",
+    "establishment",
+    "order",
+  ]}
   antonyms={["dismissal"]}
   client:only
 />

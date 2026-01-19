@@ -6,14 +6,19 @@ sidebar:
 tableOfContents: false
 ---
 
-import Pronunciation from '../../../components/Pronunciation.svelte';
-import WordRelations from '../../../components/WordRelations.svelte';
+import Pronunciation from "../../../components/Pronunciation.svelte";
+import WordRelations from "../../../components/WordRelations.svelte";
 
 ### 分析词义
 
 "Surroundings"是一个名词，意为"环境"，"周围的东西"或"周围的情况"，通常用于描述一个人或事物所在的具体环境。
 
-<Pronunciation word="Surroundings" uk="/səˈɹaʊndɪŋz/" us="/səˈɹaʊndɪŋz/" client:only />
+<Pronunciation
+  word="Surroundings"
+  uk="/səˈɹaʊndɪŋz/"
+  us="/səˈɹaʊndɪŋz/"
+  client:only
+/>
 
 ### 列举例句
 
@@ -45,7 +50,4 @@ import WordRelations from '../../../components/WordRelations.svelte';
 
 "There was nothing in her surroundings that she recognized. She looked at the strange trees and the unfamiliar flowers, feeling lost."（在她的周围，她一样也没有认识的。她看着奇形怪状的树木和陌生的花朵，感到迷失了方向。）
 
-<WordRelations
-  synonyms={["periphery"]}
-  client:only
-/>
+<WordRelations synonyms={["periphery"]} client:only />

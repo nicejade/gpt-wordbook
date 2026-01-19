@@ -9,14 +9,19 @@ sidebar:
 tableOfContents: false
 ---
 
-import Pronunciation from '../../../components/Pronunciation.svelte';
-import WordRelations from '../../../components/WordRelations.svelte';
+import Pronunciation from "../../../components/Pronunciation.svelte";
+import WordRelations from "../../../components/WordRelations.svelte";
 
 ### 分析词义
 
 "Favourable" 这个词在英语中是形容词，它的含义是有利的、积极的、赞同的。当你希望形容某种环境、条件、评估结果、反应等是积极的或者有益的时候，你可以使用 "favourable" 这个词。
 
-<Pronunciation word="Favourable" uk="/ˈfeɪv(ə)ɹəbəl/" us="/ˈfeɪv(ə)ɹəbəl/" client:only />
+<Pronunciation
+  word="Favourable"
+  uk="/ˈfeɪv(ə)ɹəbəl/"
+  us="/ˈfeɪv(ə)ɹəbəl/"
+  client:only
+/>
 
 ### 列举例句
 
@@ -51,7 +56,34 @@ In a small town, there was a favourable environment for agriculture, and the far
 在一个小镇上，有着非常适宜农业发展的环境，农田里的作物生长得十分茂盛。人们过着快乐平静的生活。
 
 <WordRelations
-  synonyms={["advantageous", "helpful", "useful", "approving", "encouraging", "good", "pleasing", "auspicious", "fortunate", "lucky", "convenient", "handy", "opportune", "suitable"]}
-  antonyms={["bad", "discouraging", "displeasing", "unfavorable", "inconvenient", "inopportune", "unsuitable", "inauspicious", "unfavourable", "unlucky", "unhelpful"]}
+  synonyms={[
+    "advantageous",
+    "helpful",
+    "useful",
+    "approving",
+    "encouraging",
+    "good",
+    "pleasing",
+    "auspicious",
+    "fortunate",
+    "lucky",
+    "convenient",
+    "handy",
+    "opportune",
+    "suitable",
+  ]}
+  antonyms={[
+    "bad",
+    "discouraging",
+    "displeasing",
+    "unfavorable",
+    "inconvenient",
+    "inopportune",
+    "unsuitable",
+    "inauspicious",
+    "unfavourable",
+    "unlucky",
+    "unhelpful",
+  ]}
   client:only
 />

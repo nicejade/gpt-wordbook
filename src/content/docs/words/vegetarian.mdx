@@ -6,14 +6,19 @@ sidebar:
 tableOfContents: false
 ---
 
-import Pronunciation from '../../../components/Pronunciation.svelte';
-import WordRelations from '../../../components/WordRelations.svelte';
+import Pronunciation from "../../../components/Pronunciation.svelte";
+import WordRelations from "../../../components/WordRelations.svelte";
 
 ### 分析词义
 
 "Vegetarian" 是一个英语单词，意为"素食主义者"或"吃素的"，来自于那些只吃蔬菜、水果、谷物、胡桃和种子等，不吃任何动物或动物源食物的人。
 
-<Pronunciation word="Vegetarian" uk="/vɛd͡ʒɪˈtɛəɹi.ən/" us="/vɛd͡ʒɪˈtɛəɹi.ən/" client:only />
+<Pronunciation
+  word="Vegetarian"
+  uk="/vɛd͡ʒɪˈtɛəɹi.ən/"
+  us="/vɛd͡ʒɪˈtɛəɹi.ən/"
+  client:only
+/>
 
 ### 列举例句
 
@@ -45,7 +50,4 @@ import WordRelations from '../../../components/WordRelations.svelte';
 
 "Tom decided to become a vegetarian after visiting a farm. He realized he loved animals too much to eat them."（汤姆在参观了一个农场之后决定成为素食主义者。他意识到他太爱动物了，不舍得吃它们。）
 
-<WordRelations
-  synonyms={["Pythagorean"]}
-  client:only
-/>
+<WordRelations synonyms={["Pythagorean"]} client:only />

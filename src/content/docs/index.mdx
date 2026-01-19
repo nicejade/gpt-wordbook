@@ -23,9 +23,16 @@ import AlphabetIndex from "../../components/AlphabetIndex.astro";
 
 <section class="w-full text-center mt-0! px-0 not-prose">
   <div class="max-w-[900px] mx-auto py-8 px-5 md:px-8 lg:px-10 rounded-[1.25rem] md:rounded-3xl border border-white/10 bg-white/[0.02] backdrop-blur-md shadow-[0_4px_6px_-1px_rgba(0,0,0,0.1),0_2px_4px_-1px_rgba(0,0,0,0.06),inset_0_1px_1px_rgba(255,255,255,0.05)] transition-all duration-300 [:root[data-theme='light']_&]:bg-black/[0.01] [:root[data-theme='light']_&]:border-black/[0.04] [:root[data-theme='light']_&]:shadow-[0_10px_15px_-3px_rgba(0,0,0,0.05),0_4px_6px_-2px_rgba(0,0,0,0.02),inset_0_1px_0_rgba(255,255,255,0.5)]">
-    <h2 class="text-[clamp(2rem,5vw,3.5rem)] font-extrabold leading-[1.1] !my-6 tracking-tighter bg-clip-text text-transparent bg-gradient-to-br from-[var(--sl-color-text-accent)] to-[#434343] font-sans">AI 赋能的深度词汇学习平台</h2>
+    <h2 class="text-[clamp(2rem,5vw,3.5rem)] font-extrabold leading-[1.1] !my-6 tracking-tighter bg-clip-text text-transparent bg-gradient-to-br from-[var(--sl-color-text-accent)] to-[#434343] font-sans">
+      AI 赋能的深度词汇学习平台
+    </h2>
     <p class="text-[clamp(1rem,3vw,1.4rem)] leading-relaxed text-[var(--sl-color-gray-3)] max-w-[700px] mx-auto font-normal tracking-tight font-sans">
-      精选 <strong class="text-[var(--sl-color-text-accent)] font-semibold text-[1.15em] inline-block transition-transform duration-200 hover:scale-105">8000+</strong> 核心词汇，利用 GPT 模型深度解析词义、词根、词缀与文化内涵，从理解本质出发构建长期记忆。
+      精选{" "}
+      <strong class="text-[var(--sl-color-text-accent)] font-semibold text-[1.15em] inline-block transition-transform duration-200 hover:scale-105">
+        8000+
+      </strong>{" "}
+      核心词汇，利用 GPT
+      模型深度解析词义、词根、词缀与文化内涵，从理解本质出发构建长期记忆。
     </p>
   </div>
 </section>
@@ -63,6 +70,7 @@ import AlphabetIndex from "../../components/AlphabetIndex.astro";
     <Card title="🔗 智能关联">
       智能关联相关词汇，构建**词汇网络**，通过联想和对比强化记忆效果
     </Card>
+
   </CardGrid>
 </div>
 

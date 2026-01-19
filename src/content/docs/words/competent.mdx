@@ -8,14 +8,19 @@ sidebar:
 tableOfContents: false
 ---
 
-import Pronunciation from '../../../components/Pronunciation.svelte';
-import WordRelations from '../../../components/WordRelations.svelte';
+import Pronunciation from "../../../components/Pronunciation.svelte";
+import WordRelations from "../../../components/WordRelations.svelte";
 
 ### 分析词义
 
 "Competent" 是一个形容词，用于形容一个人或事物有足够的技能、知识或能力来成功完成特定的任务或工作。比如，"She's highly competent in her work"（她工作非常能干）。
 
-<Pronunciation word="Competent" uk="/ˈkɒmpətənt/" us="/ˈkɒmpətənt/" client:only />
+<Pronunciation
+  word="Competent"
+  uk="/ˈkɒmpətənt/"
+  us="/ˈkɒmpətənt/"
+  client:only
+/>
 
 ### 列举例句
 
@@ -49,7 +54,4 @@ Working in a busy office, Bob often felt overwhelmed. But as his colleagues note
 
 在忙碌的办公室工作，Bob 经常感到压力山大。但是，正如他的同事所注意到的，他是一个非常称职的员工。尽管压力很大，他还是完成了所有的任务。
 
-<WordRelations
-  antonyms={["incompetent"]}
-  client:only
-/>
+<WordRelations antonyms={["incompetent"]} client:only />

@@ -8,14 +8,19 @@ sidebar:
 tableOfContents: false
 ---
 
-import Pronunciation from '../../../components/Pronunciation.svelte';
-import WordRelations from '../../../components/WordRelations.svelte';
+import Pronunciation from "../../../components/Pronunciation.svelte";
+import WordRelations from "../../../components/WordRelations.svelte";
 
 ### 分析词义
 
 'Hamburger' 是英语中的名词，通常指的是由牛肉做成的、通常放在两片面包或者一个切开的面包卷中的肉饼。在我们日常生活中，也常常直接以 'hamburger' 指代由面包、肉饼、蔬菜、酱料等构成的完整汉堡。
 
-<Pronunciation word="Hamburger" uk="/ˈhæm.bə.ɡə/" us="/ˈhæm.bə.ɡə/" client:only />
+<Pronunciation
+  word="Hamburger"
+  uk="/ˈhæm.bə.ɡə/"
+  us="/ˈhæm.bə.ɡə/"
+  client:only
+/>
 
 ### 列举例句
 
@@ -49,7 +54,4 @@ Let's imagine a scene. It's lunchtime in New York. People are bustling about, se
 
 想象一下这个场景。在纽约的午餐时间，人们忙碌着找寻一些快速而美味的午餐。一个人在小型小吃车上煎煮着汉堡，那香味扑鼻诱人。不久，小吃车周围就排起了长队。这就是汉堡的魅力。
 
-<WordRelations
-  synonyms={["beefburger"]}
-  client:only
-/>
+<WordRelations synonyms={["beefburger"]} client:only />

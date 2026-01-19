@@ -6,14 +6,19 @@ sidebar:
 tableOfContents: false
 ---
 
-import Pronunciation from '../../../components/Pronunciation.svelte';
-import WordRelations from '../../../components/WordRelations.svelte';
+import Pronunciation from "../../../components/Pronunciation.svelte";
+import WordRelations from "../../../components/WordRelations.svelte";
 
 ### 分析词义
 
 "Handwriting"是一个英文名词，中文意思是“笔迹，手写”。它通常指的是一个人写字的风格或方式，这通常是独特的，可以反映出一个人的性格特征。
 
-<Pronunciation word="Handwriting" uk="/ˈhændɹaɪtɪŋ/" us="/ˈhændɹaɪtɪŋ/" client:only />
+<Pronunciation
+  word="Handwriting"
+  uk="/ˈhændɹaɪtɪŋ/"
+  us="/ˈhændɹaɪtɪŋ/"
+  client:only
+/>
 
 ### 列举例句
 
@@ -45,7 +50,4 @@ import WordRelations from '../../../components/WordRelations.svelte';
 
 Every morning, Sarah practices her handwriting. She believes that beautiful handwriting is a reflection of a person's character.（每天早上，萨拉都在练习她的笔迹。她认为，美丽的笔迹是一个人品性的反映。）
 
-<WordRelations
-  synonyms={["manuscript", "longhand"]}
-  client:only
-/>
+<WordRelations synonyms={["manuscript", "longhand"]} client:only />

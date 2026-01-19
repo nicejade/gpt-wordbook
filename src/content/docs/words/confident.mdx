@@ -6,14 +6,19 @@ sidebar:
 tableOfContents: false
 ---
 
-import Pronunciation from '../../../components/Pronunciation.svelte';
-import WordRelations from '../../../components/WordRelations.svelte';
+import Pronunciation from "../../../components/Pronunciation.svelte";
+import WordRelations from "../../../components/WordRelations.svelte";
 
 ### 分析词义
 
 "Confident" 是一个英文形容词，有“自信的，确信的，有信心的”之意。
 
-<Pronunciation word="Confident" uk="/ˈkɒn.fɪ.dənt/" us="/ˈkɑn.fɪ.dənt/" client:only />
+<Pronunciation
+  word="Confident"
+  uk="/ˈkɒn.fɪ.dənt/"
+  us="/ˈkɑn.fɪ.dənt/"
+  client:only
+/>
 
 ### 列举例句
 
@@ -46,7 +51,4 @@ import WordRelations from '../../../components/WordRelations.svelte';
 Joe, always the confident one, walked straight up to the boss and asked for a raise. This daunting act won him not only the raise, but also the respect of his colleagues.
 (乔总是那个自信的人，他径直走向老板，要求加薪. 这个令人生畏的举动不仅使他得到了加薪，还赢得了他同事的尊重。)
 
-<WordRelations
-  antonyms={["insecure"]}
-  client:only
-/>
+<WordRelations antonyms={["insecure"]} client:only />

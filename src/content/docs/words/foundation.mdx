@@ -6,19 +6,24 @@ sidebar:
 tableOfContents: false
 ---
 
-import Pronunciation from '../../../components/Pronunciation.svelte';
-import WordRelations from '../../../components/WordRelations.svelte';
+import Pronunciation from "../../../components/Pronunciation.svelte";
+import WordRelations from "../../../components/WordRelations.svelte";
 
 ### 分析词义
 
 "Foundation" 这个单词具有多种含义：
 
-<Pronunciation word="Foundation" uk="/faʊnˈdeɪʃən/" us="/faʊnˈdeɪʃən/" client:only />
-
 1.  （建筑的）地基，基础设施，比如说"The house has a strong foundation."- 这座房子有着坚固的地基。
 2.  基金会，赞助机构，比如说 "The Gates Foundation is a philanthropic organization." - 盖茨基金会是一个致力于慈善事业的机构。
 3.  (知识，技能等的)基础，基本，比如说 "English is the foundation of all his learning." - 英语是他所有学习的基础。
 4.  粉底（化妆术用语），比如说 "She put on foundation before her makeup." - 她在化妆之前先上了粉底。
+
+<Pronunciation
+  word="Foundation"
+  uk="/faʊnˈdeɪʃən/"
+  us="/faʊnˈdeɪʃən/"
+  client:only
+/>
 
 ### 列举例句
 
@@ -54,7 +59,15 @@ Tom's father knew the most critical part of building their new home was pouring 
 汤姆的父亲知道建造他们新房子的最重要部分就是倾注地基。毕竟，房子的长期稳定性取决于它。周围的邻居们都在耐心地等待这个新家的诞生。
 
 <WordRelations
-  synonyms={["base", "groundwall", "basis", "groundwork", "establishment", "platform", "stage"]}
+  synonyms={[
+    "base",
+    "groundwall",
+    "basis",
+    "groundwork",
+    "establishment",
+    "platform",
+    "stage",
+  ]}
   antonyms={["abolition", "dissolution", "ruination"]}
   client:only
 />

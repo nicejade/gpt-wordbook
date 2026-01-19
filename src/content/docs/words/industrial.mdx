@@ -6,14 +6,19 @@ sidebar:
 tableOfContents: false
 ---
 
-import Pronunciation from '../../../components/Pronunciation.svelte';
-import WordRelations from '../../../components/WordRelations.svelte';
+import Pronunciation from "../../../components/Pronunciation.svelte";
+import WordRelations from "../../../components/WordRelations.svelte";
 
 ### 分析词义
 
 "Industrial" 是一个形容词，主要用来表示与工业相关的意思，比如工业的，工业化的。
 
-<Pronunciation word="Industrial" uk="/ɪnˈdʌstɹɪəl/" us="/ɪnˈdʌstɹɪəl/" client:only />
+<Pronunciation
+  word="Industrial"
+  uk="/ɪnˈdʌstɹɪəl/"
+  us="/ɪnˈdʌstɹɪəl/"
+  client:only
+/>
 
 ### 列举例句
 
@@ -46,7 +51,4 @@ Industrial 源于拉丁语的“industria”，原初是指勤奋工作和努力
 The new industrial park brought prosperity to the once-barren town. Now, its streets bustled with activity and opportunity.
 (新的工业园区给曾经荒凉的小镇带来了繁荣。现在，它的街道上熙熙攘攘，充满了活力和机会。)
 
-<WordRelations
-  antonyms={["nonindustrial", "unindustrial"]}
-  client:only
-/>
+<WordRelations antonyms={["nonindustrial", "unindustrial"]} client:only />

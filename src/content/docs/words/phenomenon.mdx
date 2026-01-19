@@ -6,14 +6,19 @@ sidebar:
 tableOfContents: false
 ---
 
-import Pronunciation from '../../../components/Pronunciation.svelte';
-import WordRelations from '../../../components/WordRelations.svelte';
+import Pronunciation from "../../../components/Pronunciation.svelte";
+import WordRelations from "../../../components/WordRelations.svelte";
 
 ### 分析词义
 
 "Phenomenon" 是一个名词，主要用于表示引人注目的人或事，也可以用于科学上用来形容可观察到的事实或事件。
 
-<Pronunciation word="Phenomenon" uk="/fɪˈnɒmənɒn/" us="/fɪˈnɒmənɒn/" client:only />
+<Pronunciation
+  word="Phenomenon"
+  uk="/fɪˈnɒmənɒn/"
+  us="/fɪˈnɒmənɒn/"
+  client:only
+/>
 
 ### 列举例句
 
@@ -48,7 +53,16 @@ Joe was such a phenomenon in our small town, every time he spoke on the phone, c
 修正：乔在我们小镇上就像个奇特的现象。每次他在接电话时，人群就会聚集过来聆听他诗意般的话语。
 
 <WordRelations
-  synonyms={["event","legend","marvel","miracle","oddity","wonder","phenom","prodigy"]}
+  synonyms={[
+    "event",
+    "legend",
+    "marvel",
+    "miracle",
+    "oddity",
+    "wonder",
+    "phenom",
+    "prodigy",
+  ]}
   antonyms={["noumenon"]}
   client:only
 />

@@ -6,14 +6,19 @@ sidebar:
 tableOfContents: false
 ---
 
-import Pronunciation from '../../../components/Pronunciation.svelte';
-import WordRelations from '../../../components/WordRelations.svelte';
+import Pronunciation from "../../../components/Pronunciation.svelte";
+import WordRelations from "../../../components/WordRelations.svelte";
 
 ### 分析词义
 
 "Geunine"是一个英语形容词，意思是真正的，真实的，非冒牌或仿造的。它也可以形容人为真诚的，诚实的。
 
-<Pronunciation word="Genuine" uk="/ˈdʒɛnjuːˌaɪn/" us="/ˈdʒɛnjuːˌaɪn/" client:only />
+<Pronunciation
+  word="Genuine"
+  uk="/ˈdʒɛnjuːˌaɪn/"
+  us="/ˈdʒɛnjuːˌaɪn/"
+  client:only
+/>
 
 ### 列举例句
 
@@ -48,7 +53,14 @@ John was in a dilemma, torn by whether to tell the truth or remain silent. Howev
 约翰处于困境中，矛盾于是否该说出真相或是保持沉默。然而，作为一个真诚的人，他选择了真相。
 
 <WordRelations
-  synonyms={["authentic", "lubish", "natural", "real", "true", "uncounterfeited"]}
+  synonyms={[
+    "authentic",
+    "lubish",
+    "natural",
+    "real",
+    "true",
+    "uncounterfeited",
+  ]}
   antonyms={["fake", "ingenuine"]}
   client:only
 />

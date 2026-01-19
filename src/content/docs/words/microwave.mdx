@@ -8,14 +8,19 @@ sidebar:
 tableOfContents: false
 ---
 
-import Pronunciation from '../../../components/Pronunciation.svelte';
-import WordRelations from '../../../components/WordRelations.svelte';
+import Pronunciation from "../../../components/Pronunciation.svelte";
+import WordRelations from "../../../components/WordRelations.svelte";
 
 ### 分析词义
 
 Microwave 是微波的意思，通常指的是一種電磁波，其波長在射頻波與紅外線之間，频率在 3 00 MHz (0.3 兆赫)和 300 GHz (300,000 兆赫）之间。另外，microwave 也常常在日常生活中用来指我们烹饪食物的微波炉。
 
-<Pronunciation word="Microwave" uk="/ˈmaɪkɹəʊˌweɪv/" us="/ˈmaɪkɹəʊˌweɪv/" client:only />
+<Pronunciation
+  word="Microwave"
+  uk="/ˈmaɪkɹəʊˌweɪv/"
+  us="/ˈmaɪkɹəʊˌweɪv/"
+  client:only
+/>
 
 ### 列举例句
 
@@ -47,7 +52,4 @@ microwave 作为一个名词没有变形。当它用作动词时，过去式和�
 
 Larry bought a new microwave. His old one had broken down. Now, he could easily heat up his frozen meals and satisfy his midnight cravings. ('拉里买了个新的微波炉，他的旧微波炉坏了。现在他可以轻松加热冷冻餐，满足他的夜宵。')
 
-<WordRelations
-  synonyms={["SHF", "nuke", "microwave"]}
-  client:only
-/>
+<WordRelations synonyms={["SHF", "nuke", "microwave"]} client:only />

@@ -6,17 +6,17 @@ sidebar:
 tableOfContents: false
 ---
 
-import Pronunciation from '../../../components/Pronunciation.svelte';
-import WordRelations from '../../../components/WordRelations.svelte';
+import Pronunciation from "../../../components/Pronunciation.svelte";
+import WordRelations from "../../../components/WordRelations.svelte";
 
 ### 分析词义
 
 英文单词"dear"出现在多个语境下，常见的有两个意思：
 
-<Pronunciation word="Dear" uk="/diːɹ/" us="/dɪɹ/" client:only />
-
 1.  “亲爱的”、“宝贝”，用来称呼与自己关系亲近的人。
 2.  “昂贵的”、“贵的”，用来形容价格或价值。
+
+<Pronunciation word="Dear" uk="/diːɹ/" us="/dɪɹ/" client:only />
 
 ### 列举例句
 
@@ -50,7 +50,4 @@ import WordRelations from '../../../components/WordRelations.svelte';
 
 亲爱的玛丽，无论我们有多么的远，记住，你永远在我心中。詹姆斯在他的信中这样写道。
 
-<WordRelations
-  synonyms={["darling"]}
-  client:only
-/>
+<WordRelations synonyms={["darling"]} client:only />

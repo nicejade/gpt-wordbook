@@ -8,14 +8,19 @@ sidebar:
 tableOfContents: false
 ---
 
-import Pronunciation from '../../../components/Pronunciation.svelte';
-import WordRelations from '../../../components/WordRelations.svelte';
+import Pronunciation from "../../../components/Pronunciation.svelte";
+import WordRelations from "../../../components/WordRelations.svelte";
 
 ### 分析词义
 
 Kindergarten 是英文中的一個名詞，来自德语，字面意思是“children’s garden”，通常翻譯為「幼稚園」，是一個供兒童照顧和教育的預備學校。
 
-<Pronunciation word="Kindergarten" uk="/ˈkɪndəɹˌɡɑːɹd(ə)n/" us="/ˈkɪndəɹˌɡɑːɹd(ə)n/" client:only />
+<Pronunciation
+  word="Kindergarten"
+  uk="/ˈkɪndəɹˌɡɑːɹd(ə)n/"
+  us="/ˈkɪndəɹˌɡɑːɹd(ə)n/"
+  client:only
+/>
 
 ### 列举例句
 
@@ -47,7 +52,4 @@ Kindergarten 这个词不具备特别的变形，包括不变的单复数形式�
 
 Once upon a time, there was a beautiful kindergarten with a colorful garden. Children learned and played here every day. (曾几何时，有一个美丽的幼稚园有一个五彩的花园。孩子们每天都在这里学习和游戏。)
 
-<WordRelations
-  synonyms={["preschool"]}
-  client:only
-/>
+<WordRelations synonyms={["preschool"]} client:only />

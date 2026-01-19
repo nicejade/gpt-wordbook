@@ -6,14 +6,19 @@ sidebar:
 tableOfContents: false
 ---
 
-import Pronunciation from '../../../components/Pronunciation.svelte';
-import WordRelations from '../../../components/WordRelations.svelte';
+import Pronunciation from "../../../components/Pronunciation.svelte";
+import WordRelations from "../../../components/WordRelations.svelte";
 
 ### 分析词义
 
 "Eventually" 是一个副词，意思是"最后，终于"，一般用于描述在一段时间后或经过一系列事件后最终发生的情况。
 
-<Pronunciation word="Eventually" uk="/ɪ.ˈvɛn.tjʊ.li/" us="/ɪ.ˈvɛn.t͡ʃu.li/" client:only />
+<Pronunciation
+  word="Eventually"
+  uk="/ɪ.ˈvɛn.tjʊ.li/"
+  us="/ɪ.ˈvɛn.t͡ʃu.li/"
+  client:only
+/>
 
 ### 列举例句
 
@@ -45,7 +50,4 @@ import WordRelations from '../../../components/WordRelations.svelte';
 
 Once upon a time, a tortoise and a hare had a race. The hare rushed forward, while the tortoise moved slowly. Eventually, the tortoise won the race due to its persistence.（从前，一只乌龟和一只兔子举行了一次比赛。兔子冲在前面，乌龟慢慢地移动。最终，乌龟因为坚持不懈，赢得了比赛。）
 
-<WordRelations
-  synonyms={["finally","ultimately","yet"]}
-  client:only
-/>
+<WordRelations synonyms={["finally", "ultimately", "yet"]} client:only />

@@ -8,14 +8,19 @@ sidebar:
 tableOfContents: false
 ---
 
-import Pronunciation from '../../../components/Pronunciation.svelte';
-import WordRelations from '../../../components/WordRelations.svelte';
+import Pronunciation from "../../../components/Pronunciation.svelte";
+import WordRelations from "../../../components/WordRelations.svelte";
 
 ### 分析词义
 
 - "Meanwhile" 是一个副词，表示在同一时间，或者在你说某个事情发生的同时发生的事情。通常用在两个事件同时发生，但在不同的地方或由不同的人进行的情况下。它也可以用来引导在接下来的时间要发生的事情。
 
-<Pronunciation word="Meanwhile" uk="/ˈmiːnhwaɪl/" us="/ˈmiːnhwaɪl/" client:only />
+<Pronunciation
+  word="Meanwhile"
+  uk="/ˈmiːnhwaɪl/"
+  us="/ˈmiːnhwaɪl/"
+  client:only
+/>
 
 ### 列举例句
 
@@ -49,7 +54,4 @@ import WordRelations from '../../../components/WordRelations.svelte';
 
 - 约翰正在办公室赶工作，同时，在家里，莉莉正在为他的生日准备惊喜。当约翰回家的时候，迎接他的是一枚精美的蛋糕和一首"生日快乐歌"的合唱。
 
-<WordRelations
-  synonyms={["meantime","meanwhilst"]}
-  client:only
-/>
+<WordRelations synonyms={["meantime", "meanwhilst"]} client:only />

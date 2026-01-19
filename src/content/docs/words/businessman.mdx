@@ -6,14 +6,19 @@ sidebar:
 tableOfContents: false
 ---
 
-import Pronunciation from '../../../components/Pronunciation.svelte';
-import WordRelations from '../../../components/WordRelations.svelte';
+import Pronunciation from "../../../components/Pronunciation.svelte";
+import WordRelations from "../../../components/WordRelations.svelte";
 
 ### 分析词义
 
 字面上，"businessman"是由`business`(生意、商业)和`man`(男性)相结合的词，通常用来形容在商业或工业中工作的男性。
 
-<Pronunciation word="Businessman" uk="/ˈbɪznəsmən/" us="/ˈbɪznəsmæn/" client:only />
+<Pronunciation
+  word="Businessman"
+  uk="/ˈbɪznəsmən/"
+  us="/ˈbɪznəsmæn/"
+  client:only
+/>
 
 ### 列举例句
 
@@ -43,7 +48,4 @@ In a bustling city, a businessman named Tom worked tirelessly for his dreams, vi
 
 希望这对你理解这个词有所帮助。
 
-<WordRelations
-  synonyms={["businessperson"]}
-  client:only
-/>
+<WordRelations synonyms={["businessperson"]} client:only />

@@ -6,14 +6,19 @@ sidebar:
 tableOfContents: false
 ---
 
-import Pronunciation from '../../../components/Pronunciation.svelte';
-import WordRelations from '../../../components/WordRelations.svelte';
+import Pronunciation from "../../../components/Pronunciation.svelte";
+import WordRelations from "../../../components/WordRelations.svelte";
 
 ### 分析词义
 
 "Explosion" 是一个名词，意思是爆炸，或者骤然，急剧的增加或变化。
 
-<Pronunciation word="Explosion" uk="/ɪkˈspləʊ.ʒən/" us="/ɛkˈsploʊ.ʒən/" client:only />
+<Pronunciation
+  word="Explosion"
+  uk="/ɪkˈspləʊ.ʒən/"
+  us="/ɛkˈsploʊ.ʒən/"
+  client:only
+/>
 
 ### 列举例句
 
@@ -48,7 +53,15 @@ A sudden explosion rocked the quiet town, scaring all the inhabitants.
 一个突然的爆炸震撼了这个宁静的小镇，吓坏了所有的居民。
 
 <WordRelations
-  synonyms={["bang", "blast", "boom", "burst", "detonation", "eruption", "fulmination"]}
+  synonyms={[
+    "bang",
+    "blast",
+    "boom",
+    "burst",
+    "detonation",
+    "eruption",
+    "fulmination",
+  ]}
   antonyms={["implosion"]}
   client:only
 />

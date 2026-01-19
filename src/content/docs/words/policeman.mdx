@@ -6,14 +6,19 @@ sidebar:
 tableOfContents: false
 ---
 
-import Pronunciation from '../../../components/Pronunciation.svelte';
-import WordRelations from '../../../components/WordRelations.svelte';
+import Pronunciation from "../../../components/Pronunciation.svelte";
+import WordRelations from "../../../components/WordRelations.svelte";
 
 ### 分析词义
 
 "Policeman"是英语中的一个名词，指的是一名男性的警察，也可以用于泛指所有的警察。他们的主要任务是保护社区安全，执法，并且帮助犯罪调查。
 
-<Pronunciation word="Policeman" uk="/pəˈliːsmən/" us="/pəˈliːsmən/" client:only />
+<Pronunciation
+  word="Policeman"
+  uk="/pəˈliːsmən/"
+  us="/pəˈliːsmən/"
+  client:only
+/>
 
 ### 列举例句
 
@@ -48,7 +53,4 @@ import WordRelations from '../../../components/WordRelations.svelte';
 
 "在人群中,小男孩迷路了。就在他准备哭泣的时候，一个警察走了过来。他安慰了男孩，并帮助他找到了他的父母。男孩将永远记住这位善良的警察。"
 
-<WordRelations
-  synonyms={["policeman"]}
-  client:only
-/>
+<WordRelations synonyms={["policeman"]} client:only />

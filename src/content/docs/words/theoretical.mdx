@@ -9,14 +9,19 @@ sidebar:
 tableOfContents: false
 ---
 
-import Pronunciation from '../../../components/Pronunciation.svelte';
-import WordRelations from '../../../components/WordRelations.svelte';
+import Pronunciation from "../../../components/Pronunciation.svelte";
+import WordRelations from "../../../components/WordRelations.svelte";
 
 ### 分析词义
 
 "Theoretical" 是一个形容词，源自英文词根 "theor-"，表示“理论”的含义。该单词是用于描述某事物是根据理论或者抽象思考，而不是基于实践或者实际经验。例如，"theoretical physics"（理论物理）是一种对自然世界的理论或者数学描述的研究。
 
-<Pronunciation word="Theoretical" uk="/ˌθi.əˈɹɛtɪkəl/" us="/ˌθi.əˈɹɛtɪkəl/" client:only />
+<Pronunciation
+  word="Theoretical"
+  uk="/ˌθi.əˈɹɛtɪkəl/"
+  us="/ˌθi.əˈɹɛtɪkəl/"
+  client:only
+/>
 
 ### 列举例句
 
@@ -57,7 +62,4 @@ import WordRelations from '../../../components/WordRelations.svelte';
 
 约翰总是陷入理论的沉思中。他会坐上几个小时，思考量子物理的原理，不为物质世界的纷扰所动。
 
-<WordRelations
-  antonyms={["practical"]}
-  client:only
-/>
+<WordRelations antonyms={["practical"]} client:only />

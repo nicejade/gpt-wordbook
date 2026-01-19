@@ -6,14 +6,19 @@ sidebar:
 tableOfContents: false
 ---
 
-import Pronunciation from '../../../components/Pronunciation.svelte';
-import WordRelations from '../../../components/WordRelations.svelte';
+import Pronunciation from "../../../components/Pronunciation.svelte";
+import WordRelations from "../../../components/WordRelations.svelte";
 
 ### 分析词义
 
 "Underground"在英语中是一个形容词、名词或副词，主要有两个基本含义：1. 在地面下面或地表下的。2. 秘密的、非官方的。
 
-<Pronunciation word="Underground" uk="/ˈʌndəɡɹaʊnd/" us="/ˈʌndəɡɹaʊnd/" client:only />
+<Pronunciation
+  word="Underground"
+  uk="/ˈʌndəɡɹaʊnd/"
+  us="/ˈʌndəɡɹaʊnd/"
+  client:only
+/>
 
 ### 列举例句
 
@@ -48,7 +53,21 @@ Tom discovered an underground tunnel in his backyard. He was amused to find the 
 湯姆在他的後院發現了一個地下隧道。他對找到通往古老寶箱的隱藏通道感到非常有趣。
 
 <WordRelations
-  synonyms={["Métro","metro","Tube","tube","underground","underpass","counterculture","resistance","alternative","unconventional","hypogean","subterranean","clandestinely"]}
+  synonyms={[
+    "Métro",
+    "metro",
+    "Tube",
+    "tube",
+    "underground",
+    "underpass",
+    "counterculture",
+    "resistance",
+    "alternative",
+    "unconventional",
+    "hypogean",
+    "subterranean",
+    "clandestinely",
+  ]}
   antonyms={["mainstream"]}
   client:only
 />

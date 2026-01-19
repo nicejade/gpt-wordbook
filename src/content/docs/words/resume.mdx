@@ -6,14 +6,12 @@ sidebar:
 tableOfContents: false
 ---
 
-import Pronunciation from '../../../components/Pronunciation.svelte';
-import WordRelations from '../../../components/WordRelations.svelte';
+import Pronunciation from "../../../components/Pronunciation.svelte";
+import WordRelations from "../../../components/WordRelations.svelte";
 
 ### 分析词义
 
 Resume 在英语中理解的含义有两种，取决于你的语境：
-
-<Pronunciation word="Resume" uk="/ɹɪˈzjuːm/" us="/ɹɪˈz(j)um/" client:only />
 
 1.  作为动词（重读最后一个音节），意为“重新开始；恢复”。
 
@@ -24,6 +22,8 @@ Melissa plans to resume her studies after a short break.（梅丽莎打算在短
 
 例如：
 Please send your resume and cover letter to the following email address.（请将你的简历和求职信发送至以下电子邮件地址。）
+
+<Pronunciation word="Resume" uk="/ɹɪˈzjuːm/" us="/ɹɪˈz(j)um/" client:only />
 
 ### 列举例句
 
@@ -61,7 +61,4 @@ English: After a short vacation, Emma sat in front of her computer and opened a 
 
 Chinese: 短暇之后，艾玛坐在电脑前，打开了一个文件。这是她需要编辑的简历。深吸一口气，她开始恢复她的求职之路。
 
-<WordRelations
-  antonyms={["suspend"]}
-  client:only
-/>
+<WordRelations antonyms={["suspend"]} client:only />

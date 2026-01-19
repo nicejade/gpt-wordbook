@@ -8,14 +8,19 @@ sidebar:
 tableOfContents: false
 ---
 
-import Pronunciation from '../../../components/Pronunciation.svelte';
-import WordRelations from '../../../components/WordRelations.svelte';
+import Pronunciation from "../../../components/Pronunciation.svelte";
+import WordRelations from "../../../components/WordRelations.svelte";
 
 ### 分析词义
 
 Promotion 是一个名词，一方面，它有“推广”、“宣传”的意思，例如: "promotion of a new product"（新产品的推广）。另一方面，也有 "提升"，"晋升"的意思，比如 "get a promotion"（得到提升）。
 
-<Pronunciation word="Promotion" uk="/pɹəˈməʊʃən/" us="/pɹəˈmoʊʃən/" client:only />
+<Pronunciation
+  word="Promotion"
+  uk="/pɹəˈməʊʃən/"
+  us="/pɹəˈmoʊʃən/"
+  client:only
+/>
 
 ### 列举例句
 
@@ -49,7 +54,4 @@ Once upon a time, Mr. Brown, a diligent employee, was expecting a promotion. Whe
 
 从前，勤奋的员工布朗先生期待着得到晋升。当他终于得到时，他为朋友们举办了一场盛大的派对。他的晋升确实是他职业生涯向前发展的动力。
 
-<WordRelations
-  antonyms={["demotion"]}
-  client:only
-/>
+<WordRelations antonyms={["demotion"]} client:only />

@@ -8,14 +8,19 @@ sidebar:
 tableOfContents: false
 ---
 
-import Pronunciation from '../../../components/Pronunciation.svelte';
-import WordRelations from '../../../components/WordRelations.svelte';
+import Pronunciation from "../../../components/Pronunciation.svelte";
+import WordRelations from "../../../components/WordRelations.svelte";
 
 ### 分析词义
 
 "Activity" 是一个英语名词，代表活动、行动或者行为。这个单词可以用在很多场合，既可以描述具体的行为和动作，例如：运动、游戏等，也可以描述一般的活动和事件。
 
-<Pronunciation word="Activity" uk="/ækˈtɪ.və.ti/" us="/ækˈtɪ.və.ti/" client:only />
+<Pronunciation
+  word="Activity"
+  uk="/ækˈtɪ.və.ti/"
+  us="/ækˈtɪ.və.ti/"
+  client:only
+/>
 
 ### 列举例句
 
@@ -52,7 +57,4 @@ Activity 是一个不可数名词，没有复数形式。对应的形容词是 "
 "Every Sunday, the community organized different activities for the residents. They loved this active lifestyle."
 (社区每个星期日为居民组织不同的活动，他们都喜欢这种积极的生活方式。)
 
-<WordRelations
-  antonyms={["passivity", "rest"]}
-  client:only
-/>
+<WordRelations antonyms={["passivity", "rest"]} client:only />

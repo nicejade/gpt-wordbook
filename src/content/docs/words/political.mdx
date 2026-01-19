@@ -6,14 +6,19 @@ sidebar:
 tableOfContents: false
 ---
 
-import Pronunciation from '../../../components/Pronunciation.svelte';
-import WordRelations from '../../../components/WordRelations.svelte';
+import Pronunciation from "../../../components/Pronunciation.svelte";
+import WordRelations from "../../../components/WordRelations.svelte";
 
 ### 分析词义
 
 "Political" 这个单词来自于英文，主要用来描述和政治有关的事物或活动。它可以作为形容词，用于修饰与政治有关的人，事，物等。
 
-<Pronunciation word="Political" uk="/pəˈlɪtɪkəl/" us="/pəˈlɪtɪkəl/" client:only />
+<Pronunciation
+  word="Political"
+  uk="/pəˈlɪtɪkəl/"
+  us="/pəˈlɪtɪkəl/"
+  client:only
+/>
 
 ### 列举例句
 
@@ -47,8 +52,4 @@ In a small town, a political debate was held. The square was crowded with people
 
 在一个小镇上，举行了一场政治辩论。广场上挤满了人。每个人都全神贯注地看着现场，想要听听政治家们会对他们的未来说些什么。气氛尽管紧张，但同样令人兴奋。
 
-<WordRelations
-  synonyms={["politic"]}
-  antonyms={["nonpolitical"]}
-  client:only
-/>
+<WordRelations synonyms={["politic"]} antonyms={["nonpolitical"]} client:only />

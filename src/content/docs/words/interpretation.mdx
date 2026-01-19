@@ -6,14 +6,19 @@ sidebar:
 tableOfContents: false
 ---
 
-import Pronunciation from '../../../components/Pronunciation.svelte';
-import WordRelations from '../../../components/WordRelations.svelte';
+import Pronunciation from "../../../components/Pronunciation.svelte";
+import WordRelations from "../../../components/WordRelations.svelte";
 
 ### 分析词义
 
 "Interpretation"是英语单词，翻译为中文是“解释”，“诠释”，“翻译”或“阐释”，通常指对某个主题或事实的理解或解释。
 
-<Pronunciation word="Interpretation" uk="/ɪntəpɹəˈteɪʃən/" us="/ɪntəpɹəˈteɪʃən/" client:only />
+<Pronunciation
+  word="Interpretation"
+  uk="/ɪntəpɹəˈteɪʃən/"
+  us="/ɪntəpɹəˈteɪʃən/"
+  client:only
+/>
 
 ### 列举例句
 
@@ -46,7 +51,4 @@ import WordRelations from '../../../components/WordRelations.svelte';
 One day, Jack found a mysterious letter. Through careful interpretation, he finally decoded the secret message.
 有一天，杰克找到了一封神秘的信件。通过认真的解读，他最终解码出了秘密信息。
 
-<WordRelations
-  synonyms={["interpreting"]}
-  client:only
-/>
+<WordRelations synonyms={["interpreting"]} client:only />

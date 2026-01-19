@@ -8,14 +8,19 @@ sidebar:
 tableOfContents: false
 ---
 
-import Pronunciation from '../../../components/Pronunciation.svelte';
-import WordRelations from '../../../components/WordRelations.svelte';
+import Pronunciation from "../../../components/Pronunciation.svelte";
+import WordRelations from "../../../components/WordRelations.svelte";
 
 ### 分析词义
 
 "kangaroo" 是英语中的一个单词，主要指的是一种产自澳大利亚的特大型跳跃性有袋类动物，袋鼠。此外，kangaroo 也可以用作形容词，表示与袋鼠有关的事物，如 kangaroo pouch 就是袋鼠的育儿袋。
 
-<Pronunciation word="Kangaroo" uk="/kaŋ.ɡə.ˈɹuː/" us="/kaŋ.ɡə.ˈɹuː/" client:only />
+<Pronunciation
+  word="Kangaroo"
+  uk="/kaŋ.ɡə.ˈɹuː/"
+  us="/kaŋ.ɡə.ˈɹuː/"
+  client:only
+/>
 
 ### 列举例句
 
@@ -49,7 +54,4 @@ One day, a kangaroo was bouncing alone in the Australian Outback. Suddenly, it s
 
 （有一天，一只袋鼠在澳大利亚的荒野上独自弹跳。突然，它发现了一丛新鲜的绿色草丛，于是它高兴地跳了过去，对于自己的发现感到满足。那一天，袋鼠大饱口福。）
 
-<WordRelations
-  synonyms={["macropod","roo","hoodie"]}
-  client:only
-/>
+<WordRelations synonyms={["macropod", "roo", "hoodie"]} client:only />

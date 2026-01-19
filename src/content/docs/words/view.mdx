@@ -6,18 +6,18 @@ sidebar:
 tableOfContents: false
 ---
 
-import Pronunciation from '../../../components/Pronunciation.svelte';
-import WordRelations from '../../../components/WordRelations.svelte';
+import Pronunciation from "../../../components/Pronunciation.svelte";
+import WordRelations from "../../../components/WordRelations.svelte";
 
 ### 分析词义
 
 "View"是一个非常常见的英文单词，既可以作名词，也可以作动词使用。
 
-<Pronunciation word="View" uk="/vjuː/" us="/vjuː/" client:only />
-
 当"view"作为名词时，常见的意思有两个，一是“观点，看法”， 例如"I respect your view" (我尊重你的观点)；二是"景色，视野"，例如"The view from the hill is breathtaking" (从山丘上看的景色非常壮丽)。
 
 当"view"作为动词时，意味着"看，观看，视察"，例如"We viewed the exhibition yesterday." (我们昨天参观了展览)。
+
+<Pronunciation word="View" uk="/vjuː/" us="/vjuː/" client:only />
 
 ### 列举例句
 
@@ -51,7 +51,4 @@ Mary went to the rooftop to enjoy the sunset view but what caught her attention 
 
 玛丽上屋顶去欣赏日落的景色，但吸引她的并不是深红色的天空，而是从上方看到的社区景色。她意识到，直到现在，她从未真正欣赏过这样的景色。
 
-<WordRelations
-  antonyms={["controller", "model"]}
-  client:only
-/>
+<WordRelations antonyms={["controller", "model"]} client:only />

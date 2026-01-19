@@ -6,18 +6,18 @@ sidebar:
 tableOfContents: false
 ---
 
-import Pronunciation from '../../../components/Pronunciation.svelte';
-import WordRelations from '../../../components/WordRelations.svelte';
+import Pronunciation from "../../../components/Pronunciation.svelte";
+import WordRelations from "../../../components/WordRelations.svelte";
 
 ### 分析词义
 
 "Series" 是一个名词，主要有以下几个含义：
 
-<Pronunciation word="Series" uk="/ˈsɪə.ɹiːz/" us="/ˈsiɹiz/" client:only />
-
 1.  一系列，一连串：指按照某种顺序或计划一个接一个地排列的事物
 2.  系列片，电视剧：指一套由相互关联的事件、故事或主题构成的电视节目或广播节目
 3.  数列：在数学中，系列是一个数字列表，其中每个数字被称为项
+
+<Pronunciation word="Series" uk="/ˈsɪə.ɹiːz/" us="/ˈsiɹiz/" client:only />
 
 ### 列举例句
 
@@ -51,7 +51,15 @@ John just finished the series of "Game of Thrones". He was so captivated by the 
 （约翰刚结束了《权力的游戏》系列剧的观看。他被这个史诗般的故事深深吸引，决定读完整套的书系列。）
 
 <WordRelations
-  synonyms={["chain", "line", "sequence", "stream", "succession", "program", "show"]}
+  synonyms={[
+    "chain",
+    "line",
+    "sequence",
+    "stream",
+    "succession",
+    "program",
+    "show",
+  ]}
   antonyms={["parallel"]}
   client:only
 />

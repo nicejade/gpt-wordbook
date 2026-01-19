@@ -8,14 +8,19 @@ sidebar:
 tableOfContents: false
 ---
 
-import Pronunciation from '../../../components/Pronunciation.svelte';
-import WordRelations from '../../../components/WordRelations.svelte';
+import Pronunciation from "../../../components/Pronunciation.svelte";
+import WordRelations from "../../../components/WordRelations.svelte";
 
 ### 分析词义
 
 "Embarrassed" 是一个形容词，源自动词 "embarrass"。意思是害羞、尴尬，感到窘迫或难堪。用来形容一个人因为某种情况或行为，如社交场合的失言或失态，而感到的精神上的不安。
 
-<Pronunciation word="Embarrassed" uk="/ɪmˈbæɹ.əst/" us="/ɪmˈbæɹ.əst/" client:only />
+<Pronunciation
+  word="Embarrassed"
+  uk="/ɪmˈbæɹ.əst/"
+  us="/ɪmˈbæɹ.əst/"
+  client:only
+/>
 
 ### 列举例句
 
@@ -53,7 +58,14 @@ At the party, John was so embarrassed when he spilled wine on the host's white c
 在宴会上，约翰将红酒洒在主人的白色地毯上时非常尴尬。所有人的目光都集中在他身上，这让他的尴尬感加倍。
 
 <WordRelations
-  synonyms={["abash", "discomfit", "disconcert", "humiliate", "shame", "ashamed"]}
+  synonyms={[
+    "abash",
+    "discomfit",
+    "disconcert",
+    "humiliate",
+    "shame",
+    "ashamed",
+  ]}
   antonyms={["honored", "proud"]}
   client:only
 />

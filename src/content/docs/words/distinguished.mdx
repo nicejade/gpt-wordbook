@@ -8,14 +8,19 @@ sidebar:
 tableOfContents: false
 ---
 
-import Pronunciation from '../../../components/Pronunciation.svelte';
-import WordRelations from '../../../components/WordRelations.svelte';
+import Pronunciation from "../../../components/Pronunciation.svelte";
+import WordRelations from "../../../components/WordRelations.svelte";
 
 ### 分析词义
 
 "Distinguished" 是一个形容词，来自于动词 "distinguish"，意为"出类拔萃" 或 "杰出的”。常用于形容人（尤其是专家或有成就的人）或行为所表现出的独特和卓越。
 
-<Pronunciation word="Distinguished" uk="/dɪsˈtɪŋɡwɪʃt/" us="/dɪsˈtɪŋɡwɪʃt/" client:only />
+<Pronunciation
+  word="Distinguished"
+  uk="/dɪsˈtɪŋɡwɪʃt/"
+  us="/dɪsˈtɪŋɡwɪʃt/"
+  client:only
+/>
 
 ### 列举例句
 
@@ -51,7 +56,15 @@ John was known for his distinguished service in the military. Whenever he walked
 中文翻译：约翰以其在军队中的杰出表现而闻名。每当他走进一个房间时，每个人都知道他的英勇业绩。
 
 <WordRelations
-  synonyms={["differentiate", "discriminate", "eminent", "exceptional", "remarkable", "grand", "imposing"]}
+  synonyms={[
+    "differentiate",
+    "discriminate",
+    "eminent",
+    "exceptional",
+    "remarkable",
+    "grand",
+    "imposing",
+  ]}
   antonyms={["confuse", "mediocre"]}
   client:only
 />

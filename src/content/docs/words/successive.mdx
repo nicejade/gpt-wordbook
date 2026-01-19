@@ -6,17 +6,22 @@ sidebar:
 tableOfContents: false
 ---
 
-import Pronunciation from '../../../components/Pronunciation.svelte';
-import WordRelations from '../../../components/WordRelations.svelte';
+import Pronunciation from "../../../components/Pronunciation.svelte";
+import WordRelations from "../../../components/WordRelations.svelte";
 
 ### 分析词义
 
 "Successive"是一个形容词，它的意思是"连续的"，"紧接在后的"，"接替的"。通常用于描述不间断或连续发生的事件、步骤或者阶段。
 
-<Pronunciation word="Successive" uk="/səkˈsɛsɪv/" us="/səkˈsɛsɪv/" client:only />
-
 例如:
 "Three successive days of rain dampened our holiday spirits." 连续三天的雨天让我们的假日心情大受影响。
+
+<Pronunciation
+  word="Successive"
+  uk="/səkˈsɛsɪv/"
+  us="/səkˈsɛsɪv/"
+  client:only
+/>
 
 ### 词根分析
 
@@ -48,7 +53,4 @@ import WordRelations from '../../../components/WordRelations.svelte';
 Once upon a time, a young king had made some big decisions for three successive days, which led the country to prosperity.
 从前，有一个年轻的国王连续三天都做出了重大决策，带领国家走向了繁荣。
 
-<WordRelations
-  synonyms={["consecutive"]}
-  client:only
-/>
+<WordRelations synonyms={["consecutive"]} client:only />

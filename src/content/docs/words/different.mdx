@@ -6,14 +6,19 @@ sidebar:
 tableOfContents: false
 ---
 
-import Pronunciation from '../../../components/Pronunciation.svelte';
-import WordRelations from '../../../components/WordRelations.svelte';
+import Pronunciation from "../../../components/Pronunciation.svelte";
+import WordRelations from "../../../components/WordRelations.svelte";
 
 ### 分析词义
 
 在日常用语中，“different”表示不同的、不一样的。例如：All people are different. (所有的人都是不同的。)
 
-<Pronunciation word="Different" uk="/ˈdɪf.(ə)ɹ.ənt/" us="/ˈdɪf.(ə)ɹ.ənt/" client:only />
+<Pronunciation
+  word="Different"
+  uk="/ˈdɪf.(ə)ɹ.ənt/"
+  us="/ˈdɪf.(ə)ɹ.ənt/"
+  client:only
+/>
 
 ### 列举例句
 
@@ -47,7 +52,27 @@ import WordRelations from '../../../components/WordRelations.svelte';
 There was a unique tree in the forest, it was different from all others. It had multicolored leaves.（森林中有一棵独特的树，它与其他所有的树都不一样。它的叶子是五颜六色的。）
 
 <WordRelations
-  synonyms={["apart", "distinct", "other", "aberrant", "deviant", "nonstandard", "sundry"]}
-  antonyms={["undifferent", "coherent", "indistinct", "unified", "alike", "identical", "same", "similar", "normal", "usual", "homogeneous"]}
+  synonyms={[
+    "apart",
+    "distinct",
+    "other",
+    "aberrant",
+    "deviant",
+    "nonstandard",
+    "sundry",
+  ]}
+  antonyms={[
+    "undifferent",
+    "coherent",
+    "indistinct",
+    "unified",
+    "alike",
+    "identical",
+    "same",
+    "similar",
+    "normal",
+    "usual",
+    "homogeneous",
+  ]}
   client:only
 />

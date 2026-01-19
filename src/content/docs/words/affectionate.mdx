@@ -8,14 +8,19 @@ sidebar:
 tableOfContents: false
 ---
 
-import Pronunciation from '../../../components/Pronunciation.svelte';
-import WordRelations from '../../../components/WordRelations.svelte';
+import Pronunciation from "../../../components/Pronunciation.svelte";
+import WordRelations from "../../../components/WordRelations.svelte";
 
 ### 分析词义
 
 “Affectionate”是一个形容词，用来形容一个人富有情感或者热情的，善于表达爱意的。比如 “an affectionate smile”（一个充满爱意的微笑）。
 
-<Pronunciation word="Affectionate" uk="/əˈfɛkʃənət/" us="/əˈfɛkʃənət/" client:only />
+<Pronunciation
+  word="Affectionate"
+  uk="/əˈfɛkʃənət/"
+  us="/əˈfɛkʃənət/"
+  client:only
+/>
 
 ### 列举例句
 
@@ -49,6 +54,16 @@ import WordRelations from '../../../components/WordRelations.svelte';
 （约翰一直以来都以其富有情感而著名，当他进入房子时，他给了妻子一个温暖的拥抱。）
 
 <WordRelations
-  synonyms={["ardent", "attached", "devoted", "earnest", "fond", "lovesome", "loving", "tender", "warm"]}
+  synonyms={[
+    "ardent",
+    "attached",
+    "devoted",
+    "earnest",
+    "fond",
+    "lovesome",
+    "loving",
+    "tender",
+    "warm",
+  ]}
   client:only
 />

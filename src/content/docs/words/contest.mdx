@@ -6,19 +6,19 @@ sidebar:
 tableOfContents: false
 ---
 
-import Pronunciation from '../../../components/Pronunciation.svelte';
-import WordRelations from '../../../components/WordRelations.svelte';
+import Pronunciation from "../../../components/Pronunciation.svelte";
+import WordRelations from "../../../components/WordRelations.svelte";
 
 ### 分析词义
 
 "Contest" 这个单词主要有两种意思：
 
-<Pronunciation word="Contest" uk="/ˈkɒn.tɛst/" us="/ˈkɑn.tɛst/" client:only />
-
 1.  名词意思：竞赛、比赛，这主要用于诸如音乐会、体育运动等场合。例子："The Olympic Games is a contest of skills and endurance."
     中文翻译：“奥运会是一场技能和耐力的比赛。”
 2.  动词意思：争夺，对...提出挑战。例子："The two companies are contesting for the market share."
     中文翻译：“两家公司正在争夺市场份额。”
+
+<Pronunciation word="Contest" uk="/ˈkɒn.tɛst/" us="/ˈkɑn.tɛst/" client:only />
 
 ### 列举例句
 
@@ -59,7 +59,20 @@ import WordRelations from '../../../components/WordRelations.svelte';
 中文翻译：“约翰决定参加摄影爱好者的比赛。他那张惊艳的夕阳照片迷住了每一个人。”
 
 <WordRelations
-  synonyms={["battle","combat","fight","competition","pageant","controversy","debate","discussion","oppose","compete","contend","controvert"]}
+  synonyms={[
+    "battle",
+    "combat",
+    "fight",
+    "competition",
+    "pageant",
+    "controversy",
+    "debate",
+    "discussion",
+    "oppose",
+    "compete",
+    "contend",
+    "controvert",
+  ]}
   antonyms={["support"]}
   client:only
 />

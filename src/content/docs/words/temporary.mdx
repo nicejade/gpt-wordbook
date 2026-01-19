@@ -6,14 +6,19 @@ sidebar:
 tableOfContents: false
 ---
 
-import Pronunciation from '../../../components/Pronunciation.svelte';
-import WordRelations from '../../../components/WordRelations.svelte';
+import Pronunciation from "../../../components/Pronunciation.svelte";
+import WordRelations from "../../../components/WordRelations.svelte";
 
 ### 分析词义
 
 英文单词 'temporary' 形容词，汉语翻译为"临时的，暂时的"。它指的是短时间或有限期限的情况或条件。
 
-<Pronunciation word="Temporary" uk="/ˈtɛmpəɹi/" us="/ˈtɛmpəˌɹɛɹi/" client:only />
+<Pronunciation
+  word="Temporary"
+  uk="/ˈtɛmpəɹi/"
+  us="/ˈtɛmpəˌɹɛɹi/"
+  client:only
+/>
 
 ### 列举例句
 
@@ -49,7 +54,4 @@ import WordRelations from '../../../components/WordRelations.svelte';
 In the hot summer, Tom set up a temporary lemonade stand on the street. Business was good since everyone wanted a cold drink.
 在炎热的夏天，汤姆在街上搭建了一个临时的柠檬汽水摊。因为每个人都想喝一杯冷饮，生意非常好。
 
-<WordRelations
-  synonyms={["temp"]}
-  client:only
-/>
+<WordRelations synonyms={["temp"]} client:only />

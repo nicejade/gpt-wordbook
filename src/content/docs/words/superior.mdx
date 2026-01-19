@@ -6,14 +6,19 @@ sidebar:
 tableOfContents: false
 ---
 
-import Pronunciation from '../../../components/Pronunciation.svelte';
-import WordRelations from '../../../components/WordRelations.svelte';
+import Pronunciation from "../../../components/Pronunciation.svelte";
+import WordRelations from "../../../components/WordRelations.svelte";
 
 ### 分析词义
 
 "Superior" 是一个形容词，它的基本含义是 "更好的" 或 "高于...的"。此外，作为名词时，它也常常用于表达"上级"或"长官"的意思。
 
-<Pronunciation word="Superior" uk="/suːˈpɪəɹi.ə(ɹ)/" us="/suːˈpɪɹiɚ/" client:only />
+<Pronunciation
+  word="Superior"
+  uk="/suːˈpɪəɹi.ə(ɹ)/"
+  us="/suːˈpɪɹiɚ/"
+  client:only
+/>
 
 ### 列举例句
 
@@ -46,8 +51,4 @@ Adverb: Superiorly (高傲地)
 
 In a small team, the superior was compassionate, always placing his team's welfare at a superior level. (在一个小团队中，上司非常富有同情心，总是把团队的福利放在首位。)
 
-<WordRelations
-  synonyms={["overling"]}
-  antonyms={["inferior"]}
-  client:only
-/>
+<WordRelations synonyms={["overling"]} antonyms={["inferior"]} client:only />

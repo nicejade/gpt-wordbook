@@ -7,14 +7,19 @@ sidebar:
 tableOfContents: false
 ---
 
-import Pronunciation from '../../../components/Pronunciation.svelte';
-import WordRelations from '../../../components/WordRelations.svelte';
+import Pronunciation from "../../../components/Pronunciation.svelte";
+import WordRelations from "../../../components/WordRelations.svelte";
 
 ### 分析词义
 
 "Announcement"来源于动词"announce"，它通常是一个名词，表示"公告"、"声明"、"通知"或"宣布"。它常用于描述一个正式的，通常是有关重要信息或改变的声明。
 
-<Pronunciation word="Announcement" uk="/əˈnaʊns.mɛnt/" us="/əˈnaʊns.mɛnt/" client:only />
+<Pronunciation
+  word="Announcement"
+  uk="/əˈnaʊns.mɛnt/"
+  us="/əˈnaʊns.mɛnt/"
+  client:only
+/>
 
 ### 列举例句
 
@@ -49,7 +54,4 @@ It was a quiet morning until the announcement over the loudspeaker caught everyo
 
 (那是一个宁静的早晨，直到广播中的公告吸引了每个人的注意。校长宣布：“明天不上学！”)
 
-<WordRelations
-  synonyms={["proclamation", "publication"]}
-  client:only
-/>
+<WordRelations synonyms={["proclamation", "publication"]} client:only />

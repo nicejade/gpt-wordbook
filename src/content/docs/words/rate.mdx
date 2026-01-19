@@ -6,14 +6,12 @@ sidebar:
 tableOfContents: false
 ---
 
-import Pronunciation from '../../../components/Pronunciation.svelte';
-import WordRelations from '../../../components/WordRelations.svelte';
+import Pronunciation from "../../../components/Pronunciation.svelte";
+import WordRelations from "../../../components/WordRelations.svelte";
 
 ### 分析词义
 
 "Rate"这个词在英语中有许多不同的含义，它可以用作名词，也可以用作动词。
-
-<Pronunciation word="Rate" uk="/ɹeɪt/" us="/ɹeɪt/" client:only />
 
 作为名词时，常见的意义有：
 
@@ -25,6 +23,8 @@ import WordRelations from '../../../components/WordRelations.svelte';
 
 1.  评估、评级，例如：How would you rate his performance? 你会如何评估他的表现？
 2.  视为，例如：She rates as one of the best. 她被视为最好的之一。
+
+<Pronunciation word="Rate" uk="/ɹeɪt/" us="/ɹeɪt/" client:only />
 
 ### 列举例句
 
@@ -61,7 +61,4 @@ rate 的动词时态变化：
 
 Mr. Smith had to rate his students, it was his duty as a teacher. He saw a lot of potential in John, therefore, he gave him a high rate. (史密斯先生需要给他的学生评级，这是他作为老师的职责。他在约翰身上看到了很多潜力，所以他给了约翰一个很高的评级。)
 
-<WordRelations
-  synonyms={["rank"]}
-  client:only
-/>
+<WordRelations synonyms={["rank"]} client:only />

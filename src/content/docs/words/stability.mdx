@@ -6,14 +6,19 @@ sidebar:
 tableOfContents: false
 ---
 
-import Pronunciation from '../../../components/Pronunciation.svelte';
-import WordRelations from '../../../components/WordRelations.svelte';
+import Pronunciation from "../../../components/Pronunciation.svelte";
+import WordRelations from "../../../components/WordRelations.svelte";
 
 ### 分析词义
 
 "Stability"是一种名词，意为“稳定性”或“安定性”。这个词通常用于描述一个物体或系统保持其状态或轨迹的能力，也可用于描述人的情绪或生活的稳定性。
 
-<Pronunciation word="Stability" uk="/stəˈbɪlɪti/" us="/stəˈbɪlɪti/" client:only />
+<Pronunciation
+  word="Stability"
+  uk="/stəˈbɪlɪti/"
+  us="/stəˈbɪlɪti/"
+  client:only
+/>
 
 ### 列举例句
 
@@ -54,7 +59,4 @@ import WordRelations from '../../../components/WordRelations.svelte';
 John was praised for the stability he brought to the team. Despite the ups and downs, he was always calm, helping the team to weather the storm.
 约翰因为给团队带来稳定而受到赞扬。尽管团队状况起起伏伏，但他总是保持冷静，帮助团队安然度过危机。
 
-<WordRelations
-  antonyms={["instability"]}
-  client:only
-/>
+<WordRelations antonyms={["instability"]} client:only />

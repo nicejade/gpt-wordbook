@@ -8,14 +8,19 @@ sidebar:
 tableOfContents: false
 ---
 
-import Pronunciation from '../../../components/Pronunciation.svelte';
-import WordRelations from '../../../components/WordRelations.svelte';
+import Pronunciation from "../../../components/Pronunciation.svelte";
+import WordRelations from "../../../components/WordRelations.svelte";
 
 ### 分析词义
 
 Irregularity 的基本含义是“不规则性”，或“异常”。该词常常用于描述某种情况或行为中存在的不正常、不一致或不符合规则的特点。例如，可以用来表述人体的生理功能失调，或者日常生活中事物的不规则形状。
 
-<Pronunciation word="Irregularity" uk="/ɪ.ˌrɛ.ɡjə.ˈlæ.rə.ti/" us="/ɪ.ˌrɛ.ɡjə.ˈlæ.rə.ti/" client:only />
+<Pronunciation
+  word="Irregularity"
+  uk="/ɪ.ˌrɛ.ɡjə.ˈlæ.rə.ti/"
+  us="/ɪ.ˌrɛ.ɡjə.ˈlæ.rə.ti/"
+  client:only
+/>
 
 ### 列举例句
 
@@ -53,7 +58,4 @@ The anarchy in the neighborhood was due to the irregularity in the power supply.
 
 这个社区的混乱是由于电力供应的不稳定导致的。灯光会时明时暗，黑夜与白天没有分别。
 
-<WordRelations
-  antonyms={["regularity"]}
-  client:only
-/>
+<WordRelations antonyms={["regularity"]} client:only />

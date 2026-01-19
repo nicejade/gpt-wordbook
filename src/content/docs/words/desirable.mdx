@@ -6,14 +6,19 @@ sidebar:
 tableOfContents: false
 ---
 
-import Pronunciation from '../../../components/Pronunciation.svelte';
-import WordRelations from '../../../components/WordRelations.svelte';
+import Pronunciation from "../../../components/Pronunciation.svelte";
+import WordRelations from "../../../components/WordRelations.svelte";
 
 ### 分析词义
 
 "Desirable" 是一个形容词，它的意思是“值得拥有的”、“令人向往的”，通常用来形容一种很吸引人或者人们想要得到的状态，物品或者人。
 
-<Pronunciation word="Desirable" uk="/dɪˈzaɪəɹəbəl/" us="/dɪˈzaɪəɹəbəl/" client:only />
+<Pronunciation
+  word="Desirable"
+  uk="/dɪˈzaɪəɹəbəl/"
+  us="/dɪˈzaɪəɹəbəl/"
+  client:only
+/>
 
 ### 列举例句
 
@@ -46,7 +51,4 @@ Desirable 的词缀分析：其中“Desire”是词干，表示“渴望”，�
 Steve is building a desirable future for his family with his hard work and passion. He believes that life will be desirable when you desire it.
 （史蒂夫正通过他的辛勤工作和激情为他的家庭构建一个理想的未来。他相信，当你渴望生活时，生活就会变得美好。）
 
-<WordRelations
-  antonyms={["undesirable"]}
-  client:only
-/>
+<WordRelations antonyms={["undesirable"]} client:only />

@@ -6,14 +6,19 @@ sidebar:
 tableOfContents: false
 ---
 
-import Pronunciation from '../../../components/Pronunciation.svelte';
-import WordRelations from '../../../components/WordRelations.svelte';
+import Pronunciation from "../../../components/Pronunciation.svelte";
+import WordRelations from "../../../components/WordRelations.svelte";
 
 ### 分析词义
 
 "Cucumber" 是英语中的一个单词，中文意思为“黄瓜”。这是一种常见的蔬菜，闻名于其清脆的口感和清爽的口味。这个词经常出现在烹饪和饮食的语境中。
 
-<Pronunciation word="Cucumber" uk="/ˈkjuːˌkʌmbə/" us="/ˈkjuːˌkʌmbɚ/" client:only />
+<Pronunciation
+  word="Cucumber"
+  uk="/ˈkjuːˌkʌmbə/"
+  us="/ˈkjuːˌkʌmbɚ/"
+  client:only
+/>
 
 ### 列举例句
 
@@ -46,7 +51,4 @@ import WordRelations from '../../../components/WordRelations.svelte';
 Once, Jack bought a cucumber from the market. At lunch, he added it to his salad, savoring the crunchy cool taste. His meal was refreshing thanks to the cucumber.
 (一次，杰克从市场上买了一个黄瓜。午饭时，他将其加入沙拉中，品尝着脆爽凉口的味道。由于黄瓜，他的餐点变得清新可口。)
 
-<WordRelations
-  synonyms={["cuke"]}
-  client:only
-/>
+<WordRelations synonyms={["cuke"]} client:only />

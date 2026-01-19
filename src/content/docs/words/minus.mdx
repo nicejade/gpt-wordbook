@@ -6,17 +6,17 @@ sidebar:
 tableOfContents: false
 ---
 
-import Pronunciation from '../../../components/Pronunciation.svelte';
-import WordRelations from '../../../components/WordRelations.svelte';
+import Pronunciation from "../../../components/Pronunciation.svelte";
+import WordRelations from "../../../components/WordRelations.svelte";
 
 ### 分析词义
 
 "Minus" 主要有两个基本词义：
 
-<Pronunciation word="Minus" uk="/ˈmaɪnəs/" us="/ˈmaɪnəs/" client:only />
-
 1.  作为介词，表示减去，例如: "Five minus two equals three" (五减二等于三)。
 2.  作为形容词，表示负的或者少的，例如: "The temperature is minus 10 degrees Celsius" (温度是零下十度摄氏).
+
+<Pronunciation word="Minus" uk="/ˈmaɪnəs/" us="/ˈmaɪnəs/" client:only />
 
 ### 列举例句
 
@@ -50,7 +50,18 @@ import WordRelations from '../../../components/WordRelations.svelte';
 （“看看这个，”Bob 对 Alice 说，举起一个红苹果。“拿着这个苹果，去掉茎。你得到什么？” Alice 笑了起来，“一个没有茎的苹果。”）
 
 <WordRelations
-  synonyms={["defect","deficiency","drawback","flaw","shortcoming","negative","below","zero","lacking","without"]}
-  antonyms={["advantage","bonus","boon","gain","plus","positive"]}
+  synonyms={[
+    "defect",
+    "deficiency",
+    "drawback",
+    "flaw",
+    "shortcoming",
+    "negative",
+    "below",
+    "zero",
+    "lacking",
+    "without",
+  ]}
+  antonyms={["advantage", "bonus", "boon", "gain", "plus", "positive"]}
   client:only
 />

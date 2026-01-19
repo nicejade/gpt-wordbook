@@ -6,14 +6,19 @@ sidebar:
 tableOfContents: false
 ---
 
-import Pronunciation from '../../../components/Pronunciation.svelte';
-import WordRelations from '../../../components/WordRelations.svelte';
+import Pronunciation from "../../../components/Pronunciation.svelte";
+import WordRelations from "../../../components/WordRelations.svelte";
 
 ### 分析词义
 
 "Contamination" 就是污染的意思。这是一个名词，用来描述物质被有害或不利的物质或元素所污染的情况。
 
-<Pronunciation word="Contamination" uk="/kənˌtæmɪˈneɪʃən/" us="/kənˌtæmɪˈneɪʃən/" client:only />
+<Pronunciation
+  word="Contamination"
+  uk="/kənˌtæmɪˈneɪʃən/"
+  us="/kənˌtæmɪˈneɪʃən/"
+  client:only
+/>
 
 ### 列举例句
 
@@ -47,7 +52,4 @@ English: The small town's drinking water supply faced contamination due to a che
 
 中文: 这个小镇的饮用水供应由于附近工厂的化学溢出而面临污染。市民们非常苦恼，本地政府正在进行危害控制，并誓言要起诉导致这一切的公司。
 
-<WordRelations
-  synonyms={["defilement", "pollution", "taint"]}
-  client:only
-/>
+<WordRelations synonyms={["defilement", "pollution", "taint"]} client:only />

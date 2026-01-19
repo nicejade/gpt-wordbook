@@ -6,14 +6,19 @@ sidebar:
 tableOfContents: false
 ---
 
-import Pronunciation from '../../../components/Pronunciation.svelte';
-import WordRelations from '../../../components/WordRelations.svelte';
+import Pronunciation from "../../../components/Pronunciation.svelte";
+import WordRelations from "../../../components/WordRelations.svelte";
 
 ### 分析词义
 
 "Triangular" 这个单词来自于拉丁语的 "triangulum"，在英语中意为“三角形的”。
 
-<Pronunciation word="Triangular" uk="/tɹaɪˈæŋ.ɡjə.lə/" us="/tɹaɪˈæŋ.ɡjə.lə/" client:only />
+<Pronunciation
+  word="Triangular"
+  uk="/tɹaɪˈæŋ.ɡjə.lə/"
+  us="/tɹaɪˈæŋ.ɡjə.lə/"
+  client:only
+/>
 
 ### 列举例句
 
@@ -48,7 +53,4 @@ In a land far, far away, there was a unique mountain. This mountain was special 
 
 在一个遥远的地方，有一座与众不同的山。这座山的特别之处在于它的三角形状 - 一个让所有人都感到敬畏的景象。
 
-<WordRelations
-  synonyms={["threeside", "trigonal"]}
-  client:only
-/>
+<WordRelations synonyms={["threeside", "trigonal"]} client:only />

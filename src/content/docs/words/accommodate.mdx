@@ -9,14 +9,19 @@ sidebar:
 tableOfContents: false
 ---
 
-import Pronunciation from '../../../components/Pronunciation.svelte';
-import WordRelations from '../../../components/WordRelations.svelte';
+import Pronunciation from "../../../components/Pronunciation.svelte";
+import WordRelations from "../../../components/WordRelations.svelte";
 
 ### 分析词义
 
 "Accommodate"是动词，它有几种主要含义：1）提供住宿或空间；2）使适应或协调；3）满足（某人）的需要或愿望。举例来说，如果一个酒店可以 "accommodate" 200 个客人，那就意味着它有足够的房间为 200 个客人提供住宿。同样的，一个灵活的计划或体系可能会被设计成可以 "accommodate" 各种不同的需要或需求。
 
-<Pronunciation word="Accommodate" uk="/əˈkɒməˌdeɪt/" us="/əˈkɑməˌdeɪt/" client:only />
+<Pronunciation
+  word="Accommodate"
+  uk="/əˈkɒməˌdeɪt/"
+  us="/əˈkɑməˌdeɪt/"
+  client:only
+/>
 
 ### 列举例句
 
@@ -53,7 +58,15 @@ import WordRelations from '../../../components/WordRelations.svelte';
 "Despite having limited resources on the remote island, the villagers always tried their best to accommodate the needs of stranded travelers."（尽管在偏远的岛屿上资源有限，村民们总是尽全力满足滞留旅客的需求。）
 
 <WordRelations
-  synonyms={["adapt", "adjust", "arrange", "conform", "suit", "oblige", "reconcile"]}
+  synonyms={[
+    "adapt",
+    "adjust",
+    "arrange",
+    "conform",
+    "suit",
+    "oblige",
+    "reconcile",
+  ]}
   antonyms={["discommodate"]}
   client:only
 />

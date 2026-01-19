@@ -8,14 +8,19 @@ sidebar:
 tableOfContents: false
 ---
 
-import Pronunciation from '../../../components/Pronunciation.svelte';
-import WordRelations from '../../../components/WordRelations.svelte';
+import Pronunciation from "../../../components/Pronunciation.svelte";
+import WordRelations from "../../../components/WordRelations.svelte";
 
 ### 分析词义
 
 Masculine 是一个形容词，意指的是和男性有关的或典型的男性特性，比如力量、冷静或果断等。例如：masculine features (男性特征)或 masculine voice (男性的声音)。
 
-<Pronunciation word="Masculine" uk="/ˈmæskjələn/" us="/ˈmæskjulɪn/" client:only />
+<Pronunciation
+  word="Masculine"
+  uk="/ˈmæskjələn/"
+  us="/ˈmæskjulɪn/"
+  client:only
+/>
 
 ### 列举例句
 
@@ -55,6 +60,13 @@ John walked with a masculine stride into the room, his broad shoulders back and 
 
 <WordRelations
   synonyms={["male", "manly", "virile"]}
-  antonyms={["effeminate", "emasculated", "epicene", "unmanly", "female", "womanly"]}
+  antonyms={[
+    "effeminate",
+    "emasculated",
+    "epicene",
+    "unmanly",
+    "female",
+    "womanly",
+  ]}
   client:only
 />

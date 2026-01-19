@@ -8,14 +8,19 @@ sidebar:
 tableOfContents: false
 ---
 
-import Pronunciation from '../../../components/Pronunciation.svelte';
-import WordRelations from '../../../components/WordRelations.svelte';
+import Pronunciation from "../../../components/Pronunciation.svelte";
+import WordRelations from "../../../components/WordRelations.svelte";
 
 ### 分析词义
 
 "Scientific" 是一个形容词，它是由 "science" 和后缀 "-ic" 组合而成。在英语中，"scientific" 主要有两个基本含义。首先，它是“科学的”或“使用科学方法的”的意思。其次，它还可以用来强调事物需要被仔细和系统地研究。
 
-<Pronunciation word="Scientific" uk="/ˌsaɪənˈtɪfɪk/" us="/ˌsaɪənˈtɪfɪk/" client:only />
+<Pronunciation
+  word="Scientific"
+  uk="/ˌsaɪənˈtɪfɪk/"
+  us="/ˌsaɪənˈtɪfɪk/"
+  client:only
+/>
 
 ### 列举例句
 
@@ -47,7 +52,4 @@ import WordRelations from '../../../components/WordRelations.svelte';
 
 Steven is a curious boy and always has a scientific perspective on things. He loves to experiment and discover the principles hidden behind phenomena. (史蒂文是一个富有好奇心的男孩，对事物总是有科学的观察视角。他喜欢实验和发现现象背后隐藏的原理。)
 
-<WordRelations
-  synonyms={["methodical", "systematic"]}
-  client:only
-/>
+<WordRelations synonyms={["methodical", "systematic"]} client:only />

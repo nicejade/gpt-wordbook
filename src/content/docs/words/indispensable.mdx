@@ -6,14 +6,19 @@ sidebar:
 tableOfContents: false
 ---
 
-import Pronunciation from '../../../components/Pronunciation.svelte';
-import WordRelations from '../../../components/WordRelations.svelte';
+import Pronunciation from "../../../components/Pronunciation.svelte";
+import WordRelations from "../../../components/WordRelations.svelte";
 
 ### 分析词义
 
 英语单词 "indispensable" 是形容词，用来形容某人或某物是非常必要的，不能或很难被替代的。其核心含义为 "绝对必要的" 或 "不可或缺的"。
 
-<Pronunciation word="Indispensable" uk="/ɪndɪˈspɛnsəbəl/" us="/ɪndɪˈspɛnsəbəl/" client:only />
+<Pronunciation
+  word="Indispensable"
+  uk="/ɪndɪˈspɛnsəbəl/"
+  us="/ɪndɪˈspɛnsəbəl/"
+  client:only
+/>
 
 ### 列举例句
 
@@ -52,7 +57,4 @@ import WordRelations from '../../../components/WordRelations.svelte';
 
 “汤姆是我们办公室唯一知道如何修理服务器的人，他已经变成了我们团队不可或缺的一员。”
 
-<WordRelations
-  antonyms={["dispensable"]}
-  client:only
-/>
+<WordRelations antonyms={["dispensable"]} client:only />

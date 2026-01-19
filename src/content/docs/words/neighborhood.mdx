@@ -6,14 +6,19 @@ sidebar:
 tableOfContents: false
 ---
 
-import Pronunciation from '../../../components/Pronunciation.svelte';
-import WordRelations from '../../../components/WordRelations.svelte';
+import Pronunciation from "../../../components/Pronunciation.svelte";
+import WordRelations from "../../../components/WordRelations.svelte";
 
 ### 分析词义
 
 "Neighborhood"是一个名词，意为“邻居，邻里；附近地区”。
 
-<Pronunciation word="Neighborhood" uk="/ˈneɪbə.hʊd/" us="/ˈneɪbɚˌhʊd/" client:only />
+<Pronunciation
+  word="Neighborhood"
+  uk="/ˈneɪbə.hʊd/"
+  us="/ˈneɪbɚˌhʊd/"
+  client:only
+/>
 
 ### 列举例句
 
@@ -46,7 +51,4 @@ import WordRelations from '../../../components/WordRelations.svelte';
 In a small town, a boy named Max loved his neighborhood, full of trees, flowers, and friendly neighbors.
 在一个小城镇里，一个叫 Max 的男孩，热爱他的邻里，那里满是树木，鲜花，和友善的邻居。
 
-<WordRelations
-  synonyms={["proximity", "quarter", "vicinity"]}
-  client:only
-/>
+<WordRelations synonyms={["proximity", "quarter", "vicinity"]} client:only />

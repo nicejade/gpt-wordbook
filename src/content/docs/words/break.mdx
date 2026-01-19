@@ -6,14 +6,12 @@ sidebar:
 tableOfContents: false
 ---
 
-import Pronunciation from '../../../components/Pronunciation.svelte';
-import WordRelations from '../../../components/WordRelations.svelte';
+import Pronunciation from "../../../components/Pronunciation.svelte";
+import WordRelations from "../../../components/WordRelations.svelte";
 
 ### 分析词义
 
 "Break" 是一个非常常用的英语单词，具有许多不同的含义，可能是作为动词或名词。作为一个动词，它主要有的含义是：
-
-<Pronunciation word="Break" uk="/bɹeɪk/" us="/bɹeɪk/" client:only />
 
 1.  打破，破碎，例如 "Break a glass"（打碎一个杯子）
 2.  中断，暂停，例如 "Take a break"（休息一下）
@@ -23,6 +21,8 @@ import WordRelations from '../../../components/WordRelations.svelte';
 
 1.  短暂的休息，例如 "Have a break"（休息一下）
 2.  破裂处，断口，例如 "There's a break in the pipe"（管子有裂缝）
+
+<Pronunciation word="Break" uk="/bɹeɪk/" us="/bɹeɪk/" client:only />
 
 ### 列举例句
 
@@ -56,7 +56,22 @@ One day, Little Tim got a new toy car, but he played too rough and broke it. He 
 （有一天，小提姆得到一个新的玩具车，但他玩得太粗暴，把它打破了。他很伤心。）
 
 <WordRelations
-  synonyms={["split","breach","gap","space","playtime","recess","crack","fracture","burst","bust","shatter","shear","smash","fail"]}
-  antonyms={["hold","assemble","fix","join","mend","repair"]}
+  synonyms={[
+    "split",
+    "breach",
+    "gap",
+    "space",
+    "playtime",
+    "recess",
+    "crack",
+    "fracture",
+    "burst",
+    "bust",
+    "shatter",
+    "shear",
+    "smash",
+    "fail",
+  ]}
+  antonyms={["hold", "assemble", "fix", "join", "mend", "repair"]}
   client:only
 />

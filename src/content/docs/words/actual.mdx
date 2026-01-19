@@ -8,14 +8,19 @@ sidebar:
 tableOfContents: false
 ---
 
-import Pronunciation from '../../../components/Pronunciation.svelte';
-import WordRelations from '../../../components/WordRelations.svelte';
+import Pronunciation from "../../../components/Pronunciation.svelte";
+import WordRelations from "../../../components/WordRelations.svelte";
 
 ### 分析词义
 
 "Actual"是一个形容词，常用来描述事物的真实、存在或者具体的状态，就像中文中的“实际的”、“真实的”。例如，"The actual cost is much higher"（实际成本要高得多）。我们也可以用它来强调某些事物的存在比我们先期的设想或者说法要重要或者不同。
 
-<Pronunciation word="Actual" uk="/ˈak(t)ʃj(ʊ)əl/" us="/ˈæk(t)ʃ(əw)əl/" client:only />
+<Pronunciation
+  word="Actual"
+  uk="/ˈak(t)ʃj(ʊ)əl/"
+  us="/ˈæk(t)ʃ(əw)əl/"
+  client:only
+/>
 
 ### 列举例句
 
@@ -60,6 +65,18 @@ George was ecstatic when he first got the job offer from the big company. The po
 
 <WordRelations
   synonyms={["positive", "present", "real"]}
-  antonyms={["conceivable", "estimated", "hypothetical", "nominal", "possible", "potential", "speculative", "theoretical", "virtual", "future", "past"]}
+  antonyms={[
+    "conceivable",
+    "estimated",
+    "hypothetical",
+    "nominal",
+    "possible",
+    "potential",
+    "speculative",
+    "theoretical",
+    "virtual",
+    "future",
+    "past",
+  ]}
   client:only
 />

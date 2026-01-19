@@ -8,14 +8,19 @@ sidebar:
 tableOfContents: false
 ---
 
-import Pronunciation from '../../../components/Pronunciation.svelte';
-import WordRelations from '../../../components/WordRelations.svelte';
+import Pronunciation from "../../../components/Pronunciation.svelte";
+import WordRelations from "../../../components/WordRelations.svelte";
 
 ### 分析词义
 
 "Century"这个是一个计量时间的单词，表示"世纪"。它来源于拉丁文"centuria"，意为`一百`。具体来说，世纪是指一段长达百年的时间。为了方便，人们习惯按照每百年为一个世纪的方式来指代特定的时间段，例如，我们所说的"21 世纪"表示的是 2001 年到 2100 年这一时期。
 
-<Pronunciation word="Century" uk="/ˈsɛn.t͡ʃə.ɹiː/" us="/ˈsɛn.t͡ʃə.ɹiː/" client:only />
+<Pronunciation
+  word="Century"
+  uk="/ˈsɛn.t͡ʃə.ɹiː/"
+  us="/ˈsɛn.t͡ʃə.ɹiː/"
+  client:only
+/>
 
 ### 列举例句
 
@@ -52,7 +57,4 @@ import WordRelations from '../../../components/WordRelations.svelte';
 _On a crisp morning at the turn of the century, an inventor named Robert was unveiling his latest creation - the first automobile. It was only the dawn of the 20th century, but that moment marked the dawn of a new era._
 在世纪之交的一个清晨，一位名叫罗伯特的发明家正在展示他的最新发明 - 第一辆汽车。尽管这只是二十世纪的开始，但那一刻标志着新时代的到来。
 
-<WordRelations
-  synonyms={["centuria", "yearhundred"]}
-  client:only
-/>
+<WordRelations synonyms={["centuria", "yearhundred"]} client:only />

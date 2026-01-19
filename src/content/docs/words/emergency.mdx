@@ -6,14 +6,19 @@ sidebar:
 tableOfContents: false
 ---
 
-import Pronunciation from '../../../components/Pronunciation.svelte';
-import WordRelations from '../../../components/WordRelations.svelte';
+import Pronunciation from "../../../components/Pronunciation.svelte";
+import WordRelations from "../../../components/WordRelations.svelte";
 
 ### 分析词义
 
 "Emergency" 是一个名词，主要指紧急情况或紧急状况，如突发事件，需要立即处理。
 
-<Pronunciation word="Emergency" uk="/ɪˈmɝ.dʒən.si/" us="/ɪˈmɝ.dʒən.si/" client:only />
+<Pronunciation
+  word="Emergency"
+  uk="/ɪˈmɝ.dʒən.si/"
+  us="/ɪˈmɝ.dʒən.si/"
+  client:only
+/>
 
 ### 列举例句
 
@@ -46,7 +51,4 @@ import WordRelations from '../../../components/WordRelations.svelte';
 The city experienced an unexpected flood. Emergency teams were called to aid the affected area. (城市遭受了一场意外的洪水。紧急救援队被召唤去协助受影响的地区。)
 译文：城市遭受了一场意外的洪水。紧急救援队被召唤去协助受影响的地区。
 
-<WordRelations
-  synonyms={["ER", "casualty", "emerg"]}
-  client:only
-/>
+<WordRelations synonyms={["ER", "casualty", "emerg"]} client:only />

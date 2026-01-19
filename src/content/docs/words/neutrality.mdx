@@ -6,14 +6,19 @@ sidebar:
 tableOfContents: false
 ---
 
-import Pronunciation from '../../../components/Pronunciation.svelte';
-import WordRelations from '../../../components/WordRelations.svelte';
+import Pronunciation from "../../../components/Pronunciation.svelte";
+import WordRelations from "../../../components/WordRelations.svelte";
 
 ### 分析词义
 
 "Neutrality" 是一个名词，意为"中立"，指的是在冲突或争论中没有选择任何一方的状态。
 
-<Pronunciation word="Neutrality" uk="/njuːˈtɹæləti/" us="/nuˈtɹæləti/" client:only />
+<Pronunciation
+  word="Neutrality"
+  uk="/njuːˈtɹæləti/"
+  us="/nuˈtɹæləti/"
+  client:only
+/>
 
 ### 列举例句
 
@@ -47,7 +52,4 @@ import WordRelations from '../../../components/WordRelations.svelte';
 During the World War II, Switzerland declared neutrality and refused to participate in the conflict. (在二战期间，瑞士宣布保持中立，拒绝参与冲突。）
 二战期间，瑞士宣称中立，拒绝参与冲突。
 
-<WordRelations
-  synonyms={["indifferent"]}
-  client:only
-/>
+<WordRelations synonyms={["indifferent"]} client:only />

@@ -6,14 +6,12 @@ sidebar:
 tableOfContents: false
 ---
 
-import Pronunciation from '../../../components/Pronunciation.svelte';
-import WordRelations from '../../../components/WordRelations.svelte';
+import Pronunciation from "../../../components/Pronunciation.svelte";
+import WordRelations from "../../../components/WordRelations.svelte";
 
 ### 分析词义
 
 "Objective" 这个单词在英语中有两个主要含义，分别由其作为名词和形容词时的使用决定。
-
-<Pronunciation word="Objective" uk="/ɒbˈd͡ʒɛk.tɪv/" us="/əbˈd͡ʒɛk.tɪv/" client:only />
 
 - 作为名词，"objective" 的意思是目标、宗旨、目的，是一个人、团体或计划等希望实现的事物。
 
@@ -24,6 +22,13 @@ import WordRelations from '../../../components/WordRelations.svelte';
 
   - _英文例句_："It is important to remain objective when making a decision."
   - _中文翻译_："做决定时保持客观很重要。"
+
+<Pronunciation
+  word="Objective"
+  uk="/ɒbˈd͡ʒɛk.tɪv/"
+  us="/əbˈd͡ʒɛk.tɪv/"
+  client:only
+/>
 
 ### 词根分析
 
@@ -53,7 +58,4 @@ import WordRelations from '../../../components/WordRelations.svelte';
 中文翻译：
 "吉姆是一个客观的领导。他总是为团队设定明确的目标，并鼓励他们在处理问题上保持客观。"
 
-<WordRelations
-  antonyms={["subjective"]}
-  client:only
-/>
+<WordRelations antonyms={["subjective"]} client:only />

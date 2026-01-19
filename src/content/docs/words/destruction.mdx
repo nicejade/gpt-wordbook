@@ -6,14 +6,19 @@ sidebar:
 tableOfContents: false
 ---
 
-import Pronunciation from '../../../components/Pronunciation.svelte';
-import WordRelations from '../../../components/WordRelations.svelte';
+import Pronunciation from "../../../components/Pronunciation.svelte";
+import WordRelations from "../../../components/WordRelations.svelte";
 
 ### 分析词义
 
 "Destruction" 是一个名词，它意味着破坏、毁灭，通常用来描述物体或者结构的损坏或者损失，或者一种状况的结束。
 
-<Pronunciation word="Destruction" uk="/ˌdɪsˈtɹʌkʃən/" us="/ˌdɪsˈtɹʌkʃən/" client:only />
+<Pronunciation
+  word="Destruction"
+  uk="/ˌdɪsˈtɹʌkʃən/"
+  us="/ˌdɪsˈtɹʌkʃən/"
+  client:only
+/>
 
 ### 列举例句
 
@@ -48,7 +53,4 @@ import WordRelations from '../../../components/WordRelations.svelte';
 In the movie, the alien invaders caused complete destruction of the city. Everyone felt hopeless, witnessing the devastation.
 (在电影中，外星侵略者对城市造成了完全的破坏。每个人在目睹这场灾难时，都感到无助和绝望。)
 
-<WordRelations
-  antonyms={["construction"]}
-  client:only
-/>
+<WordRelations antonyms={["construction"]} client:only />

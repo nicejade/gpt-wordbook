@@ -7,14 +7,19 @@ sidebar:
 tableOfContents: false
 ---
 
-import Pronunciation from '../../../components/Pronunciation.svelte';
-import WordRelations from '../../../components/WordRelations.svelte';
+import Pronunciation from "../../../components/Pronunciation.svelte";
+import WordRelations from "../../../components/WordRelations.svelte";
 
 ### 分析词义
 
 "Dispensable"是一个英文形容词，它的基本含义是“非必需的”或者是“可有可无的”。当你说某事或某人是"dispensable"的时候，意思就是这个事物或者这个人并不是绝对必须的，相反，如果没有他们，事情依旧可以进行。
 
-<Pronunciation word="Dispensable" uk="/dɪsˈpɛnsəbəl/" us="/dɪsˈpɛnsəbəl/" client:only />
+<Pronunciation
+  word="Dispensable"
+  uk="/dɪsˈpɛnsəbəl/"
+  us="/dɪsˈpɛnsəbəl/"
+  client:only
+/>
 
 ### 列举例句
 
@@ -46,7 +51,4 @@ import WordRelations from '../../../components/WordRelations.svelte';
 
 During the trip, Mary realized that most items in her enormous suitcase were dispensable. So, she decided to travel light in the future. (在旅行中，玛丽意识到她庞大行李箱里的大部分物品都是可有可无的。于是，她决定在未来轻装前行。)
 
-<WordRelations
-  antonyms={["indispensable"]}
-  client:only
-/>
+<WordRelations antonyms={["indispensable"]} client:only />

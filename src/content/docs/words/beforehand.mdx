@@ -6,14 +6,19 @@ sidebar:
 tableOfContents: false
 ---
 
-import Pronunciation from '../../../components/Pronunciation.svelte';
-import WordRelations from '../../../components/WordRelations.svelte';
+import Pronunciation from "../../../components/Pronunciation.svelte";
+import WordRelations from "../../../components/WordRelations.svelte";
 
 ### 分析词义
 
 "Beforehand" 是副词，直译为“事先”，意味着“在某个时间或事件之前”。
 
-<Pronunciation word="Beforehand" uk="/bɪˈfɔːhænd/" us="/bɪˈfɔɹhænd/" client:only />
+<Pronunciation
+  word="Beforehand"
+  uk="/bɪˈfɔːhænd/"
+  us="/bɪˈfɔɹhænd/"
+  client:only
+/>
 
 ### 列举例句
 
@@ -47,8 +52,4 @@ Tom is always the best prepared. He double-checks everything beforehand, never l
 
 汤姆总是最有准备的人。他总是事先检查一切，绝不让任何事情成为未知数。
 
-<WordRelations
-  synonyms={["upfront"]}
-  antonyms={["afterwards"]}
-  client:only
-/>
+<WordRelations synonyms={["upfront"]} antonyms={["afterwards"]} client:only />

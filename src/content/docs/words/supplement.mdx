@@ -8,14 +8,19 @@ sidebar:
 tableOfContents: false
 ---
 
-import Pronunciation from '../../../components/Pronunciation.svelte';
-import WordRelations from '../../../components/WordRelations.svelte';
+import Pronunciation from "../../../components/Pronunciation.svelte";
+import WordRelations from "../../../components/WordRelations.svelte";
 
 ### 分析词义
 
 "Supplement" 英 [ˈsʌplɪmənt] 美 [ˈsʌplɪmənt] 是一个英语单词，作为名词时，其主要意思是"补充"，"添加"，或者"辅助物"。当它作为动词使用时，"supplement" 的主要意义是"增补"，"补充"。
 
-<Pronunciation word="Supplement" uk="/ˈsʌpləmənt/" us="/ˈsʌpləmənt/" client:only />
+<Pronunciation
+  word="Supplement"
+  uk="/ˈsʌpləmənt/"
+  us="/ˈsʌpləmənt/"
+  client:only
+/>
 
 ### 列举例句
 
@@ -48,7 +53,4 @@ Supplement 这个词和 Supermarket 是一样的前缀，你可以想象成是�
 Tom was growing weaker day by day. His doctor recommended he start taking some daily supplements to boost his strength. These small pills became the magic beans that supplemented his health, making him feel stronger and more energetic.
 (汤姆一天天变得更虚弱。他的医生建议他开始每天吃一些补充剂来增强体力。这些小药片成了补健身体的魔豆，他从中感到更强壮更有活力。)
 
-<WordRelations
-  synonyms={["addition"]}
-  client:only
-/>
+<WordRelations synonyms={["addition"]} client:only />

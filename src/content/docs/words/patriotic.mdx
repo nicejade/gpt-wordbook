@@ -6,14 +6,19 @@ sidebar:
 tableOfContents: false
 ---
 
-import Pronunciation from '../../../components/Pronunciation.svelte';
-import WordRelations from '../../../components/WordRelations.svelte';
+import Pronunciation from "../../../components/Pronunciation.svelte";
+import WordRelations from "../../../components/WordRelations.svelte";
 
 ### 分析词义
 
 "Patriotic" 是一个形容词，用于描述人或行为，表示“爱国的”，“忠诚的”。
 
-<Pronunciation word="Patriotic" uk="/ˈpeɪ.tɹi.ɒ.tɪk/" us="/ˈpeɪ.t(ʃ)ɹi.ɑ.tɪk/" client:only />
+<Pronunciation
+  word="Patriotic"
+  uk="/ˈpeɪ.tɹi.ɒ.tɪk/"
+  us="/ˈpeɪ.t(ʃ)ɹi.ɑ.tɪk/"
+  client:only
+/>
 
 ### 列举例句
 
@@ -47,7 +52,4 @@ import WordRelations from '../../../components/WordRelations.svelte';
 Jack is a sincerely patriotic man. He always wears a badge of national flag at his chest and makes great contribution to charity. His actions inspire others to be patriotic too.
 (杰克是个非常忠诚的爱国者。他总是佩戴着国旗徽章，并在慈善事业上作出巨大贡献。他的行动激励其他人也成为爱国者。)
 
-<WordRelations
-  antonyms={["unpatriotic"]}
-  client:only
-/>
+<WordRelations antonyms={["unpatriotic"]} client:only />

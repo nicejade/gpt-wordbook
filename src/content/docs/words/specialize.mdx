@@ -6,14 +6,19 @@ sidebar:
 tableOfContents: false
 ---
 
-import Pronunciation from '../../../components/Pronunciation.svelte';
-import WordRelations from '../../../components/WordRelations.svelte';
+import Pronunciation from "../../../components/Pronunciation.svelte";
+import WordRelations from "../../../components/WordRelations.svelte";
 
 ### 分析词义
 
 "Specialize" 是动词，“专注”或“专门化”的意思。当一个人特别擅长，专注于某一领域或者拥有特定技能时，就可以使用此单词。
 
-<Pronunciation word="Specialize" uk="/ˈspɛʃəˌlaɪz/" us="/ˈspɛʃəˌlaɪz/" client:only />
+<Pronunciation
+  word="Specialize"
+  uk="/ˈspɛʃəˌlaɪz/"
+  us="/ˈspɛʃəˌlaɪz/"
+  client:only
+/>
 
 ### 列举例句
 
@@ -50,7 +55,4 @@ import WordRelations from '../../../components/WordRelations.svelte';
 Once upon a time, there was a bird who did not fit in with its kind. Instead of hunting, he decided to specialize in singing. His spectacular voice brought joy to all the creatures in the forest.
 （从前，有只鸟与其他鸟不同。它决定不是去猎食，而是专攻歌唱。它的美妙歌声为森林中的所有生物带来了快乐。）
 
-<WordRelations
-  antonyms={["generalize"]}
-  client:only
-/>
+<WordRelations antonyms={["generalize"]} client:only />

@@ -6,14 +6,19 @@ sidebar:
 tableOfContents: false
 ---
 
-import Pronunciation from '../../../components/Pronunciation.svelte';
-import WordRelations from '../../../components/WordRelations.svelte';
+import Pronunciation from "../../../components/Pronunciation.svelte";
+import WordRelations from "../../../components/WordRelations.svelte";
 
 ### 分析词义
 
 "Department"是一个常用的英文单词，主要表示"部门"或"系"(如学校的部门)，也可以用来指代某个特定的领域或主题。
 
-<Pronunciation word="Department" uk="/dɪˈpɑːtm(ə)nt/" us="/dəˈpɑɹtmənt/" client:only />
+<Pronunciation
+  word="Department"
+  uk="/dɪˈpɑːtm(ə)nt/"
+  us="/dəˈpɑɹtmənt/"
+  client:only
+/>
 
 ### 列举例句
 
@@ -45,7 +50,4 @@ Department 的词根是 "part", 表示"部分"。是由拉丁词 "partire" 演�
 
 Lucas's first day at the new company. He had been assigned to the IT department. It was completely different from his old job, but he was ready to face the challenges. (这是 Lucas 在新公司的第一天，他被分配到 IT 部门，跟他旧的工作完全不同，但他已经做好面对挑战的准备了。)
 
-<WordRelations
-  synonyms={["province", "specialty", "ministry"]}
-  client:only
-/>
+<WordRelations synonyms={["province", "specialty", "ministry"]} client:only />

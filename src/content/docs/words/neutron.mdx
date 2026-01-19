@@ -6,14 +6,19 @@ sidebar:
 tableOfContents: false
 ---
 
-import Pronunciation from '../../../components/Pronunciation.svelte';
-import WordRelations from '../../../components/WordRelations.svelte';
+import Pronunciation from "../../../components/Pronunciation.svelte";
+import WordRelations from "../../../components/WordRelations.svelte";
 
 ### 分析词义
 
 "Neutron"是英文中的一个专业词汇，源自于物理学，代表一种亚原子粒子，存在于多数原子核内，质量略大于质子，它本身无电荷。
 
-<Pronunciation word="Neutron" uk="/ˈn(j)uːtɹɒn/" us="/ˈn(j)uːtɹɒn/" client:only />
+<Pronunciation
+  word="Neutron"
+  uk="/ˈn(j)uːtɹɒn/"
+  us="/ˈn(j)uːtɹɒn/"
+  client:only
+/>
 
 ### 列举例句
 
@@ -54,7 +59,4 @@ A little neutron was wandering in the atomic nucleus. Though it had no charge, i
 
 希望这个辅助对你有所帮助！
 
-<WordRelations
-  synonyms={["n"]}
-  client:only
-/>
+<WordRelations synonyms={["n"]} client:only />

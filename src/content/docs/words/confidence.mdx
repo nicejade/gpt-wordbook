@@ -8,14 +8,19 @@ sidebar:
 tableOfContents: false
 ---
 
-import Pronunciation from '../../../components/Pronunciation.svelte';
-import WordRelations from '../../../components/WordRelations.svelte';
+import Pronunciation from "../../../components/Pronunciation.svelte";
+import WordRelations from "../../../components/WordRelations.svelte";
 
 ### 分析词义
 
 "Confidence" 这个单词来自于拉丁词 "confidentia"，在英语中，它是一个名词，主要用于表示“信心”或“自信”。它也可以表示“信任”，用于描述对人或事的信赖。
 
-<Pronunciation word="Confidence" uk="/ˈkɒnfɪdəns/" us="/ˈkɒnfɪdəns/" client:only />
+<Pronunciation
+  word="Confidence"
+  uk="/ˈkɒnfɪdəns/"
+  us="/ˈkɒnfɪdəns/"
+  client:only
+/>
 
 ### 列举例句
 
@@ -55,7 +60,4 @@ Tom walked onstage with an air of confidence, ready to face the crowd. The audie
 
 Tom 带着信心走上舞台，准备面对观众。观众能看出他对自己的信念，应和着为他鼓掌。
 
-<WordRelations
-  antonyms={["timidity"]}
-  client:only
-/>
+<WordRelations antonyms={["timidity"]} client:only />

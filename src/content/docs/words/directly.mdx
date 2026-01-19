@@ -6,14 +6,19 @@ sidebar:
 tableOfContents: false
 ---
 
-import Pronunciation from '../../../components/Pronunciation.svelte';
-import WordRelations from '../../../components/WordRelations.svelte';
+import Pronunciation from "../../../components/Pronunciation.svelte";
+import WordRelations from "../../../components/WordRelations.svelte";
 
 ### 分析词义
 
 "Directly" 这个词在英语中主要用作副词，意味着“直接地，立即，马上”，有时候也可以表示“正好，正对着”。
 
-<Pronunciation word="Directly" uk="/daɪˈɹɛk(t)li/" us="/daɪˈɹɛk(t)li/" client:only />
+<Pronunciation
+  word="Directly"
+  uk="/daɪˈɹɛk(t)li/"
+  us="/daɪˈɹɛk(t)li/"
+  client:only
+/>
 
 ### 列举例句
 
@@ -44,7 +49,23 @@ import WordRelations from '../../../components/WordRelations.svelte';
 Tom directly faced the challenges without hesitation. (Tom 毫不犹豫地直接面对挑战。)
 
 <WordRelations
-  synonyms={["accurately","precisely","forthwith","now","straightwise","undeviatingly","betimes","presently","shortly","frankly","truthfully","bluntly","clearly","downrightly","unambiguously"]}
+  synonyms={[
+    "accurately",
+    "precisely",
+    "forthwith",
+    "now",
+    "straightwise",
+    "undeviatingly",
+    "betimes",
+    "presently",
+    "shortly",
+    "frankly",
+    "truthfully",
+    "bluntly",
+    "clearly",
+    "downrightly",
+    "unambiguously",
+  ]}
   antonyms={["indirectly"]}
   client:only
 />

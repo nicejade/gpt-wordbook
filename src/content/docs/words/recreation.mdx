@@ -6,14 +6,19 @@ sidebar:
 tableOfContents: false
 ---
 
-import Pronunciation from '../../../components/Pronunciation.svelte';
-import WordRelations from '../../../components/WordRelations.svelte';
+import Pronunciation from "../../../components/Pronunciation.svelte";
+import WordRelations from "../../../components/WordRelations.svelte";
 
 ### 分析词义
 
 "Recreation" 是英语中的一个单词，它的主要含义是娱乐，休闲，或重建。它指的是进行一些活动来获得乐趣，或者以享受和休息的方式度过时间。
 
-<Pronunciation word="Recreation" uk="/ɹɛkɹiˈeɪʃən/" us="/ɹɛkɹiˈeɪʃən/" client:only />
+<Pronunciation
+  word="Recreation"
+  uk="/ɹɛkɹiˈeɪʃən/"
+  us="/ɹɛkɹiˈeɪʃən/"
+  client:only
+/>
 
 ### 列举例句
 
@@ -55,7 +60,4 @@ Tom worked hard all week, so he looked forward to a Sunday of pure "recreation" 
 
 汤姆整周都在努力工作，所以他期待周日的纯休闲时光 - 在海滩上度过一天，与他的狗玩耍，和家人一起野餐。这就是他心中完美的休息和放松方式。
 
-<WordRelations
-  synonyms={["leisure"]}
-  client:only
-/>
+<WordRelations synonyms={["leisure"]} client:only />

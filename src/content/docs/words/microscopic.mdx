@@ -6,14 +6,19 @@ sidebar:
 tableOfContents: false
 ---
 
-import Pronunciation from '../../../components/Pronunciation.svelte';
-import WordRelations from '../../../components/WordRelations.svelte';
+import Pronunciation from "../../../components/Pronunciation.svelte";
+import WordRelations from "../../../components/WordRelations.svelte";
 
 ### 分析词义
 
 英文单词"microscopic"是形容词，意为“微观的；用显微镜可见的”。比如在科学研究领域，它多被用来描述那些用肉眼无法看清的极小物体。
 
-<Pronunciation word="Microscopic" uk="/ˌmaɪkɹəˈskɑpɪk/" us="/ˌmaɪkɹəˈskɑpɪk/" client:only />
+<Pronunciation
+  word="Microscopic"
+  uk="/ˌmaɪkɹəˈskɑpɪk/"
+  us="/ˌmaɪkɹəˈskɑpɪk/"
+  client:only
+/>
 
 ### 列举例句
 
@@ -47,7 +52,4 @@ Microscopic 的词根为 "micro-"，来源于希腊语"mikros"，意为“小的
 Once upon a time, there was a girl who loved science. She used a microscope to explore a magical, microscopic world invisible to the naked eye. Her enthusiasm for microscopic life changed her world.
 从前，有个喜欢科学的女孩。她用显微镜探索只有显微镜下才看得见的神奇世界。对微观生命的热情改变了她的生活。
 
-<WordRelations
-  antonyms={["macroscopic"]}
-  client:only
-/>
+<WordRelations antonyms={["macroscopic"]} client:only />

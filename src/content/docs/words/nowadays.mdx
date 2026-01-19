@@ -6,14 +6,19 @@ sidebar:
 tableOfContents: false
 ---
 
-import Pronunciation from '../../../components/Pronunciation.svelte';
-import WordRelations from '../../../components/WordRelations.svelte';
+import Pronunciation from "../../../components/Pronunciation.svelte";
+import WordRelations from "../../../components/WordRelations.svelte";
 
 ### 分析词义
 
 "Nowadays" 是一个副词，用来描述在当前的时间或者周期内的情况，相当于中文里的 "现今"，"如今"，"现在"。
 
-<Pronunciation word="Nowadays" uk="/ˈnaʊ.ə.deɪz/" us="/ˈnaʊ.ə.deɪz/" client:only />
+<Pronunciation
+  word="Nowadays"
+  uk="/ˈnaʊ.ə.deɪz/"
+  us="/ˈnaʊ.ə.deɪz/"
+  client:only
+/>
 
 ### 列举例句
 
@@ -50,7 +55,4 @@ Tom used to hate digital books and insisted on reading paper ones. Nowadays, how
 
 汤姆过去一直讨厌电子书，坚持阅读纸质书。然而，如今，他无论走到哪里都带着他的 Kindle，享受它带来的便利。
 
-<WordRelations
-  synonyms={["currently","now"]}
-  client:only
-/>
+<WordRelations synonyms={["currently", "now"]} client:only />

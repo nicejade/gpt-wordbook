@@ -6,16 +6,16 @@ sidebar:
 tableOfContents: false
 ---
 
-import Pronunciation from '../../../components/Pronunciation.svelte';
-import WordRelations from '../../../components/WordRelations.svelte';
+import Pronunciation from "../../../components/Pronunciation.svelte";
+import WordRelations from "../../../components/WordRelations.svelte";
 
 ### 分析词义
 
 **单词**：Single
 
-<Pronunciation word="Single" uk="/ˈsɪŋɡəl/" us="/ˈsɪŋɡəl/" client:only />
-
 单词 "single" 作为形容词时，它主要表示 "只有一个" 或 "未婚的"。作为动词，较少用，意味着 "选出"。作为名词，可能指的是 "一个人"，"一张（票）" 或 "一首（歌曲）"。
+
+<Pronunciation word="Single" uk="/ˈsɪŋɡəl/" us="/ˈsɪŋɡəl/" client:only />
 
 ### 列举例句
 
@@ -53,7 +53,15 @@ David is a single father who loves to sing. He hums gently every morning while m
 David 是一个喜欢唱歌的单身爸爸。每天早晨给女儿做早餐时，他都会轻声哼唱。这是他们一天中最珍贵的时光。
 
 <WordRelations
-  synonyms={["lone","sole","unbroken","undivided","uniform","available","unmarried"]}
-  antonyms={["album","married","divorced","taken","widowed","LAT"]}
+  synonyms={[
+    "lone",
+    "sole",
+    "unbroken",
+    "undivided",
+    "uniform",
+    "available",
+    "unmarried",
+  ]}
+  antonyms={["album", "married", "divorced", "taken", "widowed", "LAT"]}
   client:only
 />

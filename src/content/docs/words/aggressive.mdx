@@ -6,14 +6,19 @@ sidebar:
 tableOfContents: false
 ---
 
-import Pronunciation from '../../../components/Pronunciation.svelte';
-import WordRelations from '../../../components/WordRelations.svelte';
+import Pronunciation from "../../../components/Pronunciation.svelte";
+import WordRelations from "../../../components/WordRelations.svelte";
 
 ### 分析词义
 
 Aggressive 是一个形容词，意思是“侵略性的”，“好斗的”，同时也可以用来形容人的行为或态度非常强硬和积极，经常采取主动。
 
-<Pronunciation word="Aggressive" uk="/əˈɡɹɛs.ɪv/" us="/əˈɡɹɛs.ɪv/" client:only />
+<Pronunciation
+  word="Aggressive"
+  uk="/əˈɡɹɛs.ɪv/"
+  us="/əˈɡɹɛs.ɪv/"
+  client:only
+/>
 
 ### 列举例句
 
@@ -48,7 +53,4 @@ Once upon a time, there was an aggressive king who always invaded neighboring co
 
 从前，有一个侵略性很强的国王，总是侵略邻国。然而，他在一个聪明的女王面前遭遇了挑战，这位女王用智谋驳斥了他的侵略行动。
 
-<WordRelations
-  antonyms={["passive"]}
-  client:only
-/>
+<WordRelations antonyms={["passive"]} client:only />

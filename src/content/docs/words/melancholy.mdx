@@ -8,19 +8,24 @@ sidebar:
 tableOfContents: false
 ---
 
-import Pronunciation from '../../../components/Pronunciation.svelte';
-import WordRelations from '../../../components/WordRelations.svelte';
+import Pronunciation from "../../../components/Pronunciation.svelte";
+import WordRelations from "../../../components/WordRelations.svelte";
 
 ### 分析词义
 
 "Melancholy" 是一个形容词，也可以作为名词使用。作为名词，它用来描述一种深深的、持久的、无明显原因的伤感或忧郁的情绪状态。作为形容词，它则用来形容情绪低落、忧郁的人或事物。
 
-<Pronunciation word="Melancholy" uk="/ˈmelənkəli/" us="/ˈmɛl.ənˌkɑl.i/" client:only />
-
 例如：
 
 - He felt a strange sense of melancholy. (他感到一种奇怪的忧郁。)
 - The music has a melancholy feel to it. (这首音乐给人一种忧郁的感觉。)
+
+<Pronunciation
+  word="Melancholy"
+  uk="/ˈmelənkəli/"
+  us="/ˈmɛl.ənˌkɑl.i/"
+  client:only
+/>
 
 ### 列举例句
 
@@ -57,7 +62,4 @@ The melancholy night was long and silent. The man sat in the dim room, his face 
 
 这个忧郁的夜晚又长又寂静。男子坐在昏暗的房间里，脸上罩着阴暗，享受着孤独。
 
-<WordRelations
-  synonyms={["melancholic"]}
-  client:only
-/>
+<WordRelations synonyms={["melancholic"]} client:only />

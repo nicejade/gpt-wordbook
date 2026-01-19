@@ -6,14 +6,19 @@ sidebar:
 tableOfContents: false
 ---
 
-import Pronunciation from '../../../components/Pronunciation.svelte';
-import WordRelations from '../../../components/WordRelations.svelte';
+import Pronunciation from "../../../components/Pronunciation.svelte";
+import WordRelations from "../../../components/WordRelations.svelte";
 
 ### 分析词义
 
 "Typewriter"是一个名词，指的是打字机，一种机械或电子设备，用于将人们的键盘击键行为转化为打印的文本。
 
-<Pronunciation word="Typewriter" uk="[ˈtaɪpˌɹaɪtə(ɹ)]" us="[ˈtaɪpˌɹaɪtə(ɹ)]" client:only />
+<Pronunciation
+  word="Typewriter"
+  uk="[ˈtaɪpˌɹaɪtə(ɹ)]"
+  us="[ˈtaɪpˌɹaɪtə(ɹ)]"
+  client:only
+/>
 
 ### 列举例句
 
@@ -48,7 +53,4 @@ There was an old typewriter in the attic, forgotten by time. The grandson found 
 
 阁楼里有一台被时间遗忘的旧打字机，某一天，孙子发现了它，开始了他作为作家的旅程。
 
-<WordRelations
-  synonyms={["typist"]}
-  client:only
-/>
+<WordRelations synonyms={["typist"]} client:only />

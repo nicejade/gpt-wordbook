@@ -8,14 +8,19 @@ sidebar:
 tableOfContents: false
 ---
 
-import Pronunciation from '../../../components/Pronunciation.svelte';
-import WordRelations from '../../../components/WordRelations.svelte';
+import Pronunciation from "../../../components/Pronunciation.svelte";
+import WordRelations from "../../../components/WordRelations.svelte";
 
 ### 分析词义
 
 "Illusion" 是个名词，意为"错觉"或"幻想"。它指的是一个错误的观念或感觉，尤指由于对现实的误解或幻想引起的。有时它也被用来描述一种是人误以为是真实的事物的幻影或幻想。
 
-<Pronunciation word="Illusion" uk="/ɪˈl(j)uːʒ(ə)n/" us="[ɪˈluː.ʒən]" client:only />
+<Pronunciation
+  word="Illusion"
+  uk="/ɪˈl(j)uːʒ(ə)n/"
+  us="[ɪˈluː.ʒən]"
+  client:only
+/>
 
 ### 列举例句
 
@@ -49,7 +54,4 @@ Once upon a time, Jack found a treasure map leading to an illusionary castle. Ho
 
 从前，杰克找到了一张通往虚幻城堡的宝藏地图。然而，他实际上只找到了一堆石头。那个城堡只是一个错觉，仅此而已。
 
-<WordRelations
-  synonyms={["misapprehension"]}
-  client:only
-/>
+<WordRelations synonyms={["misapprehension"]} client:only />

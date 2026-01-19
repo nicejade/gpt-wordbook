@@ -6,14 +6,19 @@ sidebar:
 tableOfContents: false
 ---
 
-import Pronunciation from '../../../components/Pronunciation.svelte';
-import WordRelations from '../../../components/WordRelations.svelte';
+import Pronunciation from "../../../components/Pronunciation.svelte";
+import WordRelations from "../../../components/WordRelations.svelte";
 
 ### 分析词义
 
 "Impressive"是一个形容词，用来形容令人感到印象深刻或者令人赞叹的人或事物。
 
-<Pronunciation word="Impressive" uk="/ɪmˈpɹɛsɪv/" us="/ɪmˈpɹɛsɪv/" client:only />
+<Pronunciation
+  word="Impressive"
+  uk="/ɪmˈpɹɛsɪv/"
+  us="/ɪmˈpɹɛsɪv/"
+  client:only
+/>
 
 ### 列举例句
 
@@ -47,7 +52,4 @@ im-是一个表示否定或强调的前缀，press 来自拉丁词根 press，�
 
 The band's first concert was impressive, leaving a deep mark in the hearts of the audience. (乐队的第一场演唱会让人印象深刻，留下了深刻的烙印在观众心中。)
 
-<WordRelations
-  antonyms={["unimpressive"]}
-  client:only
-/>
+<WordRelations antonyms={["unimpressive"]} client:only />
