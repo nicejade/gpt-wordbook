@@ -68,11 +68,17 @@ h3 {
   color: #1d1d1f;
   max-width: 60rem;
   margin: 0 auto;
+  /* Ensure content doesn't overflow on small screens */
+  width: 100%;
+  overflow-wrap: break-word;
+  word-wrap: break-word;
 }
 
 .sl-markdown-content p {
   margin-bottom: 1.5rem;
   color: #333336;
+  overflow-wrap: break-word;
+  word-wrap: break-word;
 }
 
 /* 列表样式优化 */
@@ -80,12 +86,18 @@ h3 {
 .sl-markdown-content ol {
   margin-bottom: 2rem;
   padding-left: 1.25rem;
+  max-width: 100%;
+  overflow-wrap: break-word;
+  word-wrap: break-word;
 }
 
 .sl-markdown-content li {
   margin-bottom: 0.8rem;
   padding-left: 0.5rem;
   list-style-type: circle;
+  overflow-wrap: break-word;
+  word-wrap: break-word;
+  max-width: 100%;
 }
 
 /* 强调色与链接 */
@@ -193,10 +205,25 @@ html[data-theme='dark'] #starlight__sidebar [aria-current='page'] {
 @media (max-width: 50rem) {
   .sl-markdown-content {
     padding: 0;
+    max-width: 100%;
   }
   
   h1 {
     font-size: 2.5rem;
+    overflow-wrap: break-word;
+    word-wrap: break-word;
+  }
+  
+  h2, h3, h4, h5, h6 {
+    overflow-wrap: break-word;
+    word-wrap: break-word;
+  }
+  
+  /* Ensure all text content breaks properly on small screens */
+  .sl-markdown-content * {
+    max-width: 100%;
+    overflow-wrap: break-word;
+    word-wrap: break-word;
   }
 }
 

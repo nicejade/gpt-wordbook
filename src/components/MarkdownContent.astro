@@ -110,6 +110,11 @@ const isWordPage = url.pathname.includes('/words/') && !url.pathname.includes('/
       padding: 1.5rem;
       border-radius: 20px;
       margin-top: 0.5rem;
+      max-width: 100%;
+      width: 100%;
+      box-sizing: border-box;
+      overflow-wrap: break-word;
+      word-wrap: break-word;
     }
     .word-content.is-snapping {
       padding: 2rem;

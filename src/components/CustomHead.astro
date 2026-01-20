@@ -8,173 +8,103 @@ const isHomepage = Astro.url.pathname === '/' || Astro.url.pathname === '/index.
 <Default {...Astro.props}><slot /></Default>
 
 <style is:global>
+  @reference "tailwindcss";
   /* 优化 SVG 图标：仅针对特定容器，避免全局冲突 */
   .site-title svg,
   .social-icons svg {
     --sl-icon-size: 1.2rem !important;
-    font-size: var(--sl-icon-size) !important;
-    width: var(--sl-icon-size) !important;
-    height: var(--sl-icon-size) !important;
+    @apply text-[var(--sl-icon-size)] w-[var(--sl-icon-size)] h-[var(--sl-icon-size)];
   }
 
   /* Header 优化 - 极致毛玻璃效果与 Apple 审美 */
   header {
-    padding: 0 1rem !important;
-    backdrop-filter: blur(24px) saturate(200%);
-    transition: all 0.4s cubic-bezier(0.4, 0, 0.2, 1);
-    box-shadow: 
-      0 1px 2px rgba(0, 0, 0, 0.02),
-      0 4px 12px rgba(0, 0, 0, 0.03),
-      inset 0 1px 1px rgba(255, 255, 255, 0.4);
-    z-index: 100;
+    @apply px-4 backdrop-blur-[24px] backdrop-saturate-[200%] transition-all duration-[400ms] ease-[cubic-bezier(0.4,0,0.2,1)] shadow-[0_1px_2px_rgba(0,0,0,0.02),0_4px_12px_rgba(0,0,0,0.03),inset_0_1px_1px_rgba(255,255,255,0.4)] z-[100];
   }
 
   /* 修复移动端侧边栏开关不显示及展示瑕疵问题 */
   @media (max-width: 50rem) {
     /* 确保按钮的父容器可见，但不要遮挡点击 */
     nav.sidebar {
-      display: block !important;
-      height: 0;
-      overflow: visible;
+      @apply block h-0 overflow-visible;
     }
 
     /* 搜索按钮在左，菜单按钮在右 */
     site-search,
     [aria-controls="starlight__sidebar"] {
-      display: flex !important;
-      visibility: visible !important;
-      opacity: 1 !important;
-      width: 2rem !important;
-      height: 2rem !important;
-      justify-content: center !important;
-      align-items: center !important;
-      position: fixed !important;
-      top: 0.7rem !important;
-      z-index: 1000 !important;
-      background: #ffffff !important;
-      border-radius: 50% !important;
-      border: none !important;
-      box-shadow: 0px 8px 4px hsla(0, 0%, 0%, .01), 0px 5px 2px hsla(0, 0%, 0%, .03), 0px 3px 2px hsla(0, 0%, 0%, .06), 0px 1px 1px hsla(0, 0%, 0%, .06);
+      @apply flex visible opacity-100 w-8 h-8 justify-center items-center fixed top-[0.7rem] z-[1000] bg-white rounded-full border-0 shadow-[0_8px_4px_hsla(0,0%,0%,0.01),0_5px_2px_hsla(0,0%,0%,0.03),0_3px_2px_hsla(0,0%,0%,0.06),0_1px_1px_hsla(0,0%,0%,0.06)];
     }
 
     starlight-menu-button,
     .mobile-menu-toggle,
     [aria-controls="starlight__sidebar"] {
-      right: 1rem !important; 
+      @apply right-4;
     }
 
     site-search {
-      right: 4.5rem !important; 
+      @apply right-[4.5rem];
     }
 
     starlight-menu-button button {
-      display: flex !important;
-      width: 100% !important;
-      height: 100% !important;
-      padding: 0 !important;
-      border: none !important;
-      background: transparent !important;
-      cursor: pointer !important;
-      justify-content: center !important;
-      align-items: center !important;
-      color: #1d1d1f !important;
+      @apply flex w-full h-full p-0 border-0 bg-transparent cursor-pointer justify-center items-center text-[#1d1d1f];
     }
 
     site-search svg,
     starlight-menu-button svg {
-      display: block;
-      width: 1.4rem !important;
-      height: 1.4rem !important;
-      color: #1d1d1f !important;
-      fill: currentColor !important;
+      @apply block w-[1.4rem] h-[1.4rem] text-[#1d1d1f] fill-current;
     }
 
     /* 精确控制切换图标：根据状态显示或隐藏 */
     starlight-menu-button button[aria-expanded="false"] .close-menu,
     starlight-menu-button button[aria-expanded="true"] .open-menu {
-      display: none !important;
+      @apply hidden;
     }
 
     /* 移动端隐藏可能冲突的元素 */
     .social-icons,
     .tagline {
-      display: none !important;
+      @apply hidden;
     }
   }
 
   html[data-theme='dark'] .header {
-    background: rgba(28, 28, 30, 0.75) !important;
-    border-bottom: 1px solid rgba(255, 255, 255, 0.06);
-    box-shadow: 
-      0 1px 2px rgba(0, 0, 0, 0.2),
-      0 8px 24px rgba(0, 0, 0, 0.2),
-      inset 0 1px 0 rgba(255, 255, 255, 0.05);
+    @apply bg-[rgba(28,28,30,0.75)] border-b border-[rgba(255,255,255,0.06)] shadow-[0_1px_2px_rgba(0,0,0,0.2),0_8px_24px_rgba(0,0,0,0.2),inset_0_1px_0_rgba(255,255,255,0.05)];
   }
 
   .tagline {
-    font-size: 1.25rem;
-    font-weight: 600;
-    letter-spacing: -0.01em;
-    background: linear-gradient(135deg, #0066cc 0%, #c621e5 100%);
-    -webkit-background-clip: text;
-    -webkit-text-fill-color: transparent;
+    @apply text-[1.25rem] font-semibold tracking-[-0.01em] bg-[linear-gradient(135deg,#0066cc_0%,#c621e5_100%)] bg-clip-text text-transparent;
   }
 
   .site-title {
-    gap: 0.75rem;
-    font-weight: 700 !important;
-    letter-spacing: -0.03em !important;
+    @apply gap-3 font-bold tracking-[-0.03em];
     img {
-      width: 2.25rem;
-      height: 2.25rem;
-      border-radius: 22% !important; /* Apple Icon shape */
-      box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
+      @apply w-9 h-9 rounded-[22%] shadow-[0_2px_8px_rgba(0,0,0,0.1)];
     }
   }
 
   .social-icons a {
-    padding: 0.5rem;
-    border-radius: 0.5rem;
-    transition: background-color 0.2s ease;
+    @apply p-2 rounded-lg transition-colors duration-200;
   }
 
   .social-icons a:hover {
-    background-color: #e5e5e5;
+    @apply bg-[#e5e5e5];
   }
 
   html[data-theme='dark'] .social-icons a:hover {
-    background-color: rgba(255, 255, 255, 0.08);
+    @apply bg-[rgba(255,255,255,0.08)];
   }
 </style>
 
 {isHomepage && (
   <>
     <style is:global>
+      @reference "tailwindcss";
       @media (max-width: 50rem) {
         .mobile-theme-toggle {
-          display: flex !important;
-          visibility: visible !important;
-          opacity: 1 !important;
-          width: 2rem !important;
-          height: 2rem !important;
-          justify-content: center !important;
-          align-items: center !important;
-          position: fixed !important;
-          top: 0.7rem !important;
-          right: 1rem !important;
-          z-index: 1000 !important;
-          background: #ffffff !important;
-          border-radius: 50% !important;
-          border: none !important;
-          box-shadow: 0px 8px 4px hsla(0, 0%, 0%, .01), 0px 5px 2px hsla(0, 0%, 0%, .03), 0px 3px 2px hsla(0, 0%, 0%, .06), 0px 1px 1px hsla(0, 0%, 0%, .06);
-          cursor: pointer !important;
-          padding: 0 !important;
-          color: #1d1d1f !important;
+          @apply flex visible opacity-100 w-8 h-8 justify-center items-center fixed top-[0.7rem] right-4 z-[1000] bg-white rounded-full border-0 shadow-[0_8px_4px_hsla(0,0%,0%,0.01),0_5px_2px_hsla(0,0%,0%,0.03),0_3px_2px_hsla(0,0%,0%,0.06),0_1px_1px_hsla(0,0%,0%,0.06)] cursor-pointer p-0 text-[#1d1d1f];
         }
 
         html[data-theme='dark'] .mobile-theme-toggle {
-          background: #2c2c2e !important;
-          color: #ffffff !important;
+          @apply bg-[#2c2c2e] text-white;
         }
 
         /* 优化暗色模式下的按钮视觉 */
@@ -182,14 +112,14 @@ const isHomepage = Astro.url.pathname === '/' || Astro.url.pathname === '/index.
         html[data-theme='dark'] starlight-menu-button,
         html[data-theme='dark'] .mobile-menu-toggle,
         html[data-theme='dark'] [aria-controls="starlight__sidebar"] {
-          background: #2c2c2e !important;
+          @apply bg-[#2c2c2e];
         }
 
         html[data-theme='dark'] site-search button,
         html[data-theme='dark'] starlight-menu-button button,
         html[data-theme='dark'] site-search svg,
         html[data-theme='dark'] starlight-menu-button svg {
-          color: #ffffff !important;
+          @apply text-white;
         }
       }
     </style>
