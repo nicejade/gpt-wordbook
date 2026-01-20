@@ -46,6 +46,7 @@
                 { href: "https://github.com/nicejade", img: "github", alt: "Github" },
                 { href: "https://x.com/MarshalXuan", img: "x", alt: "X | Twitter" },
                 { href: "https://www.facebook.com/nice.jade.yang/", img: "facebook", alt: "Facebook | 脸书" },
+                { href: "https://www.threads.com/@turingmind", img: "threads", alt: "Threads" },
                 { href: "https://www.youtube.com/@MarshalXuan", img: "youtube", alt: "YouTube | 油管" },
                 { href: "https://space.bilibili.com/690989854", img: "bilibili", alt: "Bilibili | 哔哩哔哩" },
                 { href: "https://mastodon.social/@nicejade", img: "mastodon", alt: "Mastodon | 长毛象" },
