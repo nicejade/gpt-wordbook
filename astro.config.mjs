@@ -202,7 +202,7 @@ export default defineConfig({
 					tag: 'meta',
 					attrs: {
 						name: 'twitter:description',
-						content: '智析单词书（GPT Wordbook）是 AI 驱动的深度英语词汇学习平台，精选 8000+ 核心词汇，利用 GPT 模型深度解析每个单词的词义、发音、例句、词根、词缀、同义词、反义词、文化内涵与使用场景，从理解本质出发构建长期记忆。',
+						content: '智析单词书（GPT Wordbook）是 AI 驱动的深度英语词汇学习平台，精选 11000+ 核心词汇，利用 GPT 模型深度解析每个单词的词义、发音、例句、词根、词缀、同义词、反义词、文化内涵与使用场景，从理解本质出发构建长期记忆。',
 					},
 				},
 				{
@@ -252,7 +252,7 @@ export default defineConfig({
 					tag: 'meta',
 					attrs: {
 						property: 'og:description',
-						content: '智析单词书（GPT Wordbook）是 AI 驱动的深度英语词汇学习平台，精选 8000+ 核心词汇，利用 GPT 模型深度解析每个单词的词义、发音、例句、词根、词缀、同义词、反义词、文化内涵与使用场景，从理解本质出发构建长期记忆。',
+						content: '智析单词书（GPT Wordbook）是 AI 驱动的深度英语词汇学习平台，精选 11000+ 核心词汇，利用 GPT 模型深度解析每个单词的词义、发音、例句、词根、词缀、同义词、反义词、文化内涵与使用场景，从理解本质出发构建长期记忆。',
 					},
 				},
 				{
@@ -294,7 +294,7 @@ export default defineConfig({
 					tag: 'meta',
 					attrs: {
 						name: 'theme-color',
-						content: '#f59e0b',
+						content: '#fefefe',
 					},
 				},
 				{
@@ -344,7 +344,7 @@ export default defineConfig({
 					tag: 'meta',
 					attrs: {
 						name: 'msapplication-TileColor',
-						content: '#f59e0b',
+						content: '#fefefe',
 					},
 				},
 				{
