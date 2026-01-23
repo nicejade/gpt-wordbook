@@ -97,29 +97,46 @@ const isHomepage = Astro.url.pathname === '/' || Astro.url.pathname === '/index.
 {isHomepage && (
   <>
     <style is:global>
-      @reference "tailwindcss";
       @media (max-width: 50rem) {
         .mobile-theme-toggle {
-          @apply flex visible opacity-100 w-8 h-8 justify-center items-center fixed top-[0.7rem] right-4 z-[1000] bg-white rounded-full border-0 shadow-[0_8px_4px_hsla(0,0%,0%,0.01),0_5px_2px_hsla(0,0%,0%,0.03),0_3px_2px_hsla(0,0%,0%,0.06),0_1px_1px_hsla(0,0%,0%,0.06)] cursor-pointer p-0 text-[#1d1d1f];
+          display: flex;
+          visibility: visible;
+          opacity: 1;
+          width: 2rem;
+          height: 2rem;
+          justify-content: center;
+          align-items: center;
+          position: fixed;
+          top: 0.7rem;
+          right: 1rem;
+          z-index: 1000;
+          background-color: white;
+          border-radius: 9999px;
+          border: 0;
+          box-shadow: 0 8px 4px hsla(0,0%,0%,0.01), 0 5px 2px hsla(0,0%,0%,0.03), 0 3px 2px hsla(0,0%,0%,0.06), 0 1px 1px hsla(0,0%,0%,0.06);
+          cursor: pointer;
+          padding: 0;
+          color: #1d1d1f;
         }
 
         html[data-theme='dark'] .mobile-theme-toggle {
-          @apply bg-[#2c2c2e] text-white;
+          background-color: #2c2c2e;
+          color: white;
         }
 
-        /* 优化暗色模式下的按钮视觉 */
+        /* Dark mode button styles */
         html[data-theme='dark'] site-search,
         html[data-theme='dark'] starlight-menu-button,
         html[data-theme='dark'] .mobile-menu-toggle,
         html[data-theme='dark'] [aria-controls="starlight__sidebar"] {
-          @apply bg-[#2c2c2e];
+          background-color: #2c2c2e;
         }
 
         html[data-theme='dark'] site-search button,
         html[data-theme='dark'] starlight-menu-button button,
         html[data-theme='dark'] site-search svg,
         html[data-theme='dark'] starlight-menu-button svg {
-          @apply text-white;
+          color: white;
         }
       }
     </style>
