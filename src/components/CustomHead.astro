@@ -66,10 +66,6 @@ const isHomepage = Astro.url.pathname === '/' || Astro.url.pathname === '/index.
     }
   }
 
-  html[data-theme='dark'] .header {
-    @apply bg-[rgba(28,28,30,0.75)] border-b border-[rgba(255,255,255,0.06)] shadow-[0_1px_2px_rgba(0,0,0,0.2),0_8px_24px_rgba(0,0,0,0.2),inset_0_1px_0_rgba(255,255,255,0.05)];
-  }
-
   .tagline {
     @apply text-[1.25rem] font-semibold tracking-[-0.01em] bg-[linear-gradient(135deg,#0066cc_0%,#c621e5_100%)] bg-clip-text text-transparent;
   }

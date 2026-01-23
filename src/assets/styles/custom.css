@@ -209,12 +209,21 @@ html[data-theme='dark'] #starlight__sidebar [aria-current='page'] {
 /* 适配移动端和卡片生成 */
 @media (max-width: 50rem) {
   .sl-markdown-content {
-    padding: 0;
+    padding: 0 1rem;
+    max-width: 100vw;
+    overflow-x: hidden;
+  }
+  
+  /* 确保表格和代码块在移动端可滚动 */
+  .sl-markdown-content :is(table, pre) {
     max-width: 100%;
+    overflow-x: auto;
+    display: block;
   }
   
   h1 {
     font-size: 2.5rem;
+    padding: 0 1rem;
     overflow-wrap: break-word;
     word-wrap: break-word;
   }
