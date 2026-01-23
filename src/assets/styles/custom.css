@@ -100,6 +100,11 @@ h3 {
   max-width: 100%;
 }
 
+#word-index li {
+  padding-left: 0;
+  list-style-type: circle;
+}
+
 /* 强调色与链接 */
 .sl-markdown-content a:not(:where(.not-content *)) {
 	color: var(--sl-color-link-accent);
