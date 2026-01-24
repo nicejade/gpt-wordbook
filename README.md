@@ -102,7 +102,7 @@ gpt-wordbook/
 │   └── humans.txt       # 项目贡献者信息
 ├── src/
 │   ├── assets/          # 项目资源文件
-│   ├── conponents       # 项目组件
+│   ├── components/      # 项目组件
 │   ├── content/
 │   │   ├── docs/        # 文档内容 (MDX/MD 格式)
 │   │   │   ├── about.mdx       # 关于页面
