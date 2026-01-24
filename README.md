@@ -8,8 +8,7 @@
 <h1 align="center">智析单词书 | GPT Wordbook</h1>
 <p align="center">AI 赋能的深度词汇学习平台</p>
 
-<div align="center">
-  <p>智析单词书（GPT Wordbook）是 AI 驱动的深度英语词汇学习平台，精选 11000+ 核心词汇，利用 GPT 模型深度解析每个单词的词义、发音、例句、词根、词缀、同义词、反义词、文化内涵与使用场景，从理解本质出发构建长期记忆。</p>
+<div>智析单词书，是 AI 驱动的深度英语词汇学习平台，精选 11000+ 核心词汇，利用 GPT 模型深度解析每个单词的词义、发音、例句、词根、词缀、同义词、反义词、文化内涵与使用场景，从理解本质出发构建长期记忆。
 </div>
 
 <div align="center">
@@ -103,15 +102,13 @@ gpt-wordbook/
 │   └── humans.txt       # 项目贡献者信息
 ├── src/
 │   ├── assets/          # 项目资源文件
-│   ├── configs/         # 配置文件
+│   ├── conponents       # 项目组件
 │   ├── content/
 │   │   ├── docs/        # 文档内容 (MDX/MD 格式)
 │   │   │   ├── about.mdx       # 关于页面
 │   │   │   └── words/          # 单词页面目录
 │   │   └── config.ts    # 内容集合配置
 │   └── env.d.ts         # TypeScript 类型定义
-├── scripts/             # 脚本工具
-│   └── gptwords.json    # 词汇数据源
 ├── astro.config.mjs     # Astro 配置文件
 ├── tailwind.config.mjs  # Tailwind CSS 配置
 ├── tsconfig.json        # TypeScript 配置

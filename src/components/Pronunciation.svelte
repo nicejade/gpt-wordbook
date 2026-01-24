@@ -181,7 +181,7 @@
 
       {#if uk && us}
         <div class="hidden sm:block w-[1px] h-6 bg-black/[0.08] [:root[data-theme='dark']_&]:bg-white/0.1 !mx-6 !my-0"></div>
-        <div class="block sm:hidden w-full h-[1px] bg-black/[0.08] [:root[data-theme='dark']_&]:bg-white/0.1 !mx-0 !my-1"></div>
+        <div class="block sm:hidden w-full h-[1px] bg-black/[0.08] [:root[data-theme='dark']_&]:bg-white/0.1 !mx-0 !my-[-6px]"></div>
       {/if}
 
       {#if us}
