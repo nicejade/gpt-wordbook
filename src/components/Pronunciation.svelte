@@ -156,7 +156,7 @@
     音标发音
   </h3>
   <div class="mx-auto !my-8 w-full max-w-fit [perspective:1000px] print:hidden">
-    <div class="flex flex-col sm:flex-row items-center gap-3 sm:gap-0 p-[0.4rem] w-full bg-white/60 [:root[data-theme='dark']_&]:bg-[#1c1c1e]/60 backdrop-blur-[20px] backdrop-saturate-[180%] border border-black/[0.08] [:root[data-theme='dark']_&]:border-white/0.08 rounded-[1.5rem] shadow-[0_10px_30px_-5px_rgba(0,0,0,0.05),0_4px_10px_-2px_rgba(0,0,0,0.02),inset_0_1px_1px_rgba(255,255,255,0.8)] [:root[data-theme='dark']_&]:shadow-[0_15px_35px_-5px_rgba(0,0,0,0.3),0_5px_15px_-2px_rgba(0,0,0,0.1),inset_0_1px_0_rgba(255,255,255,0.05)] transition-all duration-500">
+    <div class="flex flex-col sm:flex-row sm:justify-evenly items-center gap-3 sm:gap-0 p-[0.4rem] w-full bg-white/60 [:root[data-theme='dark']_&]:bg-[#1c1c1e]/60 backdrop-blur-[20px] backdrop-saturate-[180%] border border-black/[0.08] [:root[data-theme='dark']_&]:border-white/0.08 rounded-[1.5rem] shadow-[0_10px_30px_-5px_rgba(0,0,0,0.05),0_4px_10px_-2px_rgba(0,0,0,0.02),inset_0_1px_1px_rgba(255,255,255,0.8)] [:root[data-theme='dark']_&]:shadow-[0_15px_35px_-5px_rgba(0,0,0,0.3),0_5px_15px_-2px_rgba(0,0,0,0.1),inset_0_1px_0_rgba(255,255,255,0.05)] transition-all duration-500">
       
       {#if uk}
         <button 
