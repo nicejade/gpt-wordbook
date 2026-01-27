@@ -94,10 +94,13 @@
       </div>
 
       <!-- Bottom -->
-      <div class="w-full pt-4 !mt-4 !md:mt-8 border-t border-white/[0.08] flex flex-col md:flex-row justify-between items-center gap-6 text-center md:text-left [:root[data-theme='light']_&]:border-black/[0.05]">
+      <div class="w-full pt-4 !mt-4 !md:mt-8 border-t border-white/[0.08] flex flex-col md:flex-row justify-between items-center gap-1 text-center md:text-left [:root[data-theme='light']_&]:border-black/[0.05]">
         <p class="text-[var(--sl-color-gray-4)] text-[13px] font-medium tracking-wide">
           © {currentYear} <a href="https://www.lovejade.cn/" class="text-[var(--sl-color-gray-3)] px-2 py-1 rounded-md transition-all hover:bg-white/[0.1] bg-white/[0.1] [:root[data-theme='light']_&]:hover:bg-black/[0.06] hover:text-[var(--sl-color-text-accent)] decoration-none no-underline border-none">lovejade.cn</a> · 保留所有权利
         </p>
+        <a href="https://aidirs.org/item/gpt-wordbook" target="_blank" rel="noopener noreferrer">
+          <img src="https://aidirs.org/badges/badge-listed-light.svg" alt="Listed on AIDirs" />
+        </a>
       </div>
     </div>
   </div>
