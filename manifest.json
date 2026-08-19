@@ -1,0 +1,60 @@
+{
+	"name": "智析单词书 | GPT Wordbook",
+	"short_name": "智析单词书",
+	"description": "智析单词书（GPT Wordbook）是 AI 驱动的深度英语词汇学习平台，精选 11000+ 核心词汇，利用 GPT 模型深度解析每个单词的词义、发音、例句、词根、词缀、同义词、反义词、文化内涵与使用场景，从理解本质出发构建长期记忆。",
+	"id": "/?source=pwa",
+	"start_url": "/?source=pwa",
+	"display": "standalone",
+	"orientation": "any",
+	"scope": "/",
+	"display_override": ["window-controls-overlay", "standalone"],
+	"categories": ["education", "reference", "productivity"],
+	"lang": "zh-CN",
+	"dir": "ltr",
+	"screenshots": [
+		{
+			"src": "/hero.png",
+			"sizes": "1200x676",
+			"type": "image/png",
+			"form_factor": "wide",
+			"label": "智析单词书主页面"
+		}
+	],
+	"background_color": "#ffffff",
+	"theme_color": "#0066cc",
+	"icons": [
+		{
+			"src": "/android-chrome-512x512.png",
+			"sizes": "512x512",
+			"type": "image/png",
+			"purpose": "any"
+		},
+		{
+			"src": "/android-chrome-512x512.png",
+			"sizes": "512x512",
+			"type": "image/png",
+			"purpose": "maskable"
+		},
+		{
+			"src": "/android-chrome-192x192.png",
+			"sizes": "192x192",
+			"type": "image/png",
+			"purpose": "any"
+		},
+		{
+			"src": "/apple-touch-icon.png",
+			"sizes": "180x180",
+			"type": "image/png"
+		}
+	],
+	"shortcuts": [
+		{
+			"name": "关于页面",
+			"short_name": "关于",
+			"description": "了解更多关于智析单词书",
+			"url": "/about",
+			"icons": [{ "src": "/favicon-96x96.png", "sizes": "96x96" }]
+		}
+	],
+	"prefer_related_applications": false
+}
