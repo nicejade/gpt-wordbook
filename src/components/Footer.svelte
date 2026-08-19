@@ -8,6 +8,8 @@
         { title: '倾城之链', url: 'https://github.com/nicejade/nicelinks-vue-client' },
         { title: '曼妙句子', url: 'https://github.com/nicejade/read.lovejade.cn' },
         { title: '人生已过', url: 'https://github.com/nicejade/life-spent' },
+        { title: '时空旅行', url: 'https://github.com/nicejade/spacetime-travel' },
+				{ title: '在线编辑', url: 'https://github.com/nicejade/markdown-online-editor' },
       ]
     },
     {
@@ -15,12 +17,14 @@
       branch: [
         { title: '逍遥自在轩', url: 'https://www.niceshare.site' },
         { title: '晚晴幽草轩', url: 'https://www.jeffjade.com/' },
+        { title: '玉桃文飨轩', url: 'https://share.lovejade.cn/' },
         { title: '慧悟万象阁', url: 'https://meta.niceshare.site/zh' },
-        { title: '缘知随心庭', url: 'https://fine.niceshare.site/' },
-        { title: '玉桃文飨轩', url: 'https://share.lovejade.cn/' }
+        { title: '智能体漫游', url: 'https://agent.jeffjade.com/' },
+        { title: '逸趣游乐坊', url: 'https://play.niceshare.site/' },
+        { title: '蓝河文档馆', url: 'https://blueos.niceshare.site/' },
       ]
     }
-  ];
+  ]
 
   const currentYear = new Date().getFullYear();
 </script>
@@ -32,11 +36,12 @@
         <!-- Brand & Social -->
         <div class="flex flex-col items-start space-y-8 w-full lg:w-1/3">
           <div class="flex items-center gap-4 select-none">
-            <img class="w-9 h-9 opacity-90" src="/favicon.svg" alt="Logo" />
-            <span class="text-2xl font-bold tracking-tight bg-clip-text text-transparent bg-gradient-to-br from-[var(--sl-color-text-accent)] to-[#d1d5db] [:root[data-theme='light']_&]:to-[#6b7280]">
-              智析单词书
-            </span>
+            <a href="https://word.lovejade.cn/" class="brand-link flex justify-center">
+              <img class="inline" src="/favicon.svg" alt="智析单词书" width="28" height="28" loading="lazy" decoding="async" />
+              <span class="text-xl font-bold tracking-tight !ml-3">智析单词书</span>
+            </a>
           </div>
+          
 
           <div class="w-full">
             <p class="text-sm !my-4 text-[var(--sl-color-gray-3)] leading-relaxed  max-w-sm">
@@ -72,7 +77,7 @@
         <div class="grid grid-cols-2 md:grid-cols-2 flex-1 gap-10 lg:gap-12">
           {#each footerInfoArr as item (item.title)}
             <div class="flex flex-col space-y-6 !mt-0">
-              <h3 class="text-[12px] !mt-0 font-bold tracking-[0.2em] text-[var(--sl-color-gray-2)] uppercase opacity-80">
+              <h3 class="!text-[16px] !mt-0 px-3 font-bold tracking-[0.2em] text-[var(--sl-color-gray-2)] uppercase opacity-80">
                 {item.title}
               </h3>
 
