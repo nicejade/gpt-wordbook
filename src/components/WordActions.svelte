@@ -5,45 +5,70 @@
 	let exportProcessing = $state(false);
 	let exportSuccess = $state(false);
 
+	/**
+	 * Capture the word card via an offscreen clone so the live page
+	 * never receives layout/style mutations (no visible jitter).
+	 */
+	async function captureWordContent() {
+		const { snapdom } = await import('@zumer/snapdom');
+		const element = document.querySelector('.word-content') as HTMLElement | null;
+		if (!element) return null;
+
+		const clone = element.cloneNode(true) as HTMLElement;
+		clone.classList.add('is-snapping');
+		clone.setAttribute('aria-hidden', 'true');
+		clone.querySelectorAll('.no-print, .word-actions-wrapper').forEach((node) => node.remove());
+
+		Object.assign(clone.style, {
+			position: 'fixed',
+			left: '-10000px',
+			top: '0',
+			margin: '0',
+			pointerEvents: 'none',
+			zIndex: '-1',
+			transition: 'none',
+		});
+
+		document.body.appendChild(clone);
+		// Force layout so padding/background from .is-snapping are applied
+		void clone.offsetHeight;
+
+		try {
+			return await snapdom(clone, {
+				backgroundColor: 'transparent',
+				scale: 2,
+				fast: true,
+			});
+		} finally {
+			clone.remove();
+		}
+	}
+
 	async function handleCopy() {
 		if (copyProcessing) return;
 		copyProcessing = true;
 		copySuccess = false;
 
 		try {
-			const { snapdom } = await import('@zumer/snapdom');
-			const element = document.querySelector('.word-content') as HTMLElement;
-			if (!element) return;
+			const capture = await captureWordContent();
+			if (!capture) return;
 
-			// Steve Jobs-level attention to detail: enter Snapping state
-			element.classList.add('is-snapping');
-			
-			await new Promise(resolve => setTimeout(resolve, 350));
-			
-			const capture = await snapdom(element, {
-				backgroundColor: 'transparent',
-				scale: 2,
-				exclude: ['.word-actions-wrapper', '.no-print'],
-				excludeMode: 'remove'
-			});
-			
 			const canvas = await capture.toCanvas();
-			const blob = await new Promise<Blob | null>(resolve => 
+			const blob = await new Promise<Blob | null>((resolve) =>
 				canvas.toBlob(resolve, 'image/png', 1.0)
 			);
-			
+
 			if (blob) {
 				await navigator.clipboard.write([
 					new ClipboardItem({ 'image/png': blob })
 				]);
 			}
 
-			element.classList.remove('is-snapping');
 			copySuccess = true;
-			setTimeout(() => { copySuccess = false; }, 2000);
-			
+			setTimeout(() => {
+				copySuccess = false;
+			}, 2000);
 		} catch (err) {
-			document.querySelector('.word-content')?.classList.remove('is-snapping');
 			console.error('Copy failed:', err);
 		} finally {
 			copyProcessing = false;
@@ -56,35 +81,21 @@
 		exportSuccess = false;
 
 		try {
-			const { snapdom } = await import('@zumer/snapdom');
-			const element = document.querySelector('.word-content') as HTMLElement;
-			if (!element) return;
+			const capture = await captureWordContent();
+			if (!capture) return;
 
-			// Steve Jobs-level attention to detail: enter Snapping state
-			element.classList.add('is-snapping');
-			
-			await new Promise(resolve => setTimeout(resolve, 350));
-			
-			const capture = await snapdom(element, {
-				backgroundColor: 'transparent',
-				scale: 2,
-				exclude: ['.word-actions-wrapper', '.no-print'],
-				excludeMode: 'remove'
-			});
-			
 			const title = document.querySelector('h1')?.innerText?.trim() || 'word-card';
-			await capture.download({ 
-				type: 'png', 
+			await capture.download({
+				type: 'png',
 				filename: `${title}`,
 				quality: 1.0
 			});
 
-			element.classList.remove('is-snapping');
 			exportSuccess = true;
-			setTimeout(() => { exportSuccess = false; }, 2000);
-			
+			setTimeout(() => {
+				exportSuccess = false;
+			}, 2000);
 		} catch (err) {
-			document.querySelector('.word-content')?.classList.remove('is-snapping');
 			console.error('Export failed:', err);
 		} finally {
 			exportProcessing = false;
